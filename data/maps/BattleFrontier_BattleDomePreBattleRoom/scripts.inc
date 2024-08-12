@@ -272,122 +272,314 @@ BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor:
 	step_end
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound1:
+	.ifdef ENGLISH
 	.string "Your 1st-round match is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Deine erste Runde steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound2:
+	.ifdef ENGLISH
 	.string "Your 2nd-round match is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Deine zweite Runde steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForSemifinals:
+	.ifdef ENGLISH
 	.string "Your semifinal match is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das Halbfinale steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals:
+	.ifdef ENGLISH
 	.string "Your final match is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das Finale steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons:
+	.ifdef ENGLISH
 	.string "Please choose the two POKéMON\n"
 	.string "that are to appear in battle.$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte wähle zwei POKéMON aus, die\n"
+	.string "am Kampf teilnehmen sollen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
+	.ifdef ENGLISH
 	.string "Right this way, please.$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte hier entlang.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth:
+	.ifdef ENGLISH
 	.string "Thank you for competing!\p"
 	.string "I'll restore your POKéMON to\n"
 	.string "full health.$"
+	.else
+	.ifdef GERMAN
+	.string "Vielen Dank für die Teilnahme!\p"
+	.string "Deine POKéMON sind gleich wieder\n"
+	.string "topfit!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete:
+	.ifdef ENGLISH
 	.string "All 1st-round matches have been\n"
 	.string "completed.\p"
 	.string "These are the teams that advanced!$"
+	.else
+	.ifdef GERMAN
+	.string "Die erste Runde ist beendet.\p"
+	.string "Diese Teams sind eine Runde weiter!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round2Complete:
+	.ifdef ENGLISH
 	.string "All 2nd-round matches have been\n"
 	.string "completed.\p"
 	.string "These are the teams that advanced!$"
+	.else
+	.ifdef GERMAN
+	.string "Die zweite Runde ist beendet.\p"
+	.string "Diese Teams sind eine Runde weiter!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete:
+	.ifdef ENGLISH
 	.string "All semifinal matches have been\n"
 	.string "completed.\p"
 	.string "These are the teams that advanced!$"
+	.else
+	.ifdef GERMAN
+	.string "Das Halbfinale ist beendet.\p"
+	.string "Diese Teams sind eine Runde weiter!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2:
+	.ifdef ENGLISH
 	.string "Congratulations for getting through\n"
 	.string "the 1st round.\p"
 	.string "The 2nd round is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Congratulations for getting through\n"
+	.string "the 1st round.\p"
+	.string "The 2nd round is next.\n"
+	.string "Are you ready?$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals:
+	.ifdef ENGLISH
 	.string "Congratulations for advancing\n"
 	.string "to the semifinals.\p"
 	.string "The best four teams meet in this round.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Congratulations for advancing\n"
+	.string "to the semifinals.\p"
+	.string "The best four teams meet in this round.\n"
+	.string "Are you ready?$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals:
+	.ifdef ENGLISH
 	.string "Congratulations for advancing\n"
 	.string "to the final match.\p"
 	.string "You're one win from the championship.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Congratulations for advancing\n"
+	.string "to the final match.\p"
+	.string "You’re one win from the championship.\n"
+	.string "Are you ready?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer:
+	.ifdef ENGLISH
 	.string "{PLAYER}'s next opponent\n"
 	.string "is this TRAINER.$"
+	.else
+	.ifdef GERMAN
+	.string "Der nächste Gegner von {PLAYER} ist\n"
+	.string "dieser TRAINER.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound1:
+	.ifdef ENGLISH
 	.string "The tournament is in the 1st round.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Turnier befindet sich in der\n"
+	.string "1. Runde.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound2:
+	.ifdef ENGLISH
 	.string "The tournament is in the 2nd round.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Turnier befindet sich in der\n"
+	.string "2. Runde.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInSemifinals:
+	.ifdef ENGLISH
 	.string "The tournament is in the semifinals.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Turnier befindet sich im Halbfinale.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals:
+	.ifdef ENGLISH
 	.string "The tournament is up to the final.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Turnier befindet sich im Finale.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame:
+	.ifdef ENGLISH
 	.string "Would you like to save and\n"
 	.string "quit the game?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du das Spiel speichern und\n"
+	.string "beenden?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge:
+	.ifdef ENGLISH
 	.string "Would you like to retire from your\n"
 	.string "Battle Tournament challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du dich aus dem Turnier\n"
+	.string "zurückziehen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait:
+	.ifdef ENGLISH
 	.string "I am saving your data.\n"
 	.string "Please wait.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich speichere deine Daten.\n"
+	.string "Einen Moment bitte.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch:
+	.ifdef ENGLISH
 	.string "Should I record your last match\n"
 	.string "on your FRONTIER PASS?$"
+	.else
+	.ifdef GERMAN
+	.string "Soll ich den letzten Kampf in deinen\n"
+	.string "KAMPFZONENPASS eintragen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver:
+	.ifdef ENGLISH
 	.string "Congratulations for advancing\n"
 	.string "to the final match.\p"
 	.string "For the final match, you will challenge\n"
 	.string "the DOME ACE TUCKER.\p"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Glückwunsch! Du hast es bis zum finalen\n"
+	.string "Kampf geschafft!\p"
+	.string "In diesem Finale wirst du auf den\n"
+	.string "STADIONSTAR TASSO treffen.\p"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 @ Identical to ReadyForTuckerSilver
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold:
+	.ifdef ENGLISH
 	.string "Congratulations for advancing\n"
 	.string "to the final match.\p"
 	.string "For the final match, you will challenge\n"
 	.string "the DOME ACE TUCKER.\p"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Glückwunsch! Du hast es bis zum finalen\n"
+	.string "Kampf geschafft!\p"
+	.string "In diesem Finale wirst du auf den\n"
+	.string "STADIONSTAR TASSO treffen.\p"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort:
+	.ifdef ENGLISH
 	.string "Your final battle against TUCKER is\n"
 	.string "next. Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Dies ist das Finale. Du trittst gegen\n"
+	.string "TASSO an. Bist du bereit?$"
+	.endif
+	.endif
 
 @ Identical again
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort:
+	.ifdef ENGLISH
 	.string "Your final battle against TUCKER is\n"
 	.string "next. Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Dies ist das Finale. Du trittst gegen\n"
+	.string "TASSO an. Bist du bereit?$"
+	.endif
+	.endif
 

@@ -59,6 +59,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
+	.ifdef ENGLISH
 	.string "Ahahaha!\p"
 	.string "I'm PHOEBE of the ELITE FOUR.\n"
 	.string "I did my training on MT. PYRE.\p"
@@ -68,12 +69,34 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "is extremely tight.\p"
 	.string "So, come on, just try and see if you can\n"
 	.string "even inflict damage on my POKéMON!$"
+	.else
+	.ifdef GERMAN
+	.string "Ahahahahaha!\p"
+	.string "Ich bin ANTONIA von den TOP VIER.\n"
+	.string "Ich habe am PYROBERG trainiert.\p"
+	.string "Während des Trainings habe ich die\n"
+	.string "Fähigkeit erworben, mit GEIST-POKéMON\l"
+	.string "zu kommunizieren.\p"
+	.string "In der Tat ist das Band zwischen mir und\n"
+	.string "den POKéMON sehr stark.\p"
+	.string "Komm und schau, ob du irgendetwas\n"
+	.string "gegen meine POKéMON ausrichten kannst.$"
+	.endif
+	.endif
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
+	.ifdef ENGLISH
 	.string "Oh, darn.\n"
 	.string "I've gone and lost.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, verdammt.\n"
+	.string "Aus und vorbei. Verloren.$"
+	.endif
+	.endif
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
+	.ifdef ENGLISH
 	.string "There's a definite bond between you\n"
 	.string "and your POKéMON, too.\p"
 	.string "I didn't recognize it, so it's only\n"
@@ -81,4 +104,15 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "Yup, I'd like to see how far your bond\n"
 	.string "will carry you.\p"
 	.string "Go ahead, move on to the next room.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Band zwischen dir und deinen\n"
+	.string "POKéMON ist ebenfalls sehr stark.\p"
+	.string "Das habe ich gar nicht bemerkt, daher\n"
+	.string "konnte ich nur verlieren.\p"
+	.string "Ja, jetzt möchte ich sehen, wie weit\n"
+	.string "dieses Band euch bringt.\p"
+	.string "Geh und betritt den nächsten Raum.$"
+	.endif
+	.endif
 

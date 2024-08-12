@@ -100,5 +100,11 @@ Route124_EventScript_Isabella::
 	end
 
 Route124_Text_HuntersHouse:
+	.ifdef ENGLISH
 	.string "HUNTER'S HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "HAUS DES SCHATZTAUCHERS$"
+	.endif
+	.endif
 

@@ -53,6 +53,13 @@
 	special CallBattleTowerFunc
 	.endm
 
+	@ This acts like old tower_getopponentintro, but tower_getopponentintro was changed in the German version.
+	.macro tower_getopponentintro_de opponent:req
+	setvar VAR_0x8004, BATTLE_TOWER_FUNC_GET_OPPONENT_INTRO_DE
+	setvar VAR_0x8005, \opponent
+	special CallBattleTowerFunc
+	.endm
+
 	@ Load the parties, gfx, and other data (like Apprentice id) for the multi partner candidates
 	.macro tower_loadpartners
 	setvar VAR_0x8004, BATTLE_TOWER_FUNC_LOAD_PARTNERS

@@ -183,69 +183,196 @@ BerryTree_EventScript_PlantBerry::
 	return
 
 BerryTree_Text_ItsSoftLoamySoil:
+	.ifdef ENGLISH
 	.string "It's soft, loamy soil.$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist weicher Lehmboden.$"
+	.endif
+	.endif
 
 BerryTree_Text_WantToPlant:
+	.ifdef ENGLISH
 	.string "It's soft, loamy soil.\n"
 	.string "Want to plant a BERRY?$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist weicher Lehmboden.\n"
+	.string "Möchtest du eine BEERE pflanzen?$"
+	.endif
+	.endif
 
 BerryTree_Text_PlantedOneBerry:
+	.ifdef ENGLISH
 	.string "{PLAYER} planted one {STR_VAR_1} in\n"
 	.string "the soft, loamy soil.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} pflanzt eine\n"
+	.string "{STR_VAR_1} in den Lehmboden.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryGrowthStage1:
+	.ifdef ENGLISH
 	.string "One {STR_VAR_1} was planted here.$"
+	.else
+	.ifdef GERMAN
+	.string "Eine {STR_VAR_1} wurde\n"
+	.string "hier gepflanzt.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryGrowthStage2:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1} has sprouted.$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} blüht auf.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryGrowthStage3:
+	.ifdef ENGLISH
 	.string "This {STR_VAR_1} plant is growing taller.$"
+	.else
+	.ifdef GERMAN
+	.string "Die {STR_VAR_1}-Pflanze wächst.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryGrowthStage4:
+	.ifdef ENGLISH
 	.string "These {STR_VAR_1} flowers are blooming\n"
 	.string "{STR_VAR_2}.$"
+	.else
+	.ifdef GERMAN
+	.string "Diese {STR_VAR_1}-Blumen sind\n"
+	.string "{STR_VAR_2}.$"
+	.endif
+	.endif
 
 BerryTree_Text_CareAdverbGreat:
+	.ifdef ENGLISH
 	.string "very beautifully$"
+	.else
+	.ifdef GERMAN
+	.string "wunderschön$"
+	.endif
+	.endif
 
 BerryTree_Text_CareAdverbPoor:
+	.ifdef ENGLISH
 	.string "cutely$"
+	.else
+	.ifdef GERMAN
+	.string "zierlich$"
+	.endif
+	.endif
 
 BerryTree_Text_CareAdverbGood:
+	.ifdef ENGLISH
 	.string "prettily$"
+	.else
+	.ifdef GERMAN
+	.string "hübsch$"
+	.endif
+	.endif
 
 BerryTree_Text_WantToPick:
+	.ifdef ENGLISH
 	.string "You found {STR_VAR_2} {STR_VAR_1}!\p"
 	.string "Do you want to pick the\n"
 	.string "{STR_VAR_1}?$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_2} {STR_VAR_1}!\p"
+	.string "Möchtest du die {STR_VAR_1}\n"
+	.string "pflücken?$"
+	.endif
+	.endif
 
 BerryTree_Text_PickedTheBerry:
+	.ifdef ENGLISH
 	.string "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} pflückt die {STR_VAR_2}\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 BerryTree_Text_PutAwayBerry:
+	.ifdef ENGLISH
 	.string "{PLAYER} put away the {STR_VAR_1}\n"
 	.string "in the BAG's BERRIES POCKET.\p"
 	.string "The soil returned to its soft and\n"
 	.string "loamy state.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} packt die {STR_VAR_1}\n"
+	.string "in die BEERENTASCHE des BEUTELs.\p"
+	.string "Der Boden ist wieder weich und lehmig.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryPocketFull:
+	.ifdef ENGLISH
 	.string "The BAG's BERRIES POCKET is full.\p"
 	.string "The {STR_VAR_1} couldn't be taken.$"
+	.else
+	.ifdef GERMAN
+	.string "Die BEERENTASCHE des BEUTELs ist voll.\p"
+	.string "Die {STR_VAR_1} können nicht\n"
+	.string "mitgenommen werden.$"
+	.endif
+	.endif
 
 BerryTree_Text_BerryLeftUnpicked:
+	.ifdef ENGLISH
 	.string "{PLAYER} left the {STR_VAR_1}\n"
 	.string "unpicked.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} pflückt keine\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 BerryTree_Text_WantToWater:
+	.ifdef ENGLISH
 	.string "Want to water the {STR_VAR_1} with the\n"
 	.string "WAILMER PAIL?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du die {STR_VAR_1} mit der\n"
+	.string "WAILMERKANNE gießen?$"
+	.endif
+	.endif
 
 BerryTree_Text_WateredTheBerry:
+	.ifdef ENGLISH
 	.string "{PLAYER} watered the {STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} gießt die {STR_VAR_1}.$"
+	.endif
+	.endif
 
 BerryTree_Text_PlantIsDelighted:
+	.ifdef ENGLISH
 	.string "The plant seems to be delighted.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Pflanze scheint sich zu freuen.$"
+	.endif
+	.endif
 
 BerryTree_Text_ExclamationPoint:
+	.ifdef ENGLISH
 	.string "!$"
+	.else
+	.ifdef GERMAN
+	.string "!$"
+	.endif
+	.endif

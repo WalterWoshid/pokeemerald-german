@@ -1405,26 +1405,59 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS CITY POKéMON GYM\n"
 	.string "LEADER: JUAN\p"
 	.string "“The GYM LEADER with the beauty\n"
 	.string "of pure water!”$"
+	.else
+	.ifdef GERMAN
+	.string "XENEROVILLE POKéMON ARENA\n"
+	.string "LEITER: JUAN\p"
+	.string "“Der ARENALEITER, der die Schönheit\n"
+	.string "des Wassers zum Leuchten bringt!”$"
+	.endif
+	.endif
 
 SootopolisCity_Text_CitySign:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS CITY\p"
 	.string "“The mystical city where history\n"
 	.string "slumbers.”$"
+	.else
+	.ifdef GERMAN
+	.string "XENEROVILLE\p"
+	.string "“Die mystische Stadt, in der die\n"
+	.string "Geschichte stillsteht.”$"
+	.endif
+	.endif
 
 SootopolisCity_Text_DoorIsClosed:
+	.ifdef ENGLISH
 	.string "The door is closed.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Tür ist zu.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_PhysicallyFitLivingHere:
+	.ifdef ENGLISH
 	.string "Diving in the sea. Climbing up and\n"
 	.string "down stairs all the time…\p"
 	.string "If you live in this town, you end up\n"
 	.string "getting physically fit.$"
+	.else
+	.ifdef GERMAN
+	.string "Im Meer tauchen. Treppenstufen auf und\n"
+	.string "ab rennen…\p"
+	.string "Wenn du an diesem Ort lebst, wirst du\n"
+	.string "körperlich fit.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
+	.ifdef ENGLISH
 	.string "These giant POKéMON suddenly appeared\n"
 	.string "in the middle of the city!\p"
 	.string "And, I've never seen them before!\p"
@@ -1432,57 +1465,152 @@ SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
 	.string "other like that?\p"
 	.string "Why can't they be friends, those\n"
 	.string "POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Auf einmal tauchten diese riesigen\n"
+	.string "POKéMON mitten im Ort auf!\p"
+	.string "Ich habe sie noch nie vorher gesehen!\p"
+	.string "Warum greifen sie sich wohl gegenseitig\n"
+	.string "an?\p"
+	.string "Warum können diese POKéMON nicht\n"
+	.string "einfach Freunde sein?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_WhatIsThatGreenPokemon:
+	.ifdef ENGLISH
 	.string "What? What? What?\n"
 	.string "What is that green POKéMON?!$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie? Häh?\n"
+	.string "Was ist das für ein grünes POKéMON?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_WhereDidLegendariesGo:
+	.ifdef ENGLISH
 	.string "GROUDON and KYOGRE…\n"
 	.string "Where did they go?\p"
 	.string "Will they cause droughts or downpours\n"
 	.string "somewhere else?$"
+	.else
+	.ifdef GERMAN
+	.string "GROUDON und KYOGRE…\n"
+	.string "Wo seid ihr hin?\p"
+	.string "Ob sie jetzt woanders für Dürre und\n"
+	.string "Überschwemmungen sorgen?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_TwoPokemonArentAngry:
+	.ifdef ENGLISH
 	.string "I just get this sense somehow that\n"
 	.string "the two POKéMON aren't angry.\p"
 	.string "I think… They probably can't control\n"
 	.string "their own power…$"
+	.else
+	.ifdef GERMAN
+	.string "Irgendwie habe ich das Gefühl, dass\n"
+	.string "diese beiden POKéMON gar nicht wütend\l"
+	.string "sind.\p"
+	.string "Ich glaube… sie können einfach\n"
+	.string "ihre Kräfte nicht kontrollieren…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_FlyingMonStoppedRampage:
+	.ifdef ENGLISH
 	.string "That flying POKéMON came down from\n"
 	.string "the sky and stopped the rampaging\l"
 	.string "POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "Das fliegende POKéMON kam aus dem\n"
+	.string "Himmel und hat die beiden wütenden\l"
+	.string "POKéMON beruhigt…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_WonderWhatWorldIsLike:
+	.ifdef ENGLISH
 	.string "I… I've never been out of this city.\p"
 	.string "I wonder what the world is like on\n"
 	.string "the other side of this round sky?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich… Ich war noch nie außerhalb der\n"
+	.string "Stadt.\p"
+	.string "Ich frage mich, wie die Welt hinter\n"
+	.string "diesem Horizont aussieht?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_ThisIsWicked:
+	.ifdef ENGLISH
 	.string "Wow!\n"
 	.string "This is wicked!$"
+	.else
+	.ifdef GERMAN
+	.string "Wow!\n"
+	.string "Das ist abgefahren!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_ThatWasWicked:
+	.ifdef ENGLISH
 	.string "Wow!\n"
 	.string "That was wicked!$"
+	.else
+	.ifdef GERMAN
+	.string "Wow!\n"
+	.string "Das war abgefahren!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_GoRedAndBlueMon:
+	.ifdef ENGLISH
 	.string "Go for it, red POKéMON!\n"
 	.string "Don't back off, blue POKéMON!$"
+	.else
+	.ifdef GERMAN
+	.string "Los, rotes POKéMON!\n"
+	.string "Gib nicht auf, blaues POKéMON!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_DoYouKnowMonNames:
+	.ifdef ENGLISH
 	.string "… … … … … …\p"
 	.string "Hi, do you know the names of those\n"
 	.string "POKéMON fighting over there?$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\p"
+	.string "Hi, weißt du, wie die beiden POKéMON\n"
+	.string "heißen, die dort drüben kämpfen?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_GreenOneSettlesThings:
+	.ifdef ENGLISH
 	.string "I was wondering which one would win,\n"
 	.string "the red one or the blue one, but, oh no,\l"
 	.string "it's the green one that settles things!\p"
 	.string "Talk about a huge turn of events!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich war echt gespannt, ob das rote\n"
+	.string "oder das blaue POKéMON gewinnt. Aber\l"
+	.string "dann hat das grüne POKéMON alles\p"
+	.string "entschieden.\n"
+	.string "Das nenne ich eine spannende Wendung!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
+	.ifdef ENGLISH
 	.string "There's an ancient legend that claims\n"
 	.string "the land and sea were shaped by\l"
 	.string "a colossal battle between POKéMON.\p"
@@ -1490,8 +1618,23 @@ SootopolisCity_Text_SeeingLegendWithOwnEyes:
 	.string "my very own eyes!\p"
 	.string "Whoa! I never expected to be\n"
 	.string "witness to something this huge!$"
+	.else
+	.ifdef GERMAN
+	.string "Eine alte Legende sagt, dass Land und\n"
+	.string "Meer ihre Formen durch einen\p"
+	.string "unerbittlichen Kampf zwischen POKéMON\n"
+	.string "bekommen haben.\p"
+	.string "Und nun sehe ich genau das passieren.\n"
+	.string "Whoa! \l"
+	.string "Ich hätte nie gedacht, dass ich einmal\p"
+	.string "mit meinen eigenen Augen Zeuge eines\n"
+	.string "so bedeutenden Ereignisses werden\l"
+	.string "würde!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SawLegendWithOwnEyes:
+	.ifdef ENGLISH
 	.string "There's an ancient legend that claims\n"
 	.string "the land and sea were shaped by\l"
 	.string "a colossal battle between POKéMON.\p"
@@ -1499,41 +1642,111 @@ SootopolisCity_Text_SawLegendWithOwnEyes:
 	.string "my very own eyes!\p"
 	.string "Whoa! I never expected to be\n"
 	.string "witness to something this huge!$"
+	.else
+	.ifdef GERMAN
+	.string "Eine alte Legende sagt, dass Land und\n"
+	.string "Meer ihre Formen durch einen\p"
+	.string "unerbittlichen Kampf zwischen POKéMON\n"
+	.string "bekommen haben.\p"
+	.string "Und nun sehe ich genau das passieren.\n"
+	.string "Whoa! \l"
+	.string "Ich hätte nie gedacht, dass ich einmal\p"
+	.string "mit meinen eigenen Augen Zeuge eines\n"
+	.string "so bedeutenden Ereignisses werden\l"
+	.string "würde!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_BigPokemonFighting:
+	.ifdef ENGLISH
 	.string "A big POKéMON is fighting with\n"
 	.string "another big POKéMON!\p"
 	.string "Please, someone make them stop!$"
+	.else
+	.ifdef GERMAN
+	.string "Ein großes POKéMON kämpft gegen ein\n"
+	.string "anderes großes POKéMON!\p"
+	.string "Bitte, jemand muss sie aufhalten!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_PrettyMonCameFromSky:
+	.ifdef ENGLISH
 	.string "A pretty POKéMON came down from\n"
 	.string "the sky…$"
+	.else
+	.ifdef GERMAN
+	.string "Ein wunderschönes POKéMON kam\n"
+	.string "aus dem Himmel geflogen…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
+	.ifdef ENGLISH
 	.string "Oh, no!\n"
 	.string "SOOTOPOLIS CITY will get wrecked!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh nein!\n"
+	.string "XENEROVILLE wird zerstört!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.else
+	.ifdef GERMAN
+	.string "XENEROVILLE wurde nicht zerstört!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_NoOrdinaryTourist:
+	.ifdef ENGLISH
 	.string "Hm!\n"
 	.string "You've come all the way to SOOTOPOLIS?\l"
 	.string "You're no ordinary tourist.\p"
 	.string "But I suppose that doesn't make you\n"
 	.string "an extraordinary tourist, either.$"
+	.else
+	.ifdef GERMAN
+	.string "Hm! Du bist den ganzen Weg nach\n"
+	.string "XENEROVILLE gekommen? Du bist\l"
+	.string "kein normaler Tourist.\p"
+	.string "Aber das macht dich auch nicht zu einem\n"
+	.string "außergewöhnlichen Touristen.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_CityRegainedCalm:
+	.ifdef ENGLISH
 	.string "The city has regained its calm…$"
+	.else
+	.ifdef GERMAN
+	.string "In die Stadt ist wieder Ruhe\neingekehrt.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
+	.ifdef ENGLISH
 	.string "Who might you be?\p"
 	.string "This is the CAVE OF ORIGIN.\p"
 	.string "The spirits of POKéMON, becalmed at\n"
 	.string "MT. PYRE, are said to be revived here.\p"
 	.string "Please leave.$"
+	.else
+	.ifdef GERMAN
+	.string "Wer bist du denn wohl?\p"
+	.string "Dies ist die URZEITHÖHLE.\p"
+	.string "Die Geister der POKéMON, zur Ruhe\n"
+	.string "gebettet am PYROBERG, erwachen\l"
+	.string "hier zum Leben, sagt man.\p"
+	.string "Bitte verlasse diesen Ort.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
+	.ifdef ENGLISH
 	.string "A person with a strong will and\n"
 	.string "superior talent…\p"
 	.string "A TRAINER who has knowledge and\n"
@@ -1541,19 +1754,49 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "If such a person were to appear, I was\n"
 	.string "instructed by WALLACE to lead that\l"
 	.string "TRAINER to this CAVE.$"
+	.else
+	.ifdef GERMAN
+	.string "Eine Person mit unbeugsamem Willen und\n"
+	.string "überragendem Talent…\p"
+	.string "Ein TRAINER, der sich mit den unter-\n"
+	.string "schiedlichsten POKéMON auskennt…\p"
+	.string "WASSILI hat mich beauftragt, dass ich,\n"
+	.string "sollte ich so eine Person finden, diesen\l"
+	.string "TRAINER zu dieser HÖHLE führen soll.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_AwakenedPokemonClash:
+	.ifdef ENGLISH
 	.string "Oh, my…\p"
 	.string "The clash between the two awakened\n"
 	.string "POKéMON was quelled by the awakening\l"
 	.string "of a third POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "Oh…\p"
+	.string "Der Kampf zwischen den beiden POKéMON\n"
+	.string "wurde durch das Aufwachen eines\l"
+	.string "dritten POKéMON beendet…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
+	.ifdef ENGLISH
 	.string "This is the CAVE OF ORIGIN…\p"
 	.string "With the passing of the crisis,\n"
 	.string "the cave, too, shall sleep…$"
+	.else
+	.ifdef GERMAN
+	.string "Dies ist die URZEITHÖHLE…\p"
+	.string "Nachdem die Krise überwunden ist,\n"
+	.string "sollte auch für diese Höhle wieder\l"
+	.string "Ruhe einkehren…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SootopolisSkyBeautiful:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS sprang up as a town in\n"
 	.string "the crater of a volcano.\p"
 	.string "If you look up at the sky, the lip of\n"
@@ -1561,24 +1804,61 @@ SootopolisCity_Text_SootopolisSkyBeautiful:
 	.string "So, all you see is the sky in a circle.\p"
 	.string "But that's what makes the sky above\n"
 	.string "SOOTOPOLIS the most beautiful.$"
+	.else
+	.ifdef GERMAN
+	.string "XENEROVILLE entwickelte sich im Krater\n"
+	.string "eines Vulkans.\p"
+	.string "Wenn du in den Himmel schaust, kannst\n"
+	.string "du den Rand des Kraters über dir\l"
+	.string "erkennen. Der Himmel wird zum Kreis.\p"
+	.string "Aber das macht den Himmel über\n"
+	.string "XENEROVILLE zum schönsten Himmel.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_GiganticPokemonFight:
+	.ifdef ENGLISH
 	.string "When two POKéMON that gigantic\n"
 	.string "are fighting that savagely, there's\l"
 	.string "not much that we can do.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn zwei so riesige POKéMON\n"
+	.string "wild miteinander kämpfen, können wir\l"
+	.string "nur dastehen und zuschauen.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_FearedWorstWhenPokemonFlewDown:
+	.ifdef ENGLISH
 	.string "When that third POKéMON flew down,\n"
 	.string "I feared the worst.$"
+	.else
+	.ifdef GERMAN
+	.string "Als das dritte POKéMON erschien,\n"
+	.string "befürchtete ich das Schlimmste.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_NightSkyFavoriteScenery:
+	.ifdef ENGLISH
 	.string "A circle of a night sky framed by\n"
 	.string "the crater of a volcano…\p"
 	.string "And in that ring, stars flicker and\n"
 	.string "blink as if they were alive…\l"
 	.string "It's my favorite scenery.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Stück des Nachthimmels, umgeben\n"
+	.string "vom Rund des Vulkankraters…\p"
+	.string "Und in diesem runden Stück Himmel\n"
+	.string "strahlen und blinken die Sterne, als\l"
+	.string "wären sie lebendig. Ich liebe das…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_WeatherWentWild:
+	.ifdef ENGLISH
 	.string "The weather was clear this morning,\n"
 	.string "but…\p"
 	.string "All of a sudden, dark clouds brewed up,\n"
@@ -1588,21 +1868,54 @@ SootopolisCity_Text_WeatherWentWild:
 	.string "wild!\p"
 	.string "Is all of this because of those\n"
 	.string "POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Wir hatten heute Morgen klares Wetter,\n"
+	.string "aber…\p"
+	.string "auf einmal zog sich der Himmel mit\n"
+	.string "dunklen Wolken zu und es fing an zu\l"
+	.string "regnen. Und ein Gewitter zog auf.\p"
+	.string "Das war unangenehm!\p"
+	.string "Ob die beiden POKéMON die Ursache\n"
+	.string "dafür sind?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_YouBroughtFlyingMon:
+	.ifdef ENGLISH
 	.string "Oh?\p"
 	.string "It was you who brought that flying\n"
 	.string "POKéMON here?\p"
 	.string "Well, aren't you amazing!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh?\p"
+	.string "Hast du das fliegende POKéMON hierher\n"
+	.string "gebracht?\p"
+	.string "Nun, du bist ein unglaubliches Kind!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_GroudonPleaseStop:
+	.ifdef ENGLISH
 	.string "MAXIE: G… GROUDON…\n"
 	.string "Please! Stop what you're doing!\p"
 	.string "I know the extent of your power now!\p"
 	.string "If you keep going, all HOENN, not just\n"
 	.string "SOOTOPOLIS, will be utterly ruined!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: G… GROUDON…\n"
+	.string "Bitte! Hör auf damit!\p"
+	.string "Ich erkenne nun deine ganze Kraft!\p"
+	.string "Wenn du nicht aufhörst, wird nicht nur\n"
+	.string "XENEROVILLE, sondern ganz HOENN\l"
+	.string "ruiniert werden!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_AfterAllOurScheming:
+	.ifdef ENGLISH
 	.string "MAXIE: So the super-ancient POKéMON\n"
 	.string "weren't only GROUDON and KYOGRE…\p"
 	.string "After all our fruitless scheming and\n"
@@ -1611,8 +1924,21 @@ SootopolisCity_Text_AfterAllOurScheming:
 	.string "again as if nothing had happened…\p"
 	.string "Fu…\n"
 	.string "Fuhahaha…$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: Es gab neben GROUDON und KYOGRE\n"
+	.string "noch ein uraltes POKéMON…\p"
+	.string "Und nachdem wir uns erfolglos\n"
+	.string "angestrengt haben, schafft es dieses\l"
+	.string "dritte POKéMON mit Leichtigkeit, die\l"
+	.string "Sache wieder ins Lot zu bringen…\p"
+	.string "Ha…\n"
+	.string "Hahahahaha…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_KyogreCalmDown:
+	.ifdef ENGLISH
 	.string "ARCHIE: KYOGRE! What's wrong?!\n"
 	.string "Look over here! It's the RED ORB!\l"
 	.string "Calm down! KYOGRE!\p"
@@ -1620,8 +1946,22 @@ SootopolisCity_Text_KyogreCalmDown:
 	.string "… … … … … …\p"
 	.string "It's no good!\n"
 	.string "It's not responding at all!$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: KYOGRE! Was ist los?!?\n"
+	.string "Schau hierher! Dies ist die ROTE KUGEL!\l"
+	.string "Beruhige dich! KYOGRE!\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "…\p"
+	.string "Das ist schlecht!\n"
+	.string "Es reagiert überhaupt nicht!$"
+	.endif
+	.endif
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
+	.ifdef ENGLISH
 	.string "ARCHIE: KYOGRE and GROUDON both\n"
 	.string "flew off to who knows where.\p"
 	.string "The weather in HOENN has returned\n"
@@ -1631,8 +1971,21 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "Maybe what we were trying to do was\n"
 	.string "something small, even meaningless,\l"
 	.string "to POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: KYOGRE und GROUDON sind wer\n"
+	.string "weiß wohin geflohen.\p"
+	.string "Das Klima in HOENN hat sich wieder\n"
+	.string "normalisiert…\p"
+	.string "Haha…\n"
+	.string "Hahahahahaha…\p"
+	.string "Vielleicht war das, was wir vorhatten,\n"
+	.string "bedeutungslos für die POKéMON…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
+	.ifdef ENGLISH
 	.string "STEVEN: Those POKéMON fighting…\n"
 	.string "GROUDON… And KYOGRE…\p"
 	.string "The two super-ancient POKéMON\n"
@@ -1646,8 +1999,26 @@ SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "Well, then, there's someone that\n"
 	.string "I'd like you to meet.\p"
 	.string "Come with me, please.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Diese kämpfenden POKéMON…\n"
+	.string "GROUDON… und KYOGRE…\p"
+	.string "Diese uralten POKéMON sind aus einem\n"
+	.string "langen Schlaf erwacht…\p"
+	.string "Und nun treffen sie mit ihren un-\n"
+	.string "kontrollierbaren Kräften aufeinander…\p"
+	.string "{PLAYER}{KUN}…\p"
+	.string "Da du hier bist, gehe ich davon aus,\n"
+	.string "dass du bereit bist, uns in dieser Krise\l"
+	.string "zu helfen. \p"
+	.string "Da ist jemand, den möchte ich dir gerne\n"
+	.string "vorstellen.\p"
+	.string "Komm bitte mit.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
+	.ifdef ENGLISH
 	.string "STEVEN: Listen, {PLAYER}{KUN}.\p"
 	.string "Does seeing GROUDON and KYOGRE make\n"
 	.string "you think POKéMON are to be feared?\p"
@@ -1655,50 +2026,128 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 	.string "POKéMON are really more…\p"
 	.string "…Why am I asking you this?\n"
 	.string "You already know.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Hör zu, {PLAYER}{KUN}.\p"
+	.string "Wenn du dir GROUDON und KYOGRE\n"
+	.string "anschaust, meinst du dann, dass man\l"
+	.string "die POKéMON fürchten muss?\p"
+	.string "Nein, das muss man nicht…\n"
+	.string "POKéMON sind vielmehr…\p"
+	.string "Warum ich dich das frage?\n"
+	.string "Die Antwort kennst du bereits.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_HereWereAreHelpWallace:
+	.ifdef ENGLISH
 	.string "STEVEN: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
 	.string "WALLACE.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Okay, wir sind da!\p"
+	.string "Innen wirst du jemanden namens\n"
+	.string "WASSILI finden.\p"
+	.string "Ich glaube, du besitzt, was nötig ist,\n"
+	.string "um ihm zu helfen…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
+	.ifdef ENGLISH
 	.string "STEVEN: I think you have what's\n"
 	.string "needed to help him…$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Ich glaube, du besitzt, was\n"
+	.string "nötig ist, um ihm zu helfen…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
+	.ifdef ENGLISH
 	.string "STEVEN: The SKY PILLAR…\p"
 	.string "I've never been there.\n"
 	.string "I wonder where it could be?$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Der HIMMELTURM…\p"
+	.string "Ich war niemals dort.\n"
+	.string "Wo ist der überhaupt?$"
+	.endif
+	.endif
 
 SootopolisCity_Text_SoThatsRayquaza:
+	.ifdef ENGLISH
 	.string "STEVEN: So that's RAYQUAZA…\p"
 	.string "It's incredible how the two rampaging\n"
 	.string "POKéMON would flee from it in fear…$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Das ist also RAYQUAZA…\p"
+	.string "Unglaublich, wie die zwei tobenden\n"
+	.string "POKéMON in Angst fliehen…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_MaxieArchieLeft:
+	.ifdef ENGLISH
 	.string "STEVEN: It looks like both MAXIE and\n"
 	.string "ARCHIE have gone away somewhere.\p"
 	.string "Perhaps they've gone to MT. PYRE to\n"
 	.string "return those ORBS…$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Sieht so aus, als seien MARC und\n"
+	.string "ADRIAN irgendwo hingegangen.\p"
+	.string "Vielleicht sind sie zum PYROBERG\n"
+	.string "gegangen, um die KUGELn\l"
+	.string "zurückzubringen…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
+	.ifdef ENGLISH
 	.string "WALLACE: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the SKY PILLAR\n"
 	.string "yet?\p"
 	.string "I'm sure that you can make it to\n"
 	.string "the top of the SKY PILLAR…$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Oh?\n"
+	.string "{PLAYER}{KUN}?\p"
+	.string "Du hast den HIMMELTURM noch nicht\n"
+	.string "erklommen?\p"
+	.string "Ich bin sicher, du schaffst es im\n"
+	.string "HIMMELTURM bis ganz nach oben…$"
+	.endif
+	.endif
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
+	.ifdef ENGLISH
 	.string "WALLACE: {PLAYER}{KUN}…\p"
 	.string "The leaders of TEAM MAGMA and AQUA,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: {PLAYER}{KUN}…\p"
+	.string "Die Anführer von TEAM MAGMA und AQUA…\n"
+	.string "Ich glaube nicht, dass sie gefährlich\l"
+	.string "sind.\p"
+	.string "Es kann nicht schaden, wenn wir uns\n"
+	.string "anhören, was sie zu sagen haben.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
+	.ifdef ENGLISH
 	.string "WALLACE: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, SOOTOPOLIS…\n"
@@ -1706,8 +2155,21 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "On behalf of the people, I thank you.\p"
 	.string "This is a gift from me.\n"
 	.string "Please accept it.$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: {PLAYER}{KUN}…\n"
+	.string "Meine Augen haben mir also doch keinen\l"
+	.string "Streich gespielt.\p"
+	.string "Dank deiner Hilfe wurde XENEROVILLE…\n"
+	.string "Nein! Ganz HOENN wurde gerettet.\p"
+	.string "Im Namen aller Menschen danke ich dir.\p"
+	.string "Dies ist ein Geschenk von mir.\n"
+	.string "Bitte nimm es an.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
+	.ifdef ENGLISH
 	.string "That HIDDEN MACHINE contains\n"
 	.string "WATERFALL.\p"
 	.string "If you have the RAIN BADGE, a POKéMON\n"
@@ -1719,8 +2181,32 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "the SOOTOPOLIS GYM LEADER.\p"
 	.string "When you're all set to go, step through\n"
 	.string "that door.$"
+	.else
+	.ifdef GERMAN
+	.string "Die VERSTECKTE MASCHINE enthält\n"
+	.string "KASKADE.\p"
+	.string "Sobald du den SCHAUERORDEN besitzt,\n"
+	.string "kannst du einem POKéMON diese VM\l"
+	.string "beibringen.\p"
+	.string "Es kann dann Wasserfälle bezwingen.\p"
+	.string "Und wo bekommt man den SCHAUERORDEN?\n"
+	.string "Das weißt du doch, oder etwa nicht?\p"
+	.string "Richtig! Du musst den ARENALEITER in\n"
+	.string "XENEROVILLE besiegen.\p"
+	.string "Wenn du bereit bist, tritt durch diese\n"
+	.string "Tür.$"
+	.endif
+	.endif
 
 SootopolisCity_Text_DazzledByMentor:
+	.ifdef ENGLISH
 	.string "WALLACE: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
 	.string "elegant battle style.$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Ich bin mir sicher, dass dich\n"
+	.string "der atemberaubend elegante Kampfstil\l"
+	.string "meines Mentors schwindelig machen wird.$"
+	.endif
+	.endif

@@ -212,6 +212,7 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
+	.ifdef ENGLISH
 	.string "SCOTT: Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
@@ -219,16 +220,41 @@ BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
 	.string "This is my dream come true.\n"
 	.string "It took me years and years, but I've\l"
 	.string "finally given shape to my dream.$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Oh, hallo! Herzlich willkommen!\n"
+	.string "Ähähä… Bitte entschuldige die Enge.\p"
+	.string "Nun, {PLAYER}{KUN}, ich darf dich herzlich\n"
+	.string "hier in der KAMPFZONE begrüßen.\p"
+	.string "Hier sind meine Träume wahr geworden.\n"
+	.string "Jahre um Jahre anstrengender Arbeit,\l"
+	.string "aber mein Traum ist Realität geworden!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal:
+	.ifdef ENGLISH
 	.string "On reflection, it was a terribly long\n"
 	.string "journey…\p"
 	.string "I left home alone on a quest to find\n"
 	.string "strong TRAINERS.\p"
 	.string "No one can imagine how much effort\n"
 	.string "or time it took to make this real.$"
+	.else
+	.ifdef GERMAN
+	.string "Rückblickend betrachtet war es eine\n"
+	.string "lange Reise…\p"
+	.string "Ich habe meine Heimat verlassen und\n"
+	.string "mich auf die Suche nach starken\l"
+	.string "TRAINERn gemacht.\p"
+	.string "Niemand kann sich vorstellen, wie viel\n"
+	.string "Zeit und wie viel Anstrengungen es mich\l"
+	.string "gekostet hat, dies hier zu realisieren.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing:
+	.ifdef ENGLISH
 	.string "But that's all in the past.\n"
 	.string "No point dwelling on that!\p"
 	.string "All I want for you is to enjoy battling\n"
@@ -236,12 +262,31 @@ BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing:
 	.string "{PLAYER}{KUN}, I want you to have this\n"
 	.string "as a memento for all the time our\l"
 	.string "paths crossed on our journeys.$"
+	.else
+	.ifdef GERMAN
+	.string "Aber lassen wir die Vergangenheit\n"
+	.string "ruhen.\p"
+	.string "Alles, was ich mir wünsche ist, dass du\n"
+	.string "die Kämpfe hier aus vollem Herzen\l"
+	.string "genießt.\p"
+	.string "{PLAYER}{KUN}! Ich möchte dir dies als\n"
+	.string "Andenken geben. Es soll dich daran er-\l"
+	.string "innern, wie sich unsere Wege kreuzten.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
+	.ifdef ENGLISH
 	.string "{PLAYER} obtained\n"
 	.string "{STR_VAR_1} Battle Point(s).$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält {STR_VAR_1} Gewinnpunkt(e).$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
+	.ifdef ENGLISH
 	.string "SCOTT: You can check your Battle\n"
 	.string "Points on your FRONTIER PASS.\p"
 	.string "The more success you have here at\n"
@@ -249,11 +294,30 @@ BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
 	.string "Points you will collect.\p"
 	.string "Use your Battle Points the way you\n"
 	.string "see fit, like trading them for items.$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Du kannst die Anzahl deiner\n"
+	.string "Gewinnpunkte auf deinem KAMPFZONEN-\l"
+	.string "PASS ablesen.\p"
+	.string "Je erfolgreicher du hier in der KAMPF-\n"
+	.string "ZONE bist, desto mehr Gewinnpunkte\l"
+	.string "erhältst du.\p"
+	.string "Verwende sie ganz wie du magst. Tausche\n"
+	.string "sie zum Beispiel gegen Items ein.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
+	.ifdef ENGLISH
 	.string "I'm expecting great things from you!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich erwarte Großes von dir!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
+	.ifdef ENGLISH
 	.string "SCOTT: Every TRAINER is an individual.\n"
 	.string "They all lead lives of their own.\p"
 	.string "But when they're in a battle,\n"
@@ -264,8 +328,23 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "That's why I go everywhere seeking\n"
 	.string "TRAINERS who are serious about\l"
 	.string "battling, and invite them here.$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Jeder TRAINER ist ein\n"
+	.string "Individuum. Sie leben alle ihr Leben.\p"
+	.string "Aber in Kämpfen ist es völlig egal,\n"
+	.string "wer oder was sie sind.\p"
+	.string "Sie sind alle gleich!\p"
+	.string "Ich liebe die Reinheit der Kämpfe, in\n"
+	.string "denen jeder gleich ist.\p"
+	.string "Deshalb bin ich immer auf der Suche\n"
+	.string "nach TRAINERn, die ihre Sache ernst\l"
+	.string "nehmen, und lade sie hierher ein.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
+	.ifdef ENGLISH
 	.string "SCOTT: Have you met any of\n"
 	.string "the FRONTIER BRAINS?\p"
 	.string "Better yet, have you obtained any\n"
@@ -274,8 +353,22 @@ BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
 	.string "as the toughest TRAINERS anywhere.\p"
 	.string "But I'm sure that seeing how tough\n"
 	.string "you are will startle even them!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Hast du schon die KAMPF-\n"
+	.string "KORYPHÄEN getroffen?\p"
+	.string "Oder hast du SYMBOLE von ihnen\n"
+	.string "bekommen?\p"
+	.string "Die KAMPFKORYPHÄEN sind handverlesen.\n"
+	.string "Ich habe die stärksten TRAINER selbst\l"
+	.string "ausgesucht.\p"
+	.string "Aber ich bin sicher, deine Stärke wird\n"
+	.string "sie zum Zittern bringen!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
+	.ifdef ENGLISH
 	.string "SCOTT: You don't just train for battle,\n"
 	.string "right?\p"
 	.string "I think I remember you working on\n"
@@ -284,8 +377,21 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "You may run into wild POKéMON in\n"
 	.string "the BATTLE FRONTIER somewhere…\l"
 	.string "Fufufu!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Du trainierst doch nicht nur für\n"
+	.string "Kämpfe, oder?\p"
+	.string "Ich meine mich zu erinnern, dass du auch\n"
+	.string "an deinem POKéDEX arbeitest?\p"
+	.string "Soll ich dir was verraten?\p"
+	.string "Auch hier in der KAMPFZONE wirst\n"
+	.string "du auf wilde POKéMON treffen…\l"
+	.string "irgendwo… Ha ha ha ha!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
+	.ifdef ENGLISH
 	.string "SCOTT: Are you enjoying things in\n"
 	.string "the BATTLE FRONTIER?\p"
 	.string "…Wait a second…\n"
@@ -299,8 +405,29 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 	.string "like this, but this is a special time!\p"
 	.string "I want you to have this.\n"
 	.string "I'm sure you can put it to proper use.$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Gefällt es dir hier in der\n"
+	.string "KAMPFZONE?\p"
+	.string "Warte mal!\n"
+	.string "Oh…\p"
+	.string "Dein KAMPFZONENPASS!\n"
+	.string "Du hast ja alle silbernen SYMBOLE\l"
+	.string "zusammen!\p"
+	.string "Das ist mehr als beeindruckend!\n"
+	.string "Du bist stark, genau, wie ich es\l"
+	.string "erwartet hatte!\p"
+	.string "Normalerweise mache ich so etwas nicht,\n"
+	.string "aber dies hier ist eine besondere\l"
+	.string "Situation.\p"
+	.string "Ich möchte dir dies hier schenken!\n"
+	.string "Ich bin sicher, du weißt es gut zu\l"
+	.string "nutzen.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
+	.ifdef ENGLISH
 	.string "SCOTT: I hope you're enjoying\n"
 	.string "everything in the BATTLE FRONTIER.\p"
 	.string "…Wait a second…\n"
@@ -314,36 +441,107 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 	.string "{PLAYER}, you've got to accept this!\p"
 	.string "I think you will be able to\n"
 	.string "appreciate the value of my gift!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Ich hoffe, es gefällt dir hier in\n"
+	.string "der KAMPFZONE?\p"
+	.string "Warte mal…\n"
+	.string "Ich traue meinen Augen nicht!\p"
+	.string "Dein KAMPFZONENPASS!\n"
+	.string "Du hast ja alle goldenen SYMBOLE\l"
+	.string "zusammen!!!\p"
+	.string "Das ist mehr als hervorragend!\n"
+	.string "Du bist einfach unglaublich - ich hatte\l"
+	.string "nichts anderes erwartet!\p"
+	.string "… … … …\n"
+	.string "…\p"
+	.string "{PLAYER}, du musst dies von mir\n"
+	.string "annehmen!\p"
+	.string "Ich weiß, du wirst den Wert dieses\n"
+	.string "Geschenks erkennen!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
+	.ifdef ENGLISH
 	.string "I must say I have the gift of knowing\n"
 	.string "a good TRAINER when I see one.\p"
 	.string "I'm so glad I had the foresight to\n"
 	.string "bring you here!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich kann von mir behaupten, einen guten\n"
+	.string "TRAINER auf Anhieb erkennen zu können.\p"
+	.string "Ich bin froh, dass ich dein Potenzial\n"
+	.string "erkannt habe und dich hierher gebeten\l"
+	.string "habe!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
+	.ifdef ENGLISH
 	.string "Your BERRY POCKET seems to\n"
 	.string "be stuffed.$"
+	.else
+	.ifdef GERMAN
+	.string "Deine BEERENTASCHE scheint voll\n"
+	.string "zu sein.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
+	.ifdef ENGLISH
 	.string "SCOTT: Oh, I heard about you!\n"
 	.string "How you ruled the BATTLE TOWER!\l"
 	.string "You beat over 50 TRAINERS in a row?\p"
 	.string "That's fantastic!\n"
 	.string "I want you to have this!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Ich habe schon von dir gehört!\n"
+	.string "Wie du den DUELLTURM bezwungen hast!\l"
+	.string "Du hast 50 TRAINER in Folge besiegt!\p"
+	.string "Das ist fantastisch!\n"
+	.string "Ich möchte dir dies gerne schenken.$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
+	.ifdef ENGLISH
 	.string "SCOTT: Oh, my! I heard about you!\n"
 	.string "How you overwhelmed the BATTLE TOWER!\l"
 	.string "You beat over 100 TRAINERS in a row?\p"
 	.string "That's ridiculously spectacular!\n"
 	.string "You've got to have this!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Ich habe schon von dir gehört!\n"
+	.string "Wie du den DUELLTURM bezwungen hast!\l"
+	.string "Du hast 100 TRAINER in Folge besiegt!\p"
+	.string "Das ist einfach spektakulär!\n"
+	.string "Ich muss dir dies einfach schenken!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings:
+	.ifdef ENGLISH
 	.string "I'll be expecting to hear even greater\n"
 	.string "things about you now!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich erwarte von dir ab jetzt noch\n"
+	.string "größere Taten!$"
+	.endif
+	.endif
 
 BattleFrontier_ScottsHouse_Text_ComeBackForThisLater:
+	.ifdef ENGLISH
 	.string "Oops, well, if you have too much\n"
 	.string "stuff, come back for this later.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, schade! Komm doch einfach wieder,\n"
+	.string "wenn du Platz geschaffen hast.$"
+	.endif
+	.endif
 

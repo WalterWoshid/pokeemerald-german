@@ -198,6 +198,7 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
+	.ifdef ENGLISH
 	.string "I'm MR. STONE, the PRESIDENT of\n"
 	.string "the DEVON CORPORATION.\p"
 	.string "I'd just got word about you!\p"
@@ -211,18 +212,55 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "DEWFORD TOWN?\p"
 	.string "I was hoping that you'd deliver a\n"
 	.string "LETTER to STEVEN in DEWFORD.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin MR. TRUMM, der PRÄSIDENT der\n"
+	.string "DEVON CORPORATION.\p"
+	.string "Ich muss etwas mit dir besprechen!\p"
+	.string "Du hast unseren Mitarbeitern nicht\n"
+	.string "nur einmal, sondern zweimal aus\l"
+	.string "der Klemme geholfen!\p"
+	.string "Du bist so außergewöhnlich, dass ich\n"
+	.string "dich gerne um einen Gefallen\l"
+	.string "bitten möchte.\p"
+	.string "Ich weiß, dass du ein Paket zur WERFT in\n"
+	.string "GRAPHITPORT CITY bringen willst.\p"
+	.string "Könntest du auf dem Weg nicht\n"
+	.string "auch in FAUSTAUHAVEN Halt machen?\p"
+	.string "Und TROY in FAUSTAUHAVEN einen BRIEF\n"
+	.string "von mir überbringen?$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
+	.ifdef ENGLISH
 	.string "MR. STONE: Now, you should know that\n"
 	.string "I am a great PRESIDENT.\p"
 	.string "So, I'd never be so cheap as to ask\n"
 	.string "a favor for nothing in return.\p"
 	.string "That's why I want you to have this!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Nun, du sollst wissen, dass\n"
+	.string "ich ein einflussreicher PRÄSIDENT bin.\p"
+	.string "Und daher würde ich dich nie um einen\n"
+	.string "Gefallen bitten, ohne eine\l"
+	.string "Gegenleistung zu erbringen!\p"
+	.string "Deshalb möchte ich dir dies hier geben.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
+	.ifdef ENGLISH
 	.string "{PLAYER} received a POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält den POKéNAV.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
+	.ifdef ENGLISH
 	.string "MR. STONE: That device…\p"
 	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
 	.string "for short.\p"
@@ -236,21 +274,64 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "have been making trouble far and wide.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Dieses Gerät…\p"
+	.string "Es ist ein POKéMON NAVIGATOR - oder\n"
+	.string "kurz ein POKéNAV.\p"
+	.string "Ein unentbehrliches Hilfsmittel für\n"
+	.string "jeden TRAINER auf Abenteuerreise.\p"
+	.string "Er enthält die Karte von HOENN.\p"
+	.string "So kannst du ganz leicht herausfinden,\n"
+	.string "wo die Orte FAUSTAUHAVEN und\l"
+	.string "GRAPHITPORT CITY liegen.\p"
+	.string "Ich habe übrigens gehört, dass zwei\n"
+	.string "fiese Kriminelle - MAGMA und AQUA\l"
+	.string "heißen sie, glaube ich - überall nur\l"
+	.string "Ärger bereiten.\p"
+	.string "Vielleicht solltest du eine Pause\n"
+	.string "einlegen, bevor du dich wieder auf den\l"
+	.string "Weg machst.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
+	.ifdef ENGLISH
 	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
 	.string "go with caution and care!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Nun, {PLAYER}{KUN},\n"
+	.string "sei vorsichtig und pass auf dich auf!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
+	.ifdef ENGLISH
 	.string "MR. STONE: I'm counting on you!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Ich verlasse mich auf dich!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
+	.ifdef ENGLISH
 	.string "MR. STONE: You delivered my LETTER?\n"
 	.string "Thank you kindly!\p"
 	.string "This is my way of thanking you.\n"
 	.string "It should help you, a TRAINER.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Du hast meinen BRIEF\n"
+	.string "überbracht? Herzlichen Dank!\p"
+	.string "Dies ist ein Dankeschön von mir.\n"
+	.string "Es wird dir als TRAINER sicher helfen.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
+	.ifdef ENGLISH
 	.string "MR. STONE: A POKéMON holding that\n"
 	.string "EXP. SHARE will be given some of the\l"
 	.string "EXP Points from battle.\p"
@@ -258,16 +339,41 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "actually battle.\p"
 	.string "I would say EXP. SHARE is quite useful\n"
 	.string "for raising weak POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Trägt ein POKéMON den EP-\n"
+	.string "TEILER, so erhält es in jedem Kampf\l"
+	.string "Erfahrungspunkte.\p"
+	.string "Auch wenn es gar nicht am Kampf\n"
+	.string "teilnimmt.\p"
+	.string "Ich würde sagen, der EP-TEILER ist sehr\n"
+	.string "nützlich, um schwache POKéMON aufzu-\l"
+	.string "ziehen.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
+	.ifdef ENGLISH
 	.string "MR. STONE: Since my youth, I've immersed\n"
 	.string "myself in work.\p"
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
 	.string "But do young people all want to be\n"
 	.string "TRAINERS in the POKéMON LEAGUE?$"
+	.else
+	.ifdef GERMAN
+	.string "MR. TRUMM: Schon in meiner Jugend habe\n"
+	.string "ich mich voll auf die Arbeit\l"
+	.string "konzentriert.\p"
+	.string "Deshalb weiß ich auch nicht unbedingt,\n"
+	.string "was gerade im Trend liegt.\p"
+	.string "Wollen alle jungen Leute TRAINER in der\n"
+	.string "POKéMON LIGA werden?$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
+	.ifdef ENGLISH
 	.string "This is the DEVON CORPORATION's\n"
 	.string "third floor.\p"
 	.string "Our PRESIDENT's OFFICE is on\n"
@@ -284,25 +390,83 @@ RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
 	.string "on you to do that for me?\p"
 	.string "Oh, that's right.\n"
 	.string "Could you wait here a second?$"
+	.else
+	.ifdef GERMAN
+	.string "Dies ist die zweite Etage der DEVON\n"
+	.string "CORPORATION.\p"
+	.string "Hier befindet sich das BÜRO des\n"
+	.string "PRÄSIDENTen.\p"
+	.string "Nun ja, ich kann dir gar nicht sagen, wie\n"
+	.string "dankbar ich dir für deine Taten bin.\p"
+	.string "Ähm… Äh, das Paket, das du uns\n"
+	.string "zurückgebracht hast…\p"
+	.string "Darf ich dich bitten, es zur WERFT\n"
+	.string "in GRAPHITPORT CITY zu bringen?\p"
+	.string "Es wäre fürchterlich, wenn es den\n"
+	.string "Dieben erneut in die Hände fallen würde.\p"
+	.string "Äh… Hehehe, also, äh, kann ich auch\n"
+	.string "dieses Mal wieder mit dir rechnen?\p"
+	.string "Ach, da fällt mir ein… Würdest du mich\n"
+	.string "einen Moment entschuldigen?$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe:
+	.ifdef ENGLISH
 	.string "Our PRESIDENT would like to have\n"
 	.string "a word with you.\p"
 	.string "Please come with me.$"
+	.else
+	.ifdef GERMAN
+	.string "Unser PRÄSIDENT würde gerne kurz mit\n"
+	.string "dir sprechen.\p"
+	.string "Komm bitte mit mir.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_PleaseGoAhead:
+	.ifdef ENGLISH
 	.string "Please, go ahead.$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte, hier entlang.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
+	.ifdef ENGLISH
 	.string "If you visit the SHIPYARD in SLATEPORT,\n"
 	.string "you should go see CAPT. STERN.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du die WERFT in GRAPHITPORT CITY\n"
+	.string "besuchst, solltest du mit KAPT. BRIGG\l"
+	.string "sprechen.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
+	.ifdef ENGLISH
 	.string "DEVON's new products, the REPEAT BALL\n"
 	.string "and TIMER BALL, have become hugely\l"
 	.string "popular among TRAINERS.$"
+	.else
+	.ifdef GERMAN
+	.string "DEVONs neue Produkte, der WIEDERBALL\n"
+	.string "und der TIMERBALL, sind mittlerweile\l"
+	.string "sehr populär unter den TRAINERn.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
+	.ifdef ENGLISH
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by the PRESIDENT.$"
+	.else
+	.ifdef GERMAN
+	.string "Eine Kollektion seltener Steine und\n"
+	.string "Mineralien - gesammelt vom\l"
+	.string "PRÄSIDENTen.$"
+	.endif
+	.endif
 

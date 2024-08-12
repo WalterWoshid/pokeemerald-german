@@ -224,7 +224,19 @@ static u32 LoopedTask_PrintListItems(s32 state)
         if (listSub->iconDrawFunc != NULL)
             listSub->iconDrawFunc(listSub->listWindow.windowId, listSub->printIndex, row);
 
-        AddTextPrinterParameterized(listSub->listWindow.windowId, listSub->listWindow.fontId, listSub->itemTextBuffer, 8, (row << 4) + 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(
+            listSub->listWindow.windowId,
+            listSub->listWindow.fontId,
+            listSub->itemTextBuffer,
+#if ENGLISH
+            8,
+#elif GERMAN
+            10,
+#endif
+            (row << 4) + 1,
+            TEXT_SKIP_DRAW,
+            NULL
+        );
         if (++listSub->listWindow.numPrinted >= listSub->listWindow.numToPrint)
         {
             // Finished printing items. If icons were being drawn, draw the
@@ -714,7 +726,19 @@ static void PrintCheckPageTrainerName(struct PokenavListWindowState *state, stru
     list->bufferItemFunc(state->listPtr + state->listItemSize * state->windowTopIndex, list->itemTextBuffer);
     list->iconDrawFunc(list->listWindow.windowId, state->windowTopIndex, list->listWindow.unkA);
     FillWindowPixelRect(list->listWindow.windowId, PIXEL_FILL(4), 0, list->listWindow.unkA * 16, list->listWindow.width * 8, 16);
-    AddTextPrinterParameterized3(list->listWindow.windowId, list->listWindow.fontId, 8, (list->listWindow.unkA * 16) + 1, colors, TEXT_SKIP_DRAW, list->itemTextBuffer);
+    AddTextPrinterParameterized3(
+        list->listWindow.windowId,
+        list->listWindow.fontId,
+#if ENGLISH
+        8,
+#elif GERMAN
+        10,
+#endif
+        (list->listWindow.unkA * 16) + 1,
+        colors,
+        TEXT_SKIP_DRAW,
+        list->itemTextBuffer
+    );
     SetListMarginTile(&list->listWindow, TRUE);
     CopyWindowRectToVram(list->listWindow.windowId, COPYWIN_FULL, 0, list->listWindow.unkA * 2, list->listWindow.width, 2);
 }
@@ -724,7 +748,19 @@ static void PrintMatchCallListTrainerName(struct PokenavListWindowState *state, 
 {
     list->bufferItemFunc(state->listPtr + state->listItemSize * state->windowTopIndex, list->itemTextBuffer);
     FillWindowPixelRect(list->listWindow.windowId, PIXEL_FILL(1), 0, list->listWindow.unkA * 16, list->listWindow.width * 8, 16);
-    AddTextPrinterParameterized(list->listWindow.windowId, list->listWindow.fontId, list->itemTextBuffer, 8, list->listWindow.unkA * 16 + 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(
+        list->listWindow.windowId,
+        list->listWindow.fontId,
+        list->itemTextBuffer,
+#if ENGLISH
+        8,
+#elif GERMAN
+        10,
+#endif
+        list->listWindow.unkA * 16 + 1,
+        TEXT_SKIP_DRAW,
+        NULL
+    );
     SetListMarginTile(&list->listWindow, FALSE);
     CopyWindowToVram(list->listWindow.windowId, COPYWIN_FULL);
 }
@@ -740,7 +776,19 @@ static void PrintMatchCallFieldNames(struct PokenavListSub *list, u32 fieldId)
     u32 top = (list->listWindow.unkA + 1 + (fieldId * 2)) & 0xF;
 
     FillWindowPixelRect(list->listWindow.windowId, PIXEL_FILL(1), 0, top << 4, list->listWindow.width, 16);
-    AddTextPrinterParameterized3(list->listWindow.windowId, FONT_NARROW, 2, (top << 4) + 1, colors, TEXT_SKIP_DRAW, fieldNames[fieldId]);
+    AddTextPrinterParameterized3(
+        list->listWindow.windowId,
+        FONT_NARROW,
+#if ENGLISH
+        2,
+#elif GERMAN
+        4,
+#endif
+        (top << 4) + 1,
+        colors,
+        TEXT_SKIP_DRAW,
+        fieldNames[fieldId]
+    );
     CopyWindowRectToVram(list->listWindow.windowId, COPYWIN_GFX, 0, top << 1, list->listWindow.width, 2);
 }
 
@@ -760,7 +808,19 @@ static void PrintMatchCallFlavorText(struct PokenavListWindowState *windowState,
     if (str != NULL)
     {
         FillWindowTilesByRow(list->listWindow.windowId, 1, r6 * 2, list->listWindow.width - 1, 2);
-        AddTextPrinterParameterized(list->listWindow.windowId, FONT_NARROW, str, 2, (r6 << 4) + 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(
+            list->listWindow.windowId,
+            FONT_NARROW,
+            str,
+#if ENGLISH
+            2,
+#elif GERMAN
+            4,
+#endif
+            (r6 << 4) + 1,
+            TEXT_SKIP_DRAW,
+            NULL
+        );
         CopyWindowRectToVram(list->listWindow.windowId, COPYWIN_GFX, 0, r6 * 2, list->listWindow.width, 2);
     }
 }
@@ -849,7 +909,16 @@ static void CreateListArrowSprites(struct PokenavListWindowState *windowState, s
     u32 spriteId;
     s16 x;
 
-    spriteId = CreateSprite(&sSpriteTemplate_RightArrow, list->listWindow.x * 8 + 3, (list->listWindow.y + 1) * 8, 7);
+    spriteId = CreateSprite(
+        &sSpriteTemplate_RightArrow,
+#if ENGLISH
+        list->listWindow.x * 8 + 3,
+#elif GERMAN
+        list->listWindow.x * 8 + 5,
+#endif
+        (list->listWindow.y + 1) * 8,
+        7
+    );
     list->rightArrow = &gSprites[spriteId];
 
     x = list->listWindow.x * 8 + (list->listWindow.width - 1) * 4;

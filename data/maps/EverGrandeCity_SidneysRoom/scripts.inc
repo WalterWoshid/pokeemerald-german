@@ -65,6 +65,7 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
+	.ifdef ENGLISH
 	.string "Welcome, challenger!\n"
 	.string "I'm SIDNEY of the ELITE FOUR.\p"
 	.string "I like that look you're giving me.\n"
@@ -73,15 +74,44 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 	.string "All right! You and me, let's enjoy\n"
 	.string "a battle that can only be staged\l"
 	.string "here in the POKéMON LEAGUE!$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen, Herausforderer!\n"
+	.string "Ich bin ULRICH von den TOP VIER.\p"
+	.string "Ich mag deinen herausfordernden Blick.\n"
+	.string "Ich denke, das wird ein guter Kampf.\l"
+	.string "Gut! Das sieht gut aus!\p"
+	.string "Schön! Dann lass uns beide einen Kampf\n"
+	.string "erleben, wie man ihn nur hier in der\l"
+	.string "POKéMON LIGA erleben kann!$"
+	.endif
+	.endif
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
+	.ifdef ENGLISH
 	.string "Well, how do you like that? I lost!\n"
 	.string "Eh, it was fun, so it doesn't matter.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe verloren! Ich, ULRICH von den\n"
+	.string "TOP VIER. Macht nichts, es war lustig.$"
+	.endif
+	.endif
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
+	.ifdef ENGLISH
 	.string "Well, listen to what this loser has\n"
 	.string "to say.\p"
 	.string "You've got what it takes to go far.\n"
 	.string "Now, go on to the next room and enjoy\l"
 	.string "your next battle!$"
+	.else
+	.ifdef GERMAN
+	.string "Nun, hör dir an, was dieser Verlierer\n"
+	.string "zu sagen hat.\p"
+	.string "Du bist bestens ausgerüstet.\n"
+	.string "Daher solltest du nun in den nächsten\l"
+	.string "Raum gehen - zum nächsten Kampf.$"
+	.endif
+	.endif
 

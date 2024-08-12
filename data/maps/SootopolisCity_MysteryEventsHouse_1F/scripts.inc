@@ -166,65 +166,167 @@ SootopolisCity_MysteryEventsHouse_1F_Movement_OldManMoveAsideRight:
 	step_end
 
 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles:
+	.ifdef ENGLISH
 	.string "When I was young, I traveled the world\n"
 	.string "as a POKéMON TRAINER.\p"
 	.string "Now that I've become an old buzzard,\n"
 	.string "my only amusement is watching young\l"
 	.string "TRAINERS battle.$"
+	.else
+	.ifdef GERMAN
+	.string "Als ich noch jung war, bin ich als\n"
+	.string "POKéMON-TRAINER durch die Welt\l"
+	.string "gereist.\p"
+	.string "Nun, da ich ein alter Knabe geworden\n"
+	.string "bin, beobachte ich mit Freuden die\l"
+	.string "jungen TRAINER bei ihren Kämpfen.$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked:
+	.ifdef ENGLISH
 	.string "The door appears to be locked.$"
+	.else
+	.ifdef GERMAN
+	.string "The door appears to be locked.$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer:
+	.ifdef ENGLISH
 	.string "A TRAINER named {STR_VAR_1}\n"
 	.string "is visiting my home.\p"
 	.string "Would you like to challenge\n"
 	.string "{STR_VAR_1}?$"
+	.else
+	.ifdef GERMAN
+	.string "Ein TRAINER namens {STR_VAR_1} ist bei\n"
+	.string "mir zu Besuch.\p"
+	.string "Möchtest du einmal gegen {STR_VAR_1}\n"
+	.string "antreten?$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle:
+	.ifdef ENGLISH
 	.string "You won't battle? I'm disappointed\n"
 	.string "that I can't see you battle…$"
+	.else
+	.ifdef GERMAN
+	.string "Du möchtest nicht kämpfen? Es ent-\n"
+	.string "täuscht mich, dass ich dich nicht\l"
+	.string "kämpfen sehen kann.$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3:
+	.ifdef ENGLISH
 	.string "Oh, good, good!\p"
 	.string "But my house isn't all that sturdy.\p"
 	.string "Could I ask you to keep it down to\n"
 	.string "a 3-on-3 match?$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, sehr gut!\p"
+	.string "Aber mein Haus ist nicht sehr stabil.\p"
+	.string "Könntet ihr einen 3-gegen-3-Kampf\n"
+	.string "ausfechten?$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle:
+	.ifdef ENGLISH
 	.string "Before you two battle, you should\n"
 	.string "save your progress.$"
+	.else
+	.ifdef GERMAN
+	.string "Bevor ihr gegeneinander antretet,\n"
+	.string "solltet ihr eure Spiele speichern!$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch:
+	.ifdef ENGLISH
 	.string "I hope to see a good match!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich hoffe, einen guten Kampf zu sehen!$"
+	.endif
+	.endif
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Tie:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1}$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1}$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw:
+	.ifdef ENGLISH
 	.string "The match ended up a draw.$"
+	.else
+	.ifdef GERMAN
+	.string "Der Kampf endet unentschieden.$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff:
+	.ifdef ENGLISH
 	.string "So, it became a standoff.\p"
 	.string "It was a brilliant match in which\n"
 	.string "neither side conceded a step!$"
+	.else
+	.ifdef GERMAN
+	.string "Der Kampf endet unentschieden.$"
+	.endif
+	.endif
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Won:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1}$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1}$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative:
+	.ifdef ENGLISH
 	.string "That was superlative!\p"
 	.string "Why, it was like seeing myself in\n"
 	.string "my youth again!$"
+	.else
+	.ifdef GERMAN
+	.string "Das war absolute Spitzenklasse!\p"
+	.string "Ich habe mich wieder erkannt - mich in\n"
+	.string "meinen jungen Jahren!$"
+	.endif
+	.endif
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Lost:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1}$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1}$"
+	.endif
+	.endif
 
 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou:
+	.ifdef ENGLISH
 	.string "Ah, too bad for you!\p"
 	.string "But it was a good match.\n"
 	.string "I hope you can win next time.$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, wie bedauerlich für dich!\p"
+	.string "Aber es war ein guter Kampf.\n"
+	.string "Ich hoffe, das nächste Mal gewinnst du.$"
+	.endif
+	.endif
 

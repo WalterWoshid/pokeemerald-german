@@ -344,58 +344,145 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
+	.ifdef ENGLISH
 	.string "I want to take a rest, so I'm saving my\n"
 	.string "progress.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich möchte eine Pause einlegen, daher\n"
+	.string "speichere ich mein Spiel.$"
+	.endif
+	.endif
 
 OldaleTown_Text_IWorkAtPokemonMart:
+	.ifdef ENGLISH
 	.string "Hi!\n"
 	.string "I work at a POKéMON MART.\p"
 	.string "Can I get you to come with me?$"
+	.else
+	.ifdef GERMAN
+	.string "Hi!\n"
+	.string "Ich arbeite in einem PKMN-SUPERMARKT.\p"
+	.string "Kommst du bitte einmal mit mir?$"
+	.endif
+	.endif
 
 OldaleTown_Text_ThisIsAPokemonMart:
+	.ifdef ENGLISH
 	.string "This is a POKéMON MART.\n"
 	.string "Just look for our blue roof.\p"
 	.string "We sell a variety of goods including\n"
 	.string "POKé BALLS for catching POKéMON.\p"
 	.string "Here, I'd like you to have this as\n"
 	.string "a promotional item.$"
+	.else
+	.ifdef GERMAN
+	.string "Dies ist ein PKMN-SUPERMARKT.\n"
+	.string "Er ist an dem blauen Dach erkennbar.\p"
+	.string "Wir verkaufen eine Menge nützlicher\n"
+	.string "Dinge, wie POKéBÄLLe, mit denen man\l"
+	.string "POKéMON fängt.\p"
+	.string "Hier, dies ist ein Item, quasi als Werbe-\n"
+	.string "geschenk für dich.$"
+	.endif
+	.endif
 
 OldaleTown_Text_PotionExplanation:
+	.ifdef ENGLISH
 	.string "A POTION can be used anytime, so it's\n"
 	.string "even more useful than a POKéMON CENTER\l"
 	.string "in certain situations.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein TRANK kann zu jeder Zeit eingesetzt\n"
+	.string "werden, daher ist er in manchen\l"
+	.string "Situationen wertvoller als ein POKéMON-\l"
+	.string "CENTER.$"
+	.endif
+	.endif
 
 OldaleTown_Text_WaitDontComeInHere:
+	.ifdef ENGLISH
 	.string "Aaaaah! Wait!\n"
 	.string "Please don't come in here.\p"
 	.string "I just discovered the footprints of\n"
 	.string "a rare POKéMON!\p"
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Aaaah! Warte!\n"
+	.string "Bitte nicht dort entlang laufen!\p"
+	.string "Ich habe dort die Fußspuren eines\n"
+	.string "seltenen POKéMON gesehen!\p"
+	.string "Warte, bis ich fertig bin, sie\n"
+	.string "abzuzeichnen, okay?$"
+	.endif
+	.endif
 
 OldaleTown_Text_DiscoveredFootprints:
+	.ifdef ENGLISH
 	.string "I just discovered the footprints of\n"
 	.string "a rare POKéMON!\p"
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe dort die Fußspuren eines\n"
+	.string "seltenen POKéMON gesehen!\p"
+	.string "Warte, bis ich fertig bin, sie\n"
+	.string "abzuzeichnen, okay?$"
+	.endif
+	.endif
 
 OldaleTown_Text_FinishedSketchingFootprints:
+	.ifdef ENGLISH
 	.string "I finished sketching the footprints of\n"
 	.string "a rare POKéMON.\p"
 	.string "But it turns out they were only my\n"
 	.string "own footprints…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe die Fußspuren eines seltenen\n"
+	.string "POKéMON abgezeichnet.\p"
+	.string "Aber hinterher habe ich festgestellt,\n"
+	.string "dass es meine eigenen Spuren waren…$"
+	.endif
+	.endif
 
 OldaleTown_Text_MayLetsGoBack:
+	.ifdef ENGLISH
 	.string "MAY: {PLAYER}{KUN}!\n"
 	.string "Over here!\l"
 	.string "Let's hurry home!$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: {PLAYER}{KUN}!\n"
+	.string "Hier entlang!\l"
+	.string "Lass uns nach Hause gehen!$"
+	.endif
+	.endif
 
 OldaleTown_Text_BrendanLetsGoBack:
+	.ifdef ENGLISH
 	.string "BRENDAN: I'm heading back to my dad's\n"
 	.string "LAB now.\l"
 	.string "{PLAYER}, you should hustle back, too.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Ich gehe nun in das LABOR\n"
+	.string "meines Vaters. {PLAYER}, du solltest\l"
+	.string "auch zurücklaufen.$"
+	.endif
+	.endif
 
 OldaleTown_Text_TownSign:
+	.ifdef ENGLISH
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
-
+	.else
+	.ifdef GERMAN
+	.string "ROSALTSTADT\n"
+	.string "“Wo Dinge selten ihren Anfang nehmen.”$"
+	.endif
+	.endif

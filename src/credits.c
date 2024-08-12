@@ -87,7 +87,9 @@ static EWRAM_DATA bool8 sUsedSpeedUp = 0; // Never read
 static EWRAM_DATA struct CreditsData *sCreditsData = {0};
 
 static const u16 sCredits_Pal[] = INCBIN_U16("graphics/credits/credits.gbapal");
+#if ENGLISH
 static const u32 sCreditsCopyrightEnd_Gfx[] = INCBIN_U32("graphics/credits/the_end_copyright.4bpp.lz");
+#endif
 
 static void SpriteCB_CreditsMonBg(struct Sprite *);
 static void Task_WaitPaletteFade(u8);
@@ -118,6 +120,7 @@ static void SpriteCB_Rival(struct Sprite *);
 static u8 CreateCreditsMonSprite(u16, s16, s16, u16);
 static void DeterminePokemonToShow(void);
 
+#if ENGLISH
 static const u8 sTheEnd_LetterMap_T[] =
 {
     0,    1, 0,
@@ -162,6 +165,7 @@ static const u8 sTheEnd_LetterMap_D[] =
     1, 0x88, 0x89,
     1, 0x86, 0x87,
 };
+#endif
 
 #include "data/credits.h"
 
@@ -784,7 +788,11 @@ static void Task_UpdatePage(u8 taskId)
     case 3:
         if (!gPaletteFade.active)
         {
+#if ENGLISH
             gTasks[taskId].tDelay = 115;
+#elif GERMAN
+            gTasks[taskId].tDelay = 121;
+#endif
             gTasks[taskId].tState++;
         }
         return;
@@ -918,7 +926,11 @@ static void Task_ShowMons(u8 taskId)
         if (sCreditsData->currShownMon < sCreditsData->numMonToShow - 1)
         {
             sCreditsData->currShownMon++;
+#if ENGLISH
             gSprites[spriteId].data[3] = 50;
+#elif GERMAN
+            gSprites[spriteId].data[3] = 52;
+#endif
         }
         else
         {
@@ -932,7 +944,11 @@ static void Task_ShowMons(u8 taskId)
         else
             sCreditsData->nextImgPos++;
 
+#if ENGLISH
         gTasks[taskId].tDelay = 50;
+#elif GERMAN
+        gTasks[taskId].tDelay = 52;
+#endif
         gTasks[taskId].tState++;
         break;
     case 3:
@@ -1078,7 +1094,11 @@ static void Task_CycleSceneryPalette(u8 taskId)
         if (gTasks[taskId].tTimer != TIMER_STOP)
         {
 
+#if ENGLISH
             if (gTasks[taskId].tTimer == 584)
+#elif GERMAN
+            if (gTasks[taskId].tTimer == 620)
+#endif
             {
                 gTasks[gTasks[gTasks[taskId].tMainTaskId].tTaskId_BikeScene].tState = 10;
                 gTasks[taskId].tTimer = TIMER_STOP;
@@ -1296,9 +1316,14 @@ static void LoadTheEndScreen(u16 tileOffsetLoad, u16 tileOffsetWrite, u16 palOff
     baseTile = (palOffset / 16) << 12;
 
     for (i = 0; i < 32 * 32; i++)
+#if ENGLISH
         ((u16 *) (VRAM + tileOffsetWrite))[i] = baseTile + 1;
+#elif GERMAN
+        ((u16 *) (VRAM + tileOffsetWrite))[i] = baseTile;
+#endif
 }
 
+#if ENGLISH
 static u16 GetLetterMapTile(u8 baseTiles)
 {
     u16 out = (baseTiles & 0x3F) + 80;
@@ -1325,9 +1350,11 @@ static void DrawLetterMapTiles(const u8 baseTiles[], u8 baseX, u8 baseY, u16 off
             ((u16 *) (VRAM + offset + (baseY + y) * 64))[baseX + x] = tileOffset + GetLetterMapTile(baseTiles[y * 3 + x]);
     }
 }
+#endif
 
 static void DrawTheEnd(u16 offset, u16 palette)
 {
+#if ENGLISH
     u16 pos;
     u16 baseTile = (palette / 16) << 12;
 
@@ -1340,6 +1367,9 @@ static void DrawTheEnd(u16 offset, u16 palette)
     DrawLetterMapTiles(sTheEnd_LetterMap_E, 16, 7, offset, palette);
     DrawLetterMapTiles(sTheEnd_LetterMap_N, 20, 7, offset, palette);
     DrawLetterMapTiles(sTheEnd_LetterMap_D, 24, 7, offset, palette);
+#elif GERMAN
+    LZ77UnCompVram(sCreditsCopyrightEnd_Tilemap, ((u16 *) (VRAM + offset)));
+#endif
 }
 
 #define sState data[0]

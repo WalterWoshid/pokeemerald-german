@@ -302,44 +302,118 @@ Route110_TrickHousePuzzle3_EventScript_Alan::
 	end
 
 Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
+	.ifdef ENGLISH
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
 	.string "“TRICK MASTER is coveted.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat den geheimen Code auf die\n"
+	.string "Tür geschrieben.\p"
+	.string "“RÄTSELMEISTER ist gefragt.”\n"
+	.string "… … … … … … … …\p"
+	.string "Das Schloss geht klickend auf.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_JustinIntro:
+	.ifdef ENGLISH
 	.string "I keep coming back to this same place!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich laufe und laufe und lande immer\n"
+	.string "wieder hier.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_JustinDefeat:
+	.ifdef ENGLISH
 	.string "I'm already having trouble, and then\n"
 	.string "you have to beat me? It's not fair!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe eh schon Probleme und dann\n"
+	.string "musst du mich auch noch besiegen? Pfui!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_JustinPostBattle:
+	.ifdef ENGLISH
 	.string "It's full of doors here!\n"
 	.string "It's too small and dark in here! Help!$"
+	.else
+	.ifdef GERMAN
+	.string "Hier sieht man vor lauter Türen den\n"
+	.string "Ausgang nicht! Ich bin total verwirrt…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_MarthaIntro:
+	.ifdef ENGLISH
 	.string "I don't know what's going on here.\n"
 	.string "I'm starting to feel sad…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich weiß nicht, was hier vorgeht.\n"
+	.string "Ich habe ein ganz schlechtes Gefühl…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_MarthaDefeat:
+	.ifdef ENGLISH
 	.string "You… You're awful!$"
+	.else
+	.ifdef GERMAN
+	.string "Du… Du bist furchtbar!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_MarthaPostBattle:
+	.ifdef ENGLISH
 	.string "I know I'm weak!\n"
 	.string "And, I have no sense of direction!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich weiß, ich bin schwach! Ich weiß\n"
+	.string "nicht, in welche Richtung es weitergeht.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_AlanIntro:
+	.ifdef ENGLISH
 	.string "I don't get it. What would anyone want\n"
 	.string "with a house this bizarre?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich verstehe es nicht. Was macht einer\n"
+	.string "mit so einem bizarren Haus???$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_AlanDefeat:
+	.ifdef ENGLISH
 	.string "I don't get it.\n"
 	.string "How did I lose?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich verstehe es wieder nicht.\n"
+	.string "Wie konnte ich jetzt verlieren?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle3_Text_AlanPostBattle:
+	.ifdef ENGLISH
 	.string "I don't get it.\n"
 	.string "How many traps are in this house?\p"
 	.string "You may be the one to solve that.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe absolut keine Ahnung…\n"
+	.string "Wie viele Fallen gibt es in diesem Haus?\p"
+	.string "Du kannst mir das bestimmt\n"
+	.string "beantworten!$"
+	.endif
+	.endif
 

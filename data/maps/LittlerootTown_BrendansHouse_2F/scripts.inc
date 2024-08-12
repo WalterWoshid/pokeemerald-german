@@ -273,10 +273,18 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
+	.ifdef ENGLISH
 	.string "The clock is stopped…\p"
 	.string "Better set it and start it!$"
+	.else
+	.ifdef GERMAN
+	.string "Die Uhr ist stehen geblieben…\p"
+	.string "Stelle sie besser ein und ziehe sie auf.$"
+	.endif
+	.endif
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
+	.ifdef ENGLISH
 	.string "MOM: {PLAYER}, how do you like your\n"
 	.string "new room?\p"
 	.string "Good! Everything's put away neatly!\p"
@@ -285,20 +293,59 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "POKéMON movers are so convenient!\p"
 	.string "Oh, you should make sure that\n"
 	.string "everything's all there on your desk.$"
+	.else
+	.ifdef GERMAN
+	.string "MUTTER: {PLAYER}, wie gefällt dir dein\n"
+	.string "neues Zimmer?\p"
+	.string "Gut! Alles ist wunderbar aufgeräumt!\p"
+	.string "Auch im Erdgeschoss ist alles\n"
+	.string "komplett eingerichtet.\p"
+	.string "POKéMON-Umzugshelfer sind so\n"
+	.string "praktisch.\p"
+	.string "Oh, du solltest prüfen, ob dein Schreib-\n"
+	.string "tisch vollständig eingeräumt ist!$"
+	.endif
+	.endif
 
 PlayersHouse_2F_Text_Notebook:
+	.ifdef ENGLISH
 	.string "{PLAYER} flipped open the notebook.\p"
 	.string "ADVENTURE RULE NO. 1\n"
 	.string "Open the MENU with START.\p"
 	.string "ADVENTURE RULE NO. 2\n"
 	.string "Record your progress with SAVE.\p"
 	.string "The remaining pages are blank…$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} schlägt das Notizbuch auf.\p"
+	.string "REGEL NR. 1 FÜR ABENTEURER\n"
+	.string "Öffne das MENÜ mit START.\p"
+	.string "REGEL NR. 2 FÜR ABENTEURER\n"
+	.string "Speichere den Fortschritt mit SICHERN.\p"
+	.string "Die übrigen Seiten sind leer.$"
+	.endif
+	.endif
 
 Common_Text_LookCloserAtMap:
+	.ifdef ENGLISH
 	.string "{PLAYER} took a closer look at the\n"
 	.string "HOENN region map.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} schaut sich die Karte der\n"
+	.string "HOENN-Region genauer an.$"
+	.endif
+	.endif
 
 PlayersHouse_2F_Text_ItsAGameCube:
+	.ifdef ENGLISH
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist ein Nintendo GameCube.\p"
+	.string "Ein Game Boy Advance ist angeschlossen\n"
+	.string "und dient als Controller.$"
+	.endif
+	.endif

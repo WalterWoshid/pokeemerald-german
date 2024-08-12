@@ -271,16 +271,35 @@ RustboroCity_DevonCorp_2F_EventScript_WorkOnNext::
 	end
 
 RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon:
+	.ifdef ENGLISH
 	.string "We're developing a device for talking\n"
 	.string "with POKéMON.\p"
 	.string "But we haven't had much success…$"
+	.else
+	.ifdef GERMAN
+	.string "Wir wollen ein Gerät entwickeln, mit dem\n"
+	.string "wir mit POKéMON reden können.\p"
+	.string "Aber bisher waren wir nicht sehr\n"
+	.string "erfolgreich…$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
+	.ifdef ENGLISH
 	.string "I'm developing new kinds of\n"
 	.string "POKé BALLS…\p"
 	.string "But I haven't made much headway…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich entwickle neue Arten von\n"
+	.string "POKéBÄLLen…\p"
+	.string "Aber noch bin ich nicht sonderlich weit\n"
+	.string "mit der Entwicklung gekommen…$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
+	.ifdef ENGLISH
 	.string "We finally made new kinds of\n"
 	.string "POKé BALLS!\p"
 	.string "The REPEAT BALL makes it easier to\n"
@@ -290,13 +309,38 @@ RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "Both are proudly developed by\n"
 	.string "the DEVON CORPORATION.\p"
 	.string "Please give them a try!$"
+	.else
+	.ifdef GERMAN
+	.string "Wir haben endlich neue POKéBÄLLe\n"
+	.string "entwickelt!\p"
+	.string "Mit dem WIEDERBALL lassen sich\n"
+	.string "POKéMON leichter fangen, die du\l"
+	.string "vorher schon mal gefangen hattest.\p"
+	.string "Mit dem TIMERBALL lassen sich POKéMON\n"
+	.string "umso leichter fangen, je länger der\l"
+	.string "Kampf dauert.\p"
+	.string "Beide werden voller Stolz von der\n"
+	.string "DEVON CORPORATION präsentiert.\p"
+	.string "Probiere sie bitte unbedingt aus!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_IMadePokenav:
+	.ifdef ENGLISH
 	.string "I made the POKéNAV!\p"
 	.string "As an engineer, I feel blessed to have\n"
 	.string "made something so great!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe den POKéNAV entwickelt!\p"
+	.string "Als Ingenieur erfüllt es mich mit Stolz,\n"
+	.string "so etwas Großartiges entwickelt zu\l"
+	.string "haben.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
+	.ifdef ENGLISH
 	.string "Oh, wow!\n"
 	.string "That's a POKéNAV!\p"
 	.string "It came about as a result of our\n"
@@ -306,79 +350,208 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "features in detail?\p"
 	.string "No, no. I think you'll find out just by\n"
 	.string "trying the POKéNAV out.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, wow!\n"
+	.string "Das ist ein POKéNAV!\p"
+	.string "Er ist das Resultat der Wissbegierde\n"
+	.string "unseres PRÄSIDENTen, der etwas über\l"
+	.string "die Gefühle der POKéMON lernen möchte.\p"
+	.string "Soll ich dir die Funktionen im Einzelnen\n"
+	.string "erklären?\p"
+	.string "Ach was, du findest sie schon ganz\n"
+	.string "alleine heraus.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
+	.ifdef ENGLISH
 	.string "I'm trying to develop a device that\n"
 	.string "visually reproduces the dreams of\l"
 	.string "POKéMON…\p"
 	.string "But it's not going well.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich arbeite an einer Vorrichtung, die\n"
+	.string "die Träume der POKéMON visualisieren\l"
+	.string "kann…\p"
+	.string "Aber so richtig geht es nicht voran.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
+	.ifdef ENGLISH
 	.string "I've been trying to develop a device\n"
 	.string "that resurrects POKéMON from fossils…\p"
 	.string "And, it's working!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich arbeite an einer Vorrichtung, die\n"
+	.string "POKéMON aus Fossilien wieder zum Leben\l"
+	.string "erweckt.\p"
+	.string "Und… Es klappt!!!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
+	.ifdef ENGLISH
 	.string "Wait! That thing you have there…\n"
 	.string "Is that a POKéMON fossil?\p"
 	.string "Would you like to bring that POKéMON\n"
 	.string "back to life?\p"
 	.string "I can with my newly developed\n"
 	.string "FOSSIL REGENERATOR.$"
+	.else
+	.ifdef GERMAN
+	.string "Warte! Das Teil dort…\n"
+	.string "Ist das ein POKéMON-Fossil?\p"
+	.string "Möchtest du das POKéMON wieder zum\n"
+	.string "Leben erwecken?\p"
+	.string "Ich kann dir mit meiner neuesten Ent-\n"
+	.string "wicklung, dem FOSSIL-REGENERATOR,\l"
+	.string "dabei helfen.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_OhIsThatSo:
+	.ifdef ENGLISH
 	.string "Oh, is that so?\p"
 	.string "DEVON's technological expertise\n"
 	.string "is outstanding, I tell you.$"
+	.else
+	.ifdef GERMAN
+	.string "Ehrlich?\p"
+	.string "DEVON besitzt einen hervorragenden\n"
+	.string "Ruf in Sachen Technik. \l"
+	.string "Das versichere ich dir!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne:
+	.ifdef ENGLISH
 	.string "Oh, now that's a surprise!\n"
 	.string "You have not one, but two, fossils?\p"
 	.string "Unfortunately, my machine can only\n"
 	.string "regenerate one POKéMON at a time.\p"
 	.string "Would you like to pick one of your\n"
 	.string "fossils for regeneration?$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, das ist aber eine Überraschung!\n"
+	.string "Du hast ja nicht nur ein, sondern zwei\l"
+	.string "Fossilien!\p"
+	.string "Leider kann meine Maschine immer nur\n"
+	.string "ein POKéMON regenerieren.\p"
+	.string "Welches Fossil soll ich dafür\n"
+	.string "verwenden?$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher:
+	.ifdef ENGLISH
 	.string "Excellent!\n"
 	.string "Let's do this right away.\p"
 	.string "{PLAYER} handed the {STR_VAR_1} to\n"
 	.string "the DEVON RESEARCHER.$"
+	.else
+	.ifdef GERMAN
+	.string "Exzellent!\n"
+	.string "Dann lass uns sofort zur Tat schreiten.\p"
+	.string "{PLAYER} gibt dem FORSCHER von DEVON\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime:
+	.ifdef ENGLISH
 	.string "The FOSSIL REGENERATOR, which I made,\n"
 	.string "is incredible.\p"
 	.string "But it has one drawback--it takes\n"
 	.string "a long time to work.\p"
 	.string "So, uh… How about you go for a stroll\n"
 	.string "and look around for a while?$"
+	.else
+	.ifdef GERMAN
+	.string "Der FOSSIL-REGENERATOR, den ich ent-\n"
+	.string "wickelt habe, ist einfach unglaublich.\p"
+	.string "Aber einen Nachteil gibt es: Es dauert\n"
+	.string "eine Weile, bis der Prozess\l"
+	.string "abgeschlossen ist.\p"
+	.string "Also, äh… Warum schaust du dich in der\n"
+	.string "Zeit nicht ein wenig um?$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife:
+	.ifdef ENGLISH
 	.string "Thanks for waiting!\p"
 	.string "Your fossilized POKéMON has been\n"
 	.string "brought back to life!\p"
 	.string "The fossil was an ancient POKéMON.\n"
 	.string "{STR_VAR_2}, it was!$"
+	.else
+	.ifdef GERMAN
+	.string "Danke für deine Geduld!\p"
+	.string "Dein fossiles POKéMON wurde zu neuem\n"
+	.string "Leben erweckt!\p"
+	.string "Das Fossil war ein altertümliches\n"
+	.string "POKéMON. Ein {STR_VAR_2}!$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
+	.ifdef ENGLISH
 	.string "{PLAYER} received {STR_VAR_2} from\n"
 	.string "the DEVON RESEARCHER.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält das {STR_VAR_2} vom\n"
+	.string "FORSCHER von DEVON.$"
+	.endif
+	.endif
 
 @ Unused
 RustboroCity_DevonCorp_2F_Text_TooManyPokemon:
+	.ifdef ENGLISH
 	.string "Uh-oh, you've got too many POKéMON.\n"
 	.string "You have no room for this one.$"
+	.else
+	.ifdef GERMAN
+	.string "Uh-oh, you’ve got too many POKéMON.\n"
+	.string "You have no room for this one.$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature:
+	.ifdef ENGLISH
 	.string "I'm trying to develop a new feature\n"
 	.string "for the POKéNAV…\p"
 	.string "But it's not going well.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich entwickle ein neues Feature für\n"
+	.string "den POKéNAV…\p"
+	.string "Aber irgendwie habe ich damit Probleme…$"
+	.endif
+	.endif
 
 RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
+	.ifdef ENGLISH
 	.string "Well, now what shall I work on\n"
 	.string "developing next?\p"
 	.string "Our company allows us to make our\n"
 	.string "inspirations into reality.\p"
 	.string "One couldn't ask for a better\n"
 	.string "environment as an engineer.$"
+	.else
+	.ifdef GERMAN
+	.string "Mh, was soll ich als Nächstes\n"
+	.string "entwickeln?\p"
+	.string "Unsere Firma erlaubt es uns, unsere\n"
+	.string "kreativen Fantasien Wirklichkeit\l"
+	.string "werden zu lassen.\p"
+	.string "Als Ingenieur kann man sich nichts\n"
+	.string "Besseres wünschen!$"
+	.endif
+	.endif
 

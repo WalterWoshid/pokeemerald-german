@@ -983,16 +983,34 @@ LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase::
 	end
 
 LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase:
+	.ifdef ENGLISH
 	.string "Yippee!\p"
 	.string "The lady at the reception counter\n"
 	.string "gave me a case for {POKEBLOCK}S!$"
+	.else
+	.ifdef GERMAN
+	.string "Jipiiii!\p"
+	.string "Die Dame an der Rezeption hat mir eine\n"
+	.string "Box für {POKEBLOCK} gegeben!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries:
+	.ifdef ENGLISH
 	.string "Make {POKEBLOCK}S and put them in there.\p"
 	.string "When you make a {POKEBLOCK}, everyone\n"
 	.string "has to put in a different BERRY.$"
+	.else
+	.ifdef GERMAN
+	.string "Stelle {POKEBLOCK} her und verstaue sie\n"
+	.string "darin.\p"
+	.string "Wenn ihr einen {POKEBLOCK} herstellt, muss\n"
+	.string "jeder eine andere BEERE einsetzen.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint:
+	.ifdef ENGLISH
 	.string "Congratulations!\p"
 	.string "I did a painting of your POKéMON to\n"
 	.string "commemorate its victory…\p"
@@ -1000,8 +1018,20 @@ LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint:
 	.string "so fantastic, it spurred me into\l"
 	.string "painting better than I usually do.\l"
 	.string "Look, see?$"
+	.else
+	.ifdef GERMAN
+	.string "Herzlichen Glückwunsch!\p"
+	.string "Ich habe dein POKéMON gezeichnet, zum\n"
+	.string "Andenken an seinen Sieg…\p"
+	.string "Nun, der Auftritt deines POKéMON war so\n"
+	.string "fantastisch, dass er mich zu einer\l"
+	.string "künstlerischen Hochleistung\l"
+	.string "anspornte. Siehst du?$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum:
+	.ifdef ENGLISH
 	.string "What do you think? I'm confident in\n"
 	.string "what I've done, but do you like it?\p"
 	.string "A work of this caliber, it wouldn't look\n"
@@ -1009,8 +1039,20 @@ LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum:
 	.string "Huh? An art museum really is looking\n"
 	.string "for paintings?\p"
 	.string "Do you think I should take this there?$"
+	.else
+	.ifdef GERMAN
+	.string "Was meinst du? Ich bin mit meiner Arbeit\n"
+	.string "zufrieden, aber gefällt sie auch dir?\p"
+	.string "Eine Arbeit dieses Formats würde sich\n"
+	.string "bestimmt gut in einem Museum machen.\p"
+	.string "Ach? Es gibt ein Museum, das nach neuen\n"
+	.string "Gemälden sucht?\p"
+	.string "Meinst du, ich sollte das Bild anbieten?$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum:
+	.ifdef ENGLISH
 	.string "What, really? Then, sure, I will take\n"
 	.string "this painting there right now.\p"
 	.string "I'll give it a proper title, too.\p"
@@ -1018,69 +1060,185 @@ LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum:
 	.string "exhibiting this.\p"
 	.string "Please check if they did accept this.\n"
 	.string "Thank you!$"
+	.else
+	.ifdef GERMAN
+	.string "Nein, wirklich? Dann werde ich das Bild\n"
+	.string "natürlich sofort dort hinbringen.\p"
+	.string "Ich werde ihm einen angemessenen Titel\n"
+	.string "geben.\p"
+	.string "Ich hoffe, es gefällt ihnen, und sie\n"
+	.string "werden es ausstellen.\p"
+	.string "Bitte, schau es dir mal an, wenn sie es\n"
+	.string "ausgestellt haben. Vielen, vielen Dank!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_TakeMementoOfPainting:
+	.ifdef ENGLISH
 	.string "Oh, that's right!\p"
 	.string "As a memento of me painting your\n"
 	.string "POKéMON, please take this.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, richtig!\p"
+	.string "Da ich dein POKéMON malen durfte,\n"
+	.string "möchte ich dir dies gerne geben.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_ReceivedARibbon:
+	.ifdef ENGLISH
 	.string "{PLAYER} received a RIBBON.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält ein BAND.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon:
+	.ifdef ENGLISH
 	.string "{PLAYER} put the RIBBON on\n"
 	.string "{STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} befestigt das BAND an\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_OkaySeeYou:
+	.ifdef ENGLISH
 	.string "Okay, see you!$"
+	.else
+	.ifdef GERMAN
+	.string "Okay, man sieht sich!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum:
+	.ifdef ENGLISH
 	.string "Oh… Then, I guess I'll just take\n"
 	.string "this home with me…\p"
 	.string "But, you know, I would like to take\n"
 	.string "this to the art museum… Okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Oh… Ich glaube, dann nehme ich das mit\n"
+	.string "zu mir nach Hause…\p"
+	.string "Aber weißt du, eigentlich möchte ich das\n"
+	.string "viel lieber einem Kunstmuseum\l"
+	.string "schenken… Ja?$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs:
+	.ifdef ENGLISH
 	.string "Oh, fine, that's the way it is.\n"
 	.string "I will hang this in my own house.\p"
 	.string "I'll just have to try harder next time.\n"
 	.string "Well, be seeing you.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, fein. Genauso soll es sein.\n"
+	.string "Ich hänge das bei mir zu Hause auf.\p"
+	.string "Nächstes Mal muss ich mir mehr Mühe\n"
+	.string "geben. Bis bald mal.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_MasterRankHereICome:
+	.ifdef ENGLISH
 	.string "Hoo, boy… Master Rank CONTESTS,\n"
 	.string "here I come.\p"
 	.string "The world will know that my dearest\n"
 	.string "POKéMON is the cutest being in all\l"
 	.string "existence. The time has come!\l"
 	.string "Uheheheh.$"
+	.else
+	.ifdef GERMAN
+	.string "Hoo, Junge. WETTBEWERB der\n"
+	.string "MASTER-KLASSE, jetzt komme ich.\p"
+	.string "Bald wird die Welt wissen, dass mein\n"
+	.string "POKéMON das niedlichste aller POKéMON\l"
+	.string "ist. Die Zeit ist reif!\l"
+	.string "Ahahahaha.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere:
+	.ifdef ENGLISH
 	.string "You can see a whole variety of\n"
 	.string "POKéMON here.\p"
 	.string "That's why I make this place a regular\n"
 	.string "part of my daily stroll.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier sieht man eine ganze Reihe der\n"
+	.string "unterschiedlichsten POKéMON.\p"
+	.string "Daher mache ich hier jeden Tag eine\n"
+	.string "kurze Stippvisite.$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_ContestFeastForEyes:
+	.ifdef ENGLISH
 	.string "Wow, coming out to a CONTEST is\n"
 	.string "a feast for these eyes!\p"
 	.string "Would you look at all the POKéMON\n"
 	.string "that just scream to be painted?$"
+	.else
+	.ifdef GERMAN
+	.string "Wow, so ein POKéMON WETTBEWERB ist ein\n"
+	.string "Fest für die Augen!\p"
+	.string "Schau dir all die POKéMON an, die danach\n"
+	.string "schreien, gemalt zu werden!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
+	.ifdef ENGLISH
 	.string "The TOUGHNESS CONTEST is like\n"
 	.string "extreme, man!\p"
 	.string "Those muscular appeals…\n"
 	.string "Cascading sweat… I swoon!$"
+	.else
+	.ifdef GERMAN
+	.string "Der WETTBEWERB der STÄRKE ist tierisch\n"
+	.string "hart!\p"
+	.string "Dieses Muskelspiel… Schweiß, der\n"
+	.string "rinnt… Da fall ich glatt in Ohnmacht!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_LavishedCareOnMon:
+	.ifdef ENGLISH
 	.string "Day in and day out, I lavished my care\n"
 	.string "on this POKéMON.\p"
 	.string "Its condition is peaking.\n"
 	.string "Today, victory is mine!$"
+	.else
+	.ifdef GERMAN
+	.string "Tag für Tag habe ich dieses POKéMON mit\n"
+	.string "meiner Liebe und Fürsorge überhäuft.\p"
+	.string "Seine Kondition ist einfach unver-\n"
+	.string "gleichbar. Heute gehört der Sieg uns!$"
+	.endif
+	.endif
 
 LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
+	.ifdef ENGLISH
 	.string "I made {POKEBLOCK}S with Mom, Dad, and\n"
 	.string "Big Sister. They turned out great!\p"
 	.string "I bet you can make smoother, better\n"
 	.string "{POKEBLOCK}S if you have more people.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe {POKEBLOCK} mit Mama, Papa und\n"
+	.string "meiner Schwester gemacht. Sie sind\l"
+	.string "sehr gut geworden!\p"
+	.string "Ich glaube, je mehr Leute dir bei der\n"
+	.string "Herstellung von {POKEBLOCK} helfen, desto\l"
+	.string "besser ist die Qualität.$"
+	.endif
+	.endif
 

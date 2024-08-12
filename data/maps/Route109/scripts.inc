@@ -477,69 +477,170 @@ Route109_EventScript_Elijah::
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "We've made land in SLATEPORT!\p"
 	.string "I suppose you're going to visit CAPT.\n"
 	.string "STERN and deliver the DEVON GOODS?$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Wir haben in\n"
+	.string "GRAPHITPORT CITY angelegt.\p"
+	.string "Ich vermute, du gehst jetzt zu KAPT.\n"
+	.string "BRIGG und bringst ihm die DEVON-\l"
+	.string "WAREN?$"
+	.endif
+	.endif
 
 Route109_Text_BrineySailToDewfordQuestion:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: I thought you're supposed\n"
 	.string "to deliver the DEVON GOODS.\p"
 	.string "Would you like to sail back to\n"
 	.string "DEWFORD, then?$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Überbringst du nicht die\n"
+	.string "DEVON-WAREN?\p"
+	.string "Heißt das, du willst nach FAUSTAUHAVEN\n"
+	.string "zurücksegeln?$"
+	.endif
+	.endif
 
 Route109_Text_BrineyDewfordItIs:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: DEWFORD it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Also, auf nach FAUSTAUHAVEN!\p"
+	.string "Anker gelichtet!\n"
+	.string "PECKO, wir setzen Segel, mein Liebling!$"
+	.endif
+	.endif
 
 Route109_Text_BrineyDeliverDevonGoods:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Then you go on and deliver\n"
 	.string "the DEVON GOODS. I'll be waiting.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Dann geh und überbringe die\n"
+	.string "DEVON-WAREN. Ich warte hier.$"
+	.endif
+	.endif
 
 DewfordTown_Text_BrineyLandedInSlateport:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy! We've made land in\n"
 	.string "SLATEPORT!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Wir haben in\n"
+	.string "GRAPHITPORT CITY angelegt!\p"
+	.string "Wann immer du magst, können wir wieder\n"
+	.string "die Segel setzen.$"
+	.endif
+	.endif
 
 Route109_Text_BrineyWhereAreWeBound:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Für dich fahre ich\n"
+	.string "jederzeit wieder raus!\p"
+	.string "Nun, wo soll es hingehen?$"
+	.endif
+	.endif
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: You just tell me whenever\n"
 	.string "you need to set sail again!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Sag mir einfach Bescheid,\n"
+	.string "wenn wir wieder Segel setzen sollen.$"
+	.endif
+	.endif
 
 Route109_Text_ChillAtMyPapasSpot:
+	.ifdef ENGLISH
 	.string "Yo, TRAINERS!\n"
 	.string "Whether you're hot to trot,\l"
 	.string "or cool cat not,\l"
 	.string "chill at my papa's spot!$"
+	.else
+	.ifdef GERMAN
+	.string "Yo, TRAINER!\n"
+	.string "Seid ihr in Eile,\l"
+	.string "müsst wieder fort,\l"
+	.string "erfrischt euch doch an Papas Ort!$"
+	.endif
+	.endif
 
 Route109_Text_LittleKidsDartAround:
+	.ifdef ENGLISH
 	.string "Little kids can dart around so quickly…\p"
 	.string "You don't dare take your eyes off them\n"
 	.string "for an instant. It's very taxing.\p"
 	.string "Mine are with my POKéMON, so they\n"
 	.string "should be okay, but…$"
+	.else
+	.ifdef GERMAN
+	.string "Kleine Kinder sind blitzschnell und\n"
+	.string "flink.\p"
+	.string "Du darfst sie nicht eine Sekunde aus\n"
+	.string "den Augen lassen. Das strengt an.\p"
+	.string "Meine Kinder sind mit meinen POKéMON\n"
+	.string "zusammen, da sind sie gut aufgehoben.$"
+	.endif
+	.endif
 
 Route109_Text_SandCastleTakingLongTime:
+	.ifdef ENGLISH
 	.string "Our sand castle's taking a long time\n"
 	.string "to make.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir brauchen ganz lange, um unsere\n"
+	.string "Sandburg zu bauen.$"
+	.endif
+	.endif
 
 Route109_Text_YouCanHaveThis:
+	.ifdef ENGLISH
 	.string "You can have this!$"
+	.else
+	.ifdef GERMAN
+	.string "Das schenk ich dir!$"
+	.endif
+	.endif
 
 Route109_Text_WereGoingToMakeBigCastle:
+	.ifdef ENGLISH
 	.string "We're going to get all the sand from\n"
 	.string "the beach and make a big castle!\p"
 	.string "And then we're going to be a king and\n"
 	.string "queen.\p"
 	.string "We'll let you be a servant.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir nehmen allen Sand vom Strand\n"
+	.string "und bauen damit eine gaaanz große Burg.\p"
+	.string "Und dann sind wir Königin und König!\p"
+	.string "Und du darfst unser Diener sein.$"
+	.endif
+	.endif
 
 Route109_Text_ZigzagoonPicksUpLitter:
+	.ifdef ENGLISH
 	.string "The water around these parts is clean.\p"
 	.string "But, I get my ZIGZAGOON to pick up\n"
 	.string "litter from the shoreline at times.\p"
@@ -547,18 +648,56 @@ Route109_Text_ZigzagoonPicksUpLitter:
 	.string "rivers, which we drink from…\p"
 	.string "If we pollute the sea, it all comes\n"
 	.string "back to haunt us eventually.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Wasser in diesen Breiten ist sauber.\p"
+	.string "Aber ich sammle zusammen mit meinem\n"
+	.string "ZIGZACHS den Müll am Ufer auf.\p"
+	.string "Verschmutztes Wasser wird zu Regen und\n"
+	.string "gelangt in die Flüsse, aus denen wir\l"
+	.string "unser Trinkwasser gewinnen…\p"
+	.string "Verschmutzen wir das Meer, bekommen\n"
+	.string "wir den Schmutz wieder zurück.$"
+	.endif
+	.endif
 
 Route109_Text_ZigzagoonCry:
+	.ifdef ENGLISH
 	.string "ZIGZAGOON: Guguu?$"
+	.else
+	.ifdef GERMAN
+	.string "ZIGZACHS: Guguu?$"
+	.endif
+	.endif
 
 Route109_Text_SeashoreHouseSign:
+	.ifdef ENGLISH
 	.string "SEASHORE HOUSE\p"
 	.string "“May hot battles rage on hot sands!\n"
 	.string "The place for hot TRAINERS!”$"
+	.else
+	.ifdef GERMAN
+	.string "STRANDHAUS\p"
+	.string "“Mögen heiße Kämpfe im heißen Sand\n"
+	.string "stattfinden! Heiße TRAINER\l"
+	.string "willkommen!”$"
+	.endif
+	.endif
 
 Route109_Text_TrainerTipsSign:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "POKéMON at the same level may not\n"
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "POKéMON mit gleichem Level haben nicht\n"
+	.string "unbedingt identische Statuswerte.\p"
+	.string "POKéMON, die von TRAINERn aufgezogen\n"
+	.string "werden, wachsen schneller als wilde\l"
+	.string "POKéMON.$"
+	.endif
+	.endif

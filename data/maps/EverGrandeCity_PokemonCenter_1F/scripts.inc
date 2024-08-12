@@ -77,19 +77,39 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
+	.ifdef ENGLISH
 	.string "The POKéMON LEAGUE is only a short\n"
 	.string "distance after the VICTORY ROAD.\p"
 	.string "If you've come this far, what choice\n"
 	.string "do you have but to keep going?$"
+	.else
+	.ifdef GERMAN
+	.string "Die POKéMON LIGA triffst du kurz hinter\n"
+	.string "der SIEGESSTRASSE.\p"
+	.string "Wenn du schon so weit gekommen bist,\n"
+	.string "musst du einfach weitergehen.$"
+	.endif
+	.endif
 
 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
+	.ifdef ENGLISH
 	.string "The long and harrowing VICTORY ROAD…\p"
 	.string "It's like reliving the path one has\n"
 	.string "traveled in life…\p"
 	.string "Believe in your POKéMON and give it\n"
 	.string "your very best!$"
+	.else
+	.ifdef GERMAN
+	.string "Die lange und qualvolle SIEGESSTRASSE…\p"
+	.string "Es ist fast so, als würde man sein\n"
+	.string "ganzes Leben noch einmal leben…\p"
+	.string "Glaube an deine POKéMON und gib\n"
+	.string "dein Bestes!$"
+	.endif
+	.endif
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
+	.ifdef ENGLISH
 	.string "SCOTT: {PLAYER}{KUN}, you've clawed your\n"
 	.string "way up to face the POKéMON LEAGUE!\p"
 	.string "I'm happy for you!\n"
@@ -99,4 +119,17 @@ EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
 	.string "I'll get in touch with you then.\p"
 	.string "Okay, {PLAYER}{KUN}.\n"
 	.string "Go for greatness!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: {PLAYER}{KUN}, du hast dich zur\n"
+	.string "POKéMON LIGA durchgebissen.\p"
+	.string "Das freut mich für dich!\n"
+	.string "Meine Anfeuerungen haben sich gelohnt.\p"
+	.string "Und wenn du CHAMP der POKéMON LIGA\n"
+	.string "wirst, {PLAYER}{KUN}…\p"
+	.string "dann melde ich mich wieder bei dir.\p"
+	.string "Okay, {PLAYER}{KUN}.\n"
+	.string "Auf zum Ruhm!$"
+	.endif
+	.endif
 

@@ -106,10 +106,18 @@ static const struct WindowTemplate sWindowTemplates[] =
         .bg = 1,
         .tilemapLeft = 11,
         .tilemapTop = 4,
+#if ENGLISH
         .width = 8,
+#elif GERMAN
+        .width = 13,
+#endif
         .height = 2,
         .paletteNum = 15,
+#if ENGLISH
         .baseBlock = 69,
+#elif GERMAN
+        .baseBlock = 72,
+#endif
     },
     [WIN_SIZE_FIRM] = {
         .bg = 1,
@@ -118,16 +126,32 @@ static const struct WindowTemplate sWindowTemplates[] =
         .width = 18,
         .height = 4,
         .paletteNum = 15,
+#if ENGLISH
         .baseBlock = 85,
+#elif GERMAN
+        .baseBlock = 98,
+#endif
     },
     [WIN_DESC] = {
         .bg = 1,
+#if ENGLISH
         .tilemapLeft = 4,
+#elif GERMAN
+        .tilemapLeft = 3,
+#endif
         .tilemapTop = 14,
+#if ENGLISH
         .width = 25,
+#elif GERMAN
+        .width = 27,
+#endif
         .height = 4,
         .paletteNum = 15,
+#if ENGLISH
         .baseBlock = 157,
+#elif GERMAN
+        .baseBlock = 170,
+#endif
     },
     [WIN_BERRY_TAG] = {
         .bg = 0,
@@ -136,7 +160,11 @@ static const struct WindowTemplate sWindowTemplates[] =
         .width = 8,
         .height = 2,
         .paletteNum = 15,
+#if ENGLISH
         .baseBlock = 257,
+#elif GERMAN
+        .baseBlock = 278,
+#endif
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -402,9 +430,15 @@ static void PrintAllBerryData(void)
 
 static void PrintBerryNumberAndName(void)
 {
+#if ENGLISH
     const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
+#endif
     ConvertIntToDecimalStringN(gStringVar1, sBerryTag->berryId, STR_CONV_MODE_LEADING_ZEROS, 2);
+#if ENGLISH
     StringCopy(gStringVar2, berry->name);
+#elif GERMAN
+    StringCopy(gStringVar2, ItemId_GetName(BERRY_TO_ITEM(sBerryTag->berryId)));
+#endif
     StringExpandPlaceholders(gStringVar4, gText_NumberVar1Var2);
     PrintTextInBerryTagScreen(WIN_BERRY_NAME, gStringVar4, 0, 1, 0, 0);
 }
@@ -415,6 +449,7 @@ static void PrintBerrySize(void)
     AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gText_SizeSlash, 0, 1, TEXT_SKIP_DRAW, NULL);
     if (berry->size != 0)
     {
+#if ENGLISH
         u32 inches, fraction;
 
         inches = 1000 * berry->size / 254;
@@ -425,6 +460,11 @@ static void PrintBerrySize(void)
 
         ConvertIntToDecimalStringN(gStringVar1, inches, STR_CONV_MODE_LEFT_ALIGN, 2);
         ConvertIntToDecimalStringN(gStringVar2, fraction, STR_CONV_MODE_LEFT_ALIGN, 2);
+#elif GERMAN
+        ConvertIntToDecimalStringN(gStringVar1, berry->size / 10, STR_CONV_MODE_LEFT_ALIGN, 2);
+        ConvertIntToDecimalStringN(gStringVar2, berry->size % 10, STR_CONV_MODE_LEFT_ALIGN, 2);
+#endif
+
         StringExpandPlaceholders(gStringVar4, gText_Var1DotVar2);
         AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gStringVar4, 0x28, 1, 0, NULL);
     }
@@ -447,13 +487,37 @@ static void PrintBerryFirmness(void)
 static void PrintBerryDescription1(void)
 {
     const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berry->description1, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(
+        WIN_DESC,
+        FONT_NORMAL,
+        berry->description1,
+#if ENGLISH
+        0,
+#elif GERMAN
+        5,
+#endif
+        1,
+        0,
+        NULL
+    );
 }
 
 static void PrintBerryDescription2(void)
 {
     const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berry->description2, 0, 0x11, 0, NULL);
+    AddTextPrinterParameterized(
+        WIN_DESC,
+        FONT_NORMAL,
+        berry->description2,
+#if ENGLISH
+        0,
+#elif GERMAN
+        5,
+#endif
+        0x11,
+        0,
+        NULL
+    );
 }
 
 static void CreateBerrySprite(void)

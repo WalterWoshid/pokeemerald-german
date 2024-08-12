@@ -1,26 +1,68 @@
 SecretBase_Text_TreeCanBeClimbed:
+	.ifdef ENGLISH
 	.string "If some vines drop down, this tree can\n"
 	.string "be climbed.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn einige Äste herunterhängen, kann\n"
+	.string "man auf den Baum klettern.$"
+	.endif
+	.endif
 
 SecretBase_Text_TreeUseSecretPower:
+	.ifdef ENGLISH
 	.string "If some vines drop down, this tree can\n"
 	.string "be climbed.\p"
 	.string "Use the SECRET POWER?$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn einige Äste herunterhängen, kann\n"
+	.string "man auf den Baum klettern.\p"
+	.string "Möchtest du GEHEIMPOWER einsetzen?$"
+	.endif
+	.endif
 
 SecretBase_Text_VineDroppedDown:
+	.ifdef ENGLISH
 	.string "A thick vine dropped down!$"
+	.else
+	.ifdef GERMAN
+	.string "Ein dicker Ast fällt herunter!$"
+	.endif
+	.endif
 
 SecretBase_Text_ClumpOfGrass:
+	.ifdef ENGLISH
 	.string "If this clump of grass can be moved,\n"
 	.string "it might be possible to go inside.$"
+	.else
+	.ifdef GERMAN
+	.string "Dieser Busch kann bewegt werden,\n"
+	.string "so dass man hineinklettern kann.$"
+	.endif
+	.endif
 
 SecretBase_Text_ClumpUseSecretPower:
+	.ifdef ENGLISH
 	.string "If this clump of grass can be moved,\n"
 	.string "it might be possible to go inside.\p"
 	.string "Use the SECRET POWER?$"
+	.else
+	.ifdef GERMAN
+	.string "Dieser Busch kann bewegt werden,\n"
+	.string "so dass man hineinklettern kann.\p"
+	.string "Möchtest du GEHEIMPOWER einsetzen?$"
+	.endif
+	.endif
 
 SecretBase_Text_DiscoveredSmallEntrance:
+	.ifdef ENGLISH
 	.string "Discovered a small entrance!$"
+	.else
+	.ifdef GERMAN
+	.string "Ein kleiner Eingang wird sichtbar.$"
+	.endif
+	.endif
 
 	.include "data/text/secret_base_trainers.inc"
 
@@ -672,36 +714,94 @@ SecretBase_EventScript_CushionInteract::
 	end
 
 SecretBase_Text_AllDecorationsWillBeReturned:
+	.ifdef ENGLISH
 	.string "All decorations and furniture in your\n"
 	.string "SECRET BASE will be returned to your PC.\p"
 	.string "Is that okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Alle Dekorationsgegenstände und das\n"
+	.string "Mobiliar aus deiner GEHEIMBASIS werden\l"
+	.string "auf deinen PC gesendet.\p"
+	.string "Einverstanden?$"
+	.endif
+	.endif
 
 SecretBase_Text_WantToRegisterSecretBase:
+	.ifdef ENGLISH
 	.string "Do you want to register\n"
 	.string "{STR_VAR_1}'s SECRET BASE?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du die GEHEIMBASIS von\n"
+	.string "{STR_VAR_1} eintragen?$"
+	.endif
+	.endif
 
 SecretBase_Text_AlreadyRegisteredDelete:
+	.ifdef ENGLISH
 	.string "This data is already registered.\n"
 	.string "Would you like to delete it?$"
+	.else
+	.ifdef GERMAN
+	.string "Diese Daten wurden bereits\n"
+	.string "eingetragen. Möchtest du sie löschen?$"
+	.endif
+	.endif
 
 SecretBase_Text_TooManyBasesDeleteSome:
+	.ifdef ENGLISH
 	.string "Up to 10 locations can be registered.\p"
 	.string "Delete a location if you want to\n"
 	.string "register another location.$"
+	.else
+	.ifdef GERMAN
+	.string "Bis zu 10 Orte können eingetragen\n"
+	.string "werden.\p"
+	.string "Lösche einen Ort, um einen neuen\n"
+	.string "eintragen zu können.$"
+	.endif
+	.endif
 
 SecretBase_Text_RegistrationCompleted:
+	.ifdef ENGLISH
 	.string "Registration completed.$"
+	.else
+	.ifdef GERMAN
+	.string "Registrierung abgeschlossen.$"
+	.endif
+	.endif
 
 SecretBase_Text_DataUnregistered:
+	.ifdef ENGLISH
 	.string "Data has been unregistered.$"
+	.else
+	.ifdef GERMAN
+	.string "Daten wurden aus der Registrierung\n"
+	.string "genommen.$"
+	.endif
+	.endif
 
 SecretBase_Text_BootUpPC:
+	.ifdef ENGLISH
 	.string "{PLAYER} booted up the PC.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} schaltet den PC ein.$"
+	.endif
+	.endif
 
 SecretBase_Text_WhatWouldYouLikeToDo:
+	.ifdef ENGLISH
 	.string "What would you like to do?$"
+	.else
+	.ifdef GERMAN
+	.string "Was möchtest du tun?$"
+	.endif
+	.endif
 
 SecretBase_Text_RegistryInfo:
+	.ifdef ENGLISH
 	.string "Once registered, a SECRET BASE will not\n"
 	.string "disappear unless the other TRAINER\l"
 	.string "moves it to a different location.\p"
@@ -710,28 +810,88 @@ SecretBase_Text_RegistryInfo:
 	.string "its place.\p"
 	.string "Up to ten SECRET BASE locations\n"
 	.string "may be registered.$"
+	.else
+	.ifdef GERMAN
+	.string "Die eingetragene GEHEIMBASIS bleibt\n"
+	.string "erhalten, bis der Eigentümer umzieht.\p"
+	.string "Wird sie aus dem Grundbuch ent-\n"
+	.string "fernt, kann eine andere GEHEIMBASIS\l"
+	.string "diesen Platz einnehmen.\p"
+	.string "Bis zu 10 Orte können eingetragen\n"
+	.string "werden.$"
+	.endif
+	.endif
 
 SecretBase_Text_BattleTowerShield:
+	.ifdef ENGLISH
 	.string "A shield of {STR_VAR_2} that marks winning\n"
 	.string "{STR_VAR_1} times in a row at the BATTLE TOWER.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Schild aus {STR_VAR_2}, welches zeigt,\n"
+	.string "dass {STR_VAR_1}-mal hintereinander im\l"
+	.string "DUELLTURM ein Kampf gewonnen wurde.$"
+	.endif
+	.endif
 
 SecretBase_Text_ToyTV:
+	.ifdef ENGLISH
 	.string "A realistic toy TV. It could be easily\n"
 	.string "mistaken for the real thing.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein sehr realistischer Spielzeug-\n"
+	.string "Fernseher. Man könnte ihn glatt mit\l"
+	.string "einem echten Gerät verwechseln.$"
+	.endif
+	.endif
 
 SecretBase_Text_SeedotTV:
+	.ifdef ENGLISH
 	.string "A toy TV shaped like a SEEDOT.\n"
 	.string "It looks ready to roll away on its own…$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Spielzeug-Fernseher, der aussieht\n"
+	.string "wie ein SAMURZEL. Er scheint von\l"
+	.string "alleine davonrollen zu wollen…$"
+	.endif
+	.endif
 
 SecretBase_Text_SkittyTV:
+	.ifdef ENGLISH
 	.string "A toy TV shaped like a SKITTY.\n"
 	.string "It looks ready to stroll away…$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Spielzeug-Fernseher, der aussieht\n"
+	.string "wie ein ENECO. Es scheint, als wolle\l"
+	.string "er sich langsam davonschleichen…$"
+	.endif
+	.endif
 
 SecretBase_Text_WouldYouLikeToMoveBases:
+	.ifdef ENGLISH
 	.string "You may only make one SECRET BASE.\p"
 	.string "Would you like to move from the SECRET\n"
 	.string "BASE near {STR_VAR_1}?$"
+	.else
+	.ifdef GERMAN
+	.string "Du kannst dir nur eine GEHEIMBASIS\n"
+	.string "einrichten.\p"
+	.string "Möchtest du deine GEHEIMBASIS in der\n"
+	.string "Nähe von {STR_VAR_1} hierher\l"
+	.string "verlegen?$"
+	.endif
+	.endif
 
 SecretBase_Text_MovingCompletedUseSecretPower:
+	.ifdef ENGLISH
 	.string "Moving completed.\p"
 	.string "Would you like to use the SECRET POWER?$"
+	.else
+	.ifdef GERMAN
+	.string "Umzug wurde abgeschlossen.\p"
+	.string "Möchtest du GEHEIMPOWER einsetzen?$"
+	.endif
+	.endif

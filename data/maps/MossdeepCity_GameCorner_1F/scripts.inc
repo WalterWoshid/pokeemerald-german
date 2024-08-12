@@ -46,7 +46,13 @@ RS_MysteryEventsHouse_Text_OldManGreeting:
 	.string "TRAINERS battle.$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
+	.ifdef ENGLISH
 	.string "The door appears to be locked.$"
+	.else
+	.ifdef GERMAN
+	.string "Diese Tür ist verschlossen.$"
+	.endif
+	.endif
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
 	.string "A TRAINER named {STR_VAR_1} is\n"

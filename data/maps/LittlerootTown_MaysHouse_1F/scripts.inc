@@ -321,6 +321,7 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2:
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
+	.ifdef ENGLISH
 	.string "Oh, hello. And you are?\p"
 	.string "… … … … … … … … …\n"
 	.string "… … … … … … … … …\p"
@@ -331,35 +332,92 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 	.string "Our {STR_VAR_1} was excited about making\n"
 	.string "a new friend.\p"
 	.string "Our {STR_VAR_1} is upstairs, I think.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, hallo. Wer bist du?\p"
+	.string "… … … … … … … … …\n"
+	.string "… … … … … … … … …\p"
+	.string "Oh, du bist {PLAYER}{KUN}, unser neuer\n"
+	.string "Nachbar! Hallo!\p"
+	.string "Wir haben ein Kind in deinem Alter.\p"
+	.string "Mein(e) {STR_VAR_1} freut sich schon\n"
+	.string "darauf, mit dir Freundschaft zu\l"
+	.string "schließen.$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
+	.ifdef ENGLISH
 	.string "Like child, like father.\p"
 	.string "My husband is as wild about POKéMON\n"
 	.string "as our child.\p"
 	.string "If he's not at his LAB, he's likely\n"
 	.string "scrabbling about in grassy places.$"
+	.else
+	.ifdef GERMAN
+	.string "Wie der Vater, so das Kind.\p"
+	.string "Mein Mann ist genauso verrückt nach\n"
+	.string "POKéMON wie unser Kind.\p"
+	.string "Wenn er nicht gerade in seinem LABOR\n"
+	.string "ist, krabbelt er mit Sicherheit draußen\l"
+	.string "durch das Gras.$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
+	.ifdef ENGLISH
 	.string "That {RIVAL}!\p"
 	.string "I guess our child is too busy with\n"
 	.string "POKéMON to notice that you came\l"
 	.string "to visit, {PLAYER}{KUN}.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, {RIVAL}!\p"
+	.string "Ich vermute, unser Kind ist viel zu sehr\n"
+	.string "mit POKéMON beschäftigt und merkt gar\p"
+	.string "nicht, dass du zu Besuch hier bist,\n"
+	.string "{PLAYER}{KUN}.$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_WentOutToRoute103:
+	.ifdef ENGLISH
 	.string "Oh, {RIVAL} went out to ROUTE 103\n"
 	.string "just a little while ago.\p"
 	.string "Like father, like child.\n"
 	.string "{RIVAL} can't stay quietly at home.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, {RIVAL} ist vor kurzem zur\n"
+	.string "ROUTE 103 aufgebrochen.\p"
+	.string "Wie der Vater, so das Kind.\n"
+	.string "{RIVAL} hält es keine fünf\l"
+	.string "Minuten im Haus aus.$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
+	.ifdef ENGLISH
 	.string "I think it's wonderful for people to\n"
 	.string "travel with POKéMON.\p"
 	.string "But you should go home every so often\n"
 	.string "to let your mother know you're okay.\p"
 	.string "She might not say it, but I'm sure she\n"
 	.string "worries about you, {PLAYER}{KUN}.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich glaube, es ist wunderbar für Leute,\n"
+	.string "mit ihren POKéMON zu reisen.\p"
+	.string "Aber du solltest öfter nach Hause\n"
+	.string "gehen und deiner Mutter zeigen, dass es\l"
+	.string "dir gut geht.\p"
+	.string "Sie lässt es sich nicht anmerken, aber\n"
+	.string "sie macht sich bestimmt Sorgen!$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_MayWhoAreYou:
+	.ifdef ENGLISH
 	.string "Huh?\n"
 	.string "Who… Who are you?\p"
 	.string "… … … … … … … …\n"
@@ -382,8 +440,37 @@ RivalsHouse_1F_Text_MayWhoAreYou:
 	.string "I was supposed to go help Dad catch\n"
 	.string "some wild POKéMON!\p"
 	.string "{PLAYER}{KUN}, I'll catch you later!$"
+	.else
+	.ifdef GERMAN
+	.string "Was?\n"
+	.string "Wer… Wer bist du denn?\p"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "Ach, du bist {PLAYER}{KUN}!\n"
+	.string "Du bist heute hierher gezogen.\p"
+	.string "Ähm… Ich bin MAIKE.\n"
+	.string "Schön, dich kennen zu lernen.\p"
+	.string "Ich… Ich habe diesen Traum…\n"
+	.string "Mit POKéMON in der ganzen Welt\l"
+	.string "Freundschaft zu schließen.\p"
+	.string "Ich… Ich habe schon von dir gehört.\n"
+	.string "Mein Vater, PROF. BIRK, hat mir von\l"
+	.string "dir erzählt.\p"
+	.string "Ich habe gehofft, dass du nett bist,\n"
+	.string "{PLAYER}{KUN}, und wir Freunde werden.\p"
+	.string "Ist das nicht albern? Ich… Ich habe\n"
+	.string "dich doch gerade erst kennen gelernt.\p"
+	.string "Hihihihi…\p"
+	.string "Oh, nein! Das habe ich ja total\n"
+	.string "vergessen!\p"
+	.string "Ich sollte Vati doch helfen, ein paar\n"
+	.string "wilde POKéMON zu fangen!\p"
+	.string "{PLAYER}{KUN}, wir treffen uns später!$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_BrendanWhoAreYou:
+	.ifdef ENGLISH
 	.string "Hey!\n"
 	.string "You…\p"
 	.string "Who are you?\p"
@@ -402,8 +489,40 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 	.string "I'm supposed to go help my dad catch\n"
 	.string "some wild POKéMON.\p"
 	.string "Some other time, okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Hey!\n"
+	.string "Du…\p"
+	.string "Wer bist du denn?\p"
+	.string "Ach ja, du bist {PLAYER}, richtig?\n"
+	.string "Du bist nebenan eingezogen, stimmt’s?\p"
+	.string "Ich wusste nicht, dass du ein Mädchen\n"
+	.string "bist.\p"
+	.string "Vater, PROF. BIRK, hat mir erzählt, dass\n"
+	.string "nebenan das Kind eines ARENALEITERs\p"
+	.string "einzieht und irgendwie habe ich\n"
+	.string "gedacht, du seiest ein Junge.\p"
+	.string "Ich heiße übrigens BRIX.\n"
+	.string "Also: Hallo, Nachbarin!\p"
+	.string "Was? {PLAYER}, du hast kein einziges\n"
+	.string "POKéMON?\p"
+	.string "Soll ich eines für dich fangen?\p"
+	.string "Ach, Mist, das habe ich ganz vergessen…\p"
+	.string "Ich muss meinem Vater helfen, einige\n"
+	.string "wilde POKéMON zu fangen.\p"
+	.string "Ein anderes Mal, okay?$"
+	.endif
+	.endif
 
 RivalsHouse_1F_Text_DoYouHavePokemon:
+	.ifdef ENGLISH
 	.string "Hi, neighbor!\p"
 	.string "Do you already have your\n"
 	.string "own POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, Nachbar!\p"
+	.string "Hast du schon ein\n"
+	.string "eigenes POKéMON?$"
+	.endif
+	.endif

@@ -59,6 +59,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
+	.ifdef ENGLISH
 	.string "Welcome, my name is GLACIA\n"
 	.string "of the ELITE FOUR.\p"
 	.string "I've traveled from afar to HOENN\n"
@@ -68,16 +69,48 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "What about you?\p"
 	.string "It would please me to no end if I could\n"
 	.string "go all out against you!$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen. Mein Name ist FROSINA\n"
+	.string "von den TOP VIER.\p"
+	.string "Ich bin von weit her nach HOENN gereist,\n"
+	.string "um meine eisigen Talente zu trainieren.\p"
+	.string "Aber bisher haben mich nur lausige\n"
+	.string "TRAINER mit noch lausigeren POKéMON\l"
+	.string "herausgefordert.\p"
+	.string "Wie sieht es mit dir aus?\p"
+	.string "Es würde mich überaus freuen, wenn du\n"
+	.string "mich zwingst, alles zu geben!$"
+	.endif
+	.endif
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
+	.ifdef ENGLISH
 	.string "You and your POKéMON…\n"
 	.string "How hot your spirits burn!\p"
 	.string "The all-consuming heat overwhelms.\p"
 	.string "It's no surprise that my icy skills\n"
 	.string "failed to harm you.$"
+	.else
+	.ifdef GERMAN
+	.string "Du und deine POKéMON…\n"
+	.string "Euer Zusammenhalt verbrennt alles!\p"
+	.string "Diese Hitze besiegt jeden.\p"
+	.string "Kein Wunder, dass mein eisiges Talent\n"
+	.string "dahinschmolz und dir nicht schadete.$"
+	.endif
+	.endif
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
+	.ifdef ENGLISH
 	.string "Advance to the next room.\p"
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the POKéMON LEAGUE.$"
+	.else
+	.ifdef GERMAN
+	.string "Geh weiter in den nächsten Raum.\p"
+	.string "Und dort wirst du die schrecklichste\n"
+	.string "Seite der POKéMON LIGA kennen lernen.$"
+	.endif
+	.endif
 

@@ -1,4 +1,7 @@
 #include "global.h"
+#if GERMAN
+#include "data.h"
+#endif
 #include "international_string_util.h"
 #include "list_menu.h"
 #include "pokedex.h"
@@ -7,6 +10,9 @@
 #include "strings.h"
 #include "text.h"
 #include "window.h"
+#if GERMAN
+#include "constants/trainers.h"
+#endif
 
 extern const struct PokedexEntry gPokedexEntries[];
 
@@ -86,8 +92,10 @@ int Intl_GetListMenuWidth(const struct ListMenuTemplate *listMenu)
 void CopyMonCategoryText(int dexNum, u8 *dest)
 {
     u8 *str = StringCopy(dest, gPokedexEntries[dexNum].categoryName);
+#if ENGLISH
     *str = CHAR_SPACE;
     StringCopy(str + 1, gText_Pokemon);
+#endif
 }
 
 u8 *GetStringClearToWidth(u8 *dest, int fontId, const u8 *str, int totalStringWidth)
@@ -231,3 +239,53 @@ void FillWindowTilesByRow(int windowId, int columnStart, int rowStart, int numFi
         }
     }
 }
+
+#if GERMAN
+u8 *StringAppendWithPlaceholder(u8 *dest, const u8 *src, u8 *placeholderStr)
+{
+    u8 text[32], c;
+
+    StringCopyN(text, placeholderStr, 31);
+    text[31] = EOS;
+    placeholderStr = text;
+    while ((c = *src++) != EOS)
+    {
+        if (c == PLACEHOLDER_BEGIN)
+        {
+            src++;
+            dest = StringCopy(dest, placeholderStr);
+        }
+        else
+        {
+            *dest = c;
+            dest++;
+        }
+    }
+    *dest = EOS;
+    return dest;
+}
+
+const u8 gText_BenSvenja[] = _("BEN&SVENJA");
+
+const u8 *GetTrainerClassNameGenderSpecific(s32 trainerClassId, u32 trainerGender, const u8 *trainerName)
+{
+    switch (trainerClassId)
+    {
+    case TRAINER_CLASS_SCHOOL_KID:
+        if (trainerGender != 0)
+            return gText_SchoolKid;
+        return gTrainerClassNames[trainerClassId];
+    case TRAINER_CLASS_RIVAL:
+    case TRAINER_CLASS_RS_PROTAG:
+        if (trainerGender != 0)
+            return gText_PkmnTrainer;
+        break;
+    case TRAINER_CLASS_LEADER:
+        if (trainerName != NULL && StringCompare(trainerName, gText_BenSvenja) == 0)
+            return gText_Leader;
+        break;
+    }
+    trainerName = gTrainerClassNames[trainerClassId];
+    return trainerName;
+}
+#endif

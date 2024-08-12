@@ -405,7 +405,12 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
         int index = GetTrainerIdxByRematchIdx(matchCallEntry->headerId);
         const struct Trainer *trainer = &gTrainers[index];
         int class = trainer->trainerClass;
+#if ENGLISH
         className = gTrainerClassNames[class];
+#elif GERMAN
+        int gender = trainer->encounterMusic_gender;
+        className = GetTrainerClassNameGenderSpecific(class, gender, trainer->trainerName);
+#endif
         trainerName = trainer->trainerName;
     }
     else
@@ -416,11 +421,29 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
     if (className && trainerName)
     {
         u8 *str2 = GetStringClearToWidth(str, FONT_NARROW, className, 69);
-        GetStringClearToWidth(str2, FONT_NARROW, trainerName, 51);
+        GetStringClearToWidth(
+            str2,
+            FONT_NARROW,
+            trainerName,
+#if ENGLISH
+            51
+#elif GERMAN
+            57
+#endif
+        );
     }
     else
     {
-        GetStringClearToWidth(str, FONT_NARROW, NULL, 120);
+        GetStringClearToWidth(
+            str,
+            FONT_NARROW,
+            NULL,
+#if ENGLISH
+            120
+#elif GERMAN
+            126
+#endif
+        );
     }
 }
 

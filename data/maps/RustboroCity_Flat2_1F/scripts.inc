@@ -16,9 +16,22 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	end
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
+	.ifdef ENGLISH
 	.string "DEVON CORPORATION's workers live in\n"
 	.string "this building.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Angestellten der DEVON\n"
+	.string "CORPORATION leben in diesem Haus.$"
+	.endif
+	.endif
 
 RustboroCity_Flat2_1F_Text_Skitty:
+	.ifdef ENGLISH
 	.string "SKITTY: Gyaaaah!$"
+	.else
+	.ifdef GERMAN
+	.string "ENECO: Gyaaaah!$"
+	.endif
+	.endif
 

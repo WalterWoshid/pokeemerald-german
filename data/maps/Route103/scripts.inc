@@ -289,10 +289,18 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
+	.ifdef ENGLISH
 	.string "MAY: Let's see… The POKéMON found\n"
 	.string "on ROUTE 103 include…$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Mal seh’n… Das POKéMON von\n"
+	.string "ROUTE 103 besitzt…$"
+	.endif
+	.endif
 
 Route103_Text_MayLetsBattle:
+	.ifdef ENGLISH
 	.string "Oh, hi, {PLAYER}{KUN}!\p"
 	.string "…Oh, I see, my dad gave you\n"
 	.string "a POKéMON as a gift.\p"
@@ -300,12 +308,31 @@ Route103_Text_MayLetsBattle:
 	.string "battle!\p"
 	.string "I'll give you a taste of what being\n"
 	.string "a TRAINER is like.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, hi, {PLAYER}{KUN}!\p"
+	.string "… Oh… Ich seh schon. Mein Vater hat dir\n"
+	.string "ein POKéMON geschenkt.\p"
+	.string "Wenn wir schon mal hier sind, lass uns\n"
+	.string "doch kämpfen!\p"
+	.string "Ich gebe dir einen Vorgeschmack auf\n"
+	.string "das Leben als TRAINER.$"
+	.endif
+	.endif
 
 Route103_Text_MayDefeated:
+	.ifdef ENGLISH
 	.string "Wow! That's great!\n"
 	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.else
+	.ifdef GERMAN
+	.string "Wow! Das war spitze!\n"
+	.string "{PLAYER}{KUN}, du bist ein Naturtalent!$"
+	.endif
+	.endif
 
 Route103_Text_MayTimeToHeadBack:
+	.ifdef ENGLISH
 	.string "MAY: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that POKéMON,\n"
@@ -314,23 +341,61 @@ Route103_Text_MayTimeToHeadBack:
 	.string "kind of POKéMON easily.\p"
 	.string "Well, it's time to head back to\n"
 	.string "the LAB.$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Ich glaube, ich weiß jetzt, warum\n"
+	.string "mein Vater dich ausgesucht hat.\p"
+	.string "Ich meine, du hast dein POKéMON erst\n"
+	.string "sehr kurze Zeit und es mag dich bereits.\p"
+	.string "Du wirst es einfach haben, dich mit\n"
+	.string "jeder Art von POKéMON anzufreunden.\p"
+	.string "Nun wird es aber Zeit, zurück ins LABOR\n"
+	.string "zu gehen!$"
+	.endif
+	.endif
 
 Route103_Text_BrendanRoute103Pokemon:
+	.ifdef ENGLISH
 	.string "BRENDAN: Okay, so it's this one and\n"
 	.string "that one that live on ROUTE 103…$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: So… Dieses und dieses leben an\n"
+	.string "der ROUTE 103…$"
+	.endif
+	.endif
 
 Route103_Text_BrendanLetsBattle:
+	.ifdef ENGLISH
 	.string "Hey, it's {PLAYER}!\p"
 	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
 	.string "Since we're here, how about a little\n"
 	.string "battle?\p"
 	.string "I'll teach you what being a TRAINER's\n"
 	.string "about!$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, da ist ja {PLAYER}!\p"
+	.string "… Oh ja. Mein Vater hat dir ein POKéMON\n"
+	.string "geschenkt, nicht wahr?\p"
+	.string "Wenn wir schon mal hier sind, lass uns\n"
+	.string "doch einen kleinen Kampf austragen.\p"
+	.string "Ich bringe dir bei, was ein TRAINER\n"
+	.string "wissen muss.$"
+	.endif
+	.endif
 
 Route103_Text_BrendanDefeated:
+	.ifdef ENGLISH
 	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, {PLAYER}, das war gar nicht so übel.$"
+	.endif
+	.endif
 
 Route103_Text_BrendanTimeToHeadBack:
+	.ifdef ENGLISH
 	.string "BRENDAN: I think I get it.\n"
 	.string "I think I know why my dad has his eye\l"
 	.string "out for you now.\p"
@@ -339,17 +404,51 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "{PLAYER}, I get the feeling that you\n"
 	.string "could befriend any POKéMON with ease.\p"
 	.string "We should head back to the LAB.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Ich denke, ich habe es kapiert.\n"
+	.string "Ich weiß jetzt, warum mein Vater dich\l"
+	.string "ausgesucht hat.\p"
+	.string "Du hast dein POKéMON noch nicht lange,\n"
+	.string "und doch mag es dich schon.\p"
+	.string "{PLAYER}, ich glaube, du kannst mit\n"
+	.string "jedem POKéMON Freundschaft schließen.\p"
+	.string "Wir sollten nun zurück zum LABOR gehen.$"
+	.endif
+	.endif
 
 Route103_Text_ShouldHaveBroughtPotion:
+	.ifdef ENGLISH
 	.string "My POKéMON is staggeringly tired…\n"
 	.string "I should have brought a POTION…$"
+	.else
+	.ifdef GERMAN
+	.string "Mein POKéMON ist unglaublich müde…\n"
+	.string "Ich hätte einen TRANK mitnehmen sollen.$"
+	.endif
+	.endif
 
 Route103_Text_ShortcutToOldale:
+	.ifdef ENGLISH
 	.string "If you cross the sea from here,\n"
 	.string "it'll be a shortcut to OLDALE TOWN.\p"
 	.string "Fufufu, that's useful, isn't it?$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du von hier das Meer überquerst,\n"
+	.string "nimmst du eine Abkürzung nach\l"
+	.string "ROSALTSTADT.\p"
+	.string "Hahaha, ist das kein praktischer Tipp?$"
+	.endif
+	.endif
 
 Route103_Text_RouteSign:
+	.ifdef ENGLISH
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
-
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 103\n"
+	.string "{DOWN_ARROW} ROSALTSTADT$"
+	.endif
+	.endif

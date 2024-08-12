@@ -1,12 +1,25 @@
 Route111_Text_MakingRoomUseTMToMakeYourOwn:
+	.ifdef ENGLISH
 	.string "What's that?\n"
 	.string "What am I doing?\p"
 	.string "I'm thinking about making my own room\n"
 	.string "here using a POKéMON move.\p"
 	.string "I know! I'll give you this TM.\n"
 	.string "Will you use it to make your own room?$"
+	.else
+	.ifdef GERMAN
+	.string "Was das ist?\n"
+	.string "Was ich hier mache?\p"
+	.string "Ich überlege, ob ich mir hier mein\n"
+	.string "eigenes Refugium mit Hilfe einer\l"
+	.string "POKéMON-Attacke einrichte.\p"
+	.string "Genau! Ich gebe dir diese TM. Richte\n"
+	.string "dir damit auch dein eigenes Reich ein!$"
+	.endif
+	.endif
 
 Route111_Text_ExplainSecretPower:
+	.ifdef ENGLISH
 	.string "Find a big tree that looks like it might\n"
 	.string "drop some vines.\p"
 	.string "Use SECRET POWER in front of the tree.\n"
@@ -23,15 +36,51 @@ Route111_Text_ExplainSecretPower:
 	.string "that have small indents in them.\p"
 	.string "I'm going to look for other places, too.\n"
 	.string "Okay, bye!$"
+	.else
+	.ifdef GERMAN
+	.string "Suche dir einen Baum, der aussieht, als\n"
+	.string "ob er einige Äste verlieren würde.\p"
+	.string "Setze davor GEHEIMPOWER ein. Einige\n"
+	.string "Äste werden sich öffnen und du\l"
+	.string "kannst dann den Baum hinaufklettern.\p"
+	.string "Du findest dort einen großen Raum, den\n"
+	.string "du nach eigenem Geschmack einrichten\l"
+	.string "kannst.\p"
+	.string "Das ist dein eigener geheimer Raum…\n"
+	.string "Eine GEHEIMBASIS!\p"
+	.string "Du solltest dir auch eine einrichten.\p"
+	.string "Du musst dir deine GEHEIMBASIS nicht\n"
+	.string "unbedingt in einem Baum einrichten.\p"
+	.string "Setze GEHEIMPOWER an steinigen\n"
+	.string "Wänden ein, die Einkerbungen haben.\p"
+	.string "Ich schaue mich jetzt nach weiteren\n"
+	.string "Orten um. Tschüss!$"
+	.endif
+	.endif
 
 Route111_Text_DontWantThis:
+	.ifdef ENGLISH
 	.string "Oh, you don't want this?\n"
 	.string "If you change your mind, tell me, okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, das willst du nicht haben? Wenn du\n"
+	.string "deine Meinung änderst, sag Bescheid.$"
+	.endif
+	.endif
 
 Route111_Text_DontHaveAnyRoom:
+	.ifdef ENGLISH
 	.string "Oh, you don't have any room for this.\p"
 	.string "I'll hold on to it, so come back for it\n"
 	.string "another time, okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, dafür hast du keinen Platz mehr.\p"
+	.string "Ich verwahre es für dich. Hol es dir\n"
+	.string "später ab, einverstanden?$"
+	.endif
+	.endif
 
 Route111_EventScript_SecretPowerMan::
 	lock

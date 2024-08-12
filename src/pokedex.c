@@ -2983,12 +2983,20 @@ static void CreateInterfaceSprites(u8 page)
             digitNum = (sPokedexView->ownCount % 100) % 10;
             StartSpriteAnim(&gSprites[spriteId], digitNum);
         }
+#if ENGLISH
         spriteId = CreateSprite(&sDexListStartMenuCursorSpriteTemplate, 136, 96, 1);
+#elif GERMAN
+        spriteId = CreateSprite(&sDexListStartMenuCursorSpriteTemplate, 144, 96, 1);
+#endif
         gSprites[spriteId].invisible = TRUE;
     }
     else // PAGE_SEARCH_RESULTS
     {
+#if ENGLISH
         spriteId = CreateSprite(&sDexListStartMenuCursorSpriteTemplate, 136, 80, 1);
+#elif GERMAN
+        spriteId = CreateSprite(&sDexListStartMenuCursorSpriteTemplate, 144, 80, 1);
+#endif
         gSprites[spriteId].invisible = TRUE;
     }
 }
@@ -4130,13 +4138,45 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     PrintInfoScreenText(gText_WTWeight, 0x60, 0x49);
     if (owned)
     {
-        PrintMonHeight(gPokedexEntries[num].height, 0x81, 0x39);
-        PrintMonWeight(gPokedexEntries[num].weight, 0x81, 0x49);
+        PrintMonHeight(
+            gPokedexEntries[num].height,
+#if ENGLISH
+            0x81,
+#elif GERMAN
+            0x90,
+#endif
+            0x39
+        );
+        PrintMonWeight(
+            gPokedexEntries[num].weight,
+#if ENGLISH
+            0x81,
+#elif GERMAN
+            0x90,
+#endif
+            0x49
+        );
     }
     else
     {
-        PrintInfoScreenText(gText_UnkHeight, 0x81, 0x39);
-        PrintInfoScreenText(gText_UnkWeight, 0x81, 0x49);
+        PrintInfoScreenText(
+            gText_UnkHeight,
+#if ENGLISH
+            0x81,
+#elif GERMAN
+            0x90,
+#endif
+            0x39
+        );
+        PrintInfoScreenText(
+            gText_UnkWeight,
+#if ENGLISH
+            0x81,
+#elif GERMAN
+            0x90,
+#endif
+            0x49
+        );
     }
     if (owned)
         description = gPokedexEntries[num].description;
@@ -4147,6 +4187,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
 
 static void PrintMonHeight(u16 height, u8 left, u8 top)
 {
+#if ENGLISH
     u8 buffer[16];
     u32 inches, feet;
     u8 i = 0;
@@ -4176,10 +4217,15 @@ static void PrintMonHeight(u16 height, u8 left, u8 top)
     buffer[i++] = CHAR_DBL_QUOTE_RIGHT;
     buffer[i++] = EOS;
     PrintInfoScreenText(buffer, left, top);
+#elif GERMAN
+    PrintInfoScreenText(gText_EmptyHeight, left, top);
+    PrintDecimalNum(0, height, left, top);
+#endif
 }
 
 static void PrintMonWeight(u16 weight, u8 left, u8 top)
 {
+#if ENGLISH
     u8 buffer[16];
     bool8 output;
     u8 i;
@@ -4234,6 +4280,10 @@ static void PrintMonWeight(u16 weight, u8 left, u8 top)
     buffer[i++] = CHAR_PERIOD;
     buffer[i++] = EOS;
     PrintInfoScreenText(buffer, left, top);
+#elif GERMAN
+    PrintInfoScreenText(gText_EmptyWeight, left, top);
+    PrintDecimalNum(0, weight, left, top);
+#endif
 }
 
 const u8 *GetPokedexCategoryName(u16 dexNum) // unused

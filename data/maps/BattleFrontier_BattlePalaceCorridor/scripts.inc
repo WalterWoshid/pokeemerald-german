@@ -122,30 +122,75 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
+	.ifdef ENGLISH
 	.string "People and POKéMON, they are but\n"
 	.string "the same…\p"
 	.string "Their individual nature makes them\n"
 	.string "good at certain things, and not good\l"
 	.string "at others.$"
+	.else
+	.ifdef GERMAN
+	.string "Menschen und POKéMON… sind sich\n"
+	.string "manchmal erstaunlich ähnlich…\p"
+	.string "Beide sind in manchen Dingen gut, in\n"
+	.string "manchen weniger gut - abhängig von\l"
+	.string "ihrem Wesen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes:
+	.ifdef ENGLISH
 	.string "Rather than trying to make a POKéMON\n"
 	.string "do what it dislikes, try to let it do\l"
 	.string "what it likes and is good at doing.\p"
 	.string "Put yourself in the POKéMON's position\n"
 	.string "and consider what moves it would like.$"
+	.else
+	.ifdef GERMAN
+	.string "Statt dein POKéMON zu zwingen, etwas\n"
+	.string "zu tun, was es nicht mag, lass es das\l"
+	.string "machen, was es mag und gut kann.\p"
+	.string "Stell dir vor, du wärest das POKéMON.\n"
+	.string "Welche Attacken würdest du an seiner\l"
+	.string "Stelle einsetzen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered:
+	.ifdef ENGLISH
 	.string "A POKéMON's nature is a remarkable\n"
 	.string "thing…\p"
 	.string "Some POKéMON behave in a completely\n"
 	.string "different way when they are cornered.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Wesen eines POKéMON ist eine\n"
+	.string "bemerkenswerte Sache…\p"
+	.string "Einige POKéMON verhalten sich\n"
+	.string "untypisch, wenn sie in die Ecke\l"
+	.string "gedrängt werden.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature:
+	.ifdef ENGLISH
 	.string "Are you beginning to understand how\n"
 	.string "a POKéMON's nature makes it behave?$"
+	.else
+	.ifdef GERMAN
+	.string "Verstehst du nun, wie sehr das Wesen\n"
+	.string "eines POKéMON sein Verhalten bestimmt?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons:
+	.ifdef ENGLISH
 	.string "Ah… I see a strong, heartfelt bond\n"
 	.string "between you and your POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "Ah… Das Band zwischen dir und deinen\n"
+	.string "POKéMON ist sehr stark…$"
+	.endif
+	.endif
 

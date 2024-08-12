@@ -29,15 +29,37 @@ SootopolisCity_House1_EventScript_Kecleon::
 	end
 
 SootopolisCity_House1_Text_DevelopedThisTM:
+	.ifdef ENGLISH
 	.string "For thirty years I've remained in\n"
 	.string "SOOTOPOLIS honing my skills.\p"
 	.string "I developed a shattering TM.\n"
 	.string "I bequeath it to you!$"
+	.else
+	.ifdef GERMAN
+	.string "Seit 30 Jahren lebe ich in XENEROVILLE\n"
+	.string "und verbessere meine Fähigkeiten.\p"
+	.string "Ich habe eine alles erschütternde TM\n"
+	.string "entwickelt. Die schenke ich dir!$"
+	.endif
+	.endif
 
 SootopolisCity_House1_Text_ExplainBrickBreak:
+	.ifdef ENGLISH
 	.string "TM31 contains BRICK BREAK! It's a move\n"
 	.string "so horrible that I can't describe it.$"
+	.else
+	.ifdef GERMAN
+	.string "TM31 enthält DURCHBRUCH! Eine schier\n"
+	.string "unbeschreibliche Attacke. Horror!$"
+	.endif
+	.endif
 
 SootopolisCity_House1_Text_Kecleon:
+	.ifdef ENGLISH
 	.string "KECLEON: Puu puhyaah.$"
+	.else
+	.ifdef GERMAN
+	.string "KECLEON: Puu puhyaah.$"
+	.endif
+	.endif
 

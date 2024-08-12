@@ -100,42 +100,114 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
+	.ifdef ENGLISH
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
 	.string "“TRICK MASTER is smart.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat den geheimen Code auf die\n"
+	.string "Tür geschrieben.\p"
+	.string "“RÄTSELMEISTER ist gewieft.”\n"
+	.string "… … … … … … … …\p"
+	.string "Das Schloss geht klickend auf.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_TedIntro:
+	.ifdef ENGLISH
 	.string "Which switch closes which hole?$"
+	.else
+	.ifdef GERMAN
+	.string "Welcher Schalter schließt welches\n"
+	.string "Loch?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_TedDefeat:
+	.ifdef ENGLISH
 	.string "After that battle, I'm even more\n"
 	.string "confused!$"
+	.else
+	.ifdef GERMAN
+	.string "Nach diesem Kampf bin ich nur noch\n"
+	.string "verwirrter!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_TedPostBattle:
+	.ifdef ENGLISH
 	.string "Can I get you to push all the buttons\n"
 	.string "for me?$"
+	.else
+	.ifdef GERMAN
+	.string "Kannst du nicht alle Schalter für mich\n"
+	.string "betätigen?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
+	.ifdef ENGLISH
 	.string "Oh! You're on your second TRICK HOUSE\n"
 	.string "challenge!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh! Du forderst das RÄTSELHAUS schon\n"
+	.string "zum zweiten Mal heraus!?!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
+	.ifdef ENGLISH
 	.string "You're good at battling too?$"
+	.else
+	.ifdef GERMAN
+	.string "Du bist auch im Kämpfen so gut!?!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
+	.ifdef ENGLISH
 	.string "The TRICK MASTER rigged all the tricks\n"
 	.string "in this house all by himself.$"
+	.else
+	.ifdef GERMAN
+	.string "Der RÄTSELMEISTER tüftelt alle Tricks\n"
+	.string "in diesem Haus selber aus.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
+	.ifdef ENGLISH
 	.string "I want to make my own GYM one day.\n"
 	.string "So, I'm studying how to set traps.$"
+	.else
+	.ifdef GERMAN
+	.string "Eines Tages gründe ich meine eigene\n"
+	.string "ARENA. Und hier studiere ich die Fallen.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat:
+	.ifdef ENGLISH
 	.string "I didn't study battling enough!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe das Kämpfen nicht genug\n"
+	.string "studiert!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle:
+	.ifdef ENGLISH
 	.string "You're strong, aren't you?\n"
 	.string "Maybe even enough to be a GYM LEADER!$"
+	.else
+	.ifdef GERMAN
+	.string "Du bist stark, nicht wahr?\n"
+	.string "Stark genug, ein ARENALEITER zu sein.$"
+	.endif
+	.endif
 

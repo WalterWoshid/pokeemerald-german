@@ -34,8 +34,6 @@
 #define LOG_HANDLER (LOG_HANDLER_MGBA_PRINT)
 #endif
 
-#define ENGLISH
-
 #ifdef ENGLISH
 #define UNITS_IMPERIAL
 #define CHAR_DEC_SEPARATOR CHAR_PERIOD // Period is used as a decimal separator only in the UK and the US.

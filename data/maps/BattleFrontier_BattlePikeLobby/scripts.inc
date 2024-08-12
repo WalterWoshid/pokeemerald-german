@@ -268,16 +268,33 @@ BattleFrontier_BattlePike_EventScript_CloseCurtain::
 	return
 
 BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike:
+	.ifdef ENGLISH
 	.string "Where the luck of TRAINERS\n"
 	.string "is put to the test…\p"
 	.string "Welcome to the BATTLE PIKE…\p"
 	.string "I am your guide to the BATTLE PIKE…$"
+	.else
+	.ifdef GERMAN
+	.string "Hier wird das Glück der TRAINER\n"
+	.string "auf die Probe gestellt…\p"
+	.string "Willkommen bei der KAMPFIPITIS…\p"
+	.string "Ich begleite dich zur KAMPFIPITIS…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_TakeChallenge:
+	.ifdef ENGLISH
 	.string "Would you like to take the Battle\n"
 	.string "Choice challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du gerne an der Kampfbahn-\n"
+	.string "Herausforderung teilnehmen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike:
+	.ifdef ENGLISH
 	.string "Here we conduct an event we call\n"
 	.string "the Battle Choice.\p"
 	.string "The Battle Choice rules are very\n"
@@ -295,17 +312,54 @@ BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike:
 	.string "our staff in the big rooms on the way.\p"
 	.string "If you don't save before interrupting,\n"
 	.string "you will be disqualified.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir bieten hier eine besondere Heraus-\n"
+	.string "forderung an: Die Kampfbahn!\p"
+	.string "Die Regeln sind wirklich sehr einfach…\p"
+	.string "Wähle einen von drei möglichen Wegen\n"
+	.string "und schlag dich zu deinem Ziel durch,\l"
+	.string "das am Ende der KAMPFIPITIS liegt…\p"
+	.string "Das, was dir auf deinem Weg an Heraus-\n"
+	.string "forderungen begegnet, hängt allein\l"
+	.string "von deinem Glück ab…\p"
+	.string "Erreichst du dein Ziel, erhältst du\n"
+	.string "Gewinnpunkte.\p"
+	.string "Wenn du die Herausforderung abbrechen\n"
+	.string "möchtest, wende dich bitte an unser \l"
+	.string "Personal in den Räumen am Weg.\p"
+	.string "Wenn du nicht speicherst, bevor du\n"
+	.string "die Herausforderung unterbrichst,\l"
+	.string "wirst du disqualifiziert.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou:
+	.ifdef ENGLISH
 	.string "We look forward to seeing you\n"
 	.string "on another occasion…$"
+	.else
+	.ifdef GERMAN
+	.string "Wir freuen uns auf deine nächste\n"
+	.string "Herausforderung.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode:
+	.ifdef ENGLISH
 	.string "You have the choice of two courses,\n"
 	.string "Level 50 and Open Level.\l"
 	.string "Which will you challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Du kannst zwischen zwei Kategorien\n"
+	.string "wählen: Level 50 und Offene Kämpfe.\l"
+	.string "Welcher Weg ist richtig für dich?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
+	.ifdef ENGLISH
 	.string "I beg your pardon, but…\p"
 	.string "You do not have three eligible\n"
 	.string "POKéMON for the Battle Choice event.\p"
@@ -316,8 +370,24 @@ BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
 	.string "EGGS{STR_VAR_1} ineligible.\p"
 	.string "Please come see me when\n"
 	.string "you are ready…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bitte vielmals um Entschuldigung,\n"
+	.string "aber…\p"
+	.string "Deine POKéMON sind nicht\n"
+	.string "teilnahmeberechtigt.\p"
+	.string "Du brauchst drei verschiedene\n"
+	.string "POKéMON von Level 50 oder weniger.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "EIer{STR_VAR_1} nicht zugelassen.\p"
+	.string "Bitte komm wieder, wenn du so weit\n"
+	.string "bist…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
+	.ifdef ENGLISH
 	.string "I beg your pardon, but…\p"
 	.string "You do not have three eligible\n"
 	.string "POKéMON for the Battle Choice event.\p"
@@ -328,106 +398,285 @@ BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "EGGS{STR_VAR_1} ineligible.\p"
 	.string "Please come see me when\n"
 	.string "you are ready…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bitte vielmals um Entschuldigung,\n"
+	.string "aber…\p"
+	.string "Deine POKéMON sind nicht\n"
+	.string "teilnahmeberechtigt.\p"
+	.string "Du brauchst drei verschiedene\n"
+	.string "POKéMON.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "EIer{STR_VAR_1} nicht zugelassen.\p"
+	.string "Bitte komm wieder, wenn du so weit\n"
+	.string "bist…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons:
+	.ifdef ENGLISH
 	.string "Please choose the three POKéMON\n"
 	.string "you wish to enter in the challenge…$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte wähle 3 POKéMON, mit denen du dich\n"
+	.string "der Herausforderung stellen möchtest.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge:
+	.ifdef ENGLISH
 	.string "Before starting your Battle Choice\n"
 	.string "challenge, I must save the game.\l"
 	.string "Is that acceptable?$"
+	.else
+	.ifdef GERMAN
+	.string "Bevor du dich der Herausforderung\n"
+	.string "stellst, muss ich dein Spiel speichern.\l"
+	.string "Bist du damit einverstanden?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_StepThisWay:
+	.ifdef ENGLISH
 	.string "Please step this way…$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte hier entlang.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults:
+	.ifdef ENGLISH
 	.string "Your challenge has ended…\p"
 	.string "I shall record your results.\n"
 	.string "Please wait…$"
+	.else
+	.ifdef GERMAN
+	.string "Deine Herausforderung endet hier…\p"
+	.string "Dein Erfolg wird gespeichert.\n"
+	.string "Bitte warten…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance:
+	.ifdef ENGLISH
 	.string "You have completed the challenge…\p"
 	.string "I must say… You seem to possess luck\n"
 	.string "in abundance…$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast die Herausforderung\n"
+	.string "gemeistert…\p"
+	.string "Ich muss schon sagen…\n"
+	.string "Du hattest Glück im Übermaß…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ShallRecordResults:
+	.ifdef ENGLISH
 	.string "I shall record your results.\n"
 	.string "Please wait…$"
+	.else
+	.ifdef GERMAN
+	.string "Dein Erfolg wird gespeichert.\n"
+	.string "Bitte warten…$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2:
+	.ifdef ENGLISH
 	.string "To commemorate your completion of\n"
 	.string "the Battle Choice challenge, we award\l"
 	.string "you these Battle Point(s)…$"
+	.else
+	.ifdef GERMAN
+	.string "To commemorate your completion of\n"
+	.string "the Battle Choice challenge, we award\l"
+	.string "you these Battle Point(s)…$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit:
+	.ifdef ENGLISH
 	.string "You appear to have reached the limit\n"
 	.string "for Battle Points…\p"
 	.string "Please exchange some Battle Points\n"
 	.string "for prizes, then return…$"
+	.else
+	.ifdef GERMAN
+	.string "You appear to have reached the limit\n"
+	.string "for Battle Points…\p"
+	.string "Please exchange some Battle Points\n"
+	.string "for prizes, then return…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting:
+	.ifdef ENGLISH
 	.string "I beg your pardon, but…\p"
 	.string "You failed to save before you quit\n"
 	.string "your challenge the last time.\p"
 	.string "Because of that, your challenge so far\n"
 	.string "has been disqualified. I am sorry…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bitte vielmals um Entschuldigung,\n"
+	.string "aber…\p"
+	.string "Du hast, bevor du die Herausforderung\n"
+	.string "abgebrochen hast, nicht gespeichert.\p"
+	.string "Daher wirst du für diese Herausforde-\n"
+	.string "rung disqualifiziert. Tut mir Leid!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen:
+	.ifdef ENGLISH
 	.string "Congratulations…\p"
 	.string "You have snatched victory from the\n"
 	.string "PIKE QUEEN and cleared the event…$"
+	.else
+	.ifdef GERMAN
+	.string "Herzlichen Glückwunsch!\p"
+	.string "Du hast dir von der PFIPITISTIN den\n"
+	.string "Sieg geholt und die Herausforderung\l"
+	.string "gemeistert!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints:
+	.ifdef ENGLISH
 	.string "In recognition of your amazing luck,\n"
 	.string "we award you these Battle Point(s)…$"
+	.else
+	.ifdef GERMAN
+	.string "In Anerkennung deines unglaublichen\n"
+	.string "Glücks erhältst du Gewinnpunkte.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal:
+	.ifdef ENGLISH
 	.string "Arrgh! I blew my chance!\n"
 	.string "I was one room away from the goal!\p"
 	.string "In this place, you'd better watch out\n"
 	.string "for poison, freezing, and so on.$"
+	.else
+	.ifdef GERMAN
+	.string "Argh! Ich habe meine Chance vertan!\n"
+	.string "Ich war nur noch einen Raum vom Ziel\p"
+	.string "entfernt! Du musst hier auf Gift, Eis\n"
+	.string "und andere gemeine Dinge achten!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer:
+	.ifdef ENGLISH
 	.string "I've completed the challenge 10 times\n"
 	.string "now, but I've never had to battle\l"
 	.string "a TRAINER once.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe die Herausforderung bereits\n"
+	.string "zum 10. Mal gemeistert, trotzdem\p"
+	.string "habe ich noch nie gegen einen\n"
+	.string "TRAINER gekämpft.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere:
+	.ifdef ENGLISH
 	.string "Listen! Listen!\p"
 	.string "Don't you think that the special\n"
 	.string "abilities of POKéMON will be useful\l"
 	.string "here?$"
+	.else
+	.ifdef GERMAN
+	.string "Überleg mal!\p"
+	.string "Meinst du nicht auch, dass die\n"
+	.string "besonderen Fähigkeiten der POKéMON\l"
+	.string "hier sehr nützlich sein können?$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose:
+	.ifdef ENGLISH
 	.string "What is this weird place?\n"
 	.string "I can't figure it out at all!\p"
 	.string "I've taken the challenge a bunch\n"
 	.string "of times, but all I ever do is run into\l"
 	.string "TRAINERS whichever path I choose.$"
+	.else
+	.ifdef GERMAN
+	.string "What is this weird place?\n"
+	.string "I can’t figure it out at all!\p"
+	.string "I’ve taken the challenge a bunch\n"
+	.string "of times, but all I ever do is run into\l"
+	.string "TRAINERS whichever path I choose.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_RulesAreListed:
+	.ifdef ENGLISH
 	.string "The Battle Choice's rules are listed.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Regeln der Kampfbahn hängen\n"
+	.string "öffentlich aus.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ReadWhichHeading:
+	.ifdef ENGLISH
 	.string "Which heading do you want to read?$"
+	.else
+	.ifdef GERMAN
+	.string "Wähle bitte ein Themengebiet aus.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules:
+	.ifdef ENGLISH
 	.string "The BAG and POKéNAV may not be used\n"
 	.string "during a Battle Choice challenge.$"
+	.else
+	.ifdef GERMAN
+	.string "BEUTEL und POKéNAV dürfen nicht\n"
+	.string "auf die Kampfbahn mitgenommen werden.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules:
+	.ifdef ENGLISH
 	.string "During a Battle Choice challenge,\n"
 	.string "any BERRY or HERB held by POKéMON\l"
 	.string "will be effective only once.$"
+	.else
+	.ifdef GERMAN
+	.string "Auf der Kampfbahn ist jede\n"
+	.string "BEERE und jedes Kraut nur einmal\l"
+	.string "wirksam.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:
+	.ifdef ENGLISH
 	.string "During a Battle Choice challenge,\n"
 	.string "the sequence of POKéMON cannot be\l"
 	.string "changed.\p"
 	.string "The sequence must be set before\n"
 	.string "starting your challenge.$"
+	.else
+	.ifdef GERMAN
+	.string "Auf der Kampfbahn kann die\n"
+	.string "Reihenfolge der POKéMON nicht\l"
+	.string "verändert werden.\p"
+	.string "Du musst die Reihenfolge festlegen,\n"
+	.string "bevor du die Herausforderung annimmst.$"
+	.endif
+	.endif
 

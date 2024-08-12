@@ -592,7 +592,11 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 9,
+#if ENGLISH
         .width = 18,
+#elif GERMAN
+        .width = 19,
+#endif
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 485,
@@ -604,7 +608,11 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 18,
         .height = 6,
         .paletteNum = 6,
+#if ENGLISH
         .baseBlock = 557,
+#elif GERMAN
+        .baseBlock = 561,
+#endif
     },
 };
 static const struct WindowTemplate sPageSkillsTemplate[] =
@@ -3685,7 +3693,11 @@ static void PrintNewMoveDetailsOrCancelText(void)
 static void AddAndFillMoveNamesWindow(void)
 {
     u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_NAMES);
+#if ENGLISH
     FillWindowPixelRect(windowId, PIXEL_FILL(0), 0, 66, 72, 16);
+#elif GERMAN
+    FillWindowPixelRect(windowId, PIXEL_FILL(0), 0, 65, 72, 15);
+#endif
     CopyWindowToVram(windowId, COPYWIN_GFX);
 }
 

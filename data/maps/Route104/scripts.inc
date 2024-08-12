@@ -999,78 +999,195 @@ Route104_EventScript_Darian::
 	end
 
 Route104_Text_BrineyLivesInSeasideCottage:
+	.ifdef ENGLISH
 	.string "That seaside cottage is where\n"
 	.string "MR. BRINEY lives.\p"
 	.string "He was once a mighty sailor who never\n"
 	.string "feared the sea, however stormy.$"
+	.else
+	.ifdef GERMAN
+	.string "In dieser Hütte am Meer lebt MR. BRACK.\p"
+	.string "Er war einst ein stolzer Seemann, der\n"
+	.string "niemals Angst vor dem Meer hatte.$"
+	.endif
+	.endif
 
 Route104_Text_WhatsItLikeAtBottomOfSea:
+	.ifdef ENGLISH
 	.string "The sea, huh?\p"
 	.string "I wonder what it's like at the bottom\n"
 	.string "of the sea?$"
+	.else
+	.ifdef GERMAN
+	.string "Das Meer, was?\p"
+	.string "Ich möchte zu gerne wissen, wie es auf\n"
+	.string "dem Meeresgrund aussieht…$"
+	.endif
+	.endif
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
+	.ifdef ENGLISH
 	.string "If you're going to throw a POKé BALL,\n"
 	.string "weaken the wild POKéMON first.\p"
 	.string "It will be easier to catch if it's been\n"
 	.string "poisoned, burned, or lulled to sleep.$"
+	.else
+	.ifdef GERMAN
+	.string "Bevor du einen POKéBALL wirfst,\n"
+	.string "schwäche das POKéMON erst.\p"
+	.string "Wenn es vergiftet ist, eine Verbrennung\n"
+	.string "hat oder schläft, kann es leichter\l"
+	.string "gefangen werden.$"
+	.endif
+	.endif
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
+	.ifdef ENGLISH
 	.string "You're a thief if you try to steal\n"
 	.string "someone else's POKéMON.\p"
 	.string "You should throw POKé BALLS only at\n"
 	.string "wild POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "Du bist ein gemeiner Dieb, wenn du ver-\n"
+	.string "suchst, das POKéMON eines anderen zu\l"
+	.string "stehlen.\p"
+	.string "Du solltest deine POKéBÄLLe nur auf\n"
+	.string "wilde POKéMON werfen.$"
+	.endif
+	.endif
 
 Route104_Text_ImNotATrainer:
+	.ifdef ENGLISH
 	.string "Oh, no, I'm not a TRAINER.\p"
 	.string "But that's right, if TRAINERS lock eyes,\n"
 	.string "it's a challenge to battle.\p"
 	.string "If you don't want to battle, stay out\n"
 	.string "of their sight.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, nein, ich bin kein TRAINER.\p"
+	.string "Aber es stimmt schon, wenn TRAINER sich\n"
+	.string "in die Augen schauen, ist das eine\l"
+	.string "Herausforderung zum Kampf.\p"
+	.string "Willst du nicht kämpfen, weiche ihren\n"
+	.string "Blicken aus.$"
+	.endif
+	.endif
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
+	.ifdef ENGLISH
 	.string "I like filling my mouth with seeds,\n"
 	.string "then spitting them out fast!\p"
 	.string "You can have this, so you try it out!\p"
 	.string "Use it on a POKéMON, and it will learn\n"
 	.string "a move for firing seeds rapidly.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich liebe es, meinen Mund voller\n"
+	.string "Saatkörner zu nehmen und sie dann in\l"
+	.string "hohem Bogen auszuspucken.\p"
+	.string "Du kannst dies hier haben, versuch es\n"
+	.string "einfach mal!\p"
+	.string "Wende es an einem POKéMON an und es\n"
+	.string "wird lernen, in schneller Folge\l"
+	.string "Saatkörner auszuspucken.$"
+	.endif
+	.endif
 
 Route104_Text_TMsAreOneTimeUse:
+	.ifdef ENGLISH
 	.string "A word of advice!\p"
 	.string "A TM, TECHNICAL MACHINE, is good only\n"
 	.string "for one-time use.\p"
 	.string "Once you use it, it's gone.\n"
 	.string "Think twice before using it!$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Hinweis noch!\p"
+	.string "Eine TM, eine TECHNISCHE MASCHINE,\n"
+	.string "kann nur einmal beigebracht werden.\p"
+	.string "Einmal verwendet, ist sie weg. Denke\n"
+	.string "zweimal nach, bevor du eine TM nutzt.$"
+	.endif
+	.endif
 
 Route104_Text_DontNeedThisTakeIt:
+	.ifdef ENGLISH
 	.string "This FLOWER SHOP started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping.\p"
 	.string "I don't need this WHITE HERB anymore.\n"
 	.string "Would you take it, please?$"
+	.else
+	.ifdef GERMAN
+	.string "Der BLUMENLADEN verkauft seit kurzem\n"
+	.string "junge Bäume.\p"
+	.string "Das macht mich so glücklich, dass ich\n"
+	.string "ganz viele gekauft habe. Dieses\l"
+	.string "SCHLOHKRAUT brauche ich nicht, das\l"
+	.string "schenke ich dir.$"
+	.endif
+	.endif
 
 Route104_Text_FlowerShopSellingSaplings:
+	.ifdef ENGLISH
 	.string "This FLOWER SHOP started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping. Where should I put them?$"
+	.else
+	.ifdef GERMAN
+	.string "Der BLUMENLADEN verkauft seit kurzem\n"
+	.string "junge Bäume.\p"
+	.string "Das macht mich so glücklich, dass ich\n"
+	.string "ganz viele gekauft habe. Wohin damit?$"
+	.endif
+	.endif
 
 Route104_Text_MrBrineysCottage:
+	.ifdef ENGLISH
 	.string "MR. BRINEY'S COTTAGE$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACKS HÜTTE$"
+	.endif
+	.endif
 
 Route104_Text_RouteSignPetalburg:
+	.ifdef ENGLISH
 	.string "ROUTE 1O4\n"
 	.string "{RIGHT_ARROW} PETALBURG CITY$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 104\n"
+	.string "{RIGHT_ARROW} BLÜTENBURG CITY$"
+	.endif
+	.endif
 
 Route104_Text_RouteSignRustboro:
+	.ifdef ENGLISH
 	.string "ROUTE 1O4\n"
 	.string "{UP_ARROW} RUSTBORO CITY$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 104\n"
+	.string "{UP_ARROW} METAROST CITY$"
+	.endif
+	.endif
 
 Route104_Text_PrettyPetalFlowShop:
+	.ifdef ENGLISH
 	.string "PRETTY PETAL FLOWER SHOP$"
+	.else
+	.ifdef GERMAN
+	.string "BLÜTENTRAUM BLUMENLADEN$"
+	.endif
+	.endif
 
 Route104_Text_TrainerTipsDoubleBattles:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "In the HOENN region there are pairs\n"
 	.string "of TRAINERS who challenge others\l"
@@ -1080,93 +1197,258 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "send out two POKéMON, the one at the\l"
 	.string "left of the list and the top one.\l"
 	.string "Watch how POKéMON are lined up.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "In der HOENN-Region gibt es Paare von\n"
+	.string "TRAINERn, die andere zu einem\l"
+	.string "2-gegen-2-POKéMON-Kampf, einem\l"
+	.string "DOPPELKAMPF, herausfordern.\p"
+	.string "In einem DOPPELKAMPF muss der TRAINER\n"
+	.string "zwei POKéMON antreten lassen. Das \l"
+	.string "POKéMON links neben der Liste und das\l"
+	.string "an der Spitze der Liste. Achte also auf\l"
+	.string "die Reihenfolge der POKéMON.$"
+	.endif
+	.endif
 
 Route104_Text_MayWeShouldRegister:
+	.ifdef ENGLISH
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "DEVON upgraded your POKéNAV with\n"
 	.string "the MATCH CALL system, huh?\p"
 	.string "We should register each other so we\n"
 	.string "can get in contact anytime.$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "DEVON hat deinen POKéNAV mit einem\n"
+	.string "TRAINER/RUF-System ausgestattet?\p"
+	.string "Wir sollten uns gegenseitig eintragen,\n"
+	.string "dann können wir jederzeit miteinander\l"
+	.string "reden.$"
+	.endif
+	.endif
 
 Route104_Text_RegisteredMay:
+	.ifdef ENGLISH
 	.string "{PLAYER} registered MAY\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} trägt MAIKE in das POKéNAV-\n"
+	.string "Verzeichnis ein.$"
+	.endif
+	.endif
 
 Route104_Text_MayHowsYourPokedex:
+	.ifdef ENGLISH
 	.string "MAY: Oh, by the way, {PLAYER}{KUN},\n"
 	.string "how's your POKéDEX coming along?$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Und, {PLAYER}{KUN}?\n"
+	.string "Wie geht es mit deinem POKéDEX voran?$"
+	.endif
+	.endif
 
 Route104_Text_MayMinesDecentLetsBattle:
+	.ifdef ENGLISH
 	.string "Mine's looking pretty decent.\n"
 	.string "So…\l"
 	.string "How about a little battle?$"
+	.else
+	.ifdef GERMAN
+	.string "Meiner sieht schon ganz anständig aus.\n"
+	.string "Daher…\l"
+	.string "Wie wäre es mit einem kleinen Kampf?$"
+	.endif
+	.endif
 
 Route104_Text_MayHaventRaisedPokemon:
+	.ifdef ENGLISH
 	.string "MAY: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "POKéMON very much?\p"
 	.string "That's not very good for a TRAINER!$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Oh, was ist das?\p"
+	.string "Du hast dich aber nicht um deine\n"
+	.string "POKéMON gekümmert? Und auch\l"
+	.string "nicht viele gefangen?\p"
+	.string "Als Trainer machst du wirklich keinen\n"
+	.string "guten Eindruck!$"
+	.endif
+	.endif
 
 Route104_Text_MayLetsBattle:
+	.ifdef ENGLISH
 	.string "MAY: So, what do you think?\n"
 	.string "How about a little battle here?$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Was hältst du von einem Kampf?$"
+	.endif
+	.endif
 
 Route104_Text_MayIntro:
+	.ifdef ENGLISH
 	.string "MAY: You just became a TRAINER,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Du bist gerade erst TRAINER\n"
+	.string "geworden, {PLAYER}{KUN}. Ich werde nicht\l"
+	.string "verlieren.$"
+	.endif
+	.endif
 
 Route104_Text_MayDefeat:
+	.ifdef ENGLISH
 	.string "Yikes!\n"
 	.string "You're better than I expected!$"
+	.else
+	.ifdef GERMAN
+	.string "AchDuSchande!\n"
+	.string "Du bist besser als ich gedacht habe.$"
+	.endif
+	.endif
 
 Route104_Text_MayPostBattle:
+	.ifdef ENGLISH
 	.string "MAY: I can tell you've gotten pretty\n"
 	.string "good with the way you handle POKéMON.\p"
 	.string "But instead of only making them\n"
 	.string "battle, you should be like MR. BRINEY.\p"
 	.string "It's important to become friends with\n"
 	.string "POKéMON, too.$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Du bist wirklich sehr gut im\n"
+	.string "Umgang mit POKéMON.\p"
+	.string "Aber anstatt sie nur kämpfen zu lassen,\n"
+	.string "solltest du dir ein Beispiel an MR. BRACK\l"
+	.string "nehmen.\p"
+	.string "Es ist wichtig, dass man sich mit den\n"
+	.string "POKéMON anfreundet.$"
+	.endif
+	.endif
 
 Route104_Text_BrendanWeShouldRegister:
+	.ifdef ENGLISH
 	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
 	.string "Cool, you had DEVON install the MATCH\n"
 	.string "CALL system on your POKéNAV!\p"
 	.string "Let's register each other in our\n"
 	.string "POKéNAVS so we can keep in touch.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Hey, {PLAYER}!\p"
+	.string "Cool! DEVON hat deinen POKéNAV mit\n"
+	.string "einem TRAINER/RUF-System\l"
+	.string "ausgestattet?\p"
+	.string "Wir sollten uns gegenseitig eintragen,\n"
+	.string "dann können wir jederzeit miteinander\l"
+	.string "reden.$"
+	.endif
+	.endif
 
 Route104_Text_RegisteredBrendan:
+	.ifdef ENGLISH
 	.string "{PLAYER} registered BRENDAN\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} trägt BRIX in das POKéNAV-\n"
+	.string "Verzeichnis ein.$"
+	.endif
+	.endif
 
 Route104_Text_BrendanHowsYourPokedex:
+	.ifdef ENGLISH
 	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
 	.string "Have you filled in any pages yet?$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: {PLAYER}, wie sieht es mit\n"
+	.string "deinem POKéDEX aus?$"
+	.endif
+	.endif
 
 Route104_Text_BrendanDoingGreatLetsBattle:
+	.ifdef ENGLISH
 	.string "Me, I'm doing great!\p"
 	.string "Want to check out how good I am with\n"
 	.string "a battle?$"
+	.else
+	.ifdef GERMAN
+	.string "Mir? Mir geht es gut! Alles bestens!\p"
+	.string "Willst du mal sehen, wie gut ich im Kampf\n"
+	.string "bin?$"
+	.endif
+	.endif
 
 Route104_Text_BrendanNoConfidence:
+	.ifdef ENGLISH
 	.string "BRENDAN: What's the matter? Don't have\n"
 	.string "any confidence in your POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Oh, hast du ein Problem? Nicht\n"
+	.string "genügend Selbstbewusstsein und\l"
+	.string "Vertrauen in deine POKéMON, was?$"
+	.endif
+	.endif
 
 Route104_Text_BrendanLetsBattle:
+	.ifdef ENGLISH
 	.string "BRENDAN: What's up?\n"
 	.string "Want to have a battle with me?$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Wie geht’s? Lust auf einen Kampf?$"
+	.endif
+	.endif
 
 Route104_Text_BrendanIntro:
+	.ifdef ENGLISH
 	.string "BRENDAN: I know you just became\n"
 	.string "a TRAINER, but I won't go easy!$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Ich weiß, du bist gerade erst ein\n"
+	.string "TRAINER geworden, aber ich werde mich\l"
+	.string "nicht zurückhalten.$"
+	.endif
+	.endif
 
 Route104_Text_BrendanDefeat:
+	.ifdef ENGLISH
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\n"
+	.string "Du bist sehr gut.$"
+	.endif
+	.endif
 
 Route104_Text_BrendanPostBattle:
+	.ifdef ENGLISH
 	.string "BRENDAN: You've gotten pretty decent\n"
 	.string "at handling POKéMON.\p"
 	.string "But, you know, you shouldn't just be\n"
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Du bist sehr gut im Umgang mit\n"
+	.string "POKéMON geworden.\p"
+	.string "Aber du solltest deine POKéMON nicht\n"
+	.string "nur kämpfen lassen.\p"
+	.string "Mach es wie MR. BRACK. Es ist wichtig,\n"
+	.string "dass man sich mit ihnen anfreundet.$"
+	.endif
+	.endif

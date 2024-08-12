@@ -424,13 +424,27 @@ RusturfTunnel_EventScript_Mike::
 	end
 
 RusturfTunnel_Text_ComeAndGetSome:
+	.ifdef ENGLISH
 	.string "What, are you coming?\n"
 	.string "Come and get some, then!$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Du willst gegen uns antreten?\n"
+	.string "Na, dann hol dir eine Tracht Prügel.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_Peeko:
+	.ifdef ENGLISH
 	.string "PEEKO: Pii pihyoh!$"
+	.else
+	.ifdef GERMAN
+	.string "PECKO: Pii pihyoh!$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_GruntIntro:
+	.ifdef ENGLISH
 	.string "Grah, keelhaul it all!\p"
 	.string "That hostage POKéMON turned out to\n"
 	.string "be worthless!\p"
@@ -438,12 +452,33 @@ RusturfTunnel_Text_GruntIntro:
 	.string "In this tunnel to nowhere!\p"
 	.string "Hey! You!\n"
 	.string "So you want to battle me?$"
+	.else
+	.ifdef GERMAN
+	.string "Grrr, man sollte sie alle kielholen.\p"
+	.string "Das als Geisel genommene POKéMON hat\n"
+	.string "sich als völlig wertlos erwiesen!\p"
+	.string "Und dafür habe ich nun einen Flucht-\n"
+	.string "weg in diesem Tunnel nach Nirgendwo\l"
+	.string "gegraben!\p"
+	.string "Hey! Du!\n"
+	.string "Forderst du mich etwa heraus?$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_GruntDefeat:
+	.ifdef ENGLISH
 	.string "Urrrggh! My career in crime comes to\n"
 	.string "a dead end!$"
+	.else
+	.ifdef GERMAN
+	.string "Aargh! Und so läuft eine vielver-\n"
+	.string "sprechende kriminelle Karriere in eine\l"
+	.string "Sackgasse!$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_GruntTakePackage:
+	.ifdef ENGLISH
 	.string "This is plain not right…\p"
 	.string "The BOSS told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
@@ -451,12 +486,31 @@ RusturfTunnel_Text_GruntTakePackage:
 	.string "from DEVON.\p"
 	.string "Tch!\n"
 	.string "You want it back that badly, take it!$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist einfach nicht fair…\p"
+	.string "Der BOSS hat doch gesagt, der Job sei\n"
+	.string "ein wahres Kinderspiel.\p"
+	.string "Alles, was ich zu tun hatte, war, ein\n"
+	.string "Paket von DEVON zu stehlen.\p"
+	.string "Tse! Wenn du es so dringend wieder-\n"
+	.string "haben willst, dann nimm es halt!$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
+	.ifdef ENGLISH
 	.string "PEEKO!\n"
 	.string "Am I glad to see you're safe!$"
+	.else
+	.ifdef GERMAN
+	.string "PECKO! Bin ich froh, dass du unversehrt\n"
+	.string "wieder bei mir bist.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
+	.ifdef ENGLISH
 	.string "PEEKO owes her life to you!\p"
 	.string "They call me MR. BRINEY.\n"
 	.string "And, you are?\p"
@@ -471,8 +525,27 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "Come, PEEKO, we should make our way\n"
 	.string "home.\p"
 	.string "PEEKO: Pihyoh!$"
+	.else
+	.ifdef GERMAN
+	.string "PECKO verdankt dir ihr Leben!\p"
+	.string "Man nennt mich MR. BRACK.\n"
+	.string "Und du bist…\p"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "Ah, du bist also {PLAYER}{KUN}!\n"
+	.string "Ich danke dir von ganzem Herzen!\p"
+	.string "Wenn du irgendein Problem hast, zögere\n"
+	.string "nicht, mich um Hilfe zu bitten!\p"
+	.string "Ich wohne in dem kleinen Haus am Meer\n"
+	.string "in der Nähe des BLÜTENBURGWALDs.\p"
+	.string "Komm, PECKO, wir sollten uns auf den\n"
+	.string "Heimweg machen.\p"
+	.string "PECKO: Pihyoh!$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
+	.ifdef ENGLISH
 	.string "… …\p"
 	.string "Why can't they keep digging?\n"
 	.string "Is the bedrock too hard?\p"
@@ -483,50 +556,138 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "her every day…\p"
 	.string "But this…\n"
 	.string "What am I to do?$"
+	.else
+	.ifdef GERMAN
+	.string "… …\p"
+	.string "Warum graben sie nicht weiter?\n"
+	.string "Ist das Gestein zu hart?\p"
+	.string "Meine Geliebte wartet in WIESENFLUR\n"
+	.string "auf mich, gleich hinter diesen\l"
+	.string "Felsen…\p"
+	.string "Wenn METAROST CITY und WIESENFLUR\n"
+	.string "durch diesen Tunnel verbunden wären,\l"
+	.string "könnte ich sie jeden Tag besuchen!\p"
+	.string "Aber so…\n"
+	.string "Was soll ich nur machen?$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_ToGetToVerdanturf:
+	.ifdef ENGLISH
 	.string "To get from RUSTBORO to VERDANTURF,\n"
 	.string "you need to go to DEWFORD, then pass\l"
 	.string "through SLATEPORT and MAUVILLE…$"
+	.else
+	.ifdef GERMAN
+	.string "Um von METAROST CITY nach WIESENFLUR\n"
+	.string "zu gelangen, muss man nach FAUSTAU-\l"
+	.string "HAVEN und dann über GRAPHITPORT CITY\l"
+	.string "und MALVENFROH CITY reisen…$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM:
+	.ifdef ENGLISH
 	.string "Wow! You shattered that boulder\n"
 	.string "blocking the way.\p"
 	.string "To show you how much I appreciate it,\n"
 	.string "I'd like you to have this HM.$"
+	.else
+	.ifdef GERMAN
+	.string "Wow! Du hast den Felsen, der den Weg\n"
+	.string "blockierte, einfach zertrümmert.\p"
+	.string "Darüber bin ich überglücklich und daher\n"
+	.string "möchte ich dir diese VM geben.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_ExplainStrength:
+	.ifdef ENGLISH
 	.string "That HM contains STRENGTH.\p"
 	.string "If a muscular POKéMON were to learn\n"
 	.string "that, it would be able to move even\l"
 	.string "large boulders.$"
+	.else
+	.ifdef GERMAN
+	.string "Diese VM enthält STÄRKE.\p"
+	.string "Wenn ein kräftiges POKéMON diese VM\n"
+	.string "lernt, ist es in der Lage, sogar die\l"
+	.string "schwersten Felsen zu bewegen.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_WandaReunion:
+	.ifdef ENGLISH
 	.string "WANDA!\n"
 	.string "Now I can see you anytime!\p"
 	.string "WANDA: That's…wonderful.\p"
 	.string "Please, take some rest at my home.$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKE!\n"
+	.string "Nun kann ich dich jederzeit besuchen!\p"
+	.string "HEIKE: Das ist… wunderbar.\p"
+	.string "Bitte, ruh dich ein bisschen in meinem\n"
+	.string "Haus aus.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
+	.ifdef ENGLISH
 	.string "On the other side of this rock…\n"
 	.string "My boyfriend is there.\p"
 	.string "He… He's not just digging the tunnel\n"
 	.string "to come see me.\p"
 	.string "He works his hands raw and rough\n"
 	.string "for the benefit of everyone.$"
+	.else
+	.ifdef GERMAN
+	.string "Auf der anderen Seite dieses Felsens\n"
+	.string "wartet mein Freund.\p"
+	.string "Er… Er gräbt den Tunnel nicht nur, um\n"
+	.string "mich zu sehen.\p"
+	.string "Er reißt sich die Hände auf zum Wohle\n"
+	.string "aller.$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_MikeIntro:
+	.ifdef ENGLISH
 	.string "What do you call a wild man up in the\n"
 	.string "mountains? A mountain man, right?\p"
 	.string "So why don't they call a POKéMON in\n"
 	.string "the mountains a mountain POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Wie nennt man einen ungestümen Mann\n"
+	.string "hoch im Gebirge? Einen Bergfreund.\p"
+	.string "So, warum nennt man dann nicht auch ein\n"
+	.string "POKéMON in den Bergen ein Berg-\l"
+	.string "POKéMON?$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_MikeDefeat:
+	.ifdef ENGLISH
 	.string "My POKéMON…\n"
 	.string "Ran out of power…$"
+	.else
+	.ifdef GERMAN
+	.string "Meine POKéMON…\n"
+	.string "Haben alle Energie verloren…$"
+	.endif
+	.endif
 
 RusturfTunnel_Text_MikePostBattle:
+	.ifdef ENGLISH
 	.string "They halted development here to\n"
 	.string "protect POKéMON, right?\l"
 	.string "There's a feel-good story!$"
+	.else
+	.ifdef GERMAN
+	.string "Sie haben das Projekt hier einge-\n"
+	.string "stellt, um die POKéMON zu schützen,\l"
+	.string "nicht wahr? Eine rührende Story.$"
+	.endif
+	.endif
 

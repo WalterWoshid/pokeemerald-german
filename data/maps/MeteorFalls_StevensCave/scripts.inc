@@ -29,6 +29,7 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
+	.ifdef ENGLISH
 	.string "STEVEN: Oh, wow, {PLAYER}{KUN}.\n"
 	.string "I'm amazed you knew where to find me.\p"
 	.string "Do you, uh…maybe think of me as\n"
@@ -40,12 +41,39 @@ MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
 	.string "about how good I am.\p"
 	.string "Okay, {PLAYER}{KUN}, if you're going to mount\n"
 	.string "a serious challenge, expect the worst!$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Oh, wow, {PLAYER}{KUN}!\n"
+	.string "Ich bin erstaunt, dass du mich\l"
+	.string "gefunden hast!\p"
+	.string "Du, äh… denkst bestimmt, ich bin nur\n"
+	.string "verrückt nach Steinen, nicht wahr?\p"
+	.string "Nein, das tust du bestimmt nicht.\p"
+	.string "Wir haben ja schon als Team im\n"
+	.string "MOOSBACH CITY RAUMFAHRTZENTRUM\l"
+	.string "gekämpft.\p"
+	.string "Da hast du bestimmt einen Eindruck\n"
+	.string "davon gewonnen, wie gut ich bin.\p"
+	.string "Okay, {PLAYER}{KUN}, wenn du dich auf eine\n"
+	.string "ernsthafte Herausforderung einlässt,\l"
+	.string "sei auf das Schlimmste gefasst!$"
+	.endif
+	.endif
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
+	.ifdef ENGLISH
 	.string "You…\n"
 	.string "I had no idea you'd become so strong…$"
+	.else
+	.ifdef GERMAN
+	.string "Du…\n"
+	.string "Ich hätte nie gedacht, dass du so stark\l"
+	.string "werden würdest…$"
+	.endif
+	.endif
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
+	.ifdef ENGLISH
 	.string "STEVEN: Come to think of it, ever since\n"
 	.string "our paths first crossed in GRANITE\l"
 	.string "CAVE in DEWFORD, I had this feeling.\p"
@@ -56,4 +84,23 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Fufufu, even I couldn't tell you that.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Aber, wenn ich es recht bedenke…\n"
+	.string "Damals, als wir uns zum ersten Mal in der\p"
+	.string "GRANITHÖHLE von FAUSTAUHAVEN\n"
+	.string "begegneten, hatte ich schon dieses\l"
+	.string "Gefühl.\p"
+	.string "Ich wusste, du würdest irgendwann der\n"
+	.string "CHAMP werden.\p"
+	.string "Und mein Gefühl trügt mich nie!\p"
+	.string "Wohin wird dein Weg dich jetzt führen?\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "…\p"
+	.string "Hähähähä, das kann selbst ich dir\n"
+	.string "nicht sagen.$"
+	.endif
+	.endif
 

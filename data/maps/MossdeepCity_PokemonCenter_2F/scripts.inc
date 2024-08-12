@@ -23,7 +23,15 @@ MossdeepCity_PokemonCenter_2F_EventScript_Woman5::
 	end
 
 MossdeepCity_PokemonCenter_2F_Text_Woman5:
+	.ifdef ENGLISH
 	.string "If I win a whole lot of link battles\n"
 	.string "and show everyone how good I am,\l"
 	.string "I might get a fan following!$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn ich eine Menge Kämpfe via Link\n"
+	.string "gewinne und jedem zeige, wie gut ich bin,\l"
+	.string "dann bekomme ich sicher auch Fans!$"
+	.endif
+	.endif
 

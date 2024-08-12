@@ -213,6 +213,9 @@ extern const u8 gMenuText_Walk[];
 extern const u8 gMenuText_Deselect[];
 extern const u8 gMenuText_CheckTag[];
 extern const u8 gMenuText_Confirm[];
+#if GERMAN
+extern const u8 gMenuText_Confirm2[];
+#endif
 extern const u8 gMenuText_Show[];
 extern const u8 gMenuText_Give2[];
 
@@ -527,6 +530,10 @@ extern const u8 gText_NumberClear01[];
 extern const u8 gText_5MarksPokemon[];
 extern const u8 gText_UnkHeight[];
 extern const u8 gText_UnkWeight[];
+#if GERMAN
+extern const u8 gText_EmptyHeight[];
+extern const u8 gText_EmptyWeight[];
+#endif
 extern const u8 gText_HTHeight[];
 extern const u8 gText_WTWeight[];
 extern const u8 gText_SearchingPleaseWait[];
@@ -2481,6 +2488,9 @@ extern const u8 gText_MrStoneMatchCallName[];
 extern const u8 gText_StevenMatchCallDesc[];
 extern const u8 gText_StevenMatchCallName[];
 extern const u8 gText_MayBrendanMatchCallDesc[];
+#if GERMAN
+extern const u8 gText_MayBrendanMatchCallDesc2[];
+#endif
 extern const u8 gText_WallyMatchCallDesc[];
 extern const u8 gText_NormanMatchCallDesc[];
 extern const u8 gText_NormanMatchCallName[];
@@ -3025,5 +3035,11 @@ extern const u8 gText_YourName[];
 extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
+
+#if GERMAN
+extern const u8 gText_SchoolKid[];
+extern const u8 gText_PkmnTrainer[];
+extern const u8 gText_Leader[];
+#endif
 
 #endif // GUARD_STRINGS_H

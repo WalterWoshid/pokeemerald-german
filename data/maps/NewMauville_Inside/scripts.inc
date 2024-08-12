@@ -246,18 +246,43 @@ NewMauville_Inside_EventScript_DefeatedVoltorb3::
 	end
 
 NewMauville_Inside_Text_GeneratorRadiatingHeat:
+	.ifdef ENGLISH
 	.string "The generator is radiating heat that\n"
 	.string "can be felt even at a distance.\p"
 	.string "It looks like it should be turned off\n"
 	.string "as soon as possible.$"
+	.else
+	.ifdef GERMAN
+	.string "Der Generator strahlt eine Hitze ab, die\n"
+	.string "sogar aus der Entfernung zu spüren ist.\p"
+	.string "Man sollte ihn so schnell wie möglich\n"
+	.string "abschalten.$"
+	.endif
+	.endif
 
 NewMauville_Inside_Text_GeneratorQuietedDown:
+	.ifdef ENGLISH
 	.string "The generator quieted down.$"
+	.else
+	.ifdef GERMAN
+	.string "Der Generator ist ausgeschaltet.$"
+	.endif
+	.endif
 
 NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
+	.ifdef ENGLISH
 	.string "{PLAYER} stepped on the switch.\p"
 	.string "Click…\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "The generator appears to have\n"
 	.string "stopped…$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} stellt sich auf den Schalter.\p"
+	.string "Klick.\p"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "Der Generator ist ausgeschaltet…$"
+	.endif
+	.endif

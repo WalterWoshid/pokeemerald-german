@@ -173,20 +173,51 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
+	.ifdef ENGLISH
 	.string "Okay!\n"
 	.string "We're to move out to MT. PYRE!$"
+	.else
+	.ifdef GERMAN
+	.string "Okay!\n"
+	.string "Wir sind auf dem Weg zum PYROBERG!$"
+	.endif
+	.endif
 
 Route121_Text_AheadLoomsMtPyre:
+	.ifdef ENGLISH
 	.string "Ahead looms MT. PYRE…\p"
 	.string "It is a natural monument to the spirits \n"
 	.string "of departed POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "Vor uns erhebt sich der PYROBERG…\p"
+	.string "Er ist das natürlich gewachsene\n"
+	.string "Monument der Geister, der von uns\l"
+	.string "gegangenen POKéMON.$"
+	.endif
+	.endif
 
 Route121_Text_MtPyrePierSign:
+	.ifdef ENGLISH
 	.string "MT. PYRE PIER\p"
 	.string "…The sign is old and worn out.\n"
 	.string "The words are barely legible…$"
+	.else
+	.ifdef GERMAN
+	.string "PIER AM PYROBERG\p"
+	.string "…Das Schild ist alt und verwittert.\n"
+	.string "Die Worte sind kaum noch lesbar…$"
+	.endif
+	.endif
 
 Route121_Text_SafariZoneSign:
+	.ifdef ENGLISH
 	.string "“Filled with rare POKéMON!”\n"
 	.string "SAFARI ZONE$"
+	.else
+	.ifdef GERMAN
+	.string "SAFARI-ZONE\n"
+	.string "“Hier sind seltene POKéMON zu Hause!”$"
+	.endif
+	.endif
 

@@ -59,18 +59,44 @@ LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 	end
 
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
+	.ifdef ENGLISH
 	.string "For quickly toughening up POKéMON,\n"
 	.string "items are the best.\p"
 	.string "PROTEIN boosts ATTACK,\n"
 	.string "and CALCIUM raises SP. ATK.$"
+	.else
+	.ifdef GERMAN
+	.string "Um POKéMON schnell stärker zu machen,\n"
+	.string "eignen sich Items hervorragend.\p"
+	.string "PROTEIN steigert den ANGRIFF und\n"
+	.string "KALZIUM den SPEZ. ANGRIFF.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
+	.ifdef ENGLISH
 	.string "I want my POKéMON to have more\n"
 	.string "endurance.\p"
 	.string "I'm trying to decide whether to raise\n"
 	.string "DEFENSE with IRON, or SP. DEF with ZINC.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich möchte, dass mein POKéMON mehr\n"
+	.string "Ausdauer hat.\p"
+	.string "Ich frage mich, ob ich lieber die\n"
+	.string "VERTEIDIGUNG mit EISEN oder die SPEZ.\l"
+	.string "VER. mit ZINK steigern soll.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
+	.ifdef ENGLISH
 	.string "I gave a CARBOS to my POKéMON,\n"
 	.string "and its SPEED went up.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe meinem POKéMON CARBON\n"
+	.string "gegeben, um die INIT. zu erhöhen.$"
+	.endif
+	.endif
 

@@ -177,26 +177,70 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
+	.ifdef ENGLISH
 	.string "All my POKéMON does is ROAR…\n"
 	.string "No one dares to come near me…\p"
 	.string "Sigh… If you would, please take\n"
 	.string "this TM away…$"
+	.else
+	.ifdef GERMAN
+	.string "Alles, was mein POKéMON von sich gibt,\n"
+	.string "ist BRÜLLER…\l"
+	.string "Niemand wagt sich nah heran…\p"
+	.string "Seufz… Wenn du magst, dann nimm mir\n"
+	.string "diese Bürde… äh, diese TM ab…$"
+	.endif
+	.endif
 
 Route114_Text_ExplainRoar:
+	.ifdef ENGLISH
 	.string "TM05 contains ROAR.\n"
 	.string "A ROAR sends POKéMON scurrying.$"
+	.else
+	.ifdef GERMAN
+	.string "TM05 enthält BRÜLLER.\n"
+	.string "Ein BRÜLLER schlägt POKéMON in\l"
+	.string "die Flucht.$"
+	.endif
+	.endif
 
 Route114_Text_Poochyena:
+	.ifdef ENGLISH
 	.string "Bow! Bowwow!$"
+	.else
+	.ifdef GERMAN
+	.string "Bow! Bowwow!$"
+	.endif
+	.endif
 
 Route114_Text_MeteorFallsSign:
+	.ifdef ENGLISH
 	.string "METEOR FALLS\n"
 	.string "RUSTBORO CITY THROUGH HERE$"
+	.else
+	.ifdef GERMAN
+	.string "METEORFÄLLE\n"
+	.string "HIER ENTLANG NACH METAROST CITY$"
+	.endif
+	.endif
 
 Route114_Text_FossilManiacsHouseSign:
+	.ifdef ENGLISH
 	.string "FOSSIL MANIAC'S HOUSE\n"
 	.string "“Fossils gratefully accepted!”$"
+	.else
+	.ifdef GERMAN
+	.string "FOSSILMANIAC\n"
+	.string "“Fossilien gesucht!”$"
+	.endif
+	.endif
 
 Route114_Text_LanettesHouse:
+	.ifdef ENGLISH
 	.string "LANETTE'S HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "LANETTES HAUS$"
+	.endif
+	.endif
 

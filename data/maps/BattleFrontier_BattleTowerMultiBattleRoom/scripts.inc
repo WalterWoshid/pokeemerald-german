@@ -85,14 +85,26 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_OpponentsEnter::
 	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DoTowerBattle
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DoOpponentIntrosLink::
+    .ifdef ENGLISH
 	tower_getopponentintro 0
+	.else
+	.ifdef GERMAN
+	tower_getopponentintro_de 0
+	.endif
+	.endif
 	delay 15
 	applymovement LOCALID_OPPONENT_1, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	waitmovement 0
 	messageautoscroll gStringVar4
 	waitmessage
 	delay 48
+	.ifdef ENGLISH
 	tower_getopponentintro 1
+	.else
+	.ifdef GERMAN
+	tower_getopponentintro_de 1
+	.endif
+	.endif
 	applymovement LOCALID_OPPONENT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	waitmovement 0
 	messageautoscroll gStringVar4
@@ -445,63 +457,161 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft:
 	step_end
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet:
+	.ifdef ENGLISH
 	.string "The 2nd set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das zweite gegnerische Team ist bereit.\n"
+	.string "Bist du so weit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet:
+	.ifdef ENGLISH
 	.string "The 3rd set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das dritte gegnerische Team ist bereit.\n"
+	.string "Bist du so weit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet:
+	.ifdef ENGLISH
 	.string "The 4th set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das vierte gegnerische Team ist bereit.\n"
+	.string "Bist du so weit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet:
+	.ifdef ENGLISH
 	.string "The 5th set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das fünfte gegnerische Team ist bereit.\n"
+	.string "Bist du so weit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet:
+	.ifdef ENGLISH
 	.string "The 6th set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das sechste gegnerische Team ist\n"
+	.string "bereit. Bist du so weit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet:
+	.ifdef ENGLISH
 	.string "The 7th set of opponents is next.\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Das siebte gegnerische Team ist\n"
+	.string "bereit. Bist du so weit?$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_2ndOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 2nd set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 2nd set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_3rdOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 3rd set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 3rd set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_4thOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 4th set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 4th set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_5thOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 5th set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 5th set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 6th set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 6th set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_7thOpponentSetNext:
+	.ifdef ENGLISH
 	.string "The 7th set of opponents is next.\n"
 	.string "Do your best!$"
+	.else
+	.ifdef GERMAN
+	.string "The 7th set of opponents is next.\n"
+	.string "Do your best!$"
+	.endif
+	.endif
 
 gText_LinkStandby3::
+	.ifdef ENGLISH
 	.string "Link standby…$"
+	.else
+	.ifdef GERMAN
+	.string "Verbindung wird gehalten…$"
+	.endif
+	.endif
 
 gText_YourPartnerHasRetired::
+	.ifdef ENGLISH
 	.string "Your partner has retired.\p"
 	.string "Your BATTLE ROOM challenge\n"
 	.string "will be canceled.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein Partner hat sich zurückgezogen.\p"
+	.string "Deine KAMPFRAUM-Herausforderung\n"
+	.string "wird abgebrochen.$"
+	.endif
+	.endif

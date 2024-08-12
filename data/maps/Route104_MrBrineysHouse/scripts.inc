@@ -98,10 +98,18 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Hold on, lass!\n"
 	.string "Wait up, PEEKO!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Warte, Mädchen!\n"
+	.string "Immer langsam, PECKO!$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
+	.ifdef ENGLISH
 	.string "Hm? You're {PLAYER}{KUN}!\n"
 	.string "You saved my darling PEEKO!\l"
 	.string "We owe so much to you!\p"
@@ -115,19 +123,55 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "no problem at all.\p"
 	.string "You've come to the right man!\n"
 	.string "We'll set sail for DEWFORD.$"
+	.else
+	.ifdef GERMAN
+	.string "Hm? Du bist {PLAYER}{KUN}!\n"
+	.string "Du hast meinen Liebling PECKO gerettet!\l"
+	.string "Wir verdanken dir sehr viel!\p"
+	.string "Wie bitte?\n"
+	.string "Du möchtest mit mir segeln?\p"
+	.string "Hmhm…\p"
+	.string "Du musst einen BRIEF in FAUSTAUHAVEN\n"
+	.string "und ein Paket in GRAPHITPORT CITY\l"
+	.string "abgeben?\p"
+	.string "Da bist du aber gut beschäftigt!\p"
+	.string "Aber deine Bitte ist überhaupt kein\n"
+	.string "Problem für mich.\p"
+	.string "Bei mir bist du richtig! Wir setzen\n"
+	.string "Segel Richtung FAUSTAUHAVEN!$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: DEWFORD it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Also, auf nach FAUSTAUHAVEN!\p"
+	.string "Anker gelichtet!\n"
+	.string "PECKO, wir setzen Segel, mein Liebling!$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Is that so?\n"
 	.string "Your deliveries can wait?\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Wirklich?\n"
+	.string "Deine Besorgungen können warten?\p"
+	.string "Lass dir Zeit. Ein Wort genügt und wir\n"
+	.string "setzen Segel.$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a LETTER to DEWFORD\n"
@@ -135,8 +179,22 @@ Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
 	.string "What you need me to do is no problem\n"
 	.string "at all--I'm the man for the job!\p"
 	.string "First, we'll set sail for DEWFORD.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Ich weiß genau,\n"
+	.string "was du jetzt sagen willst!\p"
+	.string "Du musst einen BRIEF in FAUSTAUHAVEN\n"
+	.string "und ein Paket in GRAPHITPORT CITY\l"
+	.string "abgeben.\p"
+	.string "Nun, ich bin der richtige Mann für\n"
+	.string "diesen Job!\p"
+	.string "Dann segeln wir zuerst Richtung\n"
+	.string "FAUSTAUHAVEN.$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a package to\n"
@@ -144,18 +202,53 @@ Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
 	.string "What you need me to do is no problem\n"
 	.string "at all--I'm the man for the job!\p"
 	.string "First, we'll set sail for DEWFORD.$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Ich weiß genau,\n"
+	.string "was du jetzt sagen willst!\p"
+	.string "Du musst KAPT. BRIGG in\n"
+	.string "GRAPHITPORT CITY ein Paket bringen.\p"
+	.string "Nun, ich bin der richtige Mann für\n"
+	.string "diesen Job!\p"
+	.string "Dann segeln wir zuerst Richtung\n"
+	.string "FAUSTAUHAVEN.$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Ahoi! Für dich fahre ich\n"
+	.string "jederzeit wieder raus!\p"
+	.string "Nun, wo soll es hingehen?$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Is that so?\n"
 	.string "Well, PEEKO owes her life to you.\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Wirklich?\n"
+	.string "Nun, PECKO verdankt dir ihr Leben.\p"
+	.string "Lass dir Zeit. Ein Wort genügt und wir\n"
+	.string "setzen Segel.$"
+	.endif
+	.endif
 
 Route104_MrBrineysHouse_Text_Peeko:
+	.ifdef ENGLISH
 	.string "PEEKO: Pii piihyoro!$"
+	.else
+	.ifdef GERMAN
+	.string "PECKO: Pii piihyoro!$"
+	.endif
+	.endif
 

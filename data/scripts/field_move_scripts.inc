@@ -46,16 +46,38 @@ EventScript_CancelCut::
 	end
 
 Text_WantToCut:
+	.ifdef ENGLISH
 	.string "This tree looks like it can be\n"
 	.string "CUT down!\p"
 	.string "Would you like to CUT it?$"
+	.else
+	.ifdef GERMAN
+	.string "Du kannst den ZERSCHNEIDER hier\n"
+	.string "einsetzen!\p"
+	.string "Möchtest du den ZERSCHNEIDER\n"
+	.string "einsetzen?$"
+	.endif
+	.endif
 
 Text_MonUsedFieldMove:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1} used {STR_VAR_2}!$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} setzt {STR_VAR_2} ein.$"
+	.endif
+	.endif
 
 Text_CantCut:
+	.ifdef ENGLISH
 	.string "This tree looks like it can be\n"
 	.string "CUT down!$"
+	.else
+	.ifdef GERMAN
+	.string "Der ZERSCHNEIDER kann hier eingesetzt\n"
+	.string "werden.$"
+	.endif
+	.endif
 
 @ Interact with smashable rock
 EventScript_RockSmash::
@@ -114,12 +136,26 @@ EventScript_CancelSmash::
 	end
 
 Text_WantToSmash:
+	.ifdef ENGLISH
 	.string "This rock appears to be breakable.\n"
 	.string "Would you like to use ROCK SMASH?$"
+	.else
+	.ifdef GERMAN
+	.string "Dieser Fels sieht zerbrechlich aus.\n"
+	.string "Soll ZERTRÜMMERER eingesetzt werden?$"
+	.endif
+	.endif
 
 Text_CantSmash:
+	.ifdef ENGLISH
 	.string "It's a rugged rock, but a POKéMON\n"
 	.string "may be able to smash it.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein großer Felsen. Ein POKéMON könnte\n"
+	.string "ihn vielleicht zertrümmern.$"
+	.endif
+	.endif
 
 EventScript_StrengthBoulder::
 	lockall
@@ -165,22 +201,52 @@ EventScript_CancelStrength::
 	end
 
 Text_WantToStrength:
+	.ifdef ENGLISH
 	.string "It's a big boulder, but a POKéMON\n"
 	.string "may be able to push it aside.\p"
 	.string "Would you like to use STRENGTH?$"
+	.else
+	.ifdef GERMAN
+	.string "Ein POKéMON kann diesen Felsen\n"
+	.string "vielleicht bewegen.\p"
+	.string "Möchtest du STÄRKE einsetzen?$"
+	.endif
+	.endif
 
 Text_MonUsedStrength:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1} used STRENGTH!\p"
 	.string "{STR_VAR_1}'s STRENGTH made it\n"
 	.string "possible to move boulders around!$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} setzt STÄRKE ein.\p"
+	.string "STÄRKE von {STR_VAR_1} ermöglicht es,\n"
+	.string "den Felsen zu bewegen.$"
+	.endif
+	.endif
 
 Text_CantStrength:
+	.ifdef ENGLISH
 	.string "It's a big boulder, but a POKéMON\n"
 	.string "may be able to push it aside.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein POKéMON kann diesen Felsen\n"
+	.string "vielleicht bewegen.$"
+	.endif
+	.endif
 
 Text_StrengthActivated:
+	.ifdef ENGLISH
 	.string "STRENGTH made it possible to move\n"
 	.string "boulders around.$"
+	.else
+	.ifdef GERMAN
+	.string "STÄRKE ermöglicht es, Felsen zu\n"
+	.string "bewegen.$"
+	.endif
+	.endif
 
 EventScript_UseWaterfall::
 	lockall
@@ -205,15 +271,35 @@ EventScript_EndWaterfall::
 	end
 
 Text_CantWaterfall:
+	.ifdef ENGLISH
 	.string "A wall of water is crashing down with\n"
 	.string "a mighty roar.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Wasser fällt steil wie eine Wand\n"
+	.string "brüllend in die Tiefe.$"
+	.endif
+	.endif
 
 Text_WantToWaterfall:
+	.ifdef ENGLISH
 	.string "It's a large waterfall.\n"
 	.string "Would you like to use WATERFALL?$"
+	.else
+	.ifdef GERMAN
+	.string "Ein riesiger Wasserfall.\n"
+	.string "Möchtest du KASKADE einsetzen?$"
+	.endif
+	.endif
 
 Text_MonUsedWaterfall:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1} used WATERFALL.$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} setzt KASKADE ein.$"
+	.endif
+	.endif
 
 EventScript_UseDive::
 	lockall
@@ -263,27 +349,67 @@ EventScript_EndSurface::
 	end
 
 Text_CantDive:
+	.ifdef ENGLISH
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"
+	.else
+	.ifdef GERMAN
+	.string "Das Wasser ist hier tief. Ein POKéMON\n"
+	.string "könnte hier vielleicht tauchen.$"
+	.endif
+	.endif
 
 Text_WantToDive:
+	.ifdef ENGLISH
 	.string "The sea is deep here.\n"
 	.string "Would you like to use DIVE?$"
+	.else
+	.ifdef GERMAN
+	.string "Das Meer ist an dieser Stelle sehr tief.\n"
+	.string "Möchtest du TAUCHER einsetzen?$"
+	.endif
+	.endif
 
 Text_MonUsedDive:
+	.ifdef ENGLISH
 	.string "{STR_VAR_1} used DIVE.$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} setzt TAUCHER ein.$"
+	.endif
+	.endif
 
 Text_CantSurface:
+	.ifdef ENGLISH
 	.string "Light is filtering down from above.\n"
 	.string "A POKéMON may be able to surface.$"
+	.else
+	.ifdef GERMAN
+	.string "Licht schimmert von oben herab. Ein\n"
+	.string "POKéMON könnte hier auftauchen.$"
+	.endif
+	.endif
 
 Text_WantToSurface:
+	.ifdef ENGLISH
 	.string "Light is filtering down from above.\n"
 	.string "Would you like to use DIVE?$"
+	.else
+	.ifdef GERMAN
+	.string "Licht schimmert von oben herab.\n"
+	.string "Möchtest du TAUCHER einsetzen?$"
+	.endif
+	.endif
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN
 	end
 
 Text_FailSweetScent:
+	.ifdef ENGLISH
 	.string "Looks like there's nothing here…$"
+	.else
+	.ifdef GERMAN
+	.string "Hier scheint nichts zu sein…$"
+	.endif
+	.endif

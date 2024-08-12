@@ -2118,9 +2118,13 @@ static void SpriteCB_CloseChosenMonPics(struct Sprite *sprite)
 
 // Task data for Select_Task_OpenChosenMonPics, Select_Task_CloseChosenMonPics, Task_CloseMonPic, and Task_OpenMonPic
 #define tWinLeft      data[3]
+#if ENGLISH
 #ifndef UBFIX
 #define tWinRight     data[24] // UB: Typo? Likely meant data[4], 24 is out of bounds
 #else
+#define tWinRight     data[4]
+#endif
+#elif GERMAN
 #define tWinRight     data[4]
 #endif
 #define tWinTop       data[5]

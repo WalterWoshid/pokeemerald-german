@@ -15,6 +15,7 @@ struct LandmarkList
     const struct Landmark *const *landmarks;
 };
 
+#if ENGLISH
 static const u8 LandmarkName_FlowerShop[] = _("FLOWER SHOP");
 static const u8 LandmarkName_PetalburgWoods[] = _("PETALBURG WOODS");
 static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY'S COTTAGE");
@@ -57,6 +58,50 @@ static const u8 LandmarkName_MirageTower[] = _("MIRAGE TOWER");
 static const u8 LandmarkName_AlteringCave[] = _("ALTERING CAVE");
 static const u8 LandmarkName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 LandmarkName_TrainerHill[] = _("TRAINER HILL");
+#elif GERMAN
+static const u8 LandmarkName_FlowerShop[] = _("BLUMENLADEN");
+static const u8 LandmarkName_PetalburgWoods[] = _("BLÜTENBURGWALD");
+static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRACKS HÜTTE");
+static const u8 LandmarkName_AbandonedShip[] = _("SCHIFFSWRACK");
+static const u8 LandmarkName_SeashoreHouse[] = _("STRANDHAUS");
+static const u8 LandmarkName_SlateportBeach[] = _("GRAPHITPORTSTRAND");
+static const u8 LandmarkName_CyclingRoad[] = _("RADWEG");
+static const u8 LandmarkName_NewMauville[] = _("NEU MALVENFROH");
+static const u8 LandmarkName_TrickHouse[] = _("RÄTSELHAUS");
+static const u8 LandmarkName_OldLadysRestShop[] = _("HOTEL DER ALTEN DAME");
+static const u8 LandmarkName_Desert[] = _("WÜSTE");
+static const u8 LandmarkName_WinstrateFamily[] = _("FAMILIE SIHGERS");
+static const u8 LandmarkName_CableCar[] = _("SEILBAHN");
+static const u8 LandmarkName_GlassWorkshop[] = _("GLASWERKSTATT");
+static const u8 LandmarkName_WeatherInstitute[] = _("KLIMA-INSTITUT");
+static const u8 LandmarkName_MeteorFalls[] = _("METEORFÄLLE");
+static const u8 LandmarkName_TunnelersRestHouse[] = _("BERGRASTHAUS");
+static const u8 LandmarkName_RusturfTunnel[] = _("METAFLURTUNNEL");
+static const u8 LandmarkName_PokemonDayCare[] = _("POKéMON-PENSION");
+static const u8 LandmarkName_SafariZoneEntrance[] = _("EINGANG SAFARI-ZONE");
+static const u8 LandmarkName_MtPyre[] = _("PYROBERG");
+static const u8 LandmarkName_ShoalCave[] = _("KÜSTENHÖHLE");
+static const u8 LandmarkName_SeafloorCavern[] = _("TIEFSEEHÖHLE");
+static const u8 LandmarkName_GraniteCave[] = _("GRANITHÖHLE");
+static const u8 LandmarkName_OceanCurrent[] = _("MEERESSTRÖMUNG");
+static const u8 LandmarkName_LanettesHouse[] = _("LANETTES HAUS");
+static const u8 LandmarkName_FieryPath[] = _("FEURIGER PFAD");
+static const u8 LandmarkName_JaggedPass[] = _("STEILPASS");
+static const u8 LandmarkName_SkyPillar[] = _("HIMMELTURM");
+static const u8 LandmarkName_BerryMastersHouse[] = _("BEERENMEISTER-VILLA");
+static const u8 LandmarkName_IslandCave[] = _("INSELHÖHLE");
+static const u8 LandmarkName_DesertRuins[] = _("WÜSTENRUINE");
+static const u8 LandmarkName_ScorchedSlab[] = _("SONNENGROTTE");
+static const u8 LandmarkName_AncientTomb[] = _("GRABMAL");
+static const u8 LandmarkName_SealedChamber[] = _("SIEGELKAMMER");
+static const u8 LandmarkName_FossilManiacsHouse[] = _("FOSSILMANIACS HAUS");
+static const u8 LandmarkName_HuntersHouse[] = _("HAUS DES TAUCHERS");
+static const u8 LandmarkName_MagmaHideout[] = _("MAGMAs VERSTECK");
+static const u8 LandmarkName_MirageTower[] = _("WUNDERTURM");
+static const u8 LandmarkName_AlteringCave[] = _("WANDELHÖHLE");
+static const u8 LandmarkName_DesertUnderpass[] = _("WÜSTENTUNNEL");
+static const u8 LandmarkName_TrainerHill[] = _("TRAINERBERG");
+#endif
 
 static const struct Landmark Landmark_FlowerShop = {LandmarkName_FlowerShop, FLAG_LANDMARK_FLOWER_SHOP};
 static const struct Landmark Landmark_PetalburgWoods = {LandmarkName_PetalburgWoods, -1};

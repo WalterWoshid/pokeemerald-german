@@ -85,6 +85,7 @@ FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest:
 	step_end
 
 FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
+	.ifdef ENGLISH
 	.string "Oh, hello.\n"
 	.string "You are?\p"
 	.string "Okay, your name's {PLAYER}{KUN}.\n"
@@ -100,15 +101,55 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "great you're using the Storage System.\p"
 	.string "If you could, please visit me at home.\n"
 	.string "My house is on ROUTE 114.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, hallo.\n"
+	.string "Wer bist du?\p"
+	.string "Du heißt {PLAYER}{KUN}?\n"
+	.string "Ich sehe schon, du bist ein TRAINER.\p"
+	.string "Und das bedeutet, du nutzt das\n"
+	.string "POKéMON-Lagerungs-System, das ich\l"
+	.string "entwickelt habe.\p"
+	.string "Ich bin durch simple Deduktion zu\n"
+	.string "diesem Schluss gekommen.\p"
+	.string "Du hast mich angesprochen, weil du\n"
+	.string "mit diesem PC arbeiten willst.\p"
+	.string "Ach, ich habe mich gar nicht\n"
+	.string "vorgestellt. Ich bin LANETTE.\p"
+	.string "Ich bin ehrlich erfreut, dich kennen zu\n"
+	.string "lernen. Und ich freue mich, dass du das\l"
+	.string "Lagerungs-System benutzt.\p"
+	.string "Wenn du magst, besuche mich doch mal.\n"
+	.string "Ich wohne an der ROUTE 114.$"
+	.endif
+	.endif
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
+	.ifdef ENGLISH
 	.string "I wonder what POKéMON looked like\n"
 	.string "long, long ago?\p"
 	.string "Maybe the FOSSIL MANIAC at the edge\n"
 	.string "of town will know.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich frage mich, wie die POKéMON wohl\n"
+	.string "vor langer, langer Zeit aussahen.\p"
+	.string "Vielleicht kann mir der FOSSILMANIAC\n"
+	.string "am Ortsrand etwas dazu sagen.$"
+	.endif
+	.endif
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:
+	.ifdef ENGLISH
 	.string "In the fields of FALLARBOR, we plant\n"
 	.string "seedlings of hardy trees that thrive\l"
 	.string "even in volcanic ash.$"
+	.else
+	.ifdef GERMAN
+	.string "Auf den Feldern von LAUBWECHSELFELD\n"
+	.string "haben wir widerstandsfähige Bäume\p"
+	.string "gepflanzt, die auch in der Vulkanasche\n"
+	.string "gedeihen.$"
+	.endif
+	.endif
 

@@ -112,6 +112,13 @@ AbandonedShip_HiddenFloorRooms_EventScript_Trash::
 	end
 
 AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash:
+	.ifdef ENGLISH
 	.string "It's bright and shiny!\n"
 	.string "But it's just trash…$"
+	.else
+	.ifdef GERMAN
+	.string "Es ist hell und glänzend!\n"
+	.string "Aber es ist trotzdem nur Müll…$"
+	.endif
+	.endif
 

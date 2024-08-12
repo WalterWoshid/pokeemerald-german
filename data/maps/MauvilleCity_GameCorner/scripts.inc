@@ -627,140 +627,371 @@ MauvilleCity_GameCorner_EventScript_NoCoinCase::
 	end
 
 MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner:
+	.ifdef ENGLISH
 	.string "This is MAUVILLE GAME CORNER.$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen in unserer SPIELHALLE.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
+	.ifdef ENGLISH
 	.string "Okay, you wanted some COINS for\n"
 	.string "the games?\p"
 	.string "But you don't have a COIN CASE for\n"
 	.string "stowing the COINS.$"
+	.else
+	.ifdef GERMAN
+	.string "Okay, du möchtest MÜNZEn für die\n"
+	.string "Spiele haben?\p"
+	.string "Aber du hast keinen MÜNZKORB für die\n"
+	.string "MÜNZEn.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_WereYouLookingForCoins:
+	.ifdef ENGLISH
 	.string "Were you looking for COINS?\p"
 	.string "It's ¥1000 for 50 COINS.\n"
 	.string "Would you like some?$"
+	.else
+	.ifdef GERMAN
+	.string "Suchst du nach MÜNZEn?\p"
+	.string "Das macht ¥1000 für 50 MÜNZEn.\n"
+	.string "Möchtest du welche haben?$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins:
+	.ifdef ENGLISH
 	.string "Thank you very much!\n"
 	.string "Here are your COINS!$"
+	.else
+	.ifdef GERMAN
+	.string "Vielen Dank!\n"
+	.string "Hier sind deine MÜNZEn!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_DontHaveEnoughMoney:
+	.ifdef ENGLISH
 	.string "Um… You don't appear to have\n"
 	.string "enough money…$"
+	.else
+	.ifdef GERMAN
+	.string "Ähm… Es scheint, du hast nicht\n"
+	.string "genügend Geld dabei…$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_CoinCaseIsFull:
+	.ifdef ENGLISH
 	.string "Oh?\n"
 	.string "Your COIN CASE is full.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh?\n"
+	.string "Dein MÜNZKORB ist voll.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_DontNeedCoinsThen:
+	.ifdef ENGLISH
 	.string "Oh… You don't need COINS, then?\n"
 	.string "Good luck on your adventure!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh… Dann brauchst du keine MÜNZEn?\n"
+	.string "Viel Glück bei deinem Abenteuer!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes:
+	.ifdef ENGLISH
 	.string "Welcome.\p"
 	.string "You can exchange your COINS for\n"
 	.string "prizes here.$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen.\p"
+	.string "Hier kannst du deine MÜNZEn gegen\n"
+	.string "Preise eintauschen.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_WhichPrize:
+	.ifdef ENGLISH
 	.string "Which prize would you like?$"
+	.else
+	.ifdef GERMAN
+	.string "Welchen Preis hättest du gerne?$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX:
+	.ifdef ENGLISH
 	.string "So your choice is\n"
 	.string "the {STR_VAR_1} {STR_VAR_2}?$"
+	.else
+	.ifdef GERMAN
+	.string "Du möchtest also\n"
+	.string "{STR_VAR_1} {STR_VAR_2}?$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_SendToYourHomePC:
+	.ifdef ENGLISH
 	.string "Thank you!\n"
 	.string "We'll send it to your PC at home.$"
+	.else
+	.ifdef GERMAN
+	.string "Danke!\n"
+	.string "Wir senden das auf deinen PC.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_NotEnoughCoins:
+	.ifdef ENGLISH
 	.string "You don't have enough COINS.$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast nicht genügend MÜNZEn.$"
+	.endif
+	.endif
 
 @ Unused
 MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
+	.ifdef ENGLISH
 	.string "There isn't any room available for\n"
 	.string "placing {STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "There isn’t any room available for\n"
+	.string "placing {STR_VAR_1}.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_OhIsThatSo:
+	.ifdef ENGLISH
 	.string "Oh, is that so? \n"
 	.string "You need to save some COINS before\l"
 	.string "coming back here.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, wirklich?\n"
+	.string "Du musst einige MÜNZEn sparen, bevor\l"
+	.string "du wiederkommst.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsX:
+	.ifdef ENGLISH
 	.string "So your choice is {STR_VAR_1}?$"
+	.else
+	.ifdef GERMAN
+	.string "Du möchtest also {STR_VAR_1}?$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_HereYouGo:
+	.ifdef ENGLISH
 	.string "Here you go!$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte schön!$"
+	.endif
+	.endif
 
 @ Unused
 MauvilleCity_GameCorner_Text_CantCarryAnyMore:
+	.ifdef ENGLISH
 	.string "Oh, you can't carry any more than that.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, you can’t carry any more than that.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne:
+	.ifdef ENGLISH
 	.string "I made a mistake and got two of\n"
 	.string "the same DOLLS.\p"
 	.string "Would you like one of them?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe mich vertan und zweimal die\n"
+	.string "gleiche PUPPE genommen.\p"
+	.string "Möchtest du eine davon haben?$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_HereYouGo2:
+	.ifdef ENGLISH
 	.string "Here you go!$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte schön!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_YouWantItButNotNow:
+	.ifdef ENGLISH
 	.string "Huh?\n"
 	.string "You want it, but not right now?$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte?\n"
+	.string "Du möchtest sie, aber nicht jetzt???$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_DontBeNegative:
+	.ifdef ENGLISH
 	.string "Oh, don't be so negative!\n"
 	.string "You can have this!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, sei doch nicht so negativ drauf!\n"
+	.string "Du kannst sie wirklich gerne haben!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_CantWinJackpot:
+	.ifdef ENGLISH
 	.string "There's a prize I want, but I can't win\n"
 	.string "the jackpot.$"
+	.else
+	.ifdef GERMAN
+	.string "Es gibt einen Preis, den ich haben\n"
+	.string "möchte, aber ich kann den Jackpot\l"
+	.string "nicht knacken.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor:
+	.ifdef ENGLISH
 	.string "Hey, kid, if you want to play here,\n"
 	.string "you need a COIN CASE.\p"
 	.string "I think the young lady next door\n"
 	.string "had one. Go see her!$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, Kindchen, wenn du hier spielen\n"
+	.string "willst, brauchst du einen MÜNZKORB.\p"
+	.string "Ich glaube, die junge Dame nebenan hat\n"
+	.string "einen. Besuche sie mal!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins:
+	.ifdef ENGLISH
 	.string "My luck can only last so long.\n"
 	.string "This is too much for me.\l"
 	.string "Here, take some COINS!$"
+	.else
+	.ifdef GERMAN
+	.string "Mein Glück wird nicht immer anhalten.\n"
+	.string "Das ist zu viel für mich.\l"
+	.string "Hier, nimm die MÜNZEn!$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone:
+	.ifdef ENGLISH
 	.string "MAUVILLE has something for\n"
 	.string "everyone.\p"
 	.string "For me, it's the GAME CORNER.$"
+	.else
+	.ifdef GERMAN
+	.string "Immer, wenn ich in MALVENFROH CITY bin,\n"
+	.string "gehe ich in die SPIELHALLE.\p"
+	.string "MALVENFROH CITY bringt mir einfach\n"
+	.string "Glück.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates:
+	.ifdef ENGLISH
 	.string "The ROULETTE tables have different\n"
 	.string "rates.\p"
 	.string "Check your COINS if you're going to\n"
 	.string "pick a table.$"
+	.else
+	.ifdef GERMAN
+	.string "Beim ROULETTE gibt es verschiedene\n"
+	.string "Einsatzhöhen.\p"
+	.string "Überprüf deine MÜNZEn, bevor du dich\n"
+	.string "für einen Tisch entscheidest.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime:
+	.ifdef ENGLISH
 	.string "It's easy to lose track of time in here. \n"
 	.string "I should get back to work.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier kann man leicht die Zeit vergessen.\n"
+	.string "Ich sollte wieder an die Arbeit gehen.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
+	.ifdef ENGLISH
 	.string "COINS are needed to play here\n"
 	.string "in the GAME CORNER.$"
+	.else
+	.ifdef GERMAN
+	.string "MÜNZEn werden gebraucht, um hier in der\n"
+	.string "SPIELHALLE spielen zu können.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
+	.ifdef ENGLISH
 	.string "This ROULETTE thing…\n"
 	.string "It's rather demanding.\p"
 	.string "Win or lose, it's only by luck.$"
+	.else
+	.ifdef GERMAN
+	.string "Dieses ROULETTE-Dingens…\n"
+	.string "Es ist ziemlich anstrengend.\p"
+	.string "Ich versuche, zu gewinnen. Aber ich\n"
+	.string "verliere immer. Doch ich gebe nicht auf.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed:
+	.ifdef ENGLISH
 	.string "Up to three COINS can be used to play\n"
 	.string "the SLOTS.$"
+	.else
+	.ifdef GERMAN
+	.string "Bis zu drei MÜNZEn können an den EIN-\n"
+	.string "ARMIGEN BANDITen eingesetzt werden.\p"
+	.string "Je mehr MÜNZEn du einsetzt, desto\n"
+	.string "höher ist deine Chance auf den Jackpot.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_DifficultToStopOn7:
+	.ifdef ENGLISH
 	.string "It's very difficult to make it stop\n"
 	.string "right on “7.”\p"
 	.string "If it stops on “7” during the REEL TIME\n"
 	.string "bonus game, you'll receive extra COINS.$"
+	.else
+	.ifdef GERMAN
+	.string "Kannst du es genau bei “7” stoppen?\p"
+	.string "Wenn es bei “7” stoppt,\n"
+	.string "während ein REEL TIME gespielt wird,\l"
+	.string "erhältst du Extra-MÜNZEn.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
+	.ifdef ENGLISH
 	.string "Here's some information for you\n"
 	.string "about the SLOTS.\p"
 	.string "The more lightning bolts you stock,\n"
@@ -771,8 +1002,29 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 	.string "bonuses, then a big bonus.\p"
 	.string "That would total 660 COINS, but it's\n"
 	.string "very difficult to get.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich kann dir einige nützliche Tipps zu\n"
+	.string "den EINARMIGEN BANDITen geben.\p"
+	.string "Je mehr Blitze du anhältst, desto\n"
+	.string "größer die Chance auf ein REEL TIME,\l"
+	.string "eine Glücksrunde!\p"
+	.string "In einem Spiel mit fünf möglichen\n"
+	.string "Glücksrunden…\p"
+	.string "ist es möglich, vier reguläre Boni und\n"
+	.string "dann einen Big Bonus zu gewinnen.\p"
+	.string "Das ergibt zusammen 660 MÜNZEn,\n"
+	.string "aber ist sehr schwer zu gewinnen.$"
+	.endif
+	.endif
 
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
+	.ifdef ENGLISH
 	.string "You can't play if you don't have\n"
 	.string "a COIN CASE.$"
+	.else
+	.ifdef GERMAN
+	.string "Du kannst ohne MÜNZKORB nicht spielen.$"
+	.endif
+	.endif
 

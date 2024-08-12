@@ -465,6 +465,23 @@ If it has built successfully you will have the output file **pokeemerald.gba** i
 > If you switched terminals since the last build (e.g. from msys2 to WSL1), you must run `make clean-tools` once before any subsequent `make` commands.
 </details>
 
+## Notes about the German language ROM
+This repository also supports the "first edition" German version of Emerald. However, due to major differences in scripts, text, and graphics, a special configuration needs to be set up before compilation and torn down after.
+
+To set up the repository:
+
+    make clean
+    sh de_before.sh
+
+To compile the "first edition" German ROM:
+
+    make emerald_de
+
+To restore the repository (**MUST BE DONE BEFORE ATTEMPTING TO BUILD ANY ENGLISH LANGUAGE ROM**):
+
+    make clean
+    sh de_after.sh
+
 # Building guidance
 
 ## Parallel builds

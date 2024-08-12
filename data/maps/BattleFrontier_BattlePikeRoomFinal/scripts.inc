@@ -37,6 +37,13 @@ BattleFrontier_BattlePikeRoomFinal_EventScript_TurnPlayerNorth::
 	end
 
 BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease:
+	.ifdef ENGLISH
 	.string "Congratulations…\n"
 	.string "Now, this way, please…$"
+	.else
+	.ifdef GERMAN
+	.string "Glückwunsch…\n"
+	.string "Bitte hier entlang…$"
+	.endif
+	.endif
 

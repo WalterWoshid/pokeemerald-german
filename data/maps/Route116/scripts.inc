@@ -352,18 +352,38 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
+	.ifdef ENGLISH
 	.string "Ohhh, what am I to do?\p"
 	.string "We were on our walk, PEEKO and I, when\n"
 	.string "we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
 	.string "darling PEEKO!\p"
 	.string "Wrrrooooooaaaar! PEEKO!$"
+	.else
+	.ifdef GERMAN
+	.string "Oooh, was mache ich nur?!?\p"
+	.string "PECKO und ich waren auf einem Spazier-\n"
+	.string "gang und da kam so ein Schlägertyp…\p"
+	.string "Der Schurke hat mir meinen Liebling\n"
+	.string "PECKO geklaut!\p"
+	.string "Ooooooooooooaaaargh! PECKO!$"
+	.endif
+	.endif
 
 Route116_Text_WantToDigTunnel:
+	.ifdef ENGLISH
 	.string "Nnn… Roar!\p"
 	.string "I want to dig that tunnel!$"
+	.else
+	.ifdef GERMAN
+	.string "Nnn… Brüll!\p"
+	.string "Ich will diesen vermaledeiten Tunnel\n"
+	.string "graben!$"
+	.endif
+	.endif
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
+	.ifdef ENGLISH
 	.string "Nnn… Roar!\n"
 	.string "What's going on?\p"
 	.string "I was digging the tunnel without any\n"
@@ -376,13 +396,39 @@ Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
 	.string "I'm worried that the goon will do\n"
 	.string "something stupid and startle the\l"
 	.string "POKéMON into an uproar.$"
+	.else
+	.ifdef GERMAN
+	.string "Nnn… Brüll!\n"
+	.string "Was ist hier los?\p"
+	.string "Ich war dabei, einen Tunnel ohne Werk-\n"
+	.string "zeug zu graben, als so ein Idiot mich\l"
+	.string "verjagt hat!\p"
+	.string "Dieser Tunnel ist voller POKéMON, die\n"
+	.string "sensibel auf Lärm reagieren. Sie können\l"
+	.string "einen Aufruhr veranstalten.\p"
+	.string "Daher arbeiten wir ohne schwere\n"
+	.string "Maschinen an dem Tunnel…\p"
+	.string "Ich befürchte, dieser Idiot wird\n"
+	.string "irgendetwas Dummes tun und die\l"
+	.string "POKéMON in Aufruhr versetzen.$"
+	.endif
+	.endif
 
 Route116_Text_GoonHightailedItOutOfTunnel:
+	.ifdef ENGLISH
 	.string "Nnn… Roar!\p"
 	.string "That goofy goon hightailed it out of\n"
 	.string "the tunnel! I can go back to digging!$"
+	.else
+	.ifdef GERMAN
+	.string "Nnn… Brüll!\p"
+	.string "Dieser dämliche Idiot ist aus dem Tun-\n"
+	.string "nel abgehauen. Ich kann weitergraben!$"
+	.endif
+	.endif
 
 Route116_Text_ThankYouTokenOfAppreciation:
+	.ifdef ENGLISH
 	.string "Oh! It's you!\p"
 	.string "You're that person who not only helped\n"
 	.string "me in PETALBURG WOODS, but also got\l"
@@ -400,74 +446,207 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "a new kind of POKé BALL.\p"
 	.string "As a token of our appreciation, this\n"
 	.string "is our gift to our wonderful TRAINER!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh! Du bist das!\p"
+	.string "Du hast mir nicht nur im BLÜTEN-\n"
+	.string "BURGWALD geholfen, sondern auch\l"
+	.string "mein gestohlenes Paket zurückgeholt\l"
+	.string "und nach GRAPHITPORT CITY gebracht!\p"
+	.string "KAPT. BRIGG hat uns über die Ankunft\n"
+	.string "des Paketes unterrichtet!\p"
+	.string "Vielen, vielen Dank!\p"
+	.string "Wäre ich ein Meer, würde ich\n"
+	.string "dich in Dankbarkeit baden und als\l"
+	.string "Held auf meinen Wellen tragen!\p"
+	.string "Ich habe für dich, den wunderbarsten\n"
+	.string "TRAINER, gute Nachrichten!\p"
+	.string "Unsere Firma hat vor kurzem eine\n"
+	.string "neue Art von POKéBALL entwickelt…\p"
+	.string "Als Zeichen meiner Dankbarkeit\n"
+	.string "schenke ich ihn dem wunderbarsten\l"
+	.string "TRAINER!$"
+	.endif
+	.endif
 
 Route116_Text_NewBallAvailableAtMart:
+	.ifdef ENGLISH
 	.string "Our new POKé BALL will be available\n"
 	.string "at the POKéMON MART in RUSTBORO.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
+	.else
+	.ifdef GERMAN
+	.string "Unser neuer POKéBALL wird im PKMN-\n"
+	.string "MARKT in METAROST CITY erhältlich sein.\p"
+	.string "Bitte, probiere ihn aus!\n"
+	.string "Vielen Dank und Lebewohl.$"
+	.endif
+	.endif
 
 Route116_Text_BagIsJamPacked:
+	.ifdef ENGLISH
 	.string "Your BAG is jam-packed.\n"
 	.string "I can't give you this REPEAT BALL.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein BEUTEL ist brechend voll.\n"
+	.string "Ich kann dir diesen WIEDERBALL nicht\l"
+	.string "geben.$"
+	.endif
+	.endif
 
 Route116_Text_TokenOfAppreciation:
+	.ifdef ENGLISH
 	.string "As a token of our appreciation for\n"
 	.string "your delivering our package, I have\l"
 	.string "a gift of a new kind of POKé BALL\l"
 	.string "for our most wonderful TRAINER!$"
+	.else
+	.ifdef GERMAN
+	.string "Als Zeichen unseres Dankes für die\n"
+	.string "Überbringung unseres Paketes, habe ich\l"
+	.string "eine neue Art von POKéBALL für dich.\l"
+	.string "Für unseren wunderbarsten TRAINER!$"
+	.endif
+	.endif
 
 Route116_Text_CanYouHelpMeFindGlasses:
+	.ifdef ENGLISH
 	.string "I dropped my glasses…\n"
 	.string "Can you help me find them?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe meine Brille fallen lassen…\n"
+	.string "Kannst du mir helfen, sie zu finden?$"
+	.endif
+	.endif
 
 Route116_Text_MayISeeThoseGlasses:
+	.ifdef ENGLISH
 	.string "Those glasses!\n"
 	.string "May I see them for a second?$"
+	.else
+	.ifdef GERMAN
+	.string "Deine Brille…\n"
+	.string "Darf ich sie mal kurz ausprobieren?$"
+	.endif
+	.endif
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
+	.ifdef ENGLISH
 	.string "Hmm…\n"
 	.string "These are BLACKGLASSES.\l"
 	.string "They're not what I'm looking for…\p"
 	.string "Maybe my glasses aren't around\n"
 	.string "here…$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\n"
+	.string "Das ist ein SCHATTENGLAS.\l"
+	.string "Das habe ich nicht gesucht…\p"
+	.string "Vielleicht ist meine Brille gar nicht\n"
+	.string "hier zu finden…$"
+	.endif
+	.endif
 
 Route116_Text_CantFindGlassesNotHere:
+	.ifdef ENGLISH
 	.string "Hmm…\n"
 	.string "I can't find my glasses anywhere…\l"
 	.string "Maybe they're not around here…$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\n"
+	.string "Ich kann meine Brille nirgends finden…\l"
+	.string "Vielleicht liegt sie gar nicht hier…$"
+	.endif
+	.endif
 
 Route116_Text_NotWhatImLookingFor:
+	.ifdef ENGLISH
 	.string "Hmm…\n"
 	.string "These are BLACKGLASSES.\l"
 	.string "They're not what I'm looking for…$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\n"
+	.string "Das ist ein SCHATTENGLAS.\l"
+	.string "Das habe ich nicht gesucht…$"
+	.endif
+	.endif
 
 Route116_Text_RouteSignRustboro:
+	.ifdef ENGLISH
 	.string "ROUTE 116\n"
 	.string "{LEFT_ARROW} RUSTBORO CITY$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 116\n"
+	.string "{LEFT_ARROW} METAROST CITY$"
+	.endif
+	.endif
 
 Route116_Text_RusturfTunnelSign:
+	.ifdef ENGLISH
 	.string "RUSTURF TUNNEL\n"
 	.string "“Linking RUSTBORO and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
+	.else
+	.ifdef GERMAN
+	.string "METAFLURTUNNEL\n"
+	.string "“Verbindet METAROST CITY und\p"
+	.string "WIESENFLUR.\n"
+	.string "Das Tunnelprojekt wurde abgebrochen.”$"
+	.endif
+	.endif
 
 Route116_Text_TunnelersRestHouse:
+	.ifdef ENGLISH
 	.string "TUNNELER'S REST HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "BERGRASTHAUS$"
+	.endif
+	.endif
 
 Route116_Text_TrainerTipsBToStopEvolution:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "If you want to stop a POKéMON from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"
 	.string "The startled POKéMON will stop.\p"
 	.string "This is called an evolution cancel.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "Wenn du die Entwicklung eines POKéMON\n"
+	.string "stoppen willst, musst du den B-Knopf\l"
+	.string "drücken, während es sich entwickeln\l"
+	.string "will.\p"
+	.string "Das POKéMON entwickelt sich dann nicht.\n"
+	.string "Das nennt man Entwicklungsstopp.$"
+	.endif
+	.endif
 
 Route116_Text_TrainerTipsBagHasPockets:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "Your BAG has several POCKETS.\p"
 	.string "Items you obtain are automatically\n"
 	.string "placed in the appropriate POCKETS.\p"
 	.string "No TRAINER can afford to be without\n"
 	.string "a BAG of their own.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "Dein BEUTEL hat mehrere TASCHEn.\p"
+	.string "Items werden automatisch in die dafür\n"
+	.string "vorgesehene TASCHE gelegt.\p"
+	.string "Kein TRAINER kann auf einen eigenen\n"
+	.string "BEUTEL verzichten.$"
+	.endif
+	.endif
 

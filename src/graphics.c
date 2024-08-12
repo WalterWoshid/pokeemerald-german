@@ -1526,8 +1526,104 @@ const u16 gBerryCrush_Crusher_Pal[] = INCBIN_U16("graphics/berry_crush/crusher.g
 const u32 gBerryCrush_Crusher_Gfx[] = INCBIN_U32("graphics/berry_crush/crusher.4bpp.lz");
 const u32 gBerryCrush_TextWindows_Tilemap[] = INCBIN_U32("graphics/berry_crush/text_windows.bin.lz");
 
+#if GERMAN
+const u32 sCreditsCopyrightEnd_Gfx[] = INCBIN_U32("graphics/credits/the_end_copyright.4bpp.lz");
+const u32 sCreditsCopyrightEnd_Tilemap[] = INCBIN_U32("graphics/credits/the_end_copyright_de.bin.lz");
+
+const u16 s321Start_Pal[] = INCBIN_U16("graphics/link/321start.gbapal");
+const u32 s321Start_Gfx[] = INCBIN_U32("graphics/link/321start.4bpp.lz");
+
+const u32 sBonuses_Pal[] = INCBIN_U32("graphics/pokemon_jump/bonuses.gbapal");
+const u32 sBonuses_Gfx[] = INCBIN_U32("graphics/pokemon_jump/bonuses.4bpp.lz");
+const u32 sBonuses_Tilemap[] = INCBIN_U32("graphics/pokemon_jump/bonuses.bin.lz");
+
+const u16 sBlenderCenter_Pal[] = INCBIN_U16("graphics/berry_blender/center.gbapal");
+
+const u16 gTilesetPalettes_Shop[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop/palettes/15.gbapal"),
+};
+const u32 gTilesetTiles_Shop[] = INCBIN_U32("data/tilesets/secondary/shop/tiles.4bpp.lz");
+
+// roulette
+const u16 sShadow_Pal[] = INCBIN_U16("graphics/roulette/shadow.gbapal");
+const u16 sBall_Pal[] = INCBIN_U16("graphics/roulette/ball.gbapal");
+const u16 sBallCounter_Pal[] = INCBIN_U16("graphics/roulette/ball_counter.gbapal");
+const u16 sCursor_Pal[] = INCBIN_U16("graphics/roulette/cursor.gbapal");
+const u16 sCredit_Pal[] = INCBIN_U16("graphics/roulette/credit.gbapal");
+const u16 sShroomish_Pal[] = INCBIN_U16("graphics/roulette/shroomish.gbapal");
+const u16 sTaillow_Pal[] = INCBIN_U16("graphics/roulette/tailow.gbapal");
+const u16 sGridIcons_Pal[] = INCBIN_U16("graphics/roulette/grid_icons.gbapal");
+const u16 sWynaut_Pal[] = INCBIN_U16("graphics/roulette/wynaut.gbapal");
+const u16 sAzurill_Pal[] = INCBIN_U16("graphics/roulette/azurill.gbapal");
+const u16 sSkitty_Pal[] = INCBIN_U16("graphics/roulette/skitty.gbapal");
+const u16 sMakuhita_Pal[] = INCBIN_U16("graphics/roulette/makuhita.gbapal");
+const u16 sUnused1_Pal[] = INCBIN_U16("graphics/roulette/unused_1.gbapal");
+const u16 sUnused2_Pal[] = INCBIN_U16("graphics/roulette/unused_2.gbapal");
+const u16 sUnused3_Pal[] = INCBIN_U16("graphics/roulette/unused_3.gbapal");
+const u16 sUnused4_Pal[] = INCBIN_U16("graphics/roulette/unused_4.gbapal");
+
+const u32 sMapScreen_Gfx[] = INCBIN_U32("graphics/frontier_pass/map_screen.4bpp.lz");
+
+// tiles battle dome
+const u16 gTilesetPalettes_BattleDome[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_dome/palettes/15.gbapal"),
+};
+const u32 gTilesetTiles_BattleDome[] = INCBIN_U32("data/tilesets/secondary/battle_dome/tiles.4bpp.lz");
+
+const u16 sMatchCallUI_Pal[] = INCBIN_U16("graphics/pokenav/match_call/ui.gbapal");
+const u32 sMatchCallUI_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/ui.4bpp.lz");
+const u32 sMatchCallUI_Tilemap[] = INCBIN_U32("graphics/pokenav/match_call/ui.bin.lz");
+
+const u16 sConditionSearchResultFramePal[] = INCBIN_U16("graphics/pokenav/condition/search_results.gbapal");
+const u32 sConditionSearchResultTiles[] = INCBIN_U32("graphics/pokenav/condition/search_results.4bpp.lz");
+const u32 sConditionSearchResultTilemap[] = INCBIN_U32("graphics/pokenav/condition/search_results.bin.lz");
+
+const u16 sMonRibbonListFramePal[] = INCBIN_U16("graphics/pokenav/ribbons/list_bg.gbapal");
+const u32 sMonRibbonListFrameTiles[] = INCBIN_U32("graphics/pokenav/ribbons/list_bg.4bpp.lz");
+const u32 sMonRibbonListFrameTilemap[] = INCBIN_U32("graphics/pokenav/ribbons/list_bg.bin.lz");
+
+const u16 sCryMeter_Pal[] = INCBIN_U16("graphics/pokedex/cry_meter.gbapal");
+const u8 sCryMeter_Gfx[] = INCBIN_U8("graphics/pokedex/cry_meter.4bpp.lz");
+#endif
+
 // random garbage at the end.
+#if ENGLISH
 static const u8 sEmpty3[0x54BAC] = {0};
+#elif GERMAN
+static const u8 sEmpty3[0x4EB48] = {0};
+#endif
 static const u8 sUnused1[]       = {0x0D, 0x00, 0x58, 0x02};
 static const u8 sEmpty4[0x1145]  = {0};
 static const u8 sUnused2[]       = {0x02};

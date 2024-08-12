@@ -151,6 +151,7 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
+	.ifdef ENGLISH
 	.string "STEVEN: {PLAYER}{KUN}…\p"
 	.string "As you can see, there's not much here,\n"
 	.string "but this is my home.\p"
@@ -159,8 +160,19 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "It's the HIDDEN MACHINE DIVE.\p"
 	.string "No need to be shy--you've earned\n"
 	.string "this HM.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: {PLAYER}{KUN}?\p"
+	.string "Ja, das ist mein Zuhause. Peinlich, wie\n"
+	.string "kahl die Räume hier sind.\p"
+	.string "Oh, hier, nimm diese VM.\p"
+	.string "Sie enthält TAUCHER. Ich habe das\n"
+	.string "meinen POKéMON schon beigebracht.$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
+	.ifdef ENGLISH
 	.string "STEVEN: While you're using SURF, you\n"
 	.string "should notice dark patches of water.\p"
 	.string "Use DIVE if you come to deep water\n"
@@ -169,32 +181,83 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "DIVE again.\p"
 	.string "In some places, it won't be possible\n"
 	.string "for you to surface, though.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Wenn du SURFER einsetzt und\n"
+	.string "über das Meer gleitest, wirst du dunkle\l"
+	.string "Stellen im Wasser bemerken können.\p"
+	.string "Setze hier TAUCHER ein und du kannst\n"
+	.string "hinabtauchen bis zum Meeresboden.\p"
+	.string "Wenn du wieder auftauchen möchtest,\n"
+	.string "setze ebenfalls TAUCHER ein.\p"
+	.string "An manchen Stellen ist das Auftauchen\n"
+	.string "allerdings nicht möglich.$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
+	.ifdef ENGLISH
 	.string "STEVEN: Apparently, there's an\n"
 	.string "underwater cavern between\l"
 	.string "MOSSDEEP and SOOTOPOLIS.\p"
 	.string "You know, the one that CAPT. STERN\n"
 	.string "found in his submarine.$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: Zwischen MOOSBACH CITY und\n"
+	.string "XENEROVILLE gibt es eine Unterwasser-\l"
+	.string "höhle.\p"
+	.string "Die, die KAPT. BRIGG auf seiner\n"
+	.string "Expedition entdeckt hat, weißt du.$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
+	.ifdef ENGLISH
 	.string "{PLAYER} checked the POKé BALL.\p"
 	.string "It contained the POKéMON\n"
 	.string "BELDUM.\p"
 	.string "Take the POKé BALL?$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} überprüft den POKéBALL.\p"
+	.string "Er enthält das POKéMON\n"
+	.string "TANHEL.\p"
+	.string "Den POKéBALL nehmen?$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
+	.ifdef ENGLISH
 	.string "{PLAYER} obtained a BELDUM.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat TANHEL erhalten.$"
+	.endif
+	.endif
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
+	.ifdef ENGLISH
 	.string "There is no space for another POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "There is no space for another POKéMON.$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
+	.ifdef ENGLISH
 	.string "{PLAYER} left the POKé BALL where\n"
 	.string "it was.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} legt den POKéBALL zurück.$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
+	.ifdef ENGLISH
 	.string "It's a letter.\p"
 	.string "… … … … … …\p"
 	.string "To {PLAYER}{KUN}…\p"
@@ -210,8 +273,37 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "I'm counting on you.\p"
 	.string "May our paths cross someday.\p"
 	.string "STEVEN STONE$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist ein Brief.\p"
+	.string "\n"
+	.string "… … … … … …\p"
+	.string "An {PLAYER}{KUN}…\p"
+	.string "Ich habe mich dazu entschlossen, etwas\n"
+	.string "Mentaltraining zu machen und auf der\l"
+	.string "Straße zu trainieren.\p"
+	.string "Ich werde für einige Zeit nicht nach\n"
+	.string "Hause kommen.\p"
+	.string "Ich möchte dich um einen Gefallen\n"
+	.string "bitten.\p"
+	.string "Ich möchte, dass du den POKéBALL\n"
+	.string "nimmst, der auf dem Tisch liegt.\p"
+	.string "Er enthält mein Lieblings-POKéMON\n"
+	.string "TANHEL.\p"
+	.string "Ich verlasse mich auf dich.\p"
+	.string "Mögen wir uns eines Tages wiedersehen.\p"
+	.string "TROY TRUMM$"
+	.endif
+	.endif
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
+	.ifdef ENGLISH
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by STEVEN.$"
+	.else
+	.ifdef GERMAN
+	.string "Eine Kollektion seltener Steine,\n"
+	.string "zusammengetragen von TROY.$"
+	.endif
+	.endif
 

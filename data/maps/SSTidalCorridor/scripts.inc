@@ -254,6 +254,7 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
+	.ifdef ENGLISH
 	.string "SCOTT: Well, hi, hi!\n"
 	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
 	.string "Something's come up, so I have to\n"
@@ -272,49 +273,143 @@ SSTidalCorridor_Text_ScottBattleFrontierInvite:
 	.string "the BATTLE FRONTIER.\p"
 	.string "Okay, {PLAYER}{KUN}, I'll be waiting for you\n"
 	.string "at the BATTLE FRONTIER!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Hallo!!!\n"
+	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
+	.string "Irgendetwas Großes wird passieren,\n"
+	.string "daher habe ich es eilig. Aber ich habe\l"
+	.string "mich gefreut, dich zu treffen!\p"
+	.string "Herzlichen Glückwunsch, CHAMP der\n"
+	.string "POKéMON LIGA!\p"
+	.string "Jemanden wie dich würde ich gerne ein-\n"
+	.string "laden. Es gibt da einen besonderen Ort…\p"
+	.string "Und zwar…\n"
+	.string "Die KAMPFZONE!\p"
+	.string "Was das für ein Ort ist?\n"
+	.string "Schau ihn dir einfach an!\p"
+	.string "Ich habe mich bereits mit dem KAPITÄN\n"
+	.string "darüber unterhalten.\p"
+	.string "Nächstes Mal, wenn du die Fähre nimmst,\n"
+	.string "kannst du zur KAMPFZONE fahren.\p"
+	.string "Okay, {PLAYER}{KUN}, ich erwarte dich also in\n"
+	.string "der KAMPFZONE!$"
+	.endif
+	.endif
 
 SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage:
+	.ifdef ENGLISH
 	.string "This ferry is built to plow through\n"
 	.string "fast-running currents.\p"
 	.string "We hope you enjoy your voyage with us.\n"
 	.string "Feel free to explore the ship.$"
+	.else
+	.ifdef GERMAN
+	.string "Diese Fähre ist so konstruiert, dass sie\n"
+	.string "auch durch starke Strömungen\l"
+	.string "fahren kann.\p"
+	.string "Wir hoffen, du genießt die Reise mit\n"
+	.string "uns. Schau dich ruhig auf dem Schiff um.$"
+	.endif
+	.endif
 
 SSTidal_Text_HopeYouEnjoyVoyage:
+	.ifdef ENGLISH
 	.string "We hope you enjoy your voyage on\n"
 	.string "our ferry.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir hoffen, du genießt die Reise mit\n"
+	.string "uns. Schau dich ruhig auf dem Schiff um.$"
+	.endif
+	.endif
 
 SSTidal_Text_MadeLandInSlateport:
+	.ifdef ENGLISH
 	.string "We have made land in SLATEPORT CITY.\n"
 	.string "Thank you for sailing with us.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir gehen in GRAPHITPORT CITY vor\n"
+	.string "Anker. Danke, dass du mit uns gefahren\l"
+	.string "bist.$"
+	.endif
+	.endif
 
 SSTidal_Text_MadeLandInLilycove:
+	.ifdef ENGLISH
 	.string "We have made land in LILYCOVE CITY.\n"
 	.string "Thank you for sailing with us.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir gehen in SEEGRASULB CITY vor Anker.\n"
+	.string "Danke, dass du mit uns gefahren bist.$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_CanRestInCabin2:
+	.ifdef ENGLISH
 	.string "It'll be some time before we make land,\n"
 	.string "I reckon.\p"
 	.string "You can rest up in your cabin if you'd\n"
 	.string "like. Your cabin's No. 2.\p"
 	.string "The bed in there is soft and plushy.\n"
 	.string "I can attest to how comfy it is!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich schätze, es wird einige Zeit dauern,\n"
+	.string "bis wir an Land gehen.\p"
+	.string "Du kannst dich in deiner Kabine aus-\n"
+	.string "ruhen. Du hast Kabine 2.\p"
+	.string "Das Bett ist weich und gemütlich. Das\n"
+	.string "habe ich bereits überprüft!$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_WeveArrived:
+	.ifdef ENGLISH
 	.string "We've arrived!$"
+	.else
+	.ifdef GERMAN
+	.string "Wir sind angekommen!$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_VisitOtherCabins:
+	.ifdef ENGLISH
 	.string "Go visit other cabins.\n"
 	.string "TRAINERS bored of the boat trip will\l"
 	.string "be itching to battle.$"
+	.else
+	.ifdef GERMAN
+	.string "Schau dir ruhig die anderen Kabinen an.\n"
+	.string "TRAINER langweilen sich auf der Über-\l"
+	.string "fahrt und werden sicher gerne kämpfen.$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_EnjoyYourCruise:
+	.ifdef ENGLISH
 	.string "Enjoy your cruise!$"
+	.else
+	.ifdef GERMAN
+	.string "Genieße die Überfahrt.$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
+	.ifdef ENGLISH
 	.string "The horizon spreads beyond\n"
 	.string "the porthole.$"
+	.else
+	.ifdef GERMAN
+	.string "Durch das Bullauge sieht man\n"
+	.string "den Horizont.$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_BrineyWelcomeAboard:
+	.ifdef ENGLISH
 	.string "MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\p"
 	.string "They made me honorary captain of\n"
 	.string "the S.S. TIDAL!\p"
@@ -323,18 +418,62 @@ SSTidalCorridor_Text_BrineyWelcomeAboard:
 	.string "but when I saw this majestic ship…\p"
 	.string "Let me just say, it stirred my sleeping\n"
 	.string "soul as a sailor!$"
+	.else
+	.ifdef GERMAN
+	.string "MR. BRACK: Willkommen an Bord, {PLAYER}{KUN}!\p"
+	.string "Ich bin jetzt der Kapitän der\n"
+	.string "MS TIDE!\p"
+	.string "Du kannst mich ab sofort\n"
+	.string "KAPITÄN BRACK nennen.\p"
+	.string "Ich war zwar schon in Rente gegangen,\n"
+	.string "aber als ich dieses majestätische\l"
+	.string "Schiff gesehen habe…\p"
+	.string "Lass es mich so sagen: Es weckte die\n"
+	.string "schlafende Seele des Seemannes in mir.$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_Peeko:
+	.ifdef ENGLISH
 	.string "PEEKO: Pihyo pihyohyo…$"
+	.else
+	.ifdef GERMAN
+	.string "PECKO: Pihyo pihyohyo…$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_Cabin1:
+	.ifdef ENGLISH
 	.string "Cabin 1$"
+	.else
+	.ifdef GERMAN
+	.string "Kabine 1$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_Cabin2:
+	.ifdef ENGLISH
 	.string "Cabin 2$"
+	.else
+	.ifdef GERMAN
+	.string "Kabine 2$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_Cabin3:
+	.ifdef ENGLISH
 	.string "Cabin 3$"
+	.else
+	.ifdef GERMAN
+	.string "Kabine 3$"
+	.endif
+	.endif
 
 SSTidalCorridor_Text_Cabin4:
+	.ifdef ENGLISH
 	.string "Cabin 4$"
+	.else
+	.ifdef GERMAN
+	.string "Kabine 4$"
+	.endif
+	.endif

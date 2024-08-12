@@ -126,18 +126,43 @@ EverGrandeCity_PokemonLeague_1F_Movement_RightGuardOutOfWay:
 	step_end
 
 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges:
+	.ifdef ENGLISH
 	.string "Beyond this point, only those TRAINERS\n"
 	.string "who have collected all the GYM BADGES\l"
 	.string "are permitted to enter.\p"
 	.string "TRAINER, let us confirm that you have\n"
 	.string "all the GYM BADGES.$"
+	.else
+	.ifdef GERMAN
+	.string "Ab hier haben nur die TRAINER, die alle\n"
+	.string "ORDEN der ARENen erhalten haben,\l"
+	.string "Zutritt.\p"
+	.string "TRAINER, lass uns sicherstellen, dass\n"
+	.string "du auch alle ORDEN hast.$"
+	.endif
+	.endif
 
 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
+	.ifdef ENGLISH
 	.string "You haven't obtained all the BADGES.\p"
 	.string "If you're bound for the POKéMON\n"
 	.string "LEAGUE, you must return with them.$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast noch nicht alle ORDEN erhalten.\p"
+	.string "Wenn du zur POKéMON LIGA willst,\n"
+	.string "musst du alle ORDEN vorweisen können.$"
+	.endif
+	.endif
 
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:
+	.ifdef ENGLISH
 	.string "TRAINER! Believe in yourself and your\n"
 	.string "POKéMON, and go forth!$"
+	.else
+	.ifdef GERMAN
+	.string "TRAINER! Glaube an dich und deine\n"
+	.string "POKéMON und gehe weiter!$"
+	.endif
+	.endif
 

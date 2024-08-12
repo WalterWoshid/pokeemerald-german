@@ -186,4 +186,11 @@ FarawayIsland_Interior_EventScript_HideMewWhenGrassCut::
 	end
 
 FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded:
+	.ifdef ENGLISH
 	.string "The feeling of being watched faded…$"
+	.else
+	.ifdef GERMAN
+	.string "Das Gefühl, beobachtet zu werden, lässt\n"
+	.string "langsam nach…$"
+	.endif
+	.endif

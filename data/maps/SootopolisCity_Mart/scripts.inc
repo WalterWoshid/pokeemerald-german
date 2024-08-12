@@ -55,23 +55,56 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 	end
 
 SootopolisCity_Mart_Text_PPUpIsGreat:
+	.ifdef ENGLISH
 	.string "PP UP is great!\p"
 	.string "It raises the POWER POINTS, the PP,\n"
 	.string "of a POKéMON move.$"
+	.else
+	.ifdef GERMAN
+	.string "AP-PLUS ist sehr nützlich!\p"
+	.string "Es steigert die ANGRIFFSPUNKTE, die AP,\n"
+	.string "einer POKéMON-Attacke.$"
+	.endif
+	.endif
 
 SootopolisCity_Mart_Text_TooScaryOutside:
+	.ifdef ENGLISH
 	.string "What…\n"
 	.string "What is happening?\p"
 	.string "I really want to know, but it's too\n"
 	.string "scary to go outside.$"
+	.else
+	.ifdef GERMAN
+	.string "Was…\n"
+	.string "Was ist passiert?\p"
+	.string "Das würde ich zu gerne wissen, aber ich\n"
+	.string "trau mich nicht nach draußen.$"
+	.endif
+	.endif
 
 SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
+	.ifdef ENGLISH
 	.string "Do you know FULL RESTORE?\p"
 	.string "Full restoration of HP!\n"
 	.string "Eradication of all status problems!\p"
 	.string "It's truly an item of your dreams!$"
+	.else
+	.ifdef GERMAN
+	.string "Kennst du TOP-GENESUNG?\p"
+	.string "Alle KP werden aufgefüllt! Alle\n"
+	.string "Statusprobleme werden aufgehoben!\p"
+	.string "Ein wundervolles Item!$"
+	.endif
+	.endif
 
 SootopolisCity_Mart_Text_DidSomethingAwaken:
+	.ifdef ENGLISH
 	.string "This weather…\n"
 	.string "Did something awaken?$"
+	.else
+	.ifdef GERMAN
+	.string "Dieses Wetter…\n"
+	.string "Wurde etwas aufgeweckt?$"
+	.endif
+	.endif
 

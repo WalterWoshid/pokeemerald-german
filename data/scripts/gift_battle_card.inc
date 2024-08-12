@@ -24,6 +24,7 @@ MysteryGiftScript_BattleCardInfo:
 	end
 
 sText_MysteryGiftBattleCountCard:
+	.ifdef ENGLISH
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "Your BATTLE COUNT CARD keeps\n"
@@ -34,8 +35,24 @@ sText_MysteryGiftBattleCountCard:
 	.string "You may check the overall rankings\n"
 	.string "by reading the NEWS.\p"
 	.string "Please do give it a try!$"
+	.else
+	.ifdef GERMAN
+	.string "Danke, dass du das GEHEIM-\n"
+	.string "GESCHEHEN benutzt hast.\p"
+	.string "Auf deiner KAMPFKARTE\n"
+	.string "wird deine Kampfstatistik gegen\l"
+	.string "TRAINER mit derselben KARTE\l"
+	.string "festgehalten.\l"
+	.string "Suche TRAINER mit derselben KARTE\l"
+	.string "und kämpfe gegen sie.\p"
+	.string "Du kannst den Gesamtstand in den\n"
+	.string "NACHRICHTEN erfahren.\p"
+	.string "Probiere es doch einfach!$"
+	.endif
+	.endif
 
 sText_MysteryGiftBattleCountCard_WonPrize:
+	.ifdef ENGLISH
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "Congratulations!\p"
@@ -43,3 +60,14 @@ sText_MysteryGiftBattleCountCard_WonPrize:
 	.string "three battles!\p"
 	.string "We hope you will be inspired to\n"
 	.string "battle some more.$"
+	.else
+	.ifdef GERMAN
+	.string "Danke, dass du das GEHEIM-\n"
+	.string "GESCHEHEN benutzt hast.\p"
+	.string "Glückwunsch!\p"
+	.string "Du erhältst einen Preis\n"
+	.string "für drei gewonnene Kämpfe.\p"
+	.string "Hoffentlich inspiriert dich das,\n"
+	.string "weiter zu kämpfen.$"
+	.endif
+	.endif

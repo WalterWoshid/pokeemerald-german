@@ -448,6 +448,7 @@ const u8 gTypeEffectiveness[336] =
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
 };
 
+#if ENGLISH
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
     [TYPE_NORMAL] = _("NORMAL"),
@@ -469,6 +470,29 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_DRAGON] = _("DRAGON"),
     [TYPE_DARK] = _("DARK"),
 };
+#elif GERMAN
+const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
+{
+    [TYPE_NORMAL] = _("NORMAL"),
+    [TYPE_FIGHTING] = _("KAMPF"),
+    [TYPE_FLYING] = _("FLUG"),
+    [TYPE_POISON] = _("GIFT"),
+    [TYPE_GROUND] = _("BODEN"),
+    [TYPE_ROCK] = _("GEST."),
+    [TYPE_BUG] = _("KÄFER"),
+    [TYPE_GHOST] = _("GEIST"),
+    [TYPE_STEEL] = _("STAHL"),
+    [TYPE_MYSTERY] = _("???"),
+    [TYPE_FIRE] = _("FEUER"),
+    [TYPE_WATER] = _("WASSER"),
+    [TYPE_GRASS] = _("PFLAN."),
+    [TYPE_ELECTRIC] = _("ELEK."),
+    [TYPE_PSYCHIC] = _("PSYCHO"),
+    [TYPE_ICE] = _("EIS"),
+    [TYPE_DRAGON] = _("DRA."),
+    [TYPE_DARK] = _("UNL."),
+};
+#endif
 
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =

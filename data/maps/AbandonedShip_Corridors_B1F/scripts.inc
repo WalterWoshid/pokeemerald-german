@@ -54,33 +54,86 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
+	.ifdef ENGLISH
 	.string "When we go out to sea, we SAILORS\n"
 	.string "always bring our POKéMON.\l"
 	.string "How about a quick battle?$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn wir zur See fahren, nehmen wir\n"
+	.string "MATROSEN immer unsere POKéMON mit.\l"
+	.string "Wie wäre es mit einem schnellen Kampf?$"
+	.endif
+	.endif
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
+	.ifdef ENGLISH
 	.string "Whoops, I'm sunk!$"
+	.else
+	.ifdef GERMAN
+	.string "Huups, da bin ich abgesoffen.$"
+	.endif
+	.endif
 
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
+	.ifdef ENGLISH
 	.string "The ship's bottom has sunk into the\n"
 	.string "depths.\p"
 	.string "If a POKéMON knew how to go underwater,\n"
 	.string "we might make some progress…$"
+	.else
+	.ifdef GERMAN
+	.string "Der Schiffsrumpf liegt tief unter der\n"
+	.string "Wasserlinie.\p"
+	.string "Wenn ein POKéMON wissen würde, wie\n"
+	.string "man taucht, würden wir Fortschritte\l"
+	.string "machen.$"
+	.endif
+	.endif
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
+	.ifdef ENGLISH
 	.string "Yay!\n"
 	.string "It's a ship!$"
+	.else
+	.ifdef GERMAN
+	.string "Jahaa!\n"
+	.string "Ein Schiff!$"
+	.endif
+	.endif
 
 AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
+	.ifdef ENGLISH
 	.string "The door is locked.\p"
 	.string "“STORAGE” is painted on the door.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Tür ist verschlossen.\p"
+	.string "“LAGER” steht auf dem Schild.$"
+	.endif
+	.endif
 
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
+	.ifdef ENGLISH
 	.string "{PLAYER} inserted and turned the\n"
 	.string "STORAGE KEY.\p"
 	.string "The inserted KEY stuck fast,\n"
 	.string "but the door opened.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} steckt den SCHLÜSSEL zum\n"
+	.string "LAGER ins Schlüsselloch und dreht ihn.\p"
+	.string "Der SCHLÜSSEL ist schwergängig, aber\n"
+	.string "das Schloss lässt sich öffnen.$"
+	.endif
+	.endif
 
 AbandonedShip_Text_TheDoorIsOpen:
+	.ifdef ENGLISH
 	.string "The door is open.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Tür ist offen.$"
+	.endif
+	.endif
 

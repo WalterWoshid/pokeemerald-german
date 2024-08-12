@@ -5070,4 +5070,53 @@ extern const u8 gMailTilemap_Retro[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+#if GERMAN
+extern const u16 sBonuses_Pal[];
+extern const u32 sBonuses_Gfx[];
+extern const u32 sBonuses_Tilemap[];
+
+extern const u16 s321Start_Pal[];
+extern const u32 s321Start_Gfx[];
+
+extern const u16 sBlenderCenter_Pal[];
+
+extern const u32 sMapScreen_Gfx[];
+
+// roulette
+extern const u16 sShadow_Pal[];
+extern const u16 sBall_Pal[];
+extern const u16 sBallCounter_Pal[];
+extern const u16 sCursor_Pal[];
+extern const u16 sCredit_Pal[];
+extern const u16 sShroomish_Pal[];
+extern const u16 sTaillow_Pal[];
+extern const u16 sGridIcons_Pal[];
+extern const u16 sWynaut_Pal[];
+extern const u16 sAzurill_Pal[];
+extern const u16 sSkitty_Pal[];
+extern const u16 sMakuhita_Pal[];
+extern const u16 sUnused1_Pal[];
+extern const u16 sUnused2_Pal[];
+extern const u16 sUnused3_Pal[];
+extern const u16 sUnused4_Pal[];
+
+extern const u16 sCryMeter_Pal[];
+extern const u8 sCryMeter_Gfx[];
+
+extern const u32 sCreditsCopyrightEnd_Gfx[];
+extern const u32 sCreditsCopyrightEnd_Tilemap[];
+
+extern const u16 sMatchCallUI_Pal[];
+extern const u32 sMatchCallUI_Gfx[];
+extern const u32 sMatchCallUI_Tilemap[];
+
+extern const u16 sConditionSearchResultFramePal[];
+extern const u32 sConditionSearchResultTiles[];
+extern const u32 sConditionSearchResultTilemap[];
+
+extern const u16 sMonRibbonListFramePal[];
+extern const u32 sMonRibbonListFrameTiles[];
+extern const u32 sMonRibbonListFrameTilemap[];
+#endif
+
 #endif //GUARD_GRAPHICS_H

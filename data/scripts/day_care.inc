@@ -273,13 +273,24 @@ EventScript_EggHatch::
 	end
 
 Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon:
+	.ifdef ENGLISH
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
 	.string "POKéMON of TRAINERS.\p"
 	.string "If you'd like me to raise your POKéMON,\n"
 	.string "have a word with my wife.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin der PENSIONSLEITER.\p"
+	.string "Ich kümmere mich um die wertvollen\n"
+	.string "POKéMON der TRAINER.\p"
+	.string "Wenn ich eines deiner POKéMON auf-\n"
+	.string "ziehen soll, sprich mit meiner Frau.$"
+	.endif
+	.endif
 
 Route117_Text_DoYouWantEgg:
+	.ifdef ENGLISH
 	.string "Ah, it's you!\p"
 	.string "We were raising your POKéMON,\n"
 	.string "and my goodness, were we surprised!\p"
@@ -287,130 +298,357 @@ Route117_Text_DoYouWantEgg:
 	.string "We don't know how it got there,\n"
 	.string "but your POKéMON had it.\p"
 	.string "You do want it, yes?$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, du bist es!\p"
+	.string "Wir haben deine POKéMON aufgezogen\n"
+	.string "und wurden überrascht!\p"
+	.string "Deine POKéMON haben nun ein EI!\p"
+	.string "Wir wissen nicht, wie das passiert ist,\n"
+	.string "aber deine POKéMON haben es.\p"
+	.string "Möchtest du es haben?$"
+	.endif
+	.endif
 
 Route117_Text_YourMonIsDoingFine:
+	.ifdef ENGLISH
 	.string "Ah, it's you! Good to see you.\n"
 	.string "Your {STR_VAR_1}'s doing fine.$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, du bist es! Schön, dich zu sehen.\n"
+	.string "Deinem {STR_VAR_1} geht es sehr gut.$"
+	.endif
+	.endif
 
 Route117_Text_IllKeepIt:
+	.ifdef ENGLISH
 	.string "Well then, I'll keep it.\n"
 	.string "Thanks!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich werde es behalten.$"
+	.endif
+	.endif
 
 Route117_Text_YouHaveNoRoomForIt:
+	.ifdef ENGLISH
 	.string "You have no room for it…\n"
 	.string "Come back when you've made room.$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast keinen Platz dafür… Komm\n"
+	.string "wieder, wenn du Platz geschafft hast.$"
+	.endif
+	.endif
 
 Route117_Text_ReceivedEgg:
+	.ifdef ENGLISH
 	.string "{PLAYER} received the EGG from\n"
 	.string "the DAY-CARE MAN.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält das EI vom\n"
+	.string "PENSIONSLEITER.$"
+	.endif
+	.endif
 
 Route117_Text_TakeGoodCareOfIt:
+	.ifdef ENGLISH
 	.string "Take good care of it.$"
+	.else
+	.ifdef GERMAN
+	.string "Kümmere dich gut darum.$"
+	.endif
+	.endif
 
 Route117_Text_FriendlyWithOtherTrainersMon:
+	.ifdef ENGLISH
 	.string "By the way, about your {STR_VAR_1},\n"
 	.string "it seemed to be friendly with\l"
 	.string "{STR_VAR_2}'s {STR_VAR_3}.\p"
 	.string "I may even have seen it receiving\n"
 	.string "a piece of MAIL.$"
+	.else
+	.ifdef GERMAN
+	.string "Übrigens, dein {STR_VAR_1} scheint sich\n"
+	.string "gut mit dem {STR_VAR_3} von {STR_VAR_2} \l"
+	.string "zu verstehen.\p"
+	.string "Ich habe gesehen, wie sie einen BRIEF\n"
+	.string "ausgetauscht haben…$"
+	.endif
+	.endif
 
 @ Unused
 Route117_Text_SeeWifeIfYouWantToPickUpMon:
+	.ifdef ENGLISH
 	.string "If you want to pick up your POKéMON,\n"
 	.string "have a word with my wife.$"
+	.else
+	.ifdef GERMAN
+	.string "If you want to pick up your POKéMON,\n"
+	.string "have a word with my wife.$"
+	.endif
+	.endif
 
 Route117_Text_YourMonsAreDoingFine:
+	.ifdef ENGLISH
 	.string "Ah, it's you! Your {STR_VAR_1} and\n"
 	.string "{STR_VAR_2} are doing fine.$"
+	.else
+	.ifdef GERMAN
+	.string "Ah, du bist es! Deine POKéMON\n"
+	.string "{STR_VAR_1} und {STR_VAR_2} entwickeln\l"
+	.string "sich prächtig.$"
+	.endif
+	.endif
 
 Route117_Text_IWillKeepDoYouWantIt:
+	.ifdef ENGLISH
 	.string "I really will keep it.\n"
 	.string "You do want this, yes?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich werde es behalten.\n"
+	.string "Oder möchtest du es haben?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon:
+	.ifdef ENGLISH
 	.string "I'm the DAY-CARE LADY.\p"
 	.string "We can raise POKéMON for you.\p"
 	.string "Would you like us to raise one?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin die PENSIONSLEITERIN.\p"
+	.string "Wir ziehen POKéMON für dich auf.\p"
+	.string "Sollen wir eins für dich aufziehen?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_WhichMonShouldWeRaise:
+	.ifdef ENGLISH
 	.string "Which POKéMON should we raise for\n"
 	.string "you?$"
+	.else
+	.ifdef GERMAN
+	.string "Welches POKéMON sollen wir für dich\n"
+	.string "aufziehen?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_WellRaiseYourMon:
+	.ifdef ENGLISH
 	.string "Fine, we'll raise your {STR_VAR_1}\n"
 	.string "for a while.\p"
 	.string "Come back for it later.$"
+	.else
+	.ifdef GERMAN
+	.string "Fein, dann nehmen wir dein {STR_VAR_1}\n"
+	.string "für eine Weile in Pflege.\p"
+	.string "Schau später mal nach ihm.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_WeCanRaiseOneMore:
+	.ifdef ENGLISH
 	.string "We can raise two of your POKéMON.\n"
 	.string "Would you like us to raise one more?$"
+	.else
+	.ifdef GERMAN
+	.string "Wir können zwei deiner POKéMON nehmen.\n"
+	.string "Möchtest du noch eins in Pflege geben?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_HusbandWasLookingForYou:
+	.ifdef ENGLISH
 	.string "My husband was looking for you.$"
+	.else
+	.ifdef GERMAN
+	.string "Mein Mann hat dich schon gesucht.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_FineThenComeAgain:
+	.ifdef ENGLISH
 	.string "Oh, fine, then.\n"
 	.string "Come again.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, gut.\n"
+	.string "Komm bald wieder.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_NotEnoughMoney:
+	.ifdef ENGLISH
 	.string "You don't have enough money…$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast nicht genug Geld…$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_TakeOtherOneBackToo:
+	.ifdef ENGLISH
 	.string "Will you take back the other one,\n"
 	.string "too?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du das andere auch wieder\n"
+	.string "mitnehmen?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_ComeAgain:
+	.ifdef ENGLISH
 	.string "Fine.\n"
 	.string "Come again.$"
+	.else
+	.ifdef GERMAN
+	.string "Gut.\n"
+	.string "Komm bald wieder.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_GoodToSeeYou:
+	.ifdef ENGLISH
 	.string "Ah, it's you! Good to see you.\n"
 	.string "Your POKéMON can only be doing good!$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, du bist es! Schön, dich zu sehen.\n"
+	.string "Deinen POKéMON kann es einfach\l"
+	.string "nur gut gehen!$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_YourMonHasGrownXLevels:
+	.ifdef ENGLISH
 	.string "By level, your {STR_VAR_1} has\n"
 	.string "grown by {STR_VAR_2}.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein {STR_VAR_1} ist um {STR_VAR_2} Level\n"
+	.string "gewachsen.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_YourTeamIsFull:
+	.ifdef ENGLISH
 	.string "Your POKéMON team is full.\n"
 	.string "Make room, then come see me.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein POKéMON-Team ist vollzählig.\n"
+	.string "Schaffe Platz und komm dann wieder.$"
+	.endif
+	.endif
 
 @ Unused
 Route117_PokemonDayCare_Text_TakeBackWhichMon:
+	.ifdef ENGLISH
 	.string "Which POKéMON will you take back?$"
+	.else
+	.ifdef GERMAN
+	.string "Which POKéMON will you take back?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_ItWillCostX:
+	.ifdef ENGLISH
 	.string "If you want your {STR_VAR_1} back,\n"
 	.string "it will cost ¥{STR_VAR_2}.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du dein {STR_VAR_1}\n"
+	.string "mitnehmen willst, kostet das ¥{STR_VAR_2}.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_HeresYourMon:
+	.ifdef ENGLISH
 	.string "Perfect!\n"
 	.string "Here's your POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "Sehr schön!\n"
+	.string "Hier ist dein POKéMON!$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_TookBackMon:
+	.ifdef ENGLISH
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
 	.string "the DAY-CARE LADY.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat {STR_VAR_1} von der\n"
+	.string "PENSIONSLEITERIN zurückerhalten.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_YouHaveJustOneMon:
+	.ifdef ENGLISH
 	.string "Oh? But you have just one\n"
 	.string "POKéMON.\p"
 	.string "Come back another time.$"
+	.else
+	.ifdef GERMAN
+	.string "Oh! Du hast aber nur ein POKéMON.\p"
+	.string "Komm einfach später wieder.$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_TakeYourMonBack:
+	.ifdef ENGLISH
 	.string "Will you take your POKéMON back?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du dein POKéMON wieder\n"
+	.string "mitnehmen?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_WhatWillYouBattleWith:
+	.ifdef ENGLISH
 	.string "If you leave me that POKéMON,\n"
 	.string "what will you battle with?\p"
 	.string "Come back another time.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du das POKéMON hier lässt, womit\n"
+	.string "willst du denn dann kämpfen?\p"
+	.string "Komm einfach später wieder.$"
+	.endif
+	.endif
 
 Text_EggHatchHuh:
+	.ifdef ENGLISH
 	.string "Huh?$"
+	.else
+	.ifdef GERMAN
+	.string "Wie?$"
+	.endif
+	.endif
 
 Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne:
+	.ifdef ENGLISH
 	.string "Huh?\n"
 	.string "Now, now.\p"
 	.string "If you leave that POKéMON with\n"
 	.string "me, you'll be left with just one.\p"
 	.string "You will be better off if you catch\n"
 	.string "some more, I dare say.$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte?\n"
+	.string "Aber, aber…\p"
+	.string "Wenn du das POKéMON bei mir lässt, dann\n"
+	.string "hast du ja nur noch ein einziges bei dir!\p"
+	.string "Fang doch einfach ein paar POKéMON,\n"
+	.string "dann sehen wir weiter.$"
+	.endif
+	.endif

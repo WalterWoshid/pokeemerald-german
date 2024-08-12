@@ -2,6 +2,9 @@
 #include "main.h"
 #include "constants/songs.h"
 #include "constants/event_objects.h"
+#if GERMAN
+#include "constants/moves.h"
+#endif
 #include "mauville_old_man.h"
 #include "event_data.h"
 #include "string_util.h"
@@ -38,12 +41,21 @@ static EWRAM_DATA struct MauvilleManStoryteller * sStorytellerPtr = NULL;
 static EWRAM_DATA u8 sStorytellerWindowId = 0;
 
 static const u16 sDefaultBardSongLyrics[BARD_SONG_LENGTH] = {
+#if ENGLISH
     EC_WORD_SHAKE,
     EC_WORD_IT,
     EC_WORD_DO,
     EC_WORD_THE,
     EC_WORD_DIET,
     EC_WORD_DANCE
+#elif GERMAN
+    EC_WORD_GO,
+    EC_WORD_EXCL,
+    EC_WORD_WE,
+    EC_WORD_DANCE,
+    EC_WORD_OF,
+    EC_MOVE2(TEETER_DANCE)
+#endif
 };
 
 static const u8 * const sGiddyAdjectives[] = {

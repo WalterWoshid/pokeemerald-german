@@ -375,17 +375,35 @@ BattleFrontier_BattlePalaceLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
+	.ifdef ENGLISH
 	.string "Where the hearts of TRAINERS\n"
 	.string "are put to the test.\p"
 	.string "I welcome you to the BATTLE PALACE.\p"
 	.string "I accept challenges to the SINGLE\n"
 	.string "BATTLE HALLS.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier wird das Herz der TRAINER\n"
+	.string "auf die Probe gestellt!\p"
+	.string "Willkommen im KAMPFPALAST!\p"
+	.string "Ich nehme Herausforderungen für die\n"
+	.string "EINZELKAMPF-Hallen entgegen!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
+	.ifdef ENGLISH
 	.string "Do you wish to take\n"
 	.string "the SINGLE BATTLE HALL challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du dich der Herausforderung\n"
+	.string "der EINZELKAMPF-Hallen stellen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
+	.ifdef ENGLISH
 	.string "In the BATTLE PALACE, there are\n"
 	.string "several auditoriums for SINGLE BATTLES\l"
 	.string "that are named SINGLE BATTLE HALLS.\p"
@@ -407,17 +425,58 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
 	.string "challenge, you must save the game.\p"
 	.string "If you don't save before interrupting,\n"
 	.string "you will be disqualified.$"
+	.else
+	.ifdef GERMAN
+	.string "Im KAMPFPALAST gibt es verschiedene\n"
+	.string "EINZELKAMPF-Hallen für\l"
+	.string "EINZELKÄMPFE.\p"
+	.string "Die EINZELKÄMPFE verlaufen auf die\n"
+	.string "übliche Weise. Es gibt eine entschei-\l"
+	.string "dende Regel, die es zu beachten gilt!!!\p"
+	.string "TRAINER dürfen ihre POKéMON lediglich\n"
+	.string "in den Kampf rufen und zurückziehen.\p"
+	.string "Ansonsten dürfen sie ihren POKéMON\n"
+	.string "keinerlei Anweisungen geben!\p"
+	.string "Die POKéMON sollen sich ihrem Wesen\n"
+	.string "entsprechend verhalten und eigen-\p"
+	.string "ständig kämpfen! Vertrau deinen\n"
+	.string "POKéMON und achte auf sie.\p"
+	.string "Schaffst du es, sieben TRAINER in Folge\n"
+	.string "zu besiegen, erhältst du von uns\l"
+	.string "Gewinnpunkte.\p"
+	.string "Willst du die Herausforderung ab-\n"
+	.string "brechen, musst du dein Spiel speichern.\p"
+	.string "Andernfalls wirst du bei Abbruch\n"
+	.string "disqualifiziert.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified:
+	.ifdef ENGLISH
 	.string "When you have fortified your heart\n"
 	.string "and POKéMON, you must return.$"
+	.else
+	.ifdef GERMAN
+	.string "Stärke dein Herz und deine POKéMON und\n"
+	.string "komm dann wieder.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_WhichChallenge:
+	.ifdef ENGLISH
 	.string "There are two BATTLE HALLS,\n"
 	.string "Level 50 and Open Level.\l"
 	.string "Which is your choice of a challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Es gibt zwei KAMPFHALLEN:\n"
+	.string "Für Level 50 und Offene Kämpfe.\l"
+	.string "Wofür entscheidest du dich?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLv50:
+	.ifdef ENGLISH
 	.string "Sigh…\p"
 	.string "You do not have the three POKéMON\n"
 	.string "required for the challenge.\p"
@@ -430,8 +489,22 @@ BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLv50:
 	.string "EGGS{STR_VAR_1} ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
+	.else
+	.ifdef GERMAN
+	.string "Entschuldigung!\p"
+	.string "Aber deine POKéMON sind nicht\n"
+	.string "teilnahmeberechtigt.\p"
+	.string "Du brauchst drei verschiedene\n"
+	.string "POKéMON von Level 50 oder weniger.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "EIer{STR_VAR_1} nicht zugelassen.\p"
+	.string "Bitte komm wieder, wenn du bereit bist.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen:
+	.ifdef ENGLISH
 	.string "Sigh…\p"
 	.string "You do not have the three POKéMON\n"
 	.string "required for the challenge.\p"
@@ -442,65 +515,167 @@ BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "EGGS{STR_VAR_1} ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
+	.else
+	.ifdef GERMAN
+	.string "Entschuldigung!\p"
+	.string "Aber deine POKéMON sind nicht\n"
+	.string "teilnahmeberechtigt.\p"
+	.string "Du brauchst drei verschiedene\n"
+	.string "POKéMON.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "EIer{STR_VAR_1} nicht zugelassen.\p"
+	.string "Bitte komm wieder, wenn du bereit bist.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons:
+	.ifdef ENGLISH
 	.string "Good. Now, you must select your\n"
 	.string "three POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "Gut. Nun wähle deine drei POKéMON aus.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2:
+	.ifdef ENGLISH
 	.string "I must save before I show you to\n"
 	.string "the BATTLE HALL. Is that okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Bevor du die KAMPFHALLE betrittst,\n"
+	.string "musst du dein Spiel speichern. Okay?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_FollowMe:
+	.ifdef ENGLISH
 	.string "Good.\n"
 	.string "Now, follow me.$"
+	.else
+	.ifdef GERMAN
+	.string "Gut. Dann folge mir.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded:
+	.ifdef ENGLISH
 	.string "I feel privileged for having seen\n"
 	.string "your POKéMON's exploits.\p"
 	.string "The results will be recorded.\n"
 	.string "I must ask you to briefly wait.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich fühle mich geehrt, dass ich deine\n"
+	.string "POKéMON sehen durfte.\p"
+	.string "Dein Erfolg wird gespeichert.\n"
+	.string "Bitte warte einen Moment.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_FirmTrueBondsFor7WinStreak:
+	.ifdef ENGLISH
 	.string "To achieve a 7-win streak…\p"
 	.string "The bonds that bind your heart with\n"
 	.string "your POKéMON seem firm and true.$"
+	.else
+	.ifdef GERMAN
+	.string "Sieben Siege in Folge…\p"
+	.string "Das Band zwischen deinem Herzen und\n"
+	.string "deinen POKéMON scheint stark zu sein.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_FeatWillBeRecorded:
+	.ifdef ENGLISH
 	.string "Your feat will be recorded.\n"
 	.string "I must ask you to briefly wait.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein Erfolg wird gespeichert.\n"
+	.string "Bitte warte einen Moment.$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_BattlePointsFor7WinStreak:
+	.ifdef ENGLISH
 	.string "For the feat of your 7-win streak,\n"
 	.string "we present you with Battle Point(s).$"
+	.else
+	.ifdef GERMAN
+	.string "For the feat of your 7-win streak,\n"
+	.string "we present you with Battle Point(s).$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize:
+	.ifdef ENGLISH
 	.string "You seem to have no space for\n"
 	.string "our prize.\p"
 	.string "You should return when you have\n"
 	.string "organized your BAG.$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast keinen Platz für den Preis?\p"
+	.string "Räum deinen BEUTEL auf und komm\n"
+	.string "dann wieder.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting:
+	.ifdef ENGLISH
 	.string "We have been waiting for you…$"
+	.else
+	.ifdef GERMAN
+	.string "Wir haben auf dich gewartet…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge:
+	.ifdef ENGLISH
 	.string "I must save before I show you to\n"
 	.string "the BATTLE HALL. Is that okay?$"
+	.else
+	.ifdef GERMAN
+	.string "Bevor du die KAMPFHALLE betrittst,\n"
+	.string "musst du dein Spiel speichern.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge:
+	.ifdef ENGLISH
 	.string "Sigh…\p"
 	.string "You failed to save before you ended\n"
 	.string "your challenge the last time.\p"
 	.string "As a result, your challenge has been\n"
 	.string "disqualified. It is most unfortunate.$"
+	.else
+	.ifdef GERMAN
+	.string "Seufz…\p"
+	.string "Du hast, bevor du die Herausforderung\n"
+	.string "abgebrochen hast, nicht gespeichert.\p"
+	.string "Daher wirst du für diese Herausforde-\n"
+	.string "rung disqualifiziert. Schade!$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_ReceivedPrize:
+	.ifdef ENGLISH
 	.string "{PLAYER} received the prize\n"
 	.string "{STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} received the prize\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
+	.ifdef ENGLISH
 	.string "For a hardy fellow like me,\n"
 	.string "hardy POKéMON are the best.\p"
 	.string "Offense is the best defense!\n"
@@ -515,8 +690,27 @@ BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
 	.string "but she is really cute.\p"
 	.string "Huh?\n"
 	.string "Why are you looking at me like that?$"
+	.else
+	.ifdef GERMAN
+	.string "Für so einen kräftigen Burschen wie\n"
+	.string "mich sind kräftige POKéMON das Wahre!\p"
+	.string "Angriff ist die beste Verteidigung!\n"
+	.string "Eine rücksichtslose Attacke das Beste!\p"
+	.string "Aber darüber wollte ich jetzt\n"
+	.string "eigentlich gar nicht reden.\p"
+	.string "Manchmal kommt hier eine niedliche\n"
+	.string "Lady vorbei.\p"
+	.string "Sie sagt, sie kann erkennen, was\n"
+	.string "POKéMON denken.\p"
+	.string "Ich kenn mich damit nicht aus, aber ich\n"
+	.string "weiß, dass die Lady verdammt süß ist.\p"
+	.string "Was?!?\n"
+	.string "Warum schaust du mich so komisch an?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:
+	.ifdef ENGLISH
 	.string "Hmm…\p"
 	.string "It appears that the nature of POKéMON\n"
 	.string "and the moves that they have been\l"
@@ -528,34 +722,89 @@ BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:
 	.string "unable to live up to its potential,\l"
 	.string "you may need to examine how well\l"
 	.string "its moves match its nature.$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\p"
+	.string "Das Wesen der POKéMON und die\n"
+	.string "Attacken, die sie gelernt haben,\l"
+	.string "scheinen der Schlüssel zu sein.\p"
+	.string "Um es deutlicher zu machen: Die\n"
+	.string "Attacken sollten zum Wesen der\l"
+	.string "POKéMON passen.\p"
+	.string "Wenn dein POKéMON Schwierigkeiten\n"
+	.string "hat und nicht alles gibt, dann solltest\l"
+	.string "du prüfen, wie gut seine Attacken zu\l"
+	.string "seinem Wesen passen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms:
+	.ifdef ENGLISH
 	.string "My POKéMON is usually very docile.\p"
 	.string "But when it's in a BATTLE HALL,\n"
 	.string "it sometimes seems to become\l"
 	.string "transformed into something wicked!\p"
 	.string "It becomes totally intimidating.\n"
 	.string "It's shocking, even.$"
+	.else
+	.ifdef GERMAN
+	.string "Mein POKéMON ist sehr sanftmütig.\p"
+	.string "Aber wenn ich es in eine KAMPFHALLE\n"
+	.string "mitnehme, scheint es sich manchmal\l"
+	.string "ganz merkwürdig zu verändern!\p"
+	.string "Es wirkt dann regelrecht\n"
+	.string "einschüchternd! Richtig schockierend!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
+	.ifdef ENGLISH
 	.string "I wonder what sort of nature a POKéMON\n"
 	.string "would have if it favored enfeebling its\l"
 	.string "opponents and chipping away slowly.\p"
 	.string "I'd be surprised if it was a LAX nature.\p"
 	.string "But, nah, that can't be right.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich frage mich, welches Wesen ein\n"
+	.string "POKéMON hat, das seine Gegner schwächt\l"
+	.string "und dann langsam zur Strecke bringt.\p"
+	.string "Ich würde mich echt wundern, wenn es\n"
+	.string "dann ein LASCHes Wesen hätte.\p"
+	.string "Nee, bestimmt nicht!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
+	.ifdef ENGLISH
 	.string "Where the hearts of TRAINERS\n"
 	.string "are put to the test.\p"
 	.string "I welcome you to the BATTLE PALACE.\p"
 	.string "I accept challenges to the DOUBLE\n"
 	.string "BATTLE HALLS.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier wird das Herz der TRAINER\n"
+	.string "auf die Probe gestellt!\p"
+	.string "Willkommen im KAMPFPALAST!\p"
+	.string "Ich nehme Herausforderungen für die\n"
+	.string "DOPPELKAMPF-Hallen entgegen!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
+	.ifdef ENGLISH
 	.string "Do you wish to take\n"
 	.string "the DOUBLE BATTLE HALL challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du dich der Herausforderung\n"
+	.string "der DOPPELKAMPF-Hallen stellen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
+	.ifdef ENGLISH
 	.string "In the BATTLE PALACE, there are\n"
 	.string "several auditoriums for DOUBLE BATTLES\l"
 	.string "that are named DOUBLE BATTLE HALLS.\p"
@@ -577,35 +826,107 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "challenge, please save the game.\p"
 	.string "If you don't save before interrupting,\n"
 	.string "you will be disqualified.$"
+	.else
+	.ifdef GERMAN
+	.string "Im KAMPFPALAST gibt es verschiedene\n"
+	.string "DOPPELKAMPF-Hallen für\l"
+	.string "DOPPELKÄMPFE.\p"
+	.string "Die DOPPELKÄMPFE verlaufen auf die\n"
+	.string "übliche Weise. Es gibt eine entschei-\l"
+	.string "dende Regel, die es zu beachten gilt!!!\p"
+	.string "TRAINER dürfen ihre POKéMON lediglich\n"
+	.string "in den Kampf rufen und zurückziehen.\p"
+	.string "Ansonsten dürfen sie ihren POKéMON\n"
+	.string "keinerlei Anweisungen geben!\p"
+	.string "Die POKéMON sollen sich ihrem Wesen\n"
+	.string "entsprechend verhalten und eigen-\p"
+	.string "ständig kämpfen! Vertrau deinen\n"
+	.string "POKéMON und achte auf sie.\p"
+	.string "Schaffst du es, sieben TRAINER in Folge\n"
+	.string "zu besiegen, erhältst du von uns\l"
+	.string "Gewinnpunkte.\p"
+	.string "Willst du die Herausforderung ab-\n"
+	.string "brechen, musst du dein Spiel speichern.\p"
+	.string "Andernfalls wirst du bei Abbruch\n"
+	.string "disqualifiziert.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ToDefeatMavenAnd7Trainers:
+	.ifdef ENGLISH
 	.string "To defeat the PALACE MAVEN\n"
 	.string "and seven TRAINERS in a row…$"
+	.else
+	.ifdef GERMAN
+	.string "Um den PALASTREGENTen und sechs\n"
+	.string "TRAINER in Folge zu besiegen…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints:
+	.ifdef ENGLISH
 	.string "In honor of the bond you share with\n"
 	.string "your POKéMON, we present you with\l"
 	.string "these Battle Point(s).$"
+	.else
+	.ifdef GERMAN
+	.string "In Anerkennung des Bandes zwischen dir\n"
+	.string "und deinen POKéMON geben wir dir\l"
+	.string "Gewinnpunkte.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch:
+	.ifdef ENGLISH
 	.string "Would you like to record your latest\n"
 	.string "BATTLE PALACE match on your\l"
 	.string "FRONTIER PASS?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du deinen letzten KAMPF-\n"
+	.string "PALAST-Kampf in deinen\l"
+	.string "KAMPFZONENPASS eintragen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_RulesAreListed:
+	.ifdef ENGLISH
 	.string "The BATTLE HALL rules are listed.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Regeln der KAMPFHALLE hängen\n"
+	.string "öffentlich aus.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading:
+	.ifdef ENGLISH
 	.string "Which heading do you want to read?$"
+	.else
+	.ifdef GERMAN
+	.string "Wähle bitte ein Themengebiet aus.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesBasics:
+	.ifdef ENGLISH
 	.string "Here, POKéMON are required to think\n"
 	.string "and battle by themselves.\p"
 	.string "Unlike in the wild, POKéMON that live\n"
 	.string "with people behave differently\l"
 	.string "depending on their nature.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier müssen die POKéMON selbständig\n"
+	.string "handeln und kämpfen.\p"
+	.string "Anders als wilde POKéMON reagieren\n"
+	.string "POKéMON, die mit Menschen zusammen-\l"
+	.string "leben, abhängig von ihrem Wesen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature:
+	.ifdef ENGLISH
 	.string "Depending on its nature, a POKéMON\n"
 	.string "may prefer to attack no matter what.\p"
 	.string "Another POKéMON may prefer to protect\n"
@@ -617,8 +938,25 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature:
 	.string "at using.\p"
 	.string "It may also dislike certain moves that\n"
 	.string "it has trouble using.$"
+	.else
+	.ifdef GERMAN
+	.string "Je nach Wesenheit wird ein POKéMON\n"
+	.string "eventuell angreifen, egal, was passiert.\p"
+	.string "Ein anderes wird sich vielleicht seinem\n"
+	.string "Wesen entsprechend unter allen\p"
+	.string "Umständen schützen wollen. Ein anderes\n"
+	.string "irritiert oder verwirrt seinen Gegner.\p"
+	.string "Abhängig von seinem Wesen wird ein\n"
+	.string "POKéMON Lieblingsattacken haben, die\l"
+	.string "es hervorragend beherrscht.\p"
+	.string "Auf der anderen Seite wird es Attacken\n"
+	.string "kennen, die es nicht mag und die ihm\l"
+	.string "Schwierigkeiten machen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
+	.ifdef ENGLISH
 	.string "There are offensive moves that inflict\n"
 	.string "direct damage on the foe.\p"
 	.string "There are defensive moves that are\n"
@@ -630,8 +968,24 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
 	.string "paralysis.\p"
 	.string "POKéMON will consider using moves in\n"
 	.string "these three categories.$"
+	.else
+	.ifdef GERMAN
+	.string "Es gibt offensive Attacken, die dem\n"
+	.string "Gegner Schaden zufügen.\p"
+	.string "Es gibt defensive Attacken, die auf\n"
+	.string "gegnerische Attacken vorbereiten oder\l"
+	.string "aber KP wiederherstellen können.\p"
+	.string "Und es gibt Attacken, die den Gegner\n"
+	.string "schwächen, indem sie Statusprobleme\l"
+	.string "verursachen, wie Vergiftungen oder\l"
+	.string "Paralyse.\p"
+	.string "POKéMON werden diese 3 Kategorien mit\n"
+	.string "Sicherheit im Kampf in Betracht ziehen!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered:
+	.ifdef ENGLISH
 	.string "When not under command by its TRAINER,\n"
 	.string "a POKéMON may be unable to effectively\l"
 	.string "use certain moves.\p"
@@ -640,11 +994,35 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered:
 	.string "If a POKéMON only knows moves that\n"
 	.string "do not match its nature, it will often\l"
 	.string "be unable to live up to its potential.$"
+	.else
+	.ifdef GERMAN
+	.string "Gibt ein TRAINER seinem POKéMON keine\n"
+	.string "Anweisungen, wird es vielleicht nicht in\l"
+	.string "der Lage sein, bestimmte Attacken\p"
+	.string "einzusetzen. Ein POKéMON hat\n"
+	.string "Schwierigkeiten mit Attacken, die es\l"
+	.string "nicht mag.\p"
+	.string "Kennt ein POKéMON nur Attacken, die\n"
+	.string "seinem Wesen widersprechen, so kann es\l"
+	.string "nicht immer sein ganzes Können zeigen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger:
+	.ifdef ENGLISH
 	.string "Depending on its nature, a POKéMON may\n"
 	.string "start using moves that don't match its\l"
 	.string "nature when it is in trouble.\p"
 	.string "If a POKéMON begins behaving oddly\n"
 	.string "in a pinch, watch it carefully.$"
+	.else
+	.ifdef GERMAN
+	.string "Abhängig von seinem Wesen, wird ein\n"
+	.string "POKéMON vielleicht auch Attacken ein-\l"
+	.string "setzen, die seinem Wesen widersprechen.\p"
+	.string "Benimmt es sich in bestimmten\n"
+	.string "Situationen merkwürdig, beobachte es\l"
+	.string "genau.$"
+	.endif
+	.endif
 

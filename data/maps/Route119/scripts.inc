@@ -480,25 +480,55 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
+	.ifdef ENGLISH
 	.string "MAY: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
 	.string "Ready with your POKéMON?\n"
 	.string "Of course you are! Go!$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: {PLAYER}{KUN}! Wo warst du?\n"
+	.string "Ich habe dich schon gesucht!\p"
+	.string "Wie stark bist du geworden?\n"
+	.string "Lass mich das für dich herausfinden!\p"
+	.string "Bereit? Du und deine POKéMON?\n"
+	.string "Natürlich seid ihr das! Los!$"
+	.endif
+	.endif
 
 Route119_Text_MayDefeat:
+	.ifdef ENGLISH
 	.string "Achah!\n"
 	.string "{PLAYER}{KUN}, you're strong!\p"
 	.string "I was worried that you might be\n"
 	.string "struggling with your training.$"
+	.else
+	.ifdef GERMAN
+	.string "Achah!\n"
+	.string "{PLAYER}{KUN}, du bist stark!\p"
+	.string "Ich hatte schon befürchtet, du\n"
+	.string "hättest im Training nachgelassen.$"
+	.endif
+	.endif
 
 Route119_Text_MayPresentForYou:
+	.ifdef ENGLISH
 	.string "MAY: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Aber ich hätte mir absolut keine\n"
+	.string "Sorgen zu machen brauchen! Weiter so!\p"
+	.string "Und hier!\n"
+	.string "Dies ist ein Geschenk für dich!$"
+	.endif
+	.endif
 
 Route119_Text_MayExplainFly:
+	.ifdef ENGLISH
 	.string "MAY: Use FLY, and your POKéMON will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
@@ -510,34 +540,89 @@ Route119_Text_MayExplainFly:
 	.string "I bet your mom's worried about you,\n"
 	.string "{PLAYER}{KUN}.\p"
 	.string "Well, let's meet again somewhere!$"
+	.else
+	.ifdef GERMAN
+	.string "MAIKE: Setze FLIEGEN ein und deine\n"
+	.string "POKéMON bringen dich an jeden Ort, an\l"
+	.string "dem du schon einmal warst.\p"
+	.string "Aber um FLIEGEN einsetzen zu können,\n"
+	.string "brauchst du erst den ORDEN der ARENA\l"
+	.string "von BAUMHAUSEN CITY.\l"
+	.string "Vergiss das nicht!\p"
+	.string "Du solltest mal nach WURZELHEIM\n"
+	.string "FLIEGEN.\p"
+	.string "Ich wette, deine Mutter macht sich\n"
+	.string "schon Sorgen um dich, {PLAYER}{KUN}.\p"
+	.string "Nun, wir treffen uns sicher bald wieder!$"
+	.endif
+	.endif
 
 Route119_Text_BrendanIntro:
+	.ifdef ENGLISH
 	.string "BRENDAN: {PLAYER}! So this is where\n"
 	.string "you've been looking for POKéMON?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
 	.string "It's a battle, so battle!$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: {PLAYER}! Hier schaust du dich\n"
+	.string "also nach POKéMON um?\p"
+	.string "Zeig mir, wie gut du geworden bist.\n"
+	.string "Ich werde dich jetzt testen!\p"
+	.string "Nun!\n"
+	.string "Das ist ein Kampf, also kämpfen wir!$"
+	.endif
+	.endif
 
 Route119_Text_BrendanDefeat:
+	.ifdef ENGLISH
 	.string "Hmm…\n"
 	.string "You've gotten pretty darn decent.$"
+	.else
+	.ifdef GERMAN
+	.string "Hmm…\n"
+	.string "Du bist verdammt gut geworden.$"
+	.endif
+	.endif
 
 Route119_Text_BrendanIllGiveYouThis:
+	.ifdef ENGLISH
 	.string "BRENDAN: I'd say you're good enough\n"
 	.string "to search for POKéMON anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Ich sage, du bist so gut, dass\n"
+	.string "du überall nach POKéMON suchen kannst.\p"
+	.string "Hier, das ist für dich.\n"
+	.string "Probier es aus.$"
+	.endif
+	.endif
 
 Route119_Text_BrendanExplainFly:
+	.ifdef ENGLISH
 	.string "BRENDAN: Use FLY, and your POKéMON\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
 	.string "But you need the FORTREE GYM BADGE \n"
 	.string "to do that.\p"
 	.string "Anyway, I have to move along.$"
+	.else
+	.ifdef GERMAN
+	.string "BRIX: Setze es ein, und deine\n"
+	.string "POKéMON FLIEGEN dich sofort an jeden\l"
+	.string "Ort, an dem du schon einmal warst.\p"
+	.string "Aber du brauchst den ORDEN der ARENA\n"
+	.string "von BAUMHAUSEN CITY dafür.\p"
+	.string "Nun ja, ich muss jetzt weiter. Bis bald.$"
+	.endif
+	.endif
 
 Route119_Text_ScottWayToGoBeSeeingYou:
+	.ifdef ENGLISH
 	.string "SCOTT: Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
 	.string "I just passed by a TRAINER riding\n"
@@ -550,9 +635,27 @@ Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "Are you off to FORTREE GYM next?\p"
 	.string "I expect that you'll do well at the GYM.\n"
 	.string "Well, I'll be seeing you!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Hahahaha!\n"
+	.string "Mach weiter so, {PLAYER}{KUN}!\p"
+	.string "Ich bin gerade einem TRAINER begegnet,\n"
+	.string "der auf einem FAHRRAD fuhr.\p"
+	.string "Du hast den TRAINER besiegt, stimmt’s?\n"
+	.string "Das war ihm anzumerken.\p"
+	.string "Das Kind war richtig wütend und sein\n"
+	.string "Gesicht war rot vor Zorn.\p"
+	.string "Wir laufen uns wirklich oft über den\n"
+	.string "Weg! Gehst du jetzt zur ARENA in\l"
+	.string "BAUMHAUSEN CITY?\p"
+	.string "Ich erwarte, dass du dich dort\n"
+	.string "besonders anstrengst. Mach’s gut.$"
+	.endif
+	.endif
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
+	.ifdef ENGLISH
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
@@ -566,18 +669,56 @@ Route119_Text_ScottYouWonAtFortreeGym:
 	.string "Keep up the great work!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "Piep!\p"
+	.string "SCOTT: Hi {PLAYER}{KUN}, ich bin’s!\p"
+	.string "Ich wusste, dass du in der ARENA\n"
+	.string "von BAUMHAUSEN gewinnen würdest.\p"
+	.string "Deine Stärke…\n"
+	.string "Vielleicht bist du wirklich der\l"
+	.string "TRAINER, den ich die ganze Zeit\p"
+	.string "suche. Ich bin dein Fan, vergiss\n"
+	.string "das nicht. Ich werde dir zujubeln.\l"
+	.string "Mach weiter so!\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "Klick!$"
+	.endif
+	.endif
 
 Route119_Text_StayAwayFromWeatherInstitute:
+	.ifdef ENGLISH
 	.string "We're standing lookout here.\p"
 	.string "Hey, you! Stay away from the WEATHER\n"
 	.string "INSTITUTE. It's not safe.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir stehen hier Wache.\p"
+	.string "Hey, du! Halt dich bloß von dem KLIMA-\n"
+	.string "INSTITUT fern. Da ist es nicht sicher!$"
+	.endif
+	.endif
 
 Route119_Text_DontGoNearWeatherInstitute:
+	.ifdef ENGLISH
 	.string "Lookout duty is surprisingly boring.\p"
 	.string "Hey, you! Please don't go near the\n"
 	.string "WEATHER INSTITUTE.$"
+	.else
+	.ifdef GERMAN
+	.string "Wache schieben ist langweilig.\p"
+	.string "Hey, du! Komm nicht in die Nähe des\n"
+	.string "KLIMA-INSTITUTs.$"
+	.endif
+	.endif
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
+	.ifdef ENGLISH
 	.string "I thought you FLY by catching a whole\n"
 	.string "flock of BIRD POKéMON, and then\l"
 	.string "hanging on to them somehow.\p"
@@ -585,26 +726,68 @@ Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "called FLY!\p"
 	.string "I wish I'd known about that a long\n"
 	.string "time ago…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich dachte, FLIEGEN könnte man, indem\n"
+	.string "man viele VOGEL-POKéMON fängt, sie\p"
+	.string "zusammenbindet und sich dann\n"
+	.string "dranhängt.\p"
+	.string "Aber es gibt tatsächlich eine VM, die\n"
+	.string "FLIEGEN heißt!\p"
+	.string "Wenn ich das doch nur eher gewusst\n"
+	.string "hätte…$"
+	.endif
+	.endif
 
 Route119_Text_TallGrassSnaresBikeTires:
+	.ifdef ENGLISH
 	.string "Tch…\n"
 	.string "It's a no-go…\p"
 	.string "The tall grass snares BIKE tires.\n"
 	.string "There's no way you can cycle here.$"
+	.else
+	.ifdef GERMAN
+	.string "Tse… So geht es nicht weiter…\p"
+	.string "Das hohe Gras verfängt sich in den \n"
+	.string "Speichen des RADs…$"
+	.endif
+	.endif
 
 Route119_Text_CanYourMonMakeSecretBase:
+	.ifdef ENGLISH
 	.string "Can your POKéMON use its SECRET POWER\n"
 	.string "on a big pile of grass and make a\l"
 	.string "SECRET BASE?$"
+	.else
+	.ifdef GERMAN
+	.string "Kann dein POKéMON GEHEIMPOWER an\n"
+	.string "einem Berg von Gras einsetzen und eine\l"
+	.string "GEHEIMBASIS einrichten?$"
+	.endif
+	.endif
 
 Route119_Text_RouteSignFortree:
+	.ifdef ENGLISH
 	.string "ROUTE 119\n"
 	.string "{RIGHT_ARROW} FORTREE CITY$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 119\n"
+	.string "{RIGHT_ARROW} BAUMHAUSEN CITY$"
+	.endif
+	.endif
 
 Route119_Text_WeatherInstitute:
+	.ifdef ENGLISH
 	.string "WEATHER INSTITUTE$"
+	.else
+	.ifdef GERMAN
+	.string "KLIMA-INSTITUT$"
+	.endif
+	.endif
 
 Route119_Text_TrainerTipsDecoration:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "Up to sixteen decorations and\n"
 	.string "furniture items can be placed in\l"
@@ -612,3 +795,14 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "In der GEHEIMBASIS können bis zu 16\n"
+	.string "Dekorationen und Möbel untergebracht\l"
+	.string "werden.\p"
+	.string "Nimm deine Lieblingsitems und richte dir\n"
+	.string "deine GEHEIMBASIS ganz nach deinem\l"
+	.string "Geschmack ein.$"
+	.endif
+	.endif

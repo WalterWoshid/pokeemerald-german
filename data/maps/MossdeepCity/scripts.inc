@@ -311,43 +311,102 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
+	.ifdef ENGLISH
 	.string "I got this from STEVEN, but I don't\n"
 	.string "know what it's good for.\p"
 	.string "I think it's called KING'S ROCK.\n"
 	.string "Do you want it?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe das von TROY bekommen, weiß\n"
+	.string "aber nicht, was ich damit machen soll.\p"
+	.string "Ich glaube, es heißt KING-STEIN.\n"
+	.string "Möchtest du das haben?$"
+	.endif
+	.endif
 
 MossdeepCity_Text_YouCanKeepIt:
+	.ifdef ENGLISH
 	.string "Why would you want it?\n"
 	.string "You're weird.\p"
 	.string "You can keep it, but keep it a secret\n"
 	.string "from STEVEN.$"
+	.else
+	.ifdef GERMAN
+	.string "Warum willst du das haben?\n"
+	.string "Du bist komisch.\p"
+	.string "Du kannst es behalten, aber erzähle\n"
+	.string "es nicht TROY.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_StevensHouseOverThere:
+	.ifdef ENGLISH
 	.string "STEVEN's house is right over there!$"
+	.else
+	.ifdef GERMAN
+	.string "TROYs Haus befindet sich gleich\ndort drüben.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
+	.ifdef ENGLISH
 	.string "Yeah, you think so, too! What are you\n"
 	.string "supposed to do with some weird rock?$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, du denkst das auch! Was soll man\n"
+	.string "auch mit komischen Steinen anfangen?$"
+	.endif
+	.endif
 
 MossdeepCity_Text_WailmerWatching:
+	.ifdef ENGLISH
 	.string "Around MOSSDEEP, you can see wild\n"
 	.string "WAILMER.\p"
 	.string "It's called, uh…\n"
 	.string "What was it now…\p"
 	.string "WAI, WAI, WAI…\p"
 	.string "WAILMER watching!$"
+	.else
+	.ifdef GERMAN
+	.string "In der Nähe von MOOSBACH CITY\n"
+	.string "kann man wilde WAILMER sehen.\p"
+	.string "Das nennt man, äh…\n"
+	.string "Nennt man… äh… ähm…\p"
+	.string "WAI…, WAI…, WAI…\p"
+	.string "WAILMER Watching!$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
+	.ifdef ENGLISH
 	.string "The island's SPACE CENTER has been\n"
 	.string "launching huge rockets.\p"
 	.string "There's been some kind of an uproar\n"
 	.string "over a letter they received recently.$"
+	.else
+	.ifdef GERMAN
+	.string "Am RAUMFAHRTZENTRUM auf der Insel\n"
+	.string "werden große Raketen gestartet.\p"
+	.string "Dort ist vor kurzem ein Brief ange-\n"
+	.string "kommen, der für Aufregung sorgte.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
+	.ifdef ENGLISH
 	.string "The island's SPACE CENTER has been\n"
 	.string "launching huge rockets.$"
+	.else
+	.ifdef GERMAN
+	.string "Am RAUMFAHRTZENTRUM auf der Insel\n"
+	.string "werden große Raketen gestartet.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
+	.ifdef ENGLISH
 	.string "I heard from a SAILOR buddy that\n"
 	.string "TEAM AQUA set up shop in LILYCOVE.\p"
 	.string "I also heard that someone came along\n"
@@ -356,19 +415,53 @@ MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "by that TEAM MAGMA.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe von einem Freund, einem\n"
+	.string "MATROSEN, gehört, dass TEAM AQUA sich\pin SEEGRASULB CITY aufgehalten\n"
+	.string "haben soll.\p"
+	.string "Aber dann ist jemand gekommen und hat\n"
+	.string "sie aufgemischt.\p"
+	.string "Und in MOOSBACH CITY ist TEAM\n"
+	.string "MAGMA.\p"
+	.string "Wenn du wissen willst, was sie vorhaben,\n"
+	.string "dann geh zum RAUMFAHRTZENTRUM.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_FeelReliefOnLand:
+	.ifdef ENGLISH
 	.string "I'm a SAILOR, so the sea's obviously\n"
 	.string "more important to me.\p"
 	.string "But you know? When I get back on land\n"
 	.string "after a long voyage, I do feel relief!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin ein MATROSE, daher ist das Meer\n"
+	.string "sehr wichtig für mich.\p"
+	.string "Aber weißt du, was? Wenn ich nach einer\n"
+	.string "langen Seefahrt wieder festen Boden\p"
+	.string "unter den Füßen habe, bin ich jedes Mal\n"
+	.string "erleichtert.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_NiceIfWorldCoveredByFlowers:
+	.ifdef ENGLISH
 	.string "Wouldn't it be nice?\p"
 	.string "If the whole world was covered in\n"
 	.string "plants and flowers like this island?$"
+	.else
+	.ifdef GERMAN
+	.string "Wäre das nicht schön?\p"
+	.string "Wenn die ganze Welt so mit Blumen und\n"
+	.string "Pflanzen bewachsen wäre wie diese\l"
+	.string "Insel?$"
+	.endif
+	.endif
 
 MossdeepCity_Text_LifeNeedsSeaToLive:
+	.ifdef ENGLISH
 	.string "All life needs the sea to live, even\n"
 	.string "though it makes its home on the land.\p"
 	.string "Life, having run its course, becomes\n"
@@ -376,15 +469,39 @@ MossdeepCity_Text_LifeNeedsSeaToLive:
 	.string "And the sea is always connected to\n"
 	.string "the land.\p"
 	.string "Yes, like the very shoreline here.$"
+	.else
+	.ifdef GERMAN
+	.string "Alle Lebewesen brauchen das Meer, um\n"
+	.string "leben zu können, auch wenn sie an Land\l"
+	.string "leben.\p"
+	.string "Am Ende ihrer Reise wird aus den\n"
+	.string "Lebewesen Erde und sie kehren zurück\l"
+	.string "zum Land.\p"
+	.string "Und das Meer steht immer in Verbindung\n"
+	.string "zum Land.\p"
+	.string "Genau wie dieses Ufer hier.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SurfExhilarating:
+	.ifdef ENGLISH
 	.string "A voyage on a ship is fine.\p"
 	.string "But crossing the sea with POKéMON\n"
 	.string "using SURF…\p"
 	.string "Now that's an exhilarating trip!\n"
 	.string "Wouldn't you agree, youngster?$"
+	.else
+	.ifdef GERMAN
+	.string "Eine Reise auf einem Schiff ist toll.\p"
+	.string "Aber das Meer auf einem POKéMON zu\n"
+	.string "überqueren, das SURFER einsetzt…\p"
+	.string "Das ist wirklich eine aufregende Sache.\n"
+	.string "Meinst du nicht auch, Kindchen?$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
+	.ifdef ENGLISH
 	.string "This rock has a special meaning to\n"
 	.string "the people at the SPACE CENTER.\p"
 	.string "They put it here as their wish for\n"
@@ -393,24 +510,66 @@ MossdeepCity_Text_SpecialSpaceCenterRock:
 	.string "Do you wish upon a star?\p"
 	.string "I use a wish tag to make it happen.\n"
 	.string "That's what I do.$"
+	.else
+	.ifdef GERMAN
+	.string "Dieser Felsen hat eine ganz besondere\n"
+	.string "Bedeutung für das RAUMFAHRTZENTRUM.\p"
+	.string "Sie haben ihn hier hingesetzt als\n"
+	.string "Glücksbringer für den sicheren Flug der\l"
+	.string "Raketen.\p"
+	.string "Wenn du dir etwas wünschst, was machst\n"
+	.string "du dann? Sternschnuppen beobachten?\p"
+	.string "Ich benutze ein Wunschkärtchen.\n"
+	.string "Genau das mache ich.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_ItsAWhiteRock:
+	.ifdef ENGLISH
 	.string "It's a white rock.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein weißer Felsen.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_GymSign:
+	.ifdef ENGLISH
 	.string "MOSSDEEP CITY POKéMON GYM\n"
 	.string "LEADERS: LIZA & TATE\p"
 	.string "“The mystic combination!”$"
+	.else
+	.ifdef GERMAN
+	.string "POKéMON ARENA von MOOSBACH CITY \n"
+	.string "LEITER: SVENJA & BEN\p"
+	.string "“Die mystische Kombination!”$"
+	.endif
+	.endif
 
 MossdeepCity_Text_CitySign:
+	.ifdef ENGLISH
 	.string "MOSSDEEP CITY\n"
 	.string "“Our slogan: Cherish POKéMON!”$"
+	.else
+	.ifdef GERMAN
+	.string "MOOSBACH CITY\n"
+	.string "“Unser Motto: Liebe POKéMON!”$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SpaceCenterSign:
+	.ifdef ENGLISH
 	.string "MOSSDEEP SPACE CENTER\n"
 	.string "“The closest place to space.”$"
+	.else
+	.ifdef GERMAN
+	.string "MOOSBACH CITY RAUMFAHRTZENTRUM\n"
+	.string "“Der letzte Ort vor dem All.”$"
+	.endif
+	.endif
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
+	.ifdef ENGLISH
 	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"
 	.string "I'm doing great!\p"
 	.string "I'd heard MOSSDEEP's GYM LEADER is\n"
@@ -422,8 +581,27 @@ MossdeepCity_Text_ScottSomethingWrongWithTown:
 	.string "letter and the SPACE CENTER…\p"
 	.string "I don't think it concerns me in any\n"
 	.string "way, though.$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Geht es dir gut, {PLAYER}{KUN}?\n"
+	.string "Mir geht es fantastisch!\p"
+	.string "Ich habe mir sagen lassen, dass die\n"
+	.string "ARENALEITER von MOOSBACH sehr stark\l"
+	.string "sein sollen.\p"
+	.string "Davon musste ich mich einfach selbst\n"
+	.string "überzeugen.\p"
+	.string "Aber in dieser Stadt geht irgendetwas\n"
+	.string "Merkwürdiges vor.\p"
+	.string "Die Leute reden über einen Brief mit\n"
+	.string "einer Warnung und dem\l"
+	.string "RAUMFAHRTZENTRUM…\p"
+	.string "Aber ich glaube nicht, dass mich das\n"
+	.string "etwas angeht.$"
+	.endif
+	.endif
 
 MossdeepCity_Text_SootopolisNewGymLeader:
+	.ifdef ENGLISH
 	.string "Ahh… It feels great letting the waves\n"
 	.string "wash over my feet…\p"
 	.string "Speaking of the waves, you know that\n"
@@ -432,4 +610,15 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
-
+	.else
+	.ifdef GERMAN
+	.string "Ahh… Ein großartiges Gefühl, wenn\n"
+	.string "die Wellen über meine Füße spülen…\p"
+	.string "Apropos Wellen. Kennst du die Stadt\n"
+	.string "XENEROVILLE?\p"
+	.string "Ich glaube, die ARENA dort hat einen\n"
+	.string "neuen LEITER.\p"
+	.string "Das soll der frühere Mentor von\n"
+	.string "WASSILI sein.$"
+	.endif
+	.endif

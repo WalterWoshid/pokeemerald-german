@@ -67,14 +67,36 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	end
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
+	.ifdef ENGLISH
 	.string "Learn to use items properly.\n"
 	.string "That's basic, really.$"
+	.else
+	.ifdef GERMAN
+	.string "Lerne, mit Items vernünftig umzugehen.\n"
+	.string "Das ist essentiell. Ehrlich.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
+	.ifdef ENGLISH
 	.string "My husband is waiting at home.\n"
 	.string "What would make a good gift for him?$"
+	.else
+	.ifdef GERMAN
+	.string "Mein Mann wartet zu Hause auf mich.\n"
+	.string "Was wäre wohl ein passendes Geschenk\l"
+	.string "für ihn?$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
+	.ifdef ENGLISH
 	.string "I'm leaving on a long journey soon.\n"
 	.string "I need to stock up on items.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich werde bald auf eine lange Reise\n"
+	.string "gehen. Ich muss daher Items kaufen.$"
+	.endif
+	.endif
 

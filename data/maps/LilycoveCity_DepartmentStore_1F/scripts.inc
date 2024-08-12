@@ -141,25 +141,56 @@ LilycoveCity_DepartmentStore_1F_EventScript_FloorNamesSign::
 	end
 
 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore:
+	.ifdef ENGLISH
 	.string "Welcome to LILYCOVE DEPARTMENT STORE.$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen im EINKAUFSZENTRUM von\n"
+	.string "SEEGRASULB CITY.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings:
+	.ifdef ENGLISH
 	.string "Whenever I come to the DEPARTMENT\n"
 	.string "STORE, I always end up buying all sorts\l"
 	.string "of things because it's so fun.$"
+	.else
+	.ifdef GERMAN
+	.string "Immer wenn ich in das EINKAUFSZENTRUM\n"
+	.string "gehe, endet das damit, dass ich tausend\l"
+	.string "Dinge kaufe, weil es so viel Spaß macht.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
+	.ifdef ENGLISH
 	.string "Today, my mom is going to buy me some\n"
 	.string "nice furniture.$"
+	.else
+	.ifdef GERMAN
+	.string "Heute wird mir meine Mama ein paar\n"
+	.string "schöne Möbel kaufen.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
+	.ifdef ENGLISH
 	.string "I'm buying something for my AZUMARILL\n"
 	.string "as a reward for winning a CONTEST.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich kaufe etwas Schönes für mein\n"
+	.string "AZUMARILL, weil es einen WETTBEWERB\l"
+	.string "gewonnen hat.$"
+	.endif
+	.endif
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
 	.string "AZUMARILL: Maririroo!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
+	.ifdef ENGLISH
 	.string "1F: SERVICE COUNTER\n"
 	.string "    LOTTERY CORNER\p"
 	.string "2F: TRAINER'S ZONE\p"
@@ -167,6 +198,17 @@ LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "4F: TM CORNER\p"
 	.string "5F: POKé DOLL FLOOR\p"
 	.string "ROOFTOP: ROOFTOP PLAZA$"
+	.else
+	.ifdef GERMAN
+	.string "EG: INFORMATION\n"
+	.string "       LOTTERIE\p"
+	.string "1S: ALLES FÜR DEN TRAINER\p"
+	.string "2S: ALLES FÜR DEN KAMPF\p"
+	.string "3S: TM\p"
+	.string "4S: POKéPUPPEN\p"
+	.string "DACH: DACHTERRASSE$"
+	.endif
+	.endif
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:

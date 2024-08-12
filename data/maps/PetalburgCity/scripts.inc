@@ -705,63 +705,167 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
+	.ifdef ENGLISH
 	.string "Where has our WALLY gone?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
 	.string "very soon…$"
+	.else
+	.ifdef GERMAN
+	.string "Wohin ist unser HEIKO nur gegangen?\p"
+	.string "Wir müssen doch bald nach WIESENFLUR\n"
+	.string "aufbrechen…$"
+	.endif
+	.endif
 
 PetalburgCity_Text_AreYouRookieTrainer:
+	.ifdef ENGLISH
 	.string "Hiya! Are you maybe…\n"
 	.string "A rookie TRAINER?\p"
 	.string "Do you know what POKéMON TRAINERS\n"
 	.string "do when they reach a new town?\p"
 	.string "They first check what kind of GYM\n"
 	.string "is in the town.$"
+	.else
+	.ifdef GERMAN
+	.string "He da! Bist du vielleicht…\n"
+	.string "ein Anfänger unter den TRAINERn?\p"
+	.string "Weißt du, was POKéMON-TRAINER machen,\n"
+	.string "wenn sie in einen neuen Ort kommen?\p"
+	.string "Sie sehen sich als Erstes die ARENA\n"
+	.string "im Ort an.$"
+	.endif
+	.endif
 
 PetalburgCity_Text_ThisIsPetalburgGym:
+	.ifdef ENGLISH
 	.string "See? This is PETALBURG CITY's GYM.$"
+	.else
+	.ifdef GERMAN
+	.string "Schau. Das ist die ARENA von\n"
+	.string "BLÜTENBURG CITY.$"
+	.endif
+	.endif
 
 PetalburgCity_Text_ThisIsGymSign:
+	.ifdef ENGLISH
 	.string "This is the GYM's sign. Look for it\n"
 	.string "whenever you're looking for a GYM.$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist das Logo der ARENA. Daran\n"
+	.string "kannst du immer eine ARENA erkennen.$"
+	.endif
+	.endif
 
 PetalburgCity_Text_WaterReflection:
+	.ifdef ENGLISH
 	.string "My face is reflected in the water.\p"
 	.string "It's a shining grin full of hope…\p"
 	.string "Or it could be a look of somber silence\n"
 	.string "struggling with fear…\p"
 	.string "What do you see reflected in your face?$"
+	.else
+	.ifdef GERMAN
+	.string "Mein Gesicht spiegelt sich im Wasser…\p"
+	.string "Ein schimmerndes Lächeln der Hoffnung.\p"
+	.string "Oder ist es der Ausdruck düsterer\n"
+	.string "Stille, an dem die Angst nagt…\p"
+	.string "Was siehst du in deinem Spiegelbild?$"
+	.endif
+	.endif
 
 PetalburgCity_Text_FullPartyExplanation:
+	.ifdef ENGLISH
 	.string "Let's say you have six POKéMON.\n"
 	.string "If you catch another one…\p"
 	.string "It is automatically sent to a STORAGE\n"
 	.string "BOX over a PC connection.$"
+	.else
+	.ifdef GERMAN
+	.string "Nehmen wir an, du hättest 6 POKéMON.\n"
+	.string "Wenn du jetzt ein weiteres fängst…\p"
+	.string "wird es automatisch in das POKéMON-\n"
+	.string "LAGERUNGS-SYSTEM gesendet.$"
+	.endif
+	.endif
 
 PetalburgCity_Text_GymSign:
+	.ifdef ENGLISH
 	.string "PETALBURG CITY POKéMON GYM\n"
 	.string "LEADER: NORMAN\l"
 	.string "“A man in pursuit of power!”$"
+	.else
+	.ifdef GERMAN
+	.string "POKéMON ARENA von BLÜTENBURG CITY\n"
+	.string "LEITER: NORMAN\l"
+	.string "“Ein Mann, der nach Stärke strebt!”$"
+	.endif
+	.endif
 
 PetalburgCity_Text_CitySign:
+	.ifdef ENGLISH
 	.string "PETALBURG CITY\n"
 	.string "“Where people mingle with nature.”$"
+	.else
+	.ifdef GERMAN
+	.string "BLÜTENBURG CITY\n"
+	.string "“Wo Menschen Hand in Hand\l"
+	.string "mit der Natur gehen.”$"
+	.endif
+	.endif
 
 PetalburgCity_Text_WallyHouseSign:
+	.ifdef ENGLISH
 	.string "WALLY'S HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKOS HAUS$"
+	.endif
+	.endif
 
 PetalburgCity_Text_AreYouATrainer:
+	.ifdef ENGLISH
 	.string "Excuse me!\p"
 	.string "Let me guess, from the way you're\n"
 	.string "dressed, are you a POKéMON TRAINER?$"
+	.else
+	.ifdef GERMAN
+	.string "Entschuldige bitte!\p"
+	.string "Lass mich raten! Deine Kleidung verrät\n"
+	.string "mir, dass du ein TRAINER bist.\l"
+	.string "Habe ich Recht?$"
+	.endif
+	.endif
 
 PetalburgCity_Text_WellMaybeNot:
+	.ifdef ENGLISH
 	.string "… … … … … …\p"
 	.string "Well, maybe not.\n"
 	.string "Your clothes aren't all that dirty.\p"
 	.string "You're either a rookie TRAINER,\n"
 	.string "or maybe you're just an ordinary kid.$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\p"
+	.string "Nun, vielleicht auch nicht.\n"
+	.string "Deine Kleidung ist noch relativ sauber.\p"
+	.string "Entweder bist du gerade erst TRAINER\n"
+	.string "geworden oder du bist einfach ein ganz\l"
+	.string "normales Kind.$"
+	.endif
+	.endif
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
+	.ifdef ENGLISH
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich reise durch das Land, immer auf der\n"
+	.string "Suche nach talentierten TRAINERn.\p"
+	.string "Tut mir Leid, wenn ich dich aufgehalten\n"
+	.string "habe.$"
+	.endif
+	.endif

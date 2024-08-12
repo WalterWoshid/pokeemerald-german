@@ -1,3 +1,4 @@
+#if ENGLISH
 const u8 gRibbonDescriptionPart1_Champion[] = _("CHAMPION-beating, HALL");
 const u8 gRibbonDescriptionPart2_Champion[] = _("OF FAME Member RIBBON");
 const u8 gRibbonDescriptionPart1_CoolContest[] = _("COOL CONTEST");
@@ -17,6 +18,27 @@ const u8 gRibbonDescriptionPart1_Artist[] = _("RIBBON for being chosen");
 const u8 gRibbonDescriptionPart2_Artist[] = _("as a super sketch model.");
 const u8 gRibbonDescriptionPart1_Effort[] = _("RIBBON awarded for");
 const u8 gRibbonDescriptionPart2_Effort[] = _("being a hard worker.");
+#elif GERMAN
+const u8 gRibbonDescriptionPart1_Champion[] = _("BAND für unschlagbare");
+const u8 gRibbonDescriptionPart2_Champion[] = _("RUHMESHALLE-Mitglieder.");
+const u8 gRibbonDescriptionPart1_CoolContest[] = _("COOLNESS-WETTBEWERB");
+const u8 gRibbonDescriptionPart1_BeautyContest[] = _("SCHÖNHEITSWETTBEWERB");
+const u8 gRibbonDescriptionPart1_CuteContest[] = _("ANMUT-WETTBEWERB");
+const u8 gRibbonDescriptionPart1_SmartContest[] = _("KLUGHEITSWETTBEWERB");
+const u8 gRibbonDescriptionPart1_ToughContest[] = _("STÄRKE-WETTBEWERB");
+const u8 gRibbonDescriptionPart2_NormalRank[] = _("Sieger in Normal-Klasse!");
+const u8 gRibbonDescriptionPart2_SuperRank[] = _("Sieger in Super-Klasse!");
+const u8 gRibbonDescriptionPart2_HyperRank[] = _("Sieger in Hyper-Klasse!");
+const u8 gRibbonDescriptionPart2_MasterRank[] = _("Sieger in Master-Klasse!");
+const u8 gRibbonDescriptionPart1_Winning[] = _("BAND für Lv. 50-Erfolg");
+const u8 gRibbonDescriptionPart2_Winning[] = _("im DUELLTURM.");
+const u8 gRibbonDescriptionPart1_Victory[] = _("BAND f. Off. Kmpf-Erfolg");
+const u8 gRibbonDescriptionPart2_Victory[] = _("im DUELLTURM.");
+const u8 gRibbonDescriptionPart1_Artist[] = _("Band für auserwählte");
+const u8 gRibbonDescriptionPart2_Artist[] = _("Porträt-Modelle.");
+const u8 gRibbonDescriptionPart1_Effort[] = _("BAND für");
+const u8 gRibbonDescriptionPart2_Effort[] = _("fleißige Arbeiter.");
+#endif
 
 const u8 *const gRibbonDescriptionPointers[][2] =
 {

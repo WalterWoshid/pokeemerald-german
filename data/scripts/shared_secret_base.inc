@@ -202,14 +202,40 @@ SecretBase_EventScript_SkittyTV::
 	end
 
 SecretBase_Text_SmallIndentInWall::
+	.ifdef ENGLISH
 	.string "There's a small indent in the wall.$"
+	.else
+	.ifdef GERMAN
+	.string "In der Wand ist eine kleine Einkerbung.$"
+	.endif
+	.endif
 
 SecretBase_Text_IndentUseSecretPower::
+	.ifdef ENGLISH
 	.string "There's a small indent in the wall.\p"
 	.string "Use the SECRET POWER?$"
+	.else
+	.ifdef GERMAN
+	.string "In der Wand ist eine kleine Einkerbung.\p"
+	.string "Möchtest du GEHEIMPOWER einsetzen?$"
+	.endif
+	.endif
 
 SecretBase_Text_DiscoveredSmallCavern::
+	.ifdef ENGLISH
 	.string "Discovered a small cavern!$"
+	.else
+	.ifdef GERMAN
+	.string "Eine kleine Höhle wird sichtbar.$"
+	.endif
+	.endif
 
 SecretBase_Text_WantToMakeYourSecretBaseHere:
+	.ifdef ENGLISH
 	.string "Want to make your SECRET BASE here?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du hier deine GEHEIMBASIS\n"
+	.string "einrichten?$"
+	.endif
+	.endif

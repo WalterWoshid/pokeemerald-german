@@ -107,54 +107,146 @@ AquaHideout_B1F_EventScript_Grunt7::
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
+	.ifdef ENGLISH
 	.string "If you want to know the secret about\n"
 	.string "our HIDEOUT, you have me to beat!$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du das Geheimnis unseres\n"
+	.string "VERSTECKs erfahren willst, musst du\l"
+	.string "mich besiegen!$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt2Defeat:
+	.ifdef ENGLISH
 	.string "I can't win at all…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich kann anscheinend nicht gewinnen…$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt2PostBattle:
+	.ifdef ENGLISH
 	.string "Our HIDEOUT's secret?\p"
 	.string "Well, let's just say…\n"
 	.string "There's a submarine at the far end!\p"
 	.string "But, by now…\n"
 	.string "Kekekeke…$"
+	.else
+	.ifdef GERMAN
+	.string "Das Geheimnis unseres VERSTECKs?\p"
+	.string "Nun, sagen wir mal soooo…\n"
+	.string "Am Ende befindet sich ein U-Boot!\p"
+	.string "Aber, im Moment…\n"
+	.string "Hehehehe…$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt3Intro:
+	.ifdef ENGLISH
 	.string "Fuel supply loaded A-OK!\n"
 	.string "In-cruise snacks loaded A-OK!\p"
 	.string "Nothing left to do but KO a pesky\n"
 	.string "meddler!$"
+	.else
+	.ifdef GERMAN
+	.string "Tankbefüllung… OKAY!\n"
+	.string "Proviant… OKAY!\p"
+	.string "Nichts anderes mehr zu tun, als eine\n"
+	.string "Nervensäge aus dem Weg zu räumen.$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt3Defeat:
+	.ifdef ENGLISH
 	.string "I took a serious licking!$"
+	.else
+	.ifdef GERMAN
+	.string "Das war ein Schuss vor den Bug.$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
+	.ifdef ENGLISH
 	.string "Humph!\n"
 	.string "This was supposed to happen!\p"
 	.string "My mission was to just hold you up!$"
+	.else
+	.ifdef GERMAN
+	.string "Pah!\n"
+	.string "Meine Niederlage war geplant.\p"
+	.string "Ich sollte dich eh nur aufhalten!$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt5Intro:
+	.ifdef ENGLISH
 	.string "Yawn… Keeping watch over the\n"
 	.string "HIDEOUT bores me. I'll take you on.$"
+	.else
+	.ifdef GERMAN
+	.string "Gääähn… Hier im VERSTECK Wache zu\n"
+	.string "stehen, ist ermüdend. Ich muss kämpfen.$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt5Defeat:
+	.ifdef ENGLISH
 	.string "Yawn…\n"
 	.string "Oh, I lost…$"
+	.else
+	.ifdef GERMAN
+	.string "Gähn…\n"
+	.string "Oh, da habe ich wohl verloren…$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
+	.ifdef ENGLISH
 	.string "If you scurry too much, other TEAM\n"
 	.string "AQUA members might get you.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du weiter hier herumschleichst, \n"
+	.string "schnappt dich TEAM AQUA.$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt7Intro:
+	.ifdef ENGLISH
 	.string "Hey!\n"
 	.string "You there!\p"
 	.string "Which do you think is cooler?\n"
 	.string "TEAM AQUA's uniform or TEAM MAGMA's?$"
+	.else
+	.ifdef GERMAN
+	.string "Hey!\n"
+	.string "Du da!\p"
+	.string "Was ist cooler?\n"
+	.string "Die Uniform von TEAM AQUA oder\l"
+	.string "die von TEAM MAGMA?$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt7Defeat:
+	.ifdef ENGLISH
 	.string "I lost in a cool way…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe ganz cool verloren…$"
+	.endif
+	.endif
 
 AquaHideout_B1F_Text_Grunt7PostBattle:
+	.ifdef ENGLISH
 	.string "If you have a cool uniform, you look\n"
 	.string "good even in a loss, don't you think?$"
+	.else
+	.ifdef GERMAN
+	.string "Hat man eine coole Uniform, sieht man\n"
+	.string "auch noch klasse aus, wenn man verliert,\l"
+	.string "findest du nicht?$"
+	.endif
+	.endif

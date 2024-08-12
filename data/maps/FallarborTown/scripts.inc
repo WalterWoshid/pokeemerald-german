@@ -52,26 +52,60 @@ FallarborTown_EventScript_MoveTutorSign::
 	end
 
 FallarborTown_Text_ShadyCharactersCozmosHome:
+	.ifdef ENGLISH
 	.string "Something's happening,\n"
 	.string "and I don't like it!\p"
 	.string "I've seen shady characters wandering\n"
 	.string "in and out of PROF. COZMO's home…$"
+	.else
+	.ifdef GERMAN
+	.string "Was ist los? Was ist los?\p"
+	.string "Ich habe eine zwielichtige Gestalt aus\n"
+	.string "dem LABOR von PROF. KOSMO flitzen\l"
+	.string "sehen.$"
+	.endif
+	.endif
 
 FallarborTown_Text_RegionKnownForMeteors:
+	.ifdef ENGLISH
 	.string "This region's been known for meteors\n"
 	.string "since the olden days.\p"
 	.string "They say METEOR FALLS was gouged out\n"
 	.string "by a falling meteorite long ago.$"
+	.else
+	.ifdef GERMAN
+	.string "Diese Region ist schon seit Urzeiten\n"
+	.string "für ihre Meteoritenschauer bekannt.\p"
+	.string "Man sagt, METEORFÄLLE sei durch\n"
+	.string "den Aufprall eines METEORITen\l"
+	.string "entstanden.$"
+	.endif
+	.endif
 
 FallarborTown_Text_MyPreciousAzurill:
+	.ifdef ENGLISH
 	.string "See! Take a look!\n"
 	.string "This is my precious AZURILL!\p"
 	.string "It's slick and smooth and plushy, too!$"
+	.else
+	.ifdef GERMAN
+	.string "Schau mal! Guck doch mal!\n"
+	.string "Das ist mein süßes AZURILL!\p"
+	.string "Es ist glatt, weich und plüschig!$"
+	.endif
+	.endif
 
 FallarborTown_Text_Azurill:
+	.ifdef ENGLISH
 	.string "AZURILL: Rooreelooo.$"
+	.else
+	.ifdef GERMAN
+	.string "AZURILL: Rooreelooo.$"
+	.endif
+	.endif
 
 FallarborTown_Text_HaveYouChallengedFlannery:
+	.ifdef ENGLISH
 	.string "Have you already challenged FLANNERY,\n"
 	.string "the LEADER of LAVARIDGE GYM?\p"
 	.string "The girl's grandfather was famous.\n"
@@ -80,16 +114,51 @@ FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "It wouldn't surprise me to see FLANNERY\n"
 	.string "become a great TRAINER in her own\l"
 	.string "right.$"
+	.else
+	.ifdef GERMAN
+	.string "Hast du schon FLAVIA, die LEITERIN\n"
+	.string "der ARENA von BAD LAVASTADT,\l"
+	.string "herausgefordert?\p"
+	.string "Ihr Großvater ist sehr berühmt.\n"
+	.string "Er war einer der TOP VIER in der\l"
+	.string "POKéMON LIGA.\p"
+	.string "Es würde mich gar nicht wundern, wenn\n"
+	.string "FLAVIA ebenfalls ein großer TRAINER\l"
+	.string "wird.$"
+	.endif
+	.endif
 
 FallarborTown_Text_BattleTentSign:
+	.ifdef ENGLISH
 	.string "BATTLE TENT FALLARBOR SITE\n"
 	.string "“May the Greatest Teams Gather!”$"
+	.else
+	.ifdef GERMAN
+	.string "KAMPFCAMP LAUBWECHSELFELD\n"
+	.string "“Mögen Sich Die Besten Teams Hier\l"
+	.string "Treffen!”$"
+	.endif
+	.endif
 
 FallarborTown_Text_TownSign:
+	.ifdef ENGLISH
 	.string "FALLARBOR TOWN\n"
 	.string "“A farm community with small gardens.”$"
+	.else
+	.ifdef GERMAN
+	.string "LAUBWECHSELFELD\n"
+	.string "“Eine Gemeinschaft von Farmern mit\l"
+	.string "kleinen Gärten.”$"
+	.endif
+	.endif
 
 FallarborTown_Text_MoveTutorSign:
+	.ifdef ENGLISH
 	.string "MOVE TUTOR'S HOUSE\n"
 	.string "“New moves taught to POKéMON.”$"
-
+	.else
+	.ifdef GERMAN
+	.string "HAUS des ATTACKEN-HELFERS\n"
+	.string "“Neue Attacken für deine POKéMON.”$"
+	.endif
+	.endif

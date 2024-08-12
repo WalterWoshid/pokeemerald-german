@@ -315,78 +315,212 @@ Route110_TrickHousePuzzle7_EventScript_Everett::
 	end
 
 Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
+	.ifdef ENGLISH
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
 	.string "“TRICK MASTER is huggable.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat den geheimen Code auf die\n"
+	.string "Tür geschrieben.\p"
+	.string "“RÄTSELMEISTER ist riesig.”\n"
+	.string "… … … … … … … …\p"
+	.string "Das Schloss geht klickend auf.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
+	.ifdef ENGLISH
 	.string "The TRICK MASTER always vanishes\n"
 	.string "like smoke. How does he do it?$"
+	.else
+	.ifdef GERMAN
+	.string "Der RÄTSELMEISTER verschwindet immer\n"
+	.string "wie Rauch. Wie macht er das nur?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
+	.ifdef ENGLISH
 	.string "Aiyeeeh! You're much too strong!\n"
 	.string "How do you do it?$"
+	.else
+	.ifdef GERMAN
+	.string "Aiijeeh! Du bist viel zu stark!\n"
+	.string "Wie machst du das nur?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_JoshuaPostBattle:
+	.ifdef ENGLISH
 	.string "I wish I could appear and disappear as\n"
 	.string "if I were smoke, too.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich wollte, ich könnte mich auch wie\n"
+	.string "Rauch in Luft auflösen…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_PatriciaIntro:
+	.ifdef ENGLISH
 	.string "Going around the same spot…\n"
 	.string "It begets ill fortune…$"
+	.else
+	.ifdef GERMAN
+	.string "Immer am gleichen Ort herumgeistern…\n"
+	.string "Das bringt Unglück…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_PatriciaDefeat:
+	.ifdef ENGLISH
 	.string "Defeated!\n"
 	.string "It's a bad sign…$"
+	.else
+	.ifdef GERMAN
+	.string "Besiegt!\n"
+	.string "Das ist ein schlechtes Omen…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_PatriciaPostBattle:
+	.ifdef ENGLISH
 	.string "I've circled the same spot over ten\n"
 	.string "times now… It's ill fortune…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin nun schon 10 Mal an diesem Ort\n"
+	.string "herumgegeistert. Daher hatte ich Pech!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlexisIntro:
+	.ifdef ENGLISH
 	.string "Whoever wins will get through here\n"
 	.string "first. That's the feeling I get.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich glaube, der Sieger wird der erste\n"
+	.string "Gewinner an diesem Ort überhaupt sein.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlexisDefeat:
+	.ifdef ENGLISH
 	.string "Oh!\n"
 	.string "Well, go ahead, then!$"
+	.else
+	.ifdef GERMAN
+	.string "Ah!\n"
+	.string "Dann geh hurtig weiter!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlexisPostBattle:
+	.ifdef ENGLISH
 	.string "You're solving all the puzzles in the\n"
 	.string "TRICK HOUSE. That's the feeling I get.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich glaube, du wirst alle Rätsel in\n"
+	.string "diesem RÄTSELHAUS lösen!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_MarielaIntro:
+	.ifdef ENGLISH
 	.string "Nufufufu, here at last!\n"
 	.string "Let's get right with it!$"
+	.else
+	.ifdef GERMAN
+	.string "Muahahahaha! Endlich!\n"
+	.string "Lass uns gleich loslegen!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_MarielaDefeat:
+	.ifdef ENGLISH
 	.string "You're so casual about winning!$"
+	.else
+	.ifdef GERMAN
+	.string "Wie kann man nur so lässig gewinnen?$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_MarielaPostBattle:
+	.ifdef ENGLISH
 	.string "Humph! I'm not upset!\n"
 	.string "Not me!$"
+	.else
+	.ifdef GERMAN
+	.string "Hmpf! Ich reg mich nicht auf!\n"
+	.string "ICH REG MICH ÜBERHAUPT NICHT AUF!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlvaroIntro:
+	.ifdef ENGLISH
 	.string "I ever so closely watched you coming!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe dein Kommen vorhergesehen!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
+	.ifdef ENGLISH
 	.string "This outcome I didn't see coming…$"
+	.else
+	.ifdef GERMAN
+	.string "Also dieses Ende habe ich nicht\n"
+	.string "vorhergesehen.$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
+	.ifdef ENGLISH
 	.string "Well, anyway, we both picked a weird\n"
 	.string "place to get acquainted.\p"
 	.string "As one weirdo to another,\n"
 	.string "let's do our best!$"
+	.else
+	.ifdef GERMAN
+	.string "Mh… Wir haben uns beide einen\n"
+	.string "verrückten Ort ausgesucht, um uns\p"
+	.string "kennen zu lernen. Da wir zwei Verrückte\n"
+	.string "sind, lass uns unser Bestes geben!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_EverettIntro:
+	.ifdef ENGLISH
 	.string "It's awfully cramped in here…$"
+	.else
+	.ifdef GERMAN
+	.string "Hier ist es schrecklich eng…$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_EverettDefeat:
+	.ifdef ENGLISH
 	.string "Oh, yes, strong you are.$"
+	.else
+	.ifdef GERMAN
+	.string "Meine Güte, bist du gut!$"
+	.endif
+	.endif
 
 Route110_TrickHousePuzzle7_Text_EverettPostBattle:
+	.ifdef ENGLISH
 	.string "I was hoping to switch places with you\n"
 	.string "when I beat you, but…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich dachte, ich könnte deinen Platz\n"
+	.string "einnehmen, wenn ich dich besiege, aber…$"
+	.endif
+	.endif
 

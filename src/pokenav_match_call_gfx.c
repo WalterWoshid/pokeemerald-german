@@ -3,6 +3,9 @@
 #include "data.h"
 #include "decompress.h"
 #include "dma3.h"
+#if GERMAN
+#include "graphics.h"
+#endif
 #include "international_string_util.h"
 #include "main.h"
 #include "match_call.h"
@@ -114,9 +117,11 @@ static u32 ShowCheckPageDown(s32);
 static u32 ExitCheckPage(s32);
 static u32 ExitMatchCall(s32);
 
+#if ENGLISH
 static const u16 sMatchCallUI_Pal[] = INCBIN_U16("graphics/pokenav/match_call/ui.gbapal");
 static const u32 sMatchCallUI_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/ui.4bpp.lz");
 static const u32 sMatchCallUI_Tilemap[] = INCBIN_U32("graphics/pokenav/match_call/ui.bin.lz");
+#endif
 static const u16 sOptionsCursor_Pal[] = INCBIN_U16("graphics/pokenav/match_call/options_cursor.gbapal");
 static const u32 sOptionsCursor_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/options_cursor.4bpp.lz");
 static const u16 sCallWindow_Pal[] = INCBIN_U16("graphics/pokenav/match_call/call_window.gbapal");
@@ -333,7 +338,11 @@ static u32 LoopedTask_OpenMatchCall(s32 state)
         SetBgTilemapBuffer(2, gfx->bgTilemapBuffer2);
         CopyToBgTilemapBuffer(2, sMatchCallUI_Tilemap, 0, 0);
         CopyBgTilemapBufferToVram(2);
+#if ENGLISH
         CopyPaletteIntoBufferUnfaded(sMatchCallUI_Pal, BG_PLTT_ID(2), sizeof(sMatchCallUI_Pal));
+#elif GERMAN
+        CopyPaletteIntoBufferUnfaded(sMatchCallUI_Pal, BG_PLTT_ID(2), 0x20);
+#endif
         CopyBgTilemapBufferToVram(2);
         return LT_INC_AND_PAUSE;
     case 1:
@@ -876,8 +885,13 @@ static void CreateMatchCallList(void)
     template.count = GetNumberRegistered();
     template.itemSize = sizeof(struct PokenavListItem);
     template.startIndex = 0;
+#if ENGLISH
     template.item_X = 13;
     template.windowWidth = 16;
+#elif GERMAN
+    template.item_X = 12;
+    template.windowWidth = 17;
+#endif
     template.listTop = 1;
     template.maxShowed = 8;
     template.fillValue = 3;

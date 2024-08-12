@@ -26,8 +26,13 @@
 #define LANGUAGE_SPANISH  7
 #define NUM_LANGUAGES     7
 
-#define GAME_VERSION (VERSION_EMERALD)
+#if defined(ENGLISH)
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
+#elif defined(GERMAN)
+#define GAME_LANGUAGE (LANGUAGE_GERMAN)
+#endif
+
+#define GAME_VERSION (VERSION_EMERALD)
 
 // party sizes
 #define PARTY_SIZE 6

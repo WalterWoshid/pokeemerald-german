@@ -35,7 +35,11 @@ const u8 gGameVersion = GAME_VERSION;
 
 const u8 gGameLanguage = GAME_LANGUAGE; // English
 
+#if ENGLISH
 const char BuildDateTime[] = "2005 02 21 11:10";
+#elif GERMAN
+const char BuildDateTime[] = "2005 07 11 16:55";
+#endif
 
 const IntrFunc gIntrTableTemplate[] =
 {

@@ -134,43 +134,111 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
+	.ifdef ENGLISH
 	.string "I want to see GROUDON, too, but they\n"
 	.string "won't let me see even its tail…\p"
 	.string "It's got me feeling really frustrated.\p"
 	.string "Oh, no!\n"
 	.string "I blabbed about GROUDON!$"
+	.else
+	.ifdef GERMAN
+	.string "Ich würde so gerne einen Blick auf\n"
+	.string "GROUDON werfen, aber ich darf nicht mal\l"
+	.string "einen Blick auf seinen Schweif werfen.\p"
+	.string "Das frustriert mich total.\p"
+	.string "Oh, nein!\n"
+	.string "Ich klatsche hier über GROUDON!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt11Defeat:
+	.ifdef ENGLISH
 	.string "I guess it's impossible to win if one\n"
 	.string "doesn't have a calm mind…$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn der Verstand durch andere Dinge\n"
+	.string "abgelenkt ist, ist es unmöglich,\l"
+	.string "zu gewinnen…$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
+	.ifdef ENGLISH
 	.string "I wonder if GROUDON even has a tail?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich frage mich, ob GROUDON überhaupt\n"
+	.string "einen Schweif hat?$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt12Intro:
+	.ifdef ENGLISH
 	.string "Fuhahaha!\n"
 	.string "Soon! Very soon!\l"
 	.string "Our grand objective will be achieved!$"
+	.else
+	.ifdef GERMAN
+	.string "Muahahaha!\n"
+	.string "Bald! Sehr bald!\l"
+	.string "Werden wir unser großes Ziel erreichen!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt12Defeat:
+	.ifdef ENGLISH
 	.string "Grrr…\n"
 	.string "I've come so far, but now this?$"
+	.else
+	.ifdef GERMAN
+	.string "Grr…\n"
+	.string "Ich bin so weit gekommen und nun das?$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
+	.ifdef ENGLISH
 	.string "MAXIE, sir!\n"
 	.string "An intruder is headed your way!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC, Sir!\n"
+	.string "Ein Eindringling ist auf dem Weg!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt13Intro:
+	.ifdef ENGLISH
 	.string "You're not finished yet!\n"
 	.string "You're not getting by me easily!$"
+	.else
+	.ifdef GERMAN
+	.string "Du bist noch nicht fertig!\n"
+	.string "An mir kommst du nicht so leicht vorbei!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt13Defeat:
+	.ifdef ENGLISH
 	.string "Was I that easy to knock down?$"
+	.else
+	.ifdef GERMAN
+	.string "War ich so leicht zu besiegen?$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
+	.ifdef ENGLISH
 	.string "C-come on, one more match…$"
+	.else
+	.ifdef GERMAN
+	.string "Ko-Komm schon, noch ein Kampf…$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_TabithaIntro:
+	.ifdef ENGLISH
 	.string "Hehehe!\n"
 	.string "You made it this far, so I'll tell you!\p"
 	.string "That's right!\n"
@@ -179,16 +247,45 @@ MagmaHideout_4F_Text_TabithaIntro:
 	.string "ago!\p"
 	.string "It's going to awaken real soon!\n"
 	.string "Hehe! Hehehe!$"
+	.else
+	.ifdef GERMAN
+	.string "Hähähä!\n"
+	.string "Du hast es bis hierher geschafft, daher\l"
+	.string "verrate ich dir etwas!\p"
+	.string "Es stimmt!\n"
+	.string "Dort drüben schläft GROUDON!\p"
+	.string "MARC ist vor ein paar Sekunden zu ihm\n"
+	.string "gegangen!\p"
+	.string "Es wird bald erwachen!\n"
+	.string "Hähä! Hähähähä!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_TabithaDefeat:
+	.ifdef ENGLISH
 	.string "Taken down again…\n"
 	.string "Hehe…$"
+	.else
+	.ifdef GERMAN
+	.string "Schon wieder verloren…\n"
+	.string "Hähä…$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_TabithaPostBattle:
+	.ifdef ENGLISH
 	.string "…And while you wasted time with me,\n"
 	.string "MAXIE should have awakened GROUDON…$"
+	.else
+	.ifdef GERMAN
+	.string "Und während du deine Zeit mit mir\n"
+	.string "verschwendest… sollte MARC\l"
+	.string "GROUDON aufgeweckt haben…$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
+	.ifdef ENGLISH
 	.string "MAXIE: GROUDON…\p"
 	.string "Nothing could awaken you from your\n"
 	.string "sleep bathed in magma…\p"
@@ -198,26 +295,70 @@ MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "Let its shine awaken you!\p"
 	.string "And show me…\n"
 	.string "Show me the full extent of your power!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: GROUDON…\p"
+	.string "Nichts kann deinen Schlummer in\n"
+	.string "dem heißen Magma stören…\p"
+	.string "Du wolltest diese BLAUE KUGEL haben,\n"
+	.string "nicht wahr?\p"
+	.string "Ich habe sie dir gebracht.\n"
+	.string "Ihr Licht soll dich aufwecken!\p"
+	.string "Und nun zeig mir…\n"
+	.string "Zeig mir deine ganze Kraft!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
+	.ifdef ENGLISH
 	.string "MAXIE: GROUDON!\n"
 	.string "What's wrong?\p"
 	.string "Wasn't the BLUE ORB the key?\p"
 	.string "GROUDON!\n"
 	.string "Where have you gone…$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: GROUDON!\n"
+	.string "Was ist los?\p"
+	.string "Die BLAUE KUGEL ist doch der Schlüssel,\n"
+	.string "oder etwa nicht?\p"
+	.string "GROUDON!\n"
+	.string "Wo bist du hin…$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
+	.ifdef ENGLISH
 	.string "MAXIE: Oh, so it was you?\p"
 	.string "I've seen you poking around uninvited\n"
 	.string "here and there…\p"
 	.string "I get it now!\n"
 	.string "You must have pulled a cheap stunt!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: Du warst das also!\p"
+	.string "Ich habe gesehen, wie du unerlaubter-\n"
+	.string "weise deine Nase hier und dort\l"
+	.string "hineingesteckt hast.\p"
+	.string "Ich verstehe es jetzt!\n"
+	.string "Du hast eine ganz billige Nummer\l"
+	.string "abgezogen!$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_MaxieDefeat:
+	.ifdef ENGLISH
 	.string "What makes you so adept at handling\n"
 	.string "POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Wie kommt es, dass du so gut mit\n"
+	.string "POKéMON umgehen kannst?$"
+	.endif
+	.endif
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
+	.ifdef ENGLISH
 	.string "MAXIE: There has to be some reason\n"
 	.string "why GROUDON fled…\p"
 	.string "That's what you're trying to say,\n"
@@ -230,3 +371,20 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "any need for this blasted volcano.\p"
 	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: Es muss einen Grund geben, warum\n"
+	.string "GROUDON geflohen ist…\p"
+	.string "Das willst du mir doch sagen, oder?\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "…\p"
+	.string "Hmpf…\n"
+	.string "Du meinst, das wüsste ich nicht?\p"
+	.string "Da GROUDON weg ist, hat dieser Vulkan\n"
+	.string "keinen Nutzen mehr.\p"
+	.string "Ich werde GROUDON folgen. Hier trennen\n"
+	.string "sich unsere Wege.$"
+	.endif
+	.endif

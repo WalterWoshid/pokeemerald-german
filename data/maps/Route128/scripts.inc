@@ -246,15 +246,32 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
+	.ifdef ENGLISH
 	.string "ARCHIE: What happened…\n"
 	.string "What is this wretched scene…\p"
 	.string "Did I…make a horrible mistake?$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: Was ist passiert… Was für\n"
+	.string "ein Furcht erregendes Szenario…\p"
+	.string "Habe ich… einen schrecklichen Fehler\n"
+	.string "begangen?$"
+	.endif
+	.endif
 
 Route128_Text_ArchieIOnlyWanted:
+	.ifdef ENGLISH
 	.string "I…\n"
 	.string "I only wanted…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich…\n"
+	.string "Ich wollte doch nur…$"
+	.endif
+	.endif
 
 Route128_Text_MaxieDoYouUnderstandNow:
+	.ifdef ENGLISH
 	.string "MAXIE: Do you understand now,\n"
 	.string "ARCHIE?\p"
 	.string "Do you finally see how disastrous\n"
@@ -262,8 +279,20 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "We have to hurry! We have to do\n"
 	.string "something before the situation goes\l"
 	.string "completely out of control!$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: Begreifst du es nun,\n"
+	.string "ADRIAN?\p"
+	.string "Begreifst du nun die schrecklichen\n"
+	.string "Folgen deines katastrophalen Traums?\p"
+	.string "Wir müssen uns beeilen! Wir müssen\n"
+	.string "etwas unternehmen, bevor die Situation\l"
+	.string "völlig außer Kontrolle gerät!$"
+	.endif
+	.endif
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
+	.ifdef ENGLISH
 	.string "MAXIE: {PLAYER}, don't say anything.\p"
 	.string "I know that I have no right to be\n"
 	.string "critical of ARCHIE…\p"
@@ -274,18 +303,50 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 	.string "just watch helplessly.\p"
 	.string "The responsibility for putting an end\n"
 	.string "to this falls to ARCHIE and me…$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: {PLAYER}, sag jetzt nichts.\p"
+	.string "Ich weiß, ich bin nicht der Richtige, um\n"
+	.string "ADRIAN zu kritisieren…\p"
+	.string "Aber wie die Dinge jetzt liegen, werden\n"
+	.string "wir Menschen wohl nicht in der Lage\l"
+	.string "sein, etwas zu tun.\p"
+	.string "Aber wir dürfen auch nicht einfach\n"
+	.string "daneben stehen und zuschauen.\p"
+	.string "ADRIAN und ich haben die\n"
+	.string "Verantwortung, dies alles zu\l"
+	.string "verändern…$"
+	.endif
+	.endif
 
 Route128_Text_MaxieThisDefiesBelief:
+	.ifdef ENGLISH
 	.string "MAXIE: This defies belief…\p"
 	.string "Those super-ancient POKéMON…\p"
 	.string "Their power is unbelievable.\n"
 	.string "They've upset the balance of nature…$"
+	.else
+	.ifdef GERMAN
+	.string "MARC: Das ist ja unglaublich…\p"
+	.string "Ein super-antikes POKéMON…\p"
+	.string "Seine Kraft ist unglaublich. Es hat\n"
+	.string "das Gleichgewicht der Natur verändert.$"
+	.endif
+	.endif
 
 Route128_Text_StevenWhatIsHappening:
+	.ifdef ENGLISH
 	.string "STEVEN: {PLAYER}{KUN}!\n"
 	.string "What is happening?$"
+	.else
+	.ifdef GERMAN
+	.string "TROY: {PLAYER}{KUN}!\n"
+	.string "Was geht hier vor?$"
+	.endif
+	.endif
 
 Route128_Text_StevenWholeWorldWillDrown:
+	.ifdef ENGLISH
 	.string "This is terrible…\p"
 	.string "After the scorching heat wave ended,\n"
 	.string "this deluge began.\p"
@@ -296,11 +357,38 @@ Route128_Text_StevenWholeWorldWillDrown:
 	.string "What in the world is taking place there?\p"
 	.string "There's no point arguing here…\n"
 	.string "SOOTOPOLIS might provide answers…$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist schrecklich…\p"
+	.string "Nach der sengenden Hitze kam die\n"
+	.string "Überschwemmung.\p"
+	.string "Wenn das nicht aufhört, wird ganz\n"
+	.string "HOENN… Nein, die ganze Welt wird\l"
+	.string "untergehen.\p"
+	.string "Von XENEROVILLE aus breitet sich eine\n"
+	.string "gigantische Regenwolke aus…\p"
+	.string "Was in aller Welt passiert da nur?\p"
+	.string "Aber wir sollten hier nicht die Zeit mit\n"
+	.string "Reden vertun…\p"
+	.string "In XENEROVILLE bekommen wir\n"
+	.string "hoffentlich Antworten…$"
+	.endif
+	.endif
 
 Route128_Text_StevenImGoingToSootopolis:
+	.ifdef ENGLISH
 	.string "{PLAYER}{KUN}…\n"
 	.string "I don't know what you intend to do,\l"
 	.string "but don't do anything reckless.\p"
 	.string "Okay.\n"
 	.string "I'm going to SOOTOPOLIS.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER}{KUN}…\n"
+	.string "Ich weiß nicht, was du vorhast, aber tue\l"
+	.string "nichts Unüberlegtes.\p"
+	.string "Okay.\n"
+	.string "Ich gehe nach XENEROVILLE.$"
+	.endif
+	.endif
 

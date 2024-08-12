@@ -4,6 +4,9 @@
 #include "main.h"
 #include "malloc.h"
 #include "palette.h"
+#if GERMAN
+#include "graphics.h"
+#endif
 #include "pokedex_cry_screen.h"
 #include "sound.h"
 #include "trig.h"
@@ -71,8 +74,10 @@ static const u16 sCryMeterNeedle_Pal[] = INCBIN_U16("graphics/pokedex/cry_meter_
 static const u8 sCryMeterNeedle_Gfx[] = INCBIN_U8("graphics/pokedex/cry_meter_needle.4bpp");
 
 static const u16 sCryMeter_Tilemap[] = INCBIN_U16("graphics/pokedex/cry_meter_map.bin"); // Unused
+#if ENGLISH
 static const u16 sCryMeter_Pal[] = INCBIN_U16("graphics/pokedex/cry_meter.gbapal");
 static const u8 sCryMeter_Gfx[] = INCBIN_U8("graphics/pokedex/cry_meter.4bpp.lz");
+#endif
 
 static const u16 sWaveformOffsets[][72] =
 {

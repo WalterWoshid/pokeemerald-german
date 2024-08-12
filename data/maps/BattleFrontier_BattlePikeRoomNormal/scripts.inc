@@ -647,124 +647,322 @@ BattleFrontier_BattlePikeRoomNormal_Movement_CameraPanDown:
 	step_end
 
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth:
+	.ifdef ENGLISH
 	.string "Welcome…\n"
 	.string "You must be commended for your luck…\p"
 	.string "Your POKéMON shall be restored\n"
 	.string "to full health…$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen…\n"
+	.string "Du hast wirklich Glück!\p"
+	.string "Deine POKéMON sind bald wieder\n"
+	.string "topfit…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge:
+	.ifdef ENGLISH
 	.string "I urge you to enjoy the rest of your\n"
 	.string "Battle Choice challenge…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich wünsche dir für den restlichen Weg\n"
+	.string "deiner Kampfbahn-Herausforderung\l"
+	.string "alles Gute…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon:
+	.ifdef ENGLISH
 	.string "Ah, you're a lucky one.\n"
 	.string "I'm in somewhat-good spirits now.\p"
 	.string "I will restore one of your POKéMON\n"
 	.string "to full health.$"
+	.else
+	.ifdef GERMAN
+	.string "Na, du bist echt ein Glückspilz.\n"
+	.string "Ich bin gerade in guter Stimmung.\p"
+	.string "Deine POKéMON sind gleich wieder\n"
+	.string "topfit…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell:
+	.ifdef ENGLISH
 	.string "The best of luck to you.\n"
 	.string "Farewell.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich wünsche dir alles Gute!\n"
+	.string "Leb wohl…$"
+	.endif
+	.endif
 
 @ Seems there was a planned room type where the player could choose to battle and would be healed if they won
 @ Possibly replaced/superseded by the hard battle room, which is the same but the battle isnt optional
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons:
+	.ifdef ENGLISH
 	.string "Excuse me…\p"
 	.string "Would you care for a battle?\n"
 	.string "I'll restore your POKéMON if you win.$"
+	.else
+	.ifdef GERMAN
+	.string "Excuse me…\p"
+	.string "Would you care for a battle?\n"
+	.string "I’ll restore your POKéMON if you win.$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe:
+	.ifdef ENGLISH
 	.string "Very well…\n"
 	.string "Now, shall we?$"
+	.else
+	.ifdef GERMAN
+	.string "Very well…\n"
+	.string "Now, shall we?$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou:
+	.ifdef ENGLISH
 	.string "I see…\n"
 	.string "How unsporting of you…$"
+	.else
+	.ifdef GERMAN
+	.string "I see…\n"
+	.string "How unsporting of you…$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised:
+	.ifdef ENGLISH
 	.string "Magnificent…\p"
 	.string "As promised, I shall restore your\n"
 	.string "POKéMON to full health.$"
+	.else
+	.ifdef GERMAN
+	.string "Magnificent…\p"
+	.string "As promised, I shall restore your\n"
+	.string "POKéMON to full health.$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell2:
+	.ifdef ENGLISH
 	.string "The best of luck to you.\n"
 	.string "Farewell.$"
+	.else
+	.ifdef GERMAN
+	.string "The best of luck to you.\n"
+	.string "Farewell.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_WatchOut:
+	.ifdef ENGLISH
 	.string "Oh, my!\p"
 	.string "Watch out!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh je!\p"
+	.string "Pass auf!!!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop:
+	.ifdef ENGLISH
 	.string "Now, now!\n"
 	.string "KIRLIA, stop that!$"
+	.else
+	.ifdef GERMAN
+	.string "Aber, aber!\n"
+	.string "KIRLIA, hör auf damit!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop:
+	.ifdef ENGLISH
 	.string "Now, now!\n"
 	.string "DUSCLOPS, stop that!$"
+	.else
+	.ifdef GERMAN
+	.string "Aber, aber!\n"
+	.string "ZWIRRKLOP, hör auf damit!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic:
+	.ifdef ENGLISH
 	.string "KIRLIA used TOXIC!$"
+	.else
+	.ifdef GERMAN
+	.string "KIRLIA setzt TOXIN ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
+	.ifdef ENGLISH
 	.string "KIRLIA used HYPNOSIS!$"
+	.else
+	.ifdef GERMAN
+	.string "KIRLIA setzt HYPNOSE ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
+	.ifdef ENGLISH
 	.string "KIRLIA used THUNDER WAVE!$"
+	.else
+	.ifdef GERMAN
+	.string "KIRLIA setzt DONNERWELLE ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
+	.ifdef ENGLISH
 	.string "KIRLIA used WILL-O-WISP!$"
+	.else
+	.ifdef GERMAN
+	.string "KIRLIA setzt IRRLICHT ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp:
+	.ifdef ENGLISH
 	.string "DUSCLOPS used WILL-O-WISP!$"
+	.else
+	.ifdef GERMAN
+	.string "ZWIRRKLOP setzt IRRLICHT ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam:
+	.ifdef ENGLISH
 	.string "DUSCLOPS used ICE BEAM!$"
+	.else
+	.ifdef GERMAN
+	.string "ZWIRRKLOP setzt EISSTRAHL ein!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
+	.ifdef ENGLISH
 	.string "Look here!\n"
 	.string "That's quite enough!$"
+	.else
+	.ifdef GERMAN
+	.string "Jetzt reicht es aber!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia:
+	.ifdef ENGLISH
 	.string "I must apologize to you…\p"
 	.string "My KIRLIA has a TIMID nature…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich muss mich bei dir entschuldigen…\p"
+	.string "Mein KIRLIA ist eigentlich SCHEU…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops:
+	.ifdef ENGLISH
 	.string "I must apologize to you…\p"
 	.string "My DUSCLOPS has a TIMID nature…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich muss mich bei dir entschuldigen…\p"
+	.string "Mein ZWIRRKLOP ist eigentlich SCHEU…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled:
+	.ifdef ENGLISH
 	.string "It attacks without warning if it is\n"
 	.string "startled by another person…\p"
 	.string "Are you and your POKéMON all right?$"
+	.else
+	.ifdef GERMAN
+	.string "Es greift nur an, wenn es von jemandem\n"
+	.string "erschreckt wird…\p"
+	.string "Geht es dir und deinen POKéMON gut?$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeHopeMonsAreFine:
+	.ifdef ENGLISH
 	.string "I do apologize for what happened…\n"
 	.string "I do hope your POKéMON are fine.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich entschuldige mich für das, was\n"
+	.string "passiert ist… Ich hoffe, deinen\l"
+	.string "POKéMON geht es gut.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_Silence:
+	.ifdef ENGLISH
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer:
+	.ifdef ENGLISH
 	.string "Welcome…\p"
 	.string "Here, we will have you battle\n"
 	.string "a somewhat-tough TRAINER…$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen…\p"
+	.string "Hier musst du gegen einigermaßen\n"
+	.string "starke Gegner antreten…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth:
+	.ifdef ENGLISH
 	.string "How wonderful…\p"
 	.string "To honor your victory, your POKéMON\n"
 	.string "shall be restored to full health…$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, wunderbar!\p"
+	.string "Als Belohnung für deinen Sieg sorge ich\n"
+	.string "dafür, dass deine POKéMON wieder topfit\l"
+	.string "sind.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge2:
+	.ifdef ENGLISH
 	.string "I urge you to enjoy the rest of your\n"
 	.string "Battle Choice challenge…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich wünsche dir für den restlichen Weg\n"
+	.string "deiner Kampfbahn-Herausforderung\l"
+	.string "alles Gute…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen:
+	.ifdef ENGLISH
 	.string "I am LUCY…\n"
 	.string "I am the law here…\l"
 	.string "For I am the PIKE QUEEN…\p"
@@ -772,24 +970,66 @@ BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen:
 	.string "you must defeat me…\p"
 	.string "…I'm not one for idle chatter.\n"
 	.string "Hurry. Come on…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich bin LOTTE…\n"
+	.string "Ich bin hier das Gesetz…\l"
+	.string "Ich bin die PFIPITISTIN…\p"
+	.string "Du weißt das bestimmt schon, aber um\n"
+	.string "weitergehen zu können, musst du erst\l"
+	.string "an mir vorbei…\p"
+	.string "Smalltalk liegt mir nicht…\n"
+	.string "Los, lass uns kämpfen…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_HopeYouDidntUseUpLuck:
+	.ifdef ENGLISH
 	.string "Your luck…\n"
 	.string "I hope you didn't use it all up here…$"
+	.else
+	.ifdef GERMAN
+	.string "Dein Glück… Ich hoffe, du hast\n"
+	.string "noch etwas davon übrig…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_LucyShowMeFrontierPass:
+	.ifdef ENGLISH
 	.string "LUCY: … … … … … …\n"
 	.string "Show me your FRONTIER PASS…$"
+	.else
+	.ifdef GERMAN
+	.string "LOTTE: … … … …\n"
+	.string "… …\l"
+	.string "Gib mir deinen KAMPFZONENPASS!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol:
+	.ifdef ENGLISH
 	.string "The Luck Symbol was embossed on\n"
 	.string "the FRONTIER PASS!$"
+	.else
+	.ifdef GERMAN
+	.string "Das LOSSYMBOL wurde dem\n"
+	.string "KAMPFZONENPASS hinzugefügt!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear:
+	.ifdef ENGLISH
 	.string "…That's all there is…\n"
 	.string "Disappear already…$"
+	.else
+	.ifdef GERMAN
+	.string "Das war’s…\n"
+	.string "Nun verschwinde endlich…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain:
+	.ifdef ENGLISH
 	.string "LUCY: …You again…\p"
 	.string "… … … … … …\p"
 	.string "…I've trampled flowers and braved\n"
@@ -798,54 +1038,151 @@ BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain:
 	.string "losing to the same opponent…\p"
 	.string "… … … … … …\n"
 	.string "Fine… I'll do it…$"
+	.else
+	.ifdef GERMAN
+	.string "LOTTE: Du schon wieder…\p"
+	.string "… … … … …\n"
+	.string "…\p"
+	.string "Ich habe Berge bezwungen und Stürme\n"
+	.string "überstanden, um so weit zu kommen…\p"
+	.string "Irgendwie habe ich nicht das Bedürfnis,\n"
+	.string "wieder gegen denselben Gegner zu\l"
+	.string "verlieren…\p"
+	.string "… … … … …\n"
+	.string "…\p"
+	.string "Also gut… Kämpfen wir…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_NowComeOn:
+	.ifdef ENGLISH
 	.string "Now!\n"
 	.string "Come on!$"
+	.else
+	.ifdef GERMAN
+	.string "Nun mach schon!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_LucyFrontierPass:
+	.ifdef ENGLISH
 	.string "LUCY: … … … … … …\p"
 	.string "…FRONTIER PASS…$"
+	.else
+	.ifdef GERMAN
+	.string "LOTTE: … … … …\n"
+	.string "… …\l"
+	.string "……KAMPFZONENPASS……$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_LuckSymbolTookGoldenShine:
+	.ifdef ENGLISH
 	.string "The Luck Symbol took on\n"
 	.string "a golden shine!$"
+	.else
+	.ifdef GERMAN
+	.string "Das LOSSYMBOL erscheint\n"
+	.string "in einem goldenen Glanz!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_IWontForget:
+	.ifdef ENGLISH
 	.string "…You, I won't forget…\n"
 	.string "…Ever…$"
+	.else
+	.ifdef GERMAN
+	.string "Das werde ich dir nicht verzeihen…\n"
+	.string "Niemals…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomNoHeal:
+	.ifdef ENGLISH
 	.string "I welcome you…\p"
 	.string "Giggle…\n"
 	.string "You seem to be bereft of luck…\p"
 	.string "If only you hadn't chosen this room,\n"
 	.string "your POKéMON could have been healed…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich heiße dich willkommen…\p"
+	.string "Kicher… Dein Glück scheint\n"
+	.string "dich verlassen zu haben…\p"
+	.string "Hättest du dich nicht für diesen Raum\n"
+	.string "entschieden, wären deine POKéMON schon\l"
+	.string "längst wieder topfit…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne:
+	.ifdef ENGLISH
 	.string "I welcome you…\p"
 	.string "Since you have chosen this room, I will\n"
 	.string "restore one POKéMON to full health…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich heiße dich willkommen…\p"
+	.string "Da du dich für diesen Raum entschieden\n"
+	.string "hast, sorge ich dafür, dass eines deiner\l"
+	.string "POKéMON wieder topfit wird.$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo:
+	.ifdef ENGLISH
 	.string "I welcome you…\p"
 	.string "Since you have chosen this room, I will\n"
 	.string "restore two POKéMON to full health…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich heiße dich willkommen…\p"
+	.string "Da du dich für diesen Raum entschieden\n"
+	.string "hast, sorge ich dafür, dass deine\l"
+	.string "POKéMON wieder topfit werden.$"
+	.endif
+	.endif
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons:
+	.ifdef ENGLISH
 	.string "I welcome you…\p"
 	.string "Giggle…\n"
 	.string "You should thank your lucky stars…\p"
 	.string "Since you have chosen this room,\n"
 	.string "all your POKéMON will be restored…$"
+	.else
+	.ifdef GERMAN
+	.string "I welcome you…\p"
+	.string "Giggle…\n"
+	.string "You should thank your lucky stars…\p"
+	.string "Since you have chosen this room,\n"
+	.string "all your POKéMON will be restored…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster:
+	.ifdef ENGLISH
 	.string "I shall go fetch our master…$"
+	.else
+	.ifdef GERMAN
+	.string "Ich werde unsere Meisterin rufen…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons:
+	.ifdef ENGLISH
 	.string "Ah, you're a lucky one!\n"
 	.string "I'm in good spirits now.\p"
 	.string "I will restore two of your POKéMON\n"
 	.string "to full health!$"
+	.else
+	.ifdef GERMAN
+	.string "Du bist ein Glückspilz! Ich habe heute\n"
+	.string "ausgesprochen gute Laune.\p"
+	.string "Ich werde dafür sorgen, dass zwei\n"
+	.string "deiner POKéMON wieder topfit werden.$"
+	.endif
+	.endif
 

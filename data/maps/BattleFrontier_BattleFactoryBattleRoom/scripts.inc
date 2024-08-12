@@ -251,10 +251,18 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_ScientistsFaceBattle::
 	return
 
 BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn:
+	.ifdef ENGLISH
 	.string "Hey, hey!\n"
 	.string "Get a move on!$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, hey!\n"
+	.string "Beeil dich mal ein bisschen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead:
+	.ifdef ENGLISH
 	.string "Hey, my name's NOLAND!\n"
 	.string "I'm basically in charge of this place,\l"
 	.string "which is why I'm the FACTORY HEAD!\p"
@@ -270,27 +278,81 @@ BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead:
 	.string "I'll take you on under the same\n"
 	.string "conditions as you.\p"
 	.string "I'll be using rental POKéMON, too!$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, mein Name ist KEVIN!\n"
+	.string "Ich bin hier für alles verantwortlich,\l"
+	.string "daher bin ich der FABRIKLEITER!\p"
+	.string "Ich habe mir deine Wechselkampf-Daten\n"
+	.string "angeschaut.\p"
+	.string "Du scheinst schon auf der richtigen\n"
+	.string "Fährte zu sein, stehst dir aber selbst\p"
+	.string "im Weg. Also hör zu! Wissen bekommt man\n"
+	.string "nicht nur durchs Lesen oder Arbeiten.\p"
+	.string "So etwas… muss nicht immer\n"
+	.string "hilfreich sein!\p"
+	.string "Du musst auch mit deinem Herzen\n"
+	.string "Erfahrungen sammeln, verstehst du?\p"
+	.string "Ich werde gegen dich antreten, unter\n"
+	.string "den gleichen Bedingungen wie sie für\p"
+	.string "dich gelten. Ich besorge mir Leih-\n"
+	.string "POKéMON.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn:
+	.ifdef ENGLISH
 	.string "Shake out every last bit of your\n"
 	.string "knowledge and bring it on!$"
+	.else
+	.ifdef GERMAN
+	.string "Schüttle das ab, was du nur gelesen\n"
+	.string "hast und sei bereit!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass:
+	.ifdef ENGLISH
 	.string "NOLAND: Smart going!\n"
 	.string "Let's see your FRONTIER PASS.$"
+	.else
+	.ifdef GERMAN
+	.string "KEVIN: Clever gemacht!\n"
+	.string "Gib mir deinen KAMPFZONENPASS!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol:
+	.ifdef ENGLISH
 	.string "The Knowledge Symbol was embossed\n"
 	.string "on the FRONTIER PASS!$"
+	.else
+	.ifdef GERMAN
+	.string "Das KENNTNISSYMBOL wurde dem\n"
+	.string "KAMPFZONENPASS hinzugefügt!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred:
+	.ifdef ENGLISH
 	.string "Heh…\n"
 	.string "You're a pretty bright spark…\p"
 	.string "Next time, I'll come after you hard.\n"
 	.string "No holds barred, understand?\p"
 	.string "You keep up your studies!$"
+	.else
+	.ifdef GERMAN
+	.string "Heh…\n"
+	.string "Deine Flamme ist wirklich hell…\p"
+	.string "Nächstes Mal halte ich mich nicht\n"
+	.string "zurück. Hast du verstanden?\p"
+	.string "Mach weiter so und lerne, indem du\n"
+	.string "Erfahrungen sammelst!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime:
+	.ifdef ENGLISH
 	.string "NOLAND: Hey, hey! How's it going?\n"
 	.string "You keeping up with your studies?\p"
 	.string "…Oh?\p"
@@ -298,24 +360,68 @@ BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime:
 	.string "the last time I saw you.\p"
 	.string "Now, this should be fun!\n"
 	.string "I'm getting excited, hey!$"
+	.else
+	.ifdef GERMAN
+	.string "KEVIN: Hey, hey! Wie geht’s? Hast\n"
+	.string "du schon viel dazugelernt?\p"
+	.string "Oh…\p"
+	.string "Dein Blick ist härter und\n"
+	.string "entschlossener geworden!\p"
+	.string "Das wird ein Spaß!\n"
+	.string "Hey, ich freue mich auf unseren Kampf!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn:
+	.ifdef ENGLISH
 	.string "All right!\n"
 	.string "Bring it on!$"
+	.else
+	.ifdef GERMAN
+	.string "Also gut!\n"
+	.string "Dann mal los!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass:
+	.ifdef ENGLISH
 	.string "NOLAND: What the…\n"
 	.string "You're getting out of my league!\p"
 	.string "Sheesh!\n"
 	.string "Let's see that FRONTIER PASS!$"
+	.else
+	.ifdef GERMAN
+	.string "KEVIN: Was war das denn…\n"
+	.string "Du gehörst bereits in eine andere Liga.\p"
+	.string "Meine Güte! Wow!\n"
+	.string "Gib mir deinen KAMPFZONENPASS!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine:
+	.ifdef ENGLISH
 	.string "The Knowledge Symbol took on\n"
 	.string "a golden shine!$"
+	.else
+	.ifdef GERMAN
+	.string "Das KENNTNISSYMBOL erscheint\n"
+	.string "in einem goldenen Glanz!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou:
+	.ifdef ENGLISH
 	.string "Pfft, man!\p"
 	.string "That's absolutely the last time\n"
 	.string "I lose to you!\p"
 	.string "We have to do this again, hey?$"
+	.else
+	.ifdef GERMAN
+	.string "Irre! Echt!\p"
+	.string "Das war bestimmt das letzte Mal, dass\n"
+	.string "ich gegen dich verloren habe!\p"
+	.string "Wir müssen unbedingt wieder\n"
+	.string "gegeneinander kämpfen, stimmt’s?$"
+	.endif
+	.endif
 

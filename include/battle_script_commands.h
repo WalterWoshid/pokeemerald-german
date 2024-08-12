@@ -8,7 +8,11 @@
 #define WINDOW_BG1   (1 << 7)
 
 // Arguments for 'xStart, yStart, xEnd, yEnd' in HandleBattleWindow
+#if ENGLISH
 #define YESNOBOX_X_Y 24, 8, 29, 13
+#elif GERMAN
+#define YESNOBOX_X_Y 23, 8, 29, 13
+#endif
 
 void AI_CalcDmg(u8 battlerIdAtk, u8 battlerIdDef);
 u8 TypeCalc(u16 move, u8 battlerIdAtk, u8 battlerIdDef);

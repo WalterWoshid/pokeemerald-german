@@ -59,6 +59,7 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
+	.ifdef ENGLISH
 	.string "Hey!\n"
 	.string "I remember your face!\p"
 	.string "If you're here, it must mean that\n"
@@ -73,8 +74,28 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
 	.string "were spotted near MOSSDEEP.\p"
 	.string "That bunch of goons, they sure don't\n"
 	.string "look good near the sea!$"
+	.else
+	.ifdef GERMAN
+	.string "Hey!\n"
+	.string "Dein Gesicht kenne ich doch!\p"
+	.string "Du bist hier, und das kann nur bedeuten,\n"
+	.string "dass du dich wieder in unsere\l"
+	.string "Angelegenheiten einmischen willst!\p"
+	.string "Glaubst du wirklich, dass ein Baby wie\n"
+	.string "du es mit TEAM AQUA aufnehmen kann?\p"
+	.string "Du versuchst es besser in drei\n"
+	.string "Trillionen Jahren mal.\p"
+	.string "Du passt hervorragend zu TEAM MAGMA.\p"
+	.string "Und wo wir grad beim Thema sind: TEAM\n"
+	.string "MAGMA soll in der Nähe von MOOSBACH\l"
+	.string "gesehen worden sein.\p"
+	.string "Die passen mit Sicherheit nicht ans\n"
+	.string "Meer.$"
+	.endif
+	.endif
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
+	.ifdef ENGLISH
 	.string "A punk like you, do you really think\n"
 	.string "you can take on TEAM AQUA?\p"
 	.string "I'd say you're too early by about\n"
@@ -85,4 +106,18 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "were spotted near MOSSDEEP.\p"
 	.string "That bunch of goons, they sure don't\n"
 	.string "look good near the sea!$"
+	.else
+	.ifdef GERMAN
+	.string "Glaubst du wirklich, dass ein Baby wie\n"
+	.string "du es mit TEAM AQUA aufnehmen kann?\p"
+	.string "Du versuchst es besser in drei\n"
+	.string "Trillionen Jahren mal.\p"
+	.string "Du passt hervorragend zu TEAM MAGMA.\p"
+	.string "Und wo wir grad beim Thema sind: TEAM\n"
+	.string "MAGMA soll in der Nähe von MOOSBACH\l"
+	.string "gesehen worden sein.\p"
+	.string "Die passen mit Sicherheit nicht ans\n"
+	.string "Meer.$"
+	.endif
+	.endif
 

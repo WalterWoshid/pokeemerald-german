@@ -176,6 +176,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
+	.ifdef ENGLISH
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
@@ -186,15 +187,43 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "advice that I have for you.\p"
 	.string "The rest of the way, you have to\n"
 	.string "go for it yourself!$"
+	.else
+	.ifdef GERMAN
+	.string "Na, wie sieht es aus, auf dem Weg zum\n"
+	.string "CHAMP, {PLAYER}?\p"
+	.string "ARENALEITER JUAN in XENEROVILLE\n"
+	.string "ist der Meister der WASSER-POKéMON.\p"
+	.string "Und auf dem Weg zu ihm wirst du auf\n"
+	.string "gefrorenem Boden ins Rutschen kommen.\p"
+	.string "Tut mir Leid, aber mehr kann ich dir dazu\n"
+	.string "auch nicht sagen.\p"
+	.string "Den Rest des Weges musst du alleine\n"
+	.string "meistern.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
+	.ifdef ENGLISH
 	.string "Yow! You've beaten even JUAN, who\n"
 	.string "was supposedly the best in all HOENN!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
+	.else
+	.ifdef GERMAN
+	.string "Hui! Du hast JUAN besiegt, von dem\n"
+	.string "man sagt, er sei der beste TRAINER in\l"
+	.string "der HOENN-Region.\p"
+	.string "Okay! Schau auf deinem\n"
+	.string "TRAINERPASS nach.\p"
+	.string "Wenn du alle ORDEN erhalten hast,\n"
+	.string "kannst du die POKéMON LIGA\l"
+	.string "herausfordern!$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
+	.ifdef ENGLISH
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
@@ -212,12 +241,34 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "our artistry.\p"
 	.string "A grand illusion of water sculpted\n"
 	.string "by POKéMON and myself!$"
+	.else
+	.ifdef GERMAN
+	.string "Lass mich dich was fragen.\n"
+	.string "Wusstest du das schon? Ach, ich\l"
+	.string "sollte nicht so schüchtern sein.\p"
+	.string "Ich habe WASSILI alles beigebracht,\n"
+	.string "was man über POKéMON wissen muss.\p"
+	.string "Und dann habe ich mein Amt als\n"
+	.string "ARENALEITER aufgegeben.\p"
+	.string "Ich habe die ARENA an WASSILI\n"
+	.string "übergeben.\p"
+	.string "Doch es gab einen zwingenden Grund für\n"
+	.string "mich zurückzukehren.\p"
+	.string "Genug geredet.\n"
+	.string "Lass uns kämpfen.\p"
+	.string "Du sollst Zeuge unserer\n"
+	.string "Kunstfertigkeit werden.\p"
+	.string "Eine Illusion aus Wasser, geformt von\n"
+	.string "meinen POKéMON und mir.$"
+	.endif
+	.endif
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
+	.ifdef ENGLISH
 	.string "Ahahaha, excellent!\n"
 	.string "Very well, you are the winner.\p"
 	.string "From you, I sense the brilliant shine\n"
@@ -231,12 +282,39 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "Hahaha, I merely jest!\p"
 	.string "Rather than my clothes, I shall reward\n"
 	.string "you with this, the RAIN BADGE!$"
+	.else
+	.ifdef GERMAN
+	.string "Ahahahaha, ausgezeichnet!\n"
+	.string "Sehr schön! Du hast gewonnen!\p"
+	.string "Ich weiß, dein brillantes Talent wird\n"
+	.string "jeden Gegner bezwingen.\p"
+	.string "Aber im Vergleich zu mir oder auch\n"
+	.string "WASSILI fehlt es dir an Eleganz.\p"
+	.string "Vielleicht sollte ich dir ein paar meiner\n"
+	.string "Kleidungsstücke leihen?\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "…\p"
+	.string "Hahahaha, ich hab nur Spaß gemacht!\p"
+	.string "Statt meiner Kleidung überreiche ich\n"
+	.string "dir den SCHAUERORDEN.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
+	.ifdef ENGLISH
 	.string "{PLAYER} received the RAIN BADGE\n"
 	.string "from JUAN.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} erhält den SCHAUERORDEN\n"
+	.string "von JUAN.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
+	.ifdef ENGLISH
 	.string "Having the RAIN BADGE shall assure you\n"
 	.string "the full obedience of all your POKéMON\l"
 	.string "to your every command.\p"
@@ -245,19 +323,47 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "walls of cascading water.\p"
 	.string "And, so that you never forget the\n"
 	.string "battle we shared, take this…$"
+	.else
+	.ifdef GERMAN
+	.string "Dieser ORDEN sorgt dafür, dass dir alle\n"
+	.string "deine POKéMON gehorchen.\p"
+	.string "Der ORDEN befähigt dich außerdem dazu,\n"
+	.string "mit der VM KASKADE Wasserfälle in jede\l"
+	.string "Richtung zu passieren.\p"
+	.string "Und damit du unseren Kampf stets in\n"
+	.string "Erinnerung behältst, gebe ich dir dies…$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
+	.ifdef ENGLISH
 	.string "The TECHNICAL MACHINE I handed you\n"
 	.string "contains WATER PULSE.\p"
 	.string "In use, it will occasionally confuse\n"
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"
+	.else
+	.ifdef GERMAN
+	.string "Diese TM enthält AQUAWELLE.\p"
+	.string "Damit kann das gegnerische POKéMON\n"
+	.string "mit Ultraschallwellen verwirrt werden.\p"
+	.string "… … … … … …$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
+	.ifdef ENGLISH
 	.string "Registered GYM LEADER JUAN\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "ARENALEITER JUAN  wurde im POKéNAV-\n"
+	.string "Verzeichnis eingetragen.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
+	.ifdef ENGLISH
 	.string "The TRAINERS who have gathered all\n"
 	.string "the GYM BADGES of HOENN should make\l"
 	.string "way to the ultimate destination.\p"
@@ -266,23 +372,59 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "of HOENN, to the island EVER GRANDE.\p"
 	.string "There, you shall find the POKéMON\n"
 	.string "LEAGUE.$"
+	.else
+	.ifdef GERMAN
+	.string "TRAINER, die alle ORDEN der ARENen in\n"
+	.string "HOENN erhalten haben, sollten sich…\p"
+	.string "auf den Weg zur ultimativen Heraus-\n"
+	.string "forderung machen. Der POKéMON LIGA!\p"
+	.string "Reise zu den östlichsten Gebieten von\n"
+	.string "HOENN, zur Insel PRACHTPOLIS CITY.\l"
+	.string "Dort findest du die POKéMON LIGA.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
+	.ifdef ENGLISH
 	.string "There remains but one BADGE to\n"
 	.string "obtain in HOENN.\p"
 	.string "If you wish to challenge the POKéMON\n"
 	.string "LEAGUE, you must obtain the last\l"
 	.string "BADGE from the GYM in FORTREE.$"
+	.else
+	.ifdef GERMAN
+	.string "In HOENN gibt es nur noch einen ORDEN\n"
+	.string "zu verdienen.\p"
+	.string "Wenn du die POKéMON LIGA herausfordern\n"
+	.string "willst, musst du zuerst den ORDEN der\l"
+	.string "ARENA in BAUMHAUSEN CITY bekommen.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_GymStatue:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS CITY POKéMON GYM$"
+	.else
+	.ifdef GERMAN
+	.string "POKéMON ARENA von XENEROVILLE$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
+	.ifdef ENGLISH
 	.string "SOOTOPOLIS CITY POKéMON GYM\p"
 	.string "JUAN'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
+	.else
+	.ifdef GERMAN
+	.string "POKéMON ARENA von XENEROVILLE\p"
+	.string "JUANS ANERKANNTE TRAINER:\n"
+	.string "{PLAYER}$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
+	.ifdef ENGLISH
 	.string "JUAN: Ah, this GYM had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
@@ -290,12 +432,32 @@ SootopolisCity_Gym_1F_Text_JuanPreRematch:
 	.string "Well, my friend, most certainly!\p"
 	.string "I shall be delighted to dance with you\n"
 	.string "as often as you wish!$"
+	.else
+	.ifdef GERMAN
+	.string "JUAN: Ah, diese ARENA strahlt wieder die\n"
+	.string "alte Heiterkeit aus…\p"
+	.string "Aber unser junger Wirbelwind ist\n"
+	.string "zurückgekehrt, um uns erneut\l"
+	.string "zu testen.\p"
+	.string "Sicher doch, sicher doch.\p"
+	.string "Es ist mir eine Freude, mit dir immer und\n"
+	.string "immer wieder über das Wasser zu gleiten.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
+	.ifdef ENGLISH
 	.string "Ahahaha, you are the winner!\n"
 	.string "You have defeated me again!$"
+	.else
+	.ifdef GERMAN
+	.string "Ahahaha, du hast gewonnen!\n"
+	.string "Du hast mich schon wieder besiegt.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
+	.ifdef ENGLISH
 	.string "JUAN: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
@@ -304,8 +466,22 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "I imagine that to be so.\p"
 	.string "And that, my friend, is a certain sign\n"
 	.string "of nobility!$"
+	.else
+	.ifdef GERMAN
+	.string "JUAN: Wenn ich dich frage, ob du mein\n"
+	.string "Schüler werden willst, wirst du bestimmt\l"
+	.string "ablehnen.\p"
+	.string "Ich würde dir stattdessen gerne meinen\n"
+	.string "Mantel schenken.\p"
+	.string "Aber auch den würdest du bestimmt\n"
+	.string "ablehnen.\p"
+	.string "Und das, Wirbelwind, ist ein Zeichen\n"
+	.string "von hohen Idealen.$"
+	.endif
+	.endif
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
+	.ifdef ENGLISH
 	.string "JUAN: Ah, this GYM had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
@@ -316,4 +492,21 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "You have with you but one POKéMON.\p"
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, POKéMON, please.$"
+	.else
+	.ifdef GERMAN
+	.string "JUAN: Ah, diese ARENA strahlt wieder die\n"
+	.string "alte Heiterkeit aus…\p"
+	.string "Aber unser junger Wirbelwind ist\n"
+	.string "zurückgekehrt, um uns erneut\l"
+	.string "zu testen.\p"
+	.string "Sicher doch, sicher doch.\p"
+	.string "Es ist mir eine Freude, mit dir immer und\n"
+	.string "immer wieder über das Wasser zu gleiten.\p"
+	.string "Aber, nein, nein, nein, nein.\n"
+	.string "Du hast ja nur ein einziges POKéMON.\p"
+	.string "Ich wünsche, dass du mit mindestens\n"
+	.string "zwei POKéMON wiederkommst und dann\l"
+	.string "gegen mich antrittst.$"
+	.endif
+	.endif
 

@@ -219,6 +219,7 @@ BattleFrontier_BattlePyramidTop_Movement_CameraPanUp:
 	step_end
 
 BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
+	.ifdef ENGLISH
 	.string "It is a delight to see you here!\n"
 	.string "You have reached the summit of\l"
 	.string "the BATTLE PYRAMID!\p"
@@ -228,12 +229,33 @@ BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
 	.string "who have conquered the PYRAMID.\p"
 	.string "Now, please!\n"
 	.string "Up you go!$"
+	.else
+	.ifdef GERMAN
+	.string "Es ist wirklich eine Freude, dich hier zu\n"
+	.string "sehen! Du hast es bis zum Gipfel der\l"
+	.string "KAMPFPYRAMIDE geschafft!\p"
+	.string "Über uns befindet sich nur noch die\n"
+	.string "Aussichtsplattform.\p"
+	.string "Ein Platz, der nur denen offen steht,\n"
+	.string "die die PYRAMIDE erobert haben.\p"
+	.string "Nun, dann darf ich bitten?\n"
+	.string "Auf geht’s!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid:
+	.ifdef ENGLISH
 	.string "The PYRAMID's new conqueror!\n"
 	.string "Let the name {PLAYER} be known!$"
+	.else
+	.ifdef GERMAN
+	.string "Der neue Eroberer der PYRAMIDE! Sein\n"
+	.string "Name soll in aller Munde sein! {PLAYER}!!!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
+	.ifdef ENGLISH
 	.string "It is a delight to see you here!\p"
 	.string "Unfortunately, you were second by\n"
 	.string "a mere fraction of time!\p"
@@ -245,8 +267,25 @@ BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
 	.string "of the pinnacle from our chief!\p"
 	.string "Now, please! When you are ready,\n"
 	.string "take one more step of courage!$"
+	.else
+	.ifdef GERMAN
+	.string "Es ist wahrlich eine Freude, dich zu\n"
+	.string "sehen!\p"
+	.string "Aber leider bist du nur Zweiter, denn \n"
+	.string "ein anderer war schneller als du!\p"
+	.string "Unser Chef hat die PYRAMIDE bereits\n"
+	.string "erobert!\p"
+	.string "Wie dem auch sei, junger Forschergeist…\n"
+	.string "Du bist ein TRAINER!\p"
+	.string "Behaupte dich mit aller Kraft und hol\n"
+	.string "dir den Ruhm! Besiege unseren Chef!\p"
+	.string "Bitte! Du bist so weit gegangen. Mach\n"
+	.string "auch noch diesen einen Schritt!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure:
+	.ifdef ENGLISH
 	.string "Young adventurer…\p"
 	.string "Wouldn't you agree that explorations\n"
 	.string "are the grandest of adventures?\p"
@@ -255,8 +294,21 @@ BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure:
 	.string "Your own POKéMON!\p"
 	.string "And, above all, only your own courage\n"
 	.string "to lead you through unknown worlds…$"
+	.else
+	.ifdef GERMAN
+	.string "Junger Forschergeist…\p"
+	.string "Meinst du nicht auch, dass Forschungs-\n"
+	.string "reisen die Krönung der Abenteuer sind?\p"
+	.string "Dein Verstand!\p"
+	.string "Deine Stärke!\p"
+	.string "Deine POKéMON!\p"
+	.string "Aber vor allem dein Mut, dich durch\n"
+	.string "unbekannte Welten zu bewegen…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon:
+	.ifdef ENGLISH
 	.string "Aah, yes, indeed this life is grand!\n"
 	.string "Grand, it is! Eh?\p"
 	.string "I'm BRANDON!\p"
@@ -268,26 +320,72 @@ BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon:
 	.string "am I right?\p"
 	.string "Hahahah!\n"
 	.string "This should be exciting!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh ja, das Leben ist einfach großartig!\n"
+	.string "Ja, ja! Bitte?!?\p"
+	.string "Ich heiße BRIAN!\p"
+	.string "Ich bin der PYRAKÖNIG, was bedeutet,\n"
+	.string "dass ich die Verantwortung hier trage!\p"
+	.string "Die meisten nennen mich einfach Chef!\p"
+	.string "Du besitzt ein starkes Selbstver-\n"
+	.string "trauen, da du es bis hierher geschafft\p"
+	.string "hast. Hahaha!\n"
+	.string "Das wird ein Riesenspaß!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle:
+	.ifdef ENGLISH
 	.string "Now, then!\n"
 	.string "Bring your courage to our battle!$"
+	.else
+	.ifdef GERMAN
+	.string "Also dann!\n"
+	.string "Beweis deinen Mut und kämpfe!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease:
+	.ifdef ENGLISH
 	.string "BRANDON: Hahahah! Grand it was!\n"
 	.string "Grand, yes, indeed!\p"
 	.string "Well done! You've earned recognition!\n"
 	.string "Your FRONTIER PASS, please!$"
+	.else
+	.ifdef GERMAN
+	.string "BRIAN: Hahaha! Das war einfach\n"
+	.string "großartig! Großartig, jawohl!\p"
+	.string "Gut gemacht! Du hast dir meine Anerken-\n"
+	.string "nung redlich verdient! Deinen KAMPF-\l"
+	.string "ZONENPASS, bitte!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol:
+	.ifdef ENGLISH
 	.string "The Brave Symbol was embossed on\n"
 	.string "the FRONTIER PASS!$"
+	.else
+	.ifdef GERMAN
+	.string "Das BRAVURSYMBOL wurde dem\n"
+	.string "KAMPFZONENPASS hinzugefügt!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting:
+	.ifdef ENGLISH
 	.string "Young explorer!\n"
 	.string "I look forward to our next meeting!$"
+	.else
+	.ifdef GERMAN
+	.string "Junger Forschergeist! Ich freue mich\n"
+	.string "schon auf unser nächstes Treffen!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned:
+	.ifdef ENGLISH
 	.string "BRANDON: …You've finally returned,\n"
 	.string "young explorer…\p"
 	.string "Your love of adventure seems to come\n"
@@ -300,35 +398,102 @@ BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned:
 	.string "The desperate!\p"
 	.string "Those days of death-defying,\n"
 	.string "life-affirming adventures are back…$"
+	.else
+	.ifdef GERMAN
+	.string "BRIAN: … Endlich sehen wir uns\n"
+	.string "wieder, junger Forschergeist!\p"
+	.string "Deine Liebe für Abenteuer scheint aus\n"
+	.string "tiefstem Herzen zu kommen…\p"
+	.string "Ja… Als ich in deinem Alter war, war ich\n"
+	.string "genauso…\p"
+	.string "… … … …\p"
+	.string "Leidenschaftlich!\p"
+	.string "Gefährlich!\p"
+	.string "Verzweifelt!\p"
+	.string "Endlich ist es wieder Zeit für todes-\n"
+	.string "verachtende, lebensbejahende\l"
+	.string "Abenteuer…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter:
+	.ifdef ENGLISH
 	.string "Now, then!\p"
 	.string "I sense my own courage is off\n"
 	.string "the meter!$"
+	.else
+	.ifdef GERMAN
+	.string "Also dann!\p"
+	.string "Mein Mut übersteigt diesmal alle\n"
+	.string "Grenzen!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_EverythingYouHave:
+	.ifdef ENGLISH
 	.string "Everything you have!\n"
 	.string "I'm braced for it all!$"
+	.else
+	.ifdef GERMAN
+	.string "Alles, was du hast…\n"
+	.string "würde ich auch gerne besitzen…$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis:
+	.ifdef ENGLISH
 	.string "BRANDON: Hahahah!\n"
 	.string "Remarkable!\l"
 	.string "Yes, it's grand, indeed!\p"
 	.string "Young explorer!\p"
 	.string "You've bested me through and through!\n"
 	.string "Here! I want you to have this!$"
+	.else
+	.ifdef GERMAN
+	.string "BRIAN: Hahahaha!\n"
+	.string "Bemerkenswert!\l"
+	.string "Wirklich ganz großartig!\p"
+	.string "Junger Forschergeist!\p"
+	.string "Du hast es mir durch und durch gezeigt!\n"
+	.string "Bitte! Ich möchte dir dies geben!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine:
+	.ifdef ENGLISH
 	.string "The Brave Symbol took on\n"
 	.string "a golden shine!$"
+	.else
+	.ifdef GERMAN
+	.string "Das BRAVURSYMBOL erscheint\n"
+	.string "in einem goldenen Glanz!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_FarewellForNow:
+	.ifdef ENGLISH
 	.string "Ah, yes! It just goes to show that\n"
 	.string "I have much to learn still!\p"
 	.string "May our paths cross again!\n"
 	.string "Farewell for now, young explorer!$"
+	.else
+	.ifdef GERMAN
+	.string "Oh, ja! Scheinbar muss auch ich noch\n"
+	.string "sehr viel lernen!\p"
+	.string "Ich hoffe, unsere Wege kreuzen sich\n"
+	.string "bald wieder! Bis dahin Leb wohl, junger\l"
+	.string "Forschergeist!$"
+	.endif
+	.endif
 
 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady:
+	.ifdef ENGLISH
 	.string "Now, when you are ready, take courage\n"
 	.string "and step forward.$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du bereit bist, dann nimm deinen\n"
+	.string "Mut zusammen und tritt vor.$"
+	.endif
+	.endif
 

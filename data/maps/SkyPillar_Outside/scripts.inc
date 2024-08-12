@@ -140,26 +140,61 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
+	.ifdef ENGLISH
 	.string "The door is closed.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Tür ist zu.$"
+	.endif
+	.endif
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
+	.ifdef ENGLISH
 	.string "WALLACE: Oh, my, I'm terribly sorry!\p"
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
 	.string "I've opened the locked door of\n"
 	.string "the SKY PILLAR.\p"
 	.string "{PLAYER}{KUN}, let's be on our way!$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Oh, das tut mir schrecklich\n"
+	.string "Leid!\p"
+	.string "In meiner Hast habe ich gar nicht\n"
+	.string "bemerkt, dass ich dich zurückgelassen\l"
+	.string "habe.\p"
+	.string "Ich habe die Türen des HIMMELTURMs\n"
+	.string "aufgeschlossen.\p"
+	.string "Lass uns gehen, {PLAYER}{KUN}!$"
+	.endif
+	.endif
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
+	.ifdef ENGLISH
 	.string "WALLACE: It's an earthquake!\p"
 	.string "There's not a moment to waste!\n"
 	.string "We've got to hurry!$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Das ist ein Erdbeben!\p"
+	.string "Wir dürfen keine Sekunde verlieren!\n"
+	.string "Wir müssen uns beeilen!$"
+	.endif
+	.endif
 
 SkyPillar_Outside_Text_SituationGettingWorse:
+	.ifdef ENGLISH
 	.string "WALLACE: Hmm…\n"
 	.string "The situation is getting worse…$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Hmm…\n"
+	.string "Die Situation verschärft sich…$"
+	.endif
+	.endif
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
+	.ifdef ENGLISH
 	.string "WALLACE: This isn't good…\p"
 	.string "The weather distortion is spreading\n"
 	.string "even here…\p"
@@ -170,3 +205,16 @@ SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "I've got to go back.\p"
 	.string "Everything is in your hands now.\n"
 	.string "Don't fail us!$"
+	.else
+	.ifdef GERMAN
+	.string "WASSILI: Das ist schlecht…\p"
+	.string "Das Wetter spielt selbst hier verrückt…\p"
+	.string "{PLAYER}{KUN}.\p"
+	.string "RAYQUAZA befindet sich sicher auf\n"
+	.string "einer der oberen Ebenen.\p"
+	.string "Ich mache mir Sorgen um XENEROVILLE.\n"
+	.string "Ich muss zurück.\p"
+	.string "Nun liegt alles in deiner Hand!\n"
+	.string "Enttäusch uns nicht.$"
+	.endif
+	.endif

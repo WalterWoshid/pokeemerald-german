@@ -77,6 +77,7 @@ Route105_EventScript_AndresRematch::
 	end
 
 Route104_Text_DadPokenavCall:
+	.ifdef ENGLISH
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "DAD: Oh, {PLAYER}?\p"
@@ -91,7 +92,39 @@ Route104_Text_DadPokenavCall:
 	.string "You take care now.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "Piep!\p"
+	.string "VATER: Oh, {PLAYER}?\p"
+	.string "… … … … …\n"
+	.string "…\p"
+	.string "Wo bist du gerade?\n"
+	.string "Es hört sich an, als sei es dort\l"
+	.string "sehr windig.\p"
+	.string "Ich habe gerade von MR. TRUMM von\n"
+	.string "DEVON erfahren, dass du einen\l"
+	.string "besonderen POKéNAV hast, daher\l"
+	.string "rufe ich dich an.\p"
+	.string "Du hörst dich an, als ginge es dir\n"
+	.string "gut. Dann bin ich beruhigt.\p"
+	.string "Pass auf dich auf!\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "… … … … …\l"
+	.string "Klick!$"
+	.endif
+	.endif
 
 Route104_Text_RegisteredDadInPokenav:
+	.ifdef ENGLISH
 	.string "Registered DAD NORMAN\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "VATER NORMAN wurde im POKéNAV-\n"
+	.string "Verzeichnis eingetragen.$"
+	.endif
+	.endif

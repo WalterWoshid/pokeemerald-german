@@ -35,14 +35,32 @@ SlateportCity_Mart_EventScript_Man::
 	end
 
 SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
+	.ifdef ENGLISH
 	.string "The MARKET does have some interesting\n"
 	.string "merchandise.\p"
 	.string "But there are some items you can only\n"
 	.string "get at a POKéMON MART.$"
+	.else
+	.ifdef GERMAN
+	.string "Der MARKT bietet einige interessante\n"
+	.string "Merchandising-Artikel an.\p"
+	.string "Aber einige Sachen wirst du nur in einem\n"
+	.string "POKéMON-SUPERMARKT finden.$"
+	.endif
+	.endif
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
+	.ifdef ENGLISH
 	.string "A GREAT BALL is better than a POKé BALL\n"
 	.string "at catching POKéMON.\p"
 	.string "With this, I should be able to get that\n"
 	.string "elusive POKéMON…$"
+	.else
+	.ifdef GERMAN
+	.string "Ein SUPERBALL eignet sich besser zum\n"
+	.string "Fangen von POKéMON als ein POKéBALL.\p"
+	.string "Hiermit sollte ich in der Lage sein, das\n"
+	.string "begehrte POKéMON zu überlisten.$"
+	.endif
+	.endif
 

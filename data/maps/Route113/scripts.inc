@@ -134,33 +134,82 @@ Route113_EventScript_Wyatt::
 	end
 
 Route113_Text_AshCanBeFashionedIntoGlass:
+	.ifdef ENGLISH
 	.string "Wahahaha! Today's technology is a\n"
 	.string "wondrous thing!\p"
 	.string "Take this volcanic ash here.\n"
 	.string "It can be fashioned into glass.$"
+	.else
+	.ifdef GERMAN
+	.string "Wahahaha! Die heutige Technologie ist\n"
+	.string "schon eine wundersame Sache!\p"
+	.string "Nimm zum Beispiel diese Vulkanasche\n"
+	.string "hier. Aus ihr kann man Glas machen!$"
+	.endif
+	.endif
 
 Route113_Text_FunWalkingThroughAsh:
+	.ifdef ENGLISH
 	.string "It's fun walking through the volcano's\n"
 	.string "ashes on the ground and grass.\p"
 	.string "You can see where you walked--it's\n"
 	.string "really neat!$"
+	.else
+	.ifdef GERMAN
+	.string "Es macht Spaß, durch die Vulkanasche zu\n"
+	.string "laufen, über Boden und Gras.\p"
+	.string "Du kannst genau erkennen, wo du her-\n"
+	.string "umgelaufen bist - total klasse!$"
+	.endif
+	.endif
 
 Route113_Text_RouteSign111:
+	.ifdef ENGLISH
 	.string "ROUTE 113\n"
 	.string "{RIGHT_ARROW} ROUTE 111$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 113\n"
+	.string "{RIGHT_ARROW} ROUTE 111$"
+	.endif
+	.endif
 
 Route113_Text_RouteSignFallarbor:
+	.ifdef ENGLISH
 	.string "ROUTE 113\n"
 	.string "{LEFT_ARROW} FALLARBOR TOWN$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 113\n"
+	.string "{LEFT_ARROW} LAUBWECHSELFELD$"
+	.endif
+	.endif
 
 Route113_Text_TrainerTipsRegisterKeyItems:
+	.ifdef ENGLISH
 	.string "TRAINER TIPS\p"
 	.string "You may register one of the KEY ITEMS\n"
 	.string "in your BAG as SELECT.\p"
 	.string "Simply press SELECT to use\n"
 	.string "the registered item conveniently.$"
+	.else
+	.ifdef GERMAN
+	.string "TIPPS für TRAINER\p"
+	.string "Du kannst eines deiner BASIS-ITEMs in\n"
+	.string "deinem BEUTEL auf SELECT legen.\p"
+	.string "Durch Drücken von SELECT kannst du\n"
+	.string "so ganz bequem das Item einsetzen.$"
+	.endif
+	.endif
 
 Route113_Text_GlassWorkshopSign:
+	.ifdef ENGLISH
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
+	.else
+	.ifdef GERMAN
+	.string "GLASWERKSTATT\n"
+	.string "“Glasdekor aus Vulkanasche.”$"
+	.endif
+	.endif
 

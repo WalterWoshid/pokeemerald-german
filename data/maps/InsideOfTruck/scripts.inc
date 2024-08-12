@@ -52,7 +52,15 @@ InsideOfTruck_EventScript_MovingBox::
 	end
 
 InsideOfTruck_Text_BoxPrintedWithMonLogo:
+	.ifdef ENGLISH
 	.string "The box is printed with a POKéMON logo.\p"
 	.string "It's a POKéMON brand moving and\n"
 	.string "delivery service.$"
+	.else
+	.ifdef GERMAN
+	.string "Auf der Kiste ist ein POKéMON-Logo.\p"
+	.string "Es ist ein Umzugs- und Lieferservice\n"
+	.string "einer POKéMON-Firma.$"
+	.endif
+	.endif
 

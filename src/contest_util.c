@@ -1405,64 +1405,110 @@ static void HideLinkResultsTextBox(void)
 static void LoadContestResultsTitleBarTilemaps(void)
 {
     u8 palette;
+#if ENGLISH
     int x, y;
 
     x = 5;
     y = 1;
+#endif
     if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
     {
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Link_Tilemap, 5, 1, 5, 2);
         x = 10;
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Link_Tilemap, 5, 1, 12, 2);
+#endif
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_NORMAL)
     {
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Normal_Tilemap, 5, 1, 10, 2);
         x = 15;
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Normal_Tilemap, 5, 1, 12, 2);
+#endif
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_SUPER)
     {
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Super_Tilemap, 5, 1, 10, 2);
         x = 15;
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Super_Tilemap, 5, 1, 12, 2);
+#endif
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_HYPER)
     {
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Hyper_Tilemap, 5, 1, 10, 2);
         x = 15;
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Hyper_Tilemap, 5, 1, 12, 2);
+#endif
     }
     else // CONTEST_RANK_MASTER
     {
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Master_Tilemap, 5, 1, 10, 2);
         x = 15;
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Master_Tilemap, 5, 1, 12, 2);
+#endif
     }
 
     if (gSpecialVar_ContestCategory == CONTEST_CATEGORY_COOL)
     {
         palette = 0;
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Cool_Tilemap, x, y, 5, 2);
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Cool_Tilemap, 17, 1, 7, 2);
+#endif
     }
     else if (gSpecialVar_ContestCategory == CONTEST_CATEGORY_BEAUTY)
     {
         palette = 1;
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Beauty_Tilemap, x, y, 5, 2);
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Beauty_Tilemap, 17, 1, 7, 2);
+#endif
     }
     else if (gSpecialVar_ContestCategory == CONTEST_CATEGORY_CUTE)
     {
         palette = 2;
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Cute_Tilemap, x, y, 5, 2);
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Cute_Tilemap, 17, 1, 7, 2);
+#endif
     }
     else if (gSpecialVar_ContestCategory == CONTEST_CATEGORY_SMART)
     {
         palette = 3;
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Smart_Tilemap, x, y, 5, 2);
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Smart_Tilemap, 17, 1, 7, 2);
+#endif
     }
     else // CONTEST_CATEGORY_TOUGH
     {
         palette = 4;
+#if ENGLISH
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tough_Tilemap, x, y, 5, 2);
+#elif GERMAN
+        CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tough_Tilemap, 17, 1, 7, 2);
+#endif
     }
 
+#if ENGLISH
     x += 5;
     CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 6, 2);
+#elif GERMAN
+    CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, 24, 1, 0, 2);
+#endif
     CopyToBgTilemapBufferRect_ChangePalette(2, sContestResults->tilemapBuffers[2], 0, 0, 32, 4, palette);
 }
 

@@ -463,29 +463,65 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy:
+	.ifdef ENGLISH
 	.string "UNCLE: It's because of POKéMON that\n"
 	.string "this boy's got more pep, I suppose…\l"
 	.string "But he's become a bit too peppy…$"
+	.else
+	.ifdef GERMAN
+	.string "ONKEL: Ich glaube, es liegt an dem\n"
+	.string "POKéMON, dass dieser Junge mehr Pep\l"
+	.string "hat. Aber er hat zu viel Pep…$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyWantToChallengeGym:
+	.ifdef ENGLISH
 	.string "WALLY: Aww, UNCLE, please?\p"
 	.string "I want to challenge this GYM and see\n"
 	.string "how much better I've become.\p"
 	.string "Please? May I, please?$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: Oooch, bitte, ONKEL, bitte!\p"
+	.string "Ich möchte in dieser ARENA antreten,\n"
+	.string "um zu sehen, wie gut ich bin.\p"
+	.string "Bitte! Darf ich? Biiiitte!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_UncleYourePushingIt:
+	.ifdef ENGLISH
 	.string "UNCLE: Now hold on, WALLY.\p"
 	.string "Since you started living with POKéMON,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
 	.string "to suddenly challenge a GYM?$"
+	.else
+	.ifdef GERMAN
+	.string "ONKEL: Nun hör mal auf, HEIKO.\p"
+	.string "Seit du mit POKéMON zusammenlebst, bist\n"
+	.string "du viel stärker geworden.\p"
+	.string "Aber - du überforderst dich, wenn du\n"
+	.string "plötzlich in einer ARENA antrittst.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
+	.ifdef ENGLISH
 	.string "WALLY: I'm not pushing it.\p"
 	.string "If I combine forces with RALTS,\n"
 	.string "we can beat anyone!$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: Ich bin nicht überfordert!\p"
+	.string "Wenn ich die Kräfte von TRASLA\n"
+	.string "kombiniere, besiege ich jeden!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyWillYouBattleMe:
+	.ifdef ENGLISH
 	.string "WALLY: Oh! Hi, {PLAYER}!\p"
 	.string "I've gotten a lot stronger since\n"
 	.string "we met.\p"
@@ -493,52 +529,132 @@ MauvilleCity_Text_WallyWillYouBattleMe:
 	.string "understand that.\p"
 	.string "{PLAYER}, please, will you have\n"
 	.string "a battle with me?$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: Oh! Hi {PLAYER}!\p"
+	.string "Seit wir uns das letzte Mal gesehen\n"
+	.string "haben, bin ich viel stärker geworden.\p"
+	.string "{PLAYER}, ich möchte von dir und auch\n"
+	.string "von meinem ONKEL verstanden werden.\p"
+	.string "{PLAYER}, bitte, würdest du gegen mich\n"
+	.string "kämpfen?$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
+	.ifdef ENGLISH
 	.string "WALLY: Oh… If you won't battle me,\n"
 	.string "{PLAYER}, my UNCLE won't know that I've\l"
 	.string "become really strong.$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: Oh… Wenn du nicht gegen mich an-\n"
+	.string "treten willst, {PLAYER}, wird mein ONKEL\l"
+	.string "nie erkennen, wie stark ich schon bin.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_UncleCanYouBattleWally:
+	.ifdef ENGLISH
 	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
 	.string "On WALLY's behalf, can I ask you to\l"
 	.string "battle with him just this once?\p"
 	.string "I don't think he's going to listen to\n"
 	.string "any reason the way he is now.$"
+	.else
+	.ifdef GERMAN
+	.string "ONKEL: {PLAYER}{KUN}, richtig?\n"
+	.string "Darf ich dich um HEIKOs Willen bitten,\l"
+	.string "dieses eine Mal gegen ihn zu kämpfen?\p"
+	.string "Ich glaube nicht, dass er mir im Moment\n"
+	.string "überhaupt zuhören will…$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyPleaseBattleMe:
+	.ifdef ENGLISH
 	.string "WALLY: {PLAYER}, please!\n"
 	.string "Battle with me, please.$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: {PLAYER}, bitte!\n"
+	.string "Kämpfe gegen mich! Biiiitte!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyHereICome:
+	.ifdef ENGLISH
 	.string "WALLY: {PLAYER}, thank you.\p"
 	.string "Okay… Here I come!$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: {PLAYER}, vielen Dank!\p"
+	.string "Okay… Jetzt komme ich!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyDefeat:
+	.ifdef ENGLISH
 	.string "WALLY: … … … … … … …\p"
 	.string "… … … … … … … …\p"
 	.string "I lost…$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: … … … … … … …\p"
+	.string "… … … … … … … …\p"
+	.string "Ich habe verloren…$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
+	.ifdef ENGLISH
 	.string "WALLY: UNCLE…\n"
 	.string "I'll go back to VERDANTURF…$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO: ONKEL…\n"
+	.string "Ich gehe zurück nach WIESENFLUR…$"
+	.endif
+	.endif
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
+	.ifdef ENGLISH
 	.string "{PLAYER}, thank you.\n"
 	.string "Being a TRAINER is tough, isn't it?\p"
 	.string "It's not enough just to have POKéMON\n"
 	.string "and make them battle. That isn't what\l"
 	.string "being a real TRAINER is about.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER}, herzlichen Dank! TRAINER zu\n"
+	.string "sein verlangt viel von einem, oder?\p"
+	.string "Man besitzt nicht einfach nur POKéMON\n"
+	.string "und lässt sie kämpfen. Um ein richtiger\l"
+	.string "TRAINER zu sein, braucht es mehr.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
+	.ifdef ENGLISH
 	.string "UNCLE: WALLY, there's no need to be so\n"
 	.string "down on yourself.\p"
 	.string "Why, what's keeping you from becoming\n"
 	.string "stronger and stronger?\p"
 	.string "Come on, let's go home.\n"
 	.string "Everyone's waiting for you.$"
+	.else
+	.ifdef GERMAN
+	.string "ONKEL: HEIKO, du brauchst deshalb nicht\n"
+	.string "so niedergeschlagen zu sein.\p"
+	.string "Was hält dich davon ab, stärker und\n"
+	.string "stärker zu werden? Nichts!\p"
+	.string "Komm, gehen wir nach Hause.\n"
+	.string "Da warten sie alle schon auf dich.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_UncleVisitUsSometime:
+	.ifdef ENGLISH
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
 	.string "that you must be the TRAINER who kept\l"
 	.string "an eye out for WALLY when he caught\l"
@@ -546,9 +662,20 @@ MauvilleCity_Text_UncleVisitUsSometime:
 	.string "Why don't you visit us in VERDANTURF\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
-
+	.else
+	.ifdef GERMAN
+	.string "ONKEL: {PLAYER}{KUN}, mir dämmert es so\n"
+	.string "langsam. Du musst der TRAINER sein, der\l"
+	.string "sich damals um HEIKO gekümmert hat, als\l"
+	.string "er sein erstes POKéMON fing.\p"
+	.string "Warum besuchst du uns nicht irgendwann\n"
+	.string "in WIESENFLUR? Ich bin sicher,\l"
+	.string "HEIKO würde sich sehr freuen.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WallyPokenavCall:
+	.ifdef ENGLISH
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "WALLY: Oh, hello, {PLAYER}!\p"
@@ -558,12 +685,34 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "anytime, {PLAYER}!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … …\n"
+	.string "…\l… … … … …\l…\p"
+	.string "HEIKO: Oh, hallo {PLAYER}!\p"
+	.string "Ich muss dir was erzählen! Mein\n"
+	.string "Onkel hat mir einen POKéNAV\l"
+	.string "gegeben.\p"
+	.string "Nun kann ich mit dir reden, wann\n"
+	.string "immer ich möchte, {PLAYER}!\p"
+	.string "… … … … …\n"
+	.string "…\l… … … … …\lKlick!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_RegisteredWally:
+	.ifdef ENGLISH
 	.string "Registered WALLY\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "HEIKO wurde im POKéNAV-Verzeichnis\n"
+	.string "eingetragen.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
+	.ifdef ENGLISH
 	.string "SCOTT: Hehe…\n"
 	.string "I was watching that match!\p"
 	.string "You're friends with that boy WALLY,\n"
@@ -575,8 +724,25 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "I idolize TRAINERS like that!\p"
 	.string "… … … … … …\n"
 	.string "I'll be cheering for you!$"
+	.else
+	.ifdef GERMAN
+	.string "SCOTT: Hehe…\n"
+	.string "Ich habe diesen Kampf beobachtet!\p"
+	.string "Du bist ein Freund von diesem Jungen,\n"
+	.string "von HEIKO, oder?\p"
+	.string "Aber du hast dich nicht zurückgehalten\n"
+	.string "und ihn beeindruckend besiegt.\p"
+	.string "Yeah! Das ist es, was POKéMON-Kämpfe\n"
+	.string "ausmacht!\p"
+	.string "Ich bewundere solche TRAINER!\p"
+	.string "… … … … …\n"
+	.string "…\l"
+	.string "Ich feure dich an!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
+	.ifdef ENGLISH
 	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
 	.string "You look like you have a lot of zip!\l"
 	.string "That's a good thing, wahahahaha!\p"
@@ -590,68 +756,184 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "haywire. It's getting unsafe.\p"
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
+	.else
+	.ifdef GERMAN
+	.string "WALTER: Oh, {PLAYER}{KUN}!\n"
+	.string "Du siehst aus, als hättest du Mumm!\l"
+	.string "Das ist sehr gut, hähähähähä…\p"
+	.string "Gut! Ich habe es entschieden!\n"
+	.string "Du tust mir einen Gefallen, {PLAYER}{KUN}!\p"
+	.string "MALVENFROH CITY hat einen unter-\n"
+	.string "irdischen Bereich, der NEU MALVENFROH\l"
+	.string "heißt.\p"
+	.string "{PLAYER}{KUN}, ich schicke dich jetzt da\n"
+	.string "hinunter, damit du den GENERATOR aus-\l"
+	.string "schaltest.\p"
+	.string "Der GENERATOR ist kurz davor, \n"
+	.string "heißzulaufen. Das ist sehr gefährlich.\p"
+	.string "Hier hast du den SCHLÜSSEL für\n"
+	.string "NEU MALVENFROH.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WattsonWontBeChallenge:
+	.ifdef ENGLISH
 	.string "WATTSON: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
+	.else
+	.ifdef GERMAN
+	.string "WALTER: Mach dir keine Sorgen. Man\n"
+	.string "kann das nicht gerade eine Heraus-\l"
+	.string "forderung nennen.\p"
+	.string "Der Eingang zu NEU MALVENFROH\n"
+	.string "ist eine kurze SURF-Strecke von\l"
+	.string "ROUTE 110 entfernt.\p"
+	.string "Das ist alles. Du kannst mir vertrauen!\n"
+	.string "Wahahahahahaha!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WattsonThanksTakeTM:
+	.ifdef ENGLISH
 	.string "WATTSON: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
 	.string "Go on, you've earned it!$"
+	.else
+	.ifdef GERMAN
+	.string "WALTER: Wahahahahaha!\p"
+	.string "Ich wusste es, {PLAYER}{KUN}! Ich wusste, ich\n"
+	.string "habe die richtige Person\l"
+	.string "herausgepickt!\p"
+	.string "Hier, das ist mein Dankeschön - eine TM,\n"
+	.string "die DONNERBLITZ enthält!\p"
+	.string "Nimm! Du hast sie dir wirklich verdient!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
+	.ifdef ENGLISH
 	.string "WATTSON: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
 	.string "the young step up and take charge!$"
+	.else
+	.ifdef GERMAN
+	.string "WALTER: Wahahahahaha!\p"
+	.string "Es freut mich zu sehen, wie energetisch\n"
+	.string "sich die jungen Leute heute entwickeln!$"
+	.endif
+	.endif
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
+	.ifdef ENGLISH
 	.string "You know, it's cool to have POKéMON\n"
 	.string "battles and stuff…\p"
 	.string "But if your POKéMON gets hurt,\n"
 	.string "you have to nurse it back to health.$"
+	.else
+	.ifdef GERMAN
+	.string "Weißt du, es ist cool, dass es POKéMON-\n"
+	.string "Kämpfe und all das Zeugs gibt…\p"
+	.string "Aber wenn dein POKéMON verletzt wird,\n"
+	.string "dann musst du es gesund pflegen.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
+	.ifdef ENGLISH
 	.string "The roads of this town stretch north\n"
 	.string "and south, and east and west.\p"
 	.string "Because of that, we get all sorts of\n"
 	.string "people coming through.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Straßen dieses Ortes führen nach\n"
+	.string "Norden, Süden, nach Westen und Osten.\p"
+	.string "Daher reisen hier auch so viele ver-\n"
+	.string "schiedene Leute durch.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_RydelVeryGenerous:
+	.ifdef ENGLISH
 	.string "Have you been to RYDEL'S CYCLES yet?\p"
 	.string "RYDEL, the owner, is a very generous\n"
 	.string "man.$"
+	.else
+	.ifdef GERMAN
+	.string "Warst du schon in RADLAs RADLADEN?\p"
+	.string "RADLA, der Eigentümer, ist ein sehr\n"
+	.string "großzügiger Mann.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
+	.ifdef ENGLISH
 	.string "Even if you're riding a BIKE,\n"
 	.string "wild POKéMON could jump you.$"
+	.else
+	.ifdef GERMAN
+	.string "Selbst wenn du mit dem RAD fährst,\n"
+	.string "können dich POKéMON anspringen.$"
+	.endif
+	.endif
 
 MauvilleCity_Text_CitySign:
+	.ifdef ENGLISH
 	.string "MAUVILLE CITY\n"
 	.string "“The bright and shiny city of fun!”$"
+	.else
+	.ifdef GERMAN
+	.string "MALVENFROH CITY\n"
+	.string "“Die strahlende Stadt der Freude!”$"
+	.endif
+	.endif
 
 MauvilleCity_Text_GymSign:
+	.ifdef ENGLISH
 	.string "MAUVILLE CITY POKéMON GYM\n"
 	.string "LEADER: WATTSON\l"
 	.string "“The cheerfully electrifying man!”$"
+	.else
+	.ifdef GERMAN
+	.string "POKéMON ARENA von MALVENFROH CITY\n"
+	.string "LEITER: WALTER\l"
+	.string "“Der Mann, der Spannung entlädt!”$"
+	.endif
+	.endif
 
 MauvilleCity_Text_BikeShopSign:
+	.ifdef ENGLISH
 	.string "“Ride in gravel and shake up your\n"
 	.string "soul!”\l"
 	.string "RYDEL'S CYCLES$"
+	.else
+	.ifdef GERMAN
+	.string "RADLAS RÄDER\n"
+	.string "“Fahre im Kies und lass dich durch-\l"
+	.string "schütteln!”$"
+	.endif
+	.endif
 
 MauvilleCity_Text_GameCornerSign:
+	.ifdef ENGLISH
 	.string "“The play spot for all!”\n"
 	.string "MAUVILLE GAME CORNER$"
+	.else
+	.ifdef GERMAN
+	.string "MALVENFROH CITY SPIELHALLE\n"
+	.string "“Der Ort für alle Spieler!”$"
+	.endif
+	.endif
 
 MauvilleCity_Text_ExplainTV:
+	.ifdef ENGLISH
 	.string "Hi, do you check out TV at all?\p"
 	.string "They've added a bunch of cool new\n"
 	.string "shows recently.\p"
@@ -662,6 +944,28 @@ MauvilleCity_Text_ExplainTV:
 	.string "I wish I would be on TV sometime.\p"
 	.string "That's why I think you should check\n"
 	.string "out TVs whenever you can.$"
+	.else
+	.ifdef GERMAN
+	.string "Hi, hast du in letzter Zeit\n"
+	.string "ferngesehen?\p"
+	.string "Da gibt es jetzt jede Menge coole, neue\n"
+	.string "Shows.\p"
+	.string "Fernsehen ist so cool. Plötzlich habe\n"
+	.string "ich meine Freunde im Fernsehen gesehen.\p"
+	.string "Und manchmal, da zeigen sie dich im\n"
+	.string "Fernsehen und du weißt es gar nicht.\p"
+	.string "Ich möchte auch mal im Fernsehen sein.\p"
+	.string "Du solltest immer mal wieder den\n"
+	.string "Fernseher einschalten…$"
+	.endif
+	.endif
 
 MauvilleCity_Text_BeenCheckingOutTV:
+	.ifdef ENGLISH
 	.string "Hi, have you been checking out TVs?$"
+	.else
+	.ifdef GERMAN
+	.string "Hi, hast du in letzter Zeit\n"
+	.string "ferngesehen?$"
+	.endif
+	.endif

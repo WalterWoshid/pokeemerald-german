@@ -166,7 +166,11 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 15,
+#if ENGLISH
         .width = 26,
+#elif GERMAN
+        .width = 27,
+#endif
         .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x0090,
@@ -272,9 +276,17 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] =
     },
     [B_WIN_YESNO] = {
         .bg = 0,
+#if ENGLISH
         .tilemapLeft = 26,
+#elif GERMAN
+        .tilemapLeft = 25,
+#endif
         .tilemapTop = 9,
+#if ENGLISH
         .width = 3,
+#elif GERMAN
+        .width = 4,
+#endif
         .height = 4,
         .paletteNum = 5,
         .baseBlock = 0x0100,
@@ -387,7 +399,11 @@ static const struct WindowTemplate sBattleArenaWindowTemplates[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 15,
+#if ENGLISH
         .width = 26,
+#elif GERMAN
+        .width = 27,
+#endif
         .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x0090,
@@ -493,9 +509,17 @@ static const struct WindowTemplate sBattleArenaWindowTemplates[] =
     },
     [B_WIN_YESNO] = {
         .bg = 0,
+#if ENGLISH
         .tilemapLeft = 26,
+#elif GERMAN
+        .tilemapLeft = 25,
+#endif
         .tilemapTop = 9,
+#if ENGLISH
         .width = 3,
+#elif GERMAN
+        .width = 4,
+#endif
         .height = 4,
         .paletteNum = 5,
         .baseBlock = 0x0100,
@@ -585,7 +609,11 @@ static const struct WindowTemplate sBattleArenaWindowTemplates[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 15,
+#if ENGLISH
         .width = 26,
+#elif GERMAN
+        .width = 27,
+#endif
         .height = 4,
         .paletteNum = 7,
         .baseBlock = 0x0090,

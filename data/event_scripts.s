@@ -834,31 +834,77 @@ Common_EventScript_PlayerHandedOverTheItem::
 
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign::
+    .ifdef ENGLISH
 	.string "“Selected items for your convenience!”\n"
 	.string "POKéMON MART$"
+	.else
+	.ifdef GERMAN
+	.string "“Ausgewählte Items für Ihren\n"
+	.string "Gebrauch!”\l"
+	.string "POKéMON-SUPERMARKT$"
+	.endif
+	.endif
 
 gText_PokemonCenterSign::
+    .ifdef ENGLISH
 	.string "“Rejuvenate your tired partners!”\n"
 	.string "POKéMON CENTER$"
+	.else
+	.ifdef GERMAN
+	.string "“Erfrische deine müden Partner!”\n"
+	.string "POKéMON-CENTER$"
+	.endif
+	.endif
 
 gText_MomOrDadMightLikeThisProgram::
+    .ifdef ENGLISH
 	.string "{STR_VAR_1} might like this program.\n"
 	.string "… … … … … … … … … … … … … … … …\p"
 	.string "Better get going!$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} würde dieses Programm gefallen.\p"
+	.string "… … … … … … … … … … … … … … … …\p"
+	.string "Ich beeile mich besser!$"
+	.endif
+	.endif
 
 gText_WhichFloorWouldYouLike::
+    .ifdef ENGLISH
 	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
 	.string "Which floor would you like?$"
+	.else
+	.ifdef GERMAN
+	.string "Willkommen im SEEGRASULB CITY\n"
+	.string "EINKAUFSZENTRUM.\p"
+	.string "In welches Stockwerk möchtest du?$"
+	.endif
+	.endif
 
 gText_SandstormIsVicious::
+    .ifdef ENGLISH
 	.string "The sandstorm is vicious.\n"
 	.string "It's impossible to keep going.$"
+	.else
+	.ifdef GERMAN
+	.string "Der Sandsturm ist zu stark.\n"
+	.string "Dagegen kann man nicht angehen!$"
+	.endif
+	.endif
 
 gText_SelectWithoutRegisteredItem::
+    .ifdef ENGLISH
 	.string "An item in the BAG can be\n"
 	.string "registered to SELECT for easy use.$"
+	.else
+	.ifdef GERMAN
+	.string "Ein Basis-Item aus dem BEUTEL kann auf\n"
+	.string "SELECT gelegt werden. Sehr praktisch!$"
+	.endif
+	.endif
 
 gText_PokemonTrainerSchoolEmail::
+    .ifdef ENGLISH
 	.string "There's an e-mail from POKéMON TRAINER\n"
 	.string "SCHOOL.\p"
 	.string "… … … … … …\p"
@@ -866,26 +912,67 @@ gText_PokemonTrainerSchoolEmail::
 	.string "A TRAINER's expertise is tested on the\n"
 	.string "move sets chosen for POKéMON.\p"
 	.string "… … … … … …$"
+	.else
+	.ifdef GERMAN
+	.string "Da ist eine E-Mail von der POKéMON\n"
+	.string "TRAINERSCHULE.\p"
+	.string "… … … … … …\p"
+	.string "Ein POKéMON kann bis zu vier Attacken\n"
+	.string "lernen.\p"
+	.string "Die Fähigkeiten eines TRAINERs werden\n"
+	.string "durch die Attacken, die er seinen\l"
+	.string "POKéMON beibringt, erprobt.\p"
+	.string "… … … … … …$"
+	.endif
+	.endif
 
 gText_PlayerHouseBootPC::
+    .ifdef ENGLISH
 	.string "{PLAYER} booted up the PC.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} schaltet den PC ein.$"
+	.endif
+	.endif
 
 gText_PokeblockLinkCanceled::
+    .ifdef ENGLISH
 	.string "The link was canceled.$"
+	.else
+	.ifdef GERMAN
+	.string "Die Verbindung wurde abgebrochen.$"
+	.endif
+	.endif
 
 gText_UnusedNicknameReceivedPokemon::
 	.string "Want to give a nickname to\n"
 	.string "the {STR_VAR_2} you received?$"
 
 gText_PlayerWhitedOut::
+    .ifdef ENGLISH
 	.string "{PLAYER} is out of usable\n"
 	.string "POKéMON!\p{PLAYER} whited out!$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat kein kampffähiges POKéMON\n"
+	.string "mehr!\p"
+	.string "{PLAYER} wird ohnmächtig!$"
+	.endif
+	.endif
 
 gText_RegisteredTrainerinPokeNav::
+    .ifdef ENGLISH
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
 	.string "in the POKéNAV.$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} {STR_VAR_2} wurde(n) in\n"
+	.string "das POKéNAV-Verzeichnis eingetragen.$"
+	.endif
+	.endif
 
 gText_ComeBackWithSecretPower::
+    .ifdef ENGLISH
 	.string "Do you know the TM SECRET POWER?\p"
 	.string "Our group, we love the TM SECRET\n"
 	.string "POWER.\p"
@@ -893,8 +980,21 @@ gText_ComeBackWithSecretPower::
 	.string "Come back and show me if you get it.\p"
 	.string "We'll accept you as a member and sell\n"
 	.string "you good stuff in secrecy.$"
+	.else
+	.ifdef GERMAN
+	.string "Kennst du die TM GEHEIMPOWER?\p"
+	.string "In unserer Gruppe mögen alle die TM\n"
+	.string "GEHEIMPOWER.\p"
+	.string "Eines unserer Mitglieder wird sie dir\n"
+	.string "geben. Sag mir, wenn du sie hast.\p"
+	.string "Wir werden dich dann als Mitglied auf-\n"
+	.string "nehmen und dir unter der Hand tolle\l"
+	.string "Sachen verkaufen.$"
+	.endif
+	.endif
 
 gText_PokerusExplanation::
+    .ifdef ENGLISH
 	.string "Your POKéMON may be infected with\n"
 	.string "POKéRUS.\p"
 	.string "Little is known about the POKéRUS\n"
@@ -902,24 +1002,63 @@ gText_PokerusExplanation::
 	.string "forms that attach to POKéMON.\p"
 	.string "While infected, POKéMON are said to\n"
 	.string "grow exceptionally well.$"
+	.else
+	.ifdef GERMAN
+	.string "Dein POKéMON scheint von dem\n"
+	.string "POKéRUS befallen zu sein.\p"
+	.string "Über den POKéRUS ist bisher wenig be-\n"
+	.string "kannt, außer dass es Mikroorganismen\l"
+	.string "sind, die POKéMON befallen.\p"
+	.string "Sind deine POKéMON infiziert, wachsen\n"
+	.string "sie besonders gut.$"
+	.endif
+	.endif
 
 	.include "data/text/surf.inc"
 
 gText_DoorOpenedFarAway::
+    .ifdef ENGLISH
 	.string "It sounded as if a door opened\n"
 	.string "somewhere far away.$"
+	.else
+	.ifdef GERMAN
+	.string "Das hörte sich an, als würde irgendwo\n"
+	.string "eine Tür geöffnet.$"
+	.endif
+	.endif
 
 gText_BigHoleInTheWall::
+    .ifdef ENGLISH
 	.string "There is a big hole in the wall.$"
+	.else
+	.ifdef GERMAN
+	.string "In der Wand ist ein großes Loch.$"
+	.endif
+	.endif
 
 gText_SorryWirelessClubAdjustments::
+    .ifdef ENGLISH
 	.string "I'm terribly sorry.\n"
 	.string "The POKéMON WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
+	.else
+	.ifdef GERMAN
+	.string "Tut mir schrecklich Leid. Das KOLOSSEUM\n"
+	.string "wird gerade renoviert.$"
+	.endif
+	.endif
 
 gText_UndergoingAdjustments::
+    .ifdef ENGLISH
 	.string "It appears to be undergoing\n"
 	.string "adjustments…$"
+	.else
+	.ifdef GERMAN
+	.string "Es scheint, dass gerade\n"
+	.string "Wartungsarbeiten vorgenommen\l"
+	.string "werden…$"
+	.endif
+	.endif
 
 @ Unused
 gText_SorryTradeCenterInspections::
@@ -932,24 +1071,59 @@ gText_SorryRecordCornerPreparation::
 	.string "is under preparation.$"
 
 gText_PlayerHandedOverTheItem::
+    .ifdef ENGLISH
 	.string "{PLAYER} handed over the\n"
 	.string "{STR_VAR_1}.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} übergibt\n"
+	.string "{STR_VAR_1}.$"
+	.endif
+	.endif
 
 gText_ThankYouForAccessingMysteryGift::
+    .ifdef ENGLISH
 	.string "Thank you for accessing the\n"
 	.string "MYSTERY GIFT System.$"
+	.else
+	.ifdef GERMAN
+	.string "Danke, dass du das GEHEIM-\n"
+	.string "GESCHEHEN-System benutzt hast.$"
+	.endif
+	.endif
 
 gText_PlayerFoundOneTMHM::
+    .ifdef ENGLISH
 	.string "{PLAYER} found one {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} hat die {STR_VAR_1}\n"
+	.string "{STR_VAR_2} gefunden!$"
+	.endif
+	.endif
 
 gText_Sudowoodo_Attacked::
+    .ifdef ENGLISH
 	.string "The weird tree doesn't like the\n"
 	.string "WAILMER PAIL!\p"
 	.string "The weird tree attacked!$"
+	.else
+	.ifdef GERMAN
+	.string "Der merkwürdige Baum mag die\n"
+	.string "WAILMERKANNE nicht!\p"
+	.string "Der merkwürdige Baum greift an!$"
+	.endif
+	.endif
 
 gText_LegendaryFlewAway::
+    .ifdef ENGLISH
 	.string "The {STR_VAR_1} flew away!$"
+	.else
+	.ifdef GERMAN
+	.string "{STR_VAR_1} flog davon!$"
+	.endif
+	.endif
 
 	.include "data/text/pc_transfer.inc"
 	.include "data/text/questionnaire.inc"

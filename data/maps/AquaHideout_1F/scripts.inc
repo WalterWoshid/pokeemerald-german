@@ -51,6 +51,7 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 	end
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
+	.ifdef ENGLISH
 	.string "What? What? What do you want with \n"
 	.string "TEAM AQUA?\p"
 	.string "Our BOSS isn't here! He's gone off to\n"
@@ -59,16 +60,41 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 	.string "Where did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
 	.string "you something that crucial?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie? Was hast du mit TEAM AQUA zu\n"
+	.string "schaffen?\p"
+	.string "Unser BOSS ist nicht hier! Er ist dabei,\n"
+	.string "sich etwas sehr Wichtiges unter den\l"
+	.string "Nagel zu reißen.\p"
+	.string "… …\n"
+	.string "Wo er hin ist?\p"
+	.string "Uahahaha! Du glaubst doch nicht im\n"
+	.string "Ernst, dass ich dir das verrate!?!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
+	.ifdef ENGLISH
 	.string "What? What?\n"
 	.string "Are you a TEAM MAGMA grunt?\p"
 	.string "I hear that TEAM MAGMA is trying to\n"
 	.string "awaken an awesome POKéMON at their\l"
 	.string "HIDEOUT.\p"
 	.string "But where might their HIDEOUT be?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie?!?\n"
+	.string "Du bist einer von TEAM MAGMA?\p"
+	.string "Ich habe gehört, dass TEAM MAGMA\n"
+	.string "versucht, ein großartiges POKéMON in\l"
+	.string "seinem VERSTECK aufzuwecken.\p"
+	.string "Aber wo ist das VERSTECK wohl?$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
+	.ifdef ENGLISH
 	.string "What? What? What do you want with \n"
 	.string "TEAM AQUA?\p"
 	.string "Our BOSS isn't here!\n"
@@ -77,8 +103,22 @@ AquaHideout_1F_Text_BossWentToJackASubmarine:
 	.string "Where did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
 	.string "you something that crucial?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie? Was hast du mit TEAM AQUA zu\n"
+	.string "schaffen?\p"
+	.string "Unser BOSS ist nicht hier! Er ist dabei,\n"
+	.string "sich ein U-Boot unter den Nagel zu\l"
+	.string "reißen.\p"
+	.string "… …\n"
+	.string "Wo er hin ist?\p"
+	.string "Uahahaha! Du glaubst doch nicht im\n"
+	.string "Ernst, dass ich dir das verrate!?!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_BossIsOnRoute122:
+	.ifdef ENGLISH
 	.string "What? What? What do you want with \n"
 	.string "TEAM AQUA?\p"
 	.string "Our BOSS isn't here! He's on his way to\n"
@@ -87,15 +127,41 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "Why did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
 	.string "you something that crucial?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie? Was hast du mit TEAM AQUA zu\n"
+	.string "schaffen?\p"
+	.string "Unser BOSS ist nicht hier! Er ist auf\n"
+	.string "dem Weg nach PYROBERG auf der\l"
+	.string "ROUTE 122!\p"
+	.string "… …\n"
+	.string "Warum er dorthin ist?\p"
+	.string "Uahahaha! Du glaubst doch nicht im\n"
+	.string "Ernst, dass ich dir das verrate!?!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
+	.ifdef ENGLISH
 	.string "What? What?\n"
 	.string "Are you a TEAM MAGMA grunt?\p"
 	.string "I hear that TEAM MAGMA is after\n"
 	.string "an awesome POKéMON at MT. CHIMNEY.\p"
 	.string "But what is that POKéMON like?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie?!?\n"
+	.string "Bist du einer von den TEAM MAGMA\l"
+	.string "Rüpeln?\p"
+	.string "Ich habe gehört, dass TEAM MAGMA am\n"
+	.string "SCHLOTBERG nach einem unglaublichen\l"
+	.string "POKéMON sucht.\p"
+	.string "Was ist das wohl für ein POKéMON?$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
+	.ifdef ENGLISH
 	.string "What? What? What do you want with\n"
 	.string "TEAM AQUA?\p"
 	.string "Our BOSS isn't here!\n"
@@ -104,16 +170,49 @@ AquaHideout_1F_Text_BossIsInSlateportCity:
 	.string "Why did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
 	.string "you something that crucial?$"
+	.else
+	.ifdef GERMAN
+	.string "Was? Wie? Was hast du mit TEAM AQUA zu\n"
+	.string "schaffen?\p"
+	.string "Unser BOSS ist nicht hier! Er ist auf\n"
+	.string "dem Weg nach GRAPHITPORT CITY!\p"
+	.string "… …\n"
+	.string "Warum er dorthin ist?\p"
+	.string "Uahahaha! Du glaubst doch nicht im\n"
+	.string "Ernst, dass ich dir das verrate!?!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_Grunt1Intro:
+	.ifdef ENGLISH
 	.string "Ayiyiyi!\n"
 	.string "Suspicious character spotted!$"
+	.else
+	.ifdef GERMAN
+	.string "Huhuuhuhuu!\n"
+	.string "Verdächtige Person gesichtet!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_Grunt1Defeat:
+	.ifdef ENGLISH
 	.string "Grrrrr…\n"
 	.string "I lost it!$"
+	.else
+	.ifdef GERMAN
+	.string "Grrr…\n"
+	.string "Ich habe verloren!$"
+	.endif
+	.endif
 
 AquaHideout_1F_Text_Grunt1PostBattle:
+	.ifdef ENGLISH
 	.string "I took the loss for the TEAM,\n"
 	.string "but I did my job…$"
+	.else
+	.ifdef GERMAN
+	.string "Nun hat das TEAM verloren, aber ich\n"
+	.string "habe meinen Job gemacht…$"
+	.endif
+	.endif
 

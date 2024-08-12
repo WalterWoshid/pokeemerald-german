@@ -450,198 +450,539 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantReturnToPlayer:
 	step_end
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection:
+	.ifdef ENGLISH
 	.string "First, we will hold your POKéMON for\n"
 	.string "safekeeping.\p"
 	.string "You may then choose from our\n"
 	.string "selection of POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "Wir nehmen deine POKéMON in unsere\n"
+	.string "Obhut.\p"
+	.string "Dann kannst du dir aus einer Anzahl von\n"
+	.string "POKéMON ein paar ausleihen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
+	.ifdef ENGLISH
 	.string "Thank you for competing!\n"
 	.string "Let us restore your POKéMON!$"
+	.else
+	.ifdef GERMAN
+	.string "Vielen Dank für deine Teilnahme! Deine\n"
+	.string "POKéMON sind gleich wieder topfit.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
+	.ifdef ENGLISH
 	.string "The 2nd match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der zweite Kampf steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
+	.ifdef ENGLISH
 	.string "The 3rd match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der dritte Kampf steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
+	.ifdef ENGLISH
 	.string "The 4th match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der vierte Kampf steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
+	.ifdef ENGLISH
 	.string "The 5th match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der fünfte Kampf steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
+	.ifdef ENGLISH
 	.string "The 6th match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der sechste Kampf steht bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
+	.ifdef ENGLISH
 	.string "Finally, the 7th match is next!\n"
 	.string "Are you ready?$"
+	.else
+	.ifdef GERMAN
+	.string "Der siebte Kampf steht endlich bevor!\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:
+	.ifdef ENGLISH
 	.string "Would you like to save and quit\n"
 	.string "the game?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du das Spiel speichern und\n"
+	.string "beenden?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RetireFromChallenge:
+	.ifdef ENGLISH
 	.string "Would you like to retire from your\n"
 	.string "Battle Swap challenge?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du dich aus dem Wechselkampf\n"
+	.string "zurückziehen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent:
+	.ifdef ENGLISH
 	.string "I've conducted a little investigation\n"
 	.string "about your upcoming opponent.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich habe mich über deinen nächsten\n"
+	.string "Gegner erkundigt.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the NORMAL type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ NORMAL.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the FIRE type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ FEUER.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the WATER type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ WASSER.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the ELECTRIC type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ ELEKTRO.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the GRASS type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ PFLANZE.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the ICE type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ EIS.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the FIGHTING type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ KAMPF.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the POISON type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ GIFT.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the GROUND type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ BODEN.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the FLYING type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ FLUG.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the PSYCHIC type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ PSYCHO.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the BUG type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ KÄFER.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the ROCK type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ GESTEIN.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the GHOST type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ GEIST.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the DRAGON type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ DRACHE.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the DARK type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ UNLICHT.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
+	.ifdef ENGLISH
 	.string "The TRAINER is apparently skilled\n"
 	.string "in the handling of the STEEL type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER ist ein Fachmann für\n"
+	.string "POKéMON vom Typ STAHL.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
+	.ifdef ENGLISH
 	.string "The TRAINER appears to have no clear\n"
 	.string "favorites when it comes to type.$"
+	.else
+	.ifdef GERMAN
+	.string "Der TRAINER scheint keine Vorlieben\n"
+	.string "für einen bestimmten Typ zu haben.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be slow and steady.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil:\n"
+	.string "langsam, aber mit Beständigkeit.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be one of endurance.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil:\n"
+	.string "ausdauernd.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be high risk, high return.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil:\n"
+	.string "hohes Risiko und starke Gegenattacken.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "depend on the battle's flow.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil:\n"
+	.string "hängt vom Kampfverlauf ab.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be one based on total preparation.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil: \n"
+	.string "gründliche Vorbereitung eines Kampfes.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears\n"
 	.string "to be weakening the foe to start.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil: \n"
+	.string "den Gegner gleich zu Anfang schwächen.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be flexibly adaptable to the situation.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil: \n"
+	.string "flexibel auf jede Situation reagieren.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be impossible to predict.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil: \n"
+	.string "ist nicht vorhersehbar.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained:
+	.ifdef ENGLISH
 	.string "The favorite battle style appears to\n"
 	.string "be free-spirited and unrestrained.$"
+	.else
+	.ifdef GERMAN
+	.string "Sein favorisierter Kampfstil: \n"
+	.string "frei und bedenkenlos.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon:
+	.ifdef ENGLISH
 	.string "Before starting the battle, would you\n"
 	.string "like to swap a POKéMON?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du vor dem Kampf ein POKéMON\n"
+	.string "tauschen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete:
+	.ifdef ENGLISH
 	.string "Thank you!\n"
 	.string "Your POKéMON swap is complete.$"
+	.else
+	.ifdef GERMAN
+	.string "Vielen Dank! Der POKéMON-Tausch\n"
+	.string "wurde durchgeführt.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay:
+	.ifdef ENGLISH
 	.string "Right this way, please!$"
+	.else
+	.ifdef GERMAN
+	.string "Bitte hier entlang!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
+	.ifdef ENGLISH
 	.string "I am saving your data.\n"
 	.string "Please wait.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich speichere deine Daten.\n"
+	.string "Einen Moment bitte.$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
+	.ifdef ENGLISH
 	.string "Would you like to record your latest\n"
 	.string "battle on your FRONTIER PASS?$"
+	.else
+	.ifdef GERMAN
+	.string "Möchtest du deinen letzten Kampf\n"
+	.string "in deinen KAMPFZONENPASS eintragen?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
+	.ifdef ENGLISH
 	.string "Excuse me! Excuse me, please!\n"
 	.string "May I get you to wait a few moments?$"
+	.else
+	.ifdef GERMAN
+	.string "Entschuldigung! Hallo, entschuldige!\n"
+	.string "Würdest du bitte einen Moment warten?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
+	.ifdef ENGLISH
 	.string "…Uh-huh? What?! …Whoa!\n"
 	.string "Understood, sir! Will do!$"
+	.else
+	.ifdef GERMAN
+	.string "…Oh-oh. Was?!?… Hui!\n"
+	.string "Ja, verstanden, Sir! Sofort!$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:
+	.ifdef ENGLISH
 	.string "Oh, my…\n"
 	.string "Sorry to keep you waiting!\p"
 	.string "I have a message from this facility's\n"
 	.string "boss, the FACTORY HEAD.\p"
 	.string "He says, “We're going to do it!\n"
 	.string "Come here right now!”$"
+	.else
+	.ifdef GERMAN
+	.string "Oh je…\n"
+	.string "Tut mir Leid, dass du warten musstest.\p"
+	.string "Ich habe eine Nachricht vom\n"
+	.string "FABRIKLEITER.\p"
+	.string "Er sagt: “Wir werden es in Angriff\n"
+	.string "nehmen! Komm bitte her!”$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead:
+	.ifdef ENGLISH
 	.string "The FACTORY HEAD is demanding you.\n"
 	.string "Are you prepared to face him?$"
+	.else
+	.ifdef GERMAN
+	.string "Der FABRIKLEITER erwartet dich.\n"
+	.string "Bist du bereit?$"
+	.endif
+	.endif
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead:
+	.ifdef ENGLISH
 	.string "I'm terribly sorry, but I can't tell you\n"
 	.string "anything about the FACTORY HEAD.$"
+	.else
+	.ifdef GERMAN
+	.string "Es tut mir Leid, aber ich kann dir über\n"
+	.string "den FABRIKLEITER nichts sagen.$"
+	.endif
+	.endif

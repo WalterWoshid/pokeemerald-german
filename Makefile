@@ -30,17 +30,19 @@ LD := $(PREFIX)ld
 MODERNCC := $(PREFIX)gcc
 PATH_MODERNCC := PATH="$(PATH)" $(MODERNCC)
 
+include config.mk
+
+ifeq ($(MAKECMDGOALS), emerald)
+export GAME_LANGUAGE = ENGLISH
+else ifeq ($(MAKECMDGOALS), emerald_de)
+export GAME_LANGUAGE = GERMAN
+endif
+
 ifeq ($(OS),Windows_NT)
 EXE := .exe
 else
 EXE :=
 endif
-
-TITLE       := POKEMON EMER
-GAME_CODE   := BPEE
-MAKER_CODE  := 01
-REVISION    := 0
-MODERN      ?= 0
 
 ifeq (modern,$(MAKECMDGOALS))
   MODERN := 1
@@ -63,21 +65,14 @@ else
   CPP := $(PREFIX)cpp
 endif
 
-ROM_NAME := pokeemerald.gba
-ELF_NAME := $(ROM_NAME:.gba=.elf)
-MAP_NAME := $(ROM_NAME:.gba=.map)
-OBJ_DIR_NAME := build/emerald
-
-MODERN_ROM_NAME := pokeemerald_modern.gba
-MODERN_ELF_NAME := $(MODERN_ROM_NAME:.gba=.elf)
-MODERN_MAP_NAME := $(MODERN_ROM_NAME:.gba=.map)
-MODERN_OBJ_DIR_NAME := build/modern
-
 SHELL := bash -o pipefail
 
-ELF = $(ROM:.gba=.elf)
-MAP = $(ROM:.gba=.map)
-SYM = $(ROM:.gba=.sym)
+ROM := poke$(BUILD_NAME).gba
+MAP := $(ROM:%.gba=%.map)
+ELF := $(ROM:%.gba=%.elf)
+SYM := $(ROM:%.gba=%.sym)
+
+BUILD_DIR := build/$(BUILD_NAME)
 
 C_SUBDIR = src
 GFLIB_SUBDIR = gflib
@@ -89,32 +84,28 @@ MID_SUBDIR = sound/songs/midi
 SAMPLE_SUBDIR = sound/direct_sound_samples
 CRY_SUBDIR = sound/direct_sound_samples/cries
 
-C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
-GFLIB_BUILDDIR = $(OBJ_DIR)/$(GFLIB_SUBDIR)
-ASM_BUILDDIR = $(OBJ_DIR)/$(ASM_SUBDIR)
-DATA_ASM_BUILDDIR = $(OBJ_DIR)/$(DATA_ASM_SUBDIR)
-SONG_BUILDDIR = $(OBJ_DIR)/$(SONG_SUBDIR)
-MID_BUILDDIR = $(OBJ_DIR)/$(MID_SUBDIR)
+C_BUILDDIR = $(BUILD_DIR)/$(C_SUBDIR)
+GFLIB_BUILDDIR = $(BUILD_DIR)/$(GFLIB_SUBDIR)
+ASM_BUILDDIR = $(BUILD_DIR)/$(ASM_SUBDIR)
+DATA_ASM_BUILDDIR = $(BUILD_DIR)/$(DATA_ASM_SUBDIR)
+SONG_BUILDDIR = $(BUILD_DIR)/$(SONG_SUBDIR)
+MID_BUILDDIR = $(BUILD_DIR)/$(MID_SUBDIR)
 
-ASFLAGS := -mcpu=arm7tdmi --defsym MODERN=$(MODERN)
+ASFLAGS := -mcpu=arm7tdmi --defsym $(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_LANGUAGE)=1 --defsym DEBUG=$(DEBUG) --defsym MODERN=$(MODERN)
 
 ifeq ($(MODERN),0)
 CC1             := tools/agbcc/bin/agbcc$(EXE)
 override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O2 -fhex-asm -g
-ROM := $(ROM_NAME)
-OBJ_DIR := $(OBJ_DIR_NAME)
 LIBPATH := -L ../../tools/agbcc/lib
 LIB := $(LIBPATH) -lgcc -lc -L../../libagbsyscall -lagbsyscall
 else
 CC1              = $(shell $(PATH_MODERNCC) --print-prog-name=cc1) -quiet
 override CFLAGS += -mthumb -mthumb-interwork -O2 -mabi=apcs-gnu -mtune=arm7tdmi -march=armv4t -fno-toplevel-reorder -Wno-pointer-to-int-cast
-ROM := $(MODERN_ROM_NAME)
-OBJ_DIR := $(MODERN_OBJ_DIR_NAME)
 LIBPATH := -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libgcc.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libnosys.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libc.a))"
 LIB := $(LIBPATH) -lc -lnosys -lgcc -L../../libagbsyscall -lagbsyscall
 endif
 
-CPPFLAGS := -iquote include -iquote $(GFLIB_SUBDIR) -Wno-trigraphs -DMODERN=$(MODERN)
+CPPFLAGS := -iquote include -iquote $(GFLIB_SUBDIR) -Wno-trigraphs -D $(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D$(GAME_LANGUAGE) -D DEBUG=$(DEBUG) -D MODERN=$(MODERN)
 ifneq ($(MODERN),1)
 CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef
 endif
@@ -148,6 +139,9 @@ MAKEFLAGS += --no-print-directory
 
 # Secondary expansion is required for dependency variables in object rules.
 .SECONDEXPANSION:
+
+ALL_BUILDS    := emerald emerald_debug emerald_de emerald_de_debug
+MODERN_BUILDS := $(ALL_BUILDS:%=%_modern)
 
 .PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS) libagbsyscall modern tidymodern tidynonmodern
 
@@ -203,7 +197,7 @@ MID_SRCS := $(wildcard $(MID_SUBDIR)/*.mid)
 MID_OBJS := $(patsubst $(MID_SUBDIR)/%.mid,$(MID_BUILDDIR)/%.o,$(MID_SRCS))
 
 OBJS     := $(C_OBJS) $(GFLIB_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(SONG_OBJS) $(MID_OBJS)
-OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
+OBJS_REL := $(patsubst $(BUILD_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS)))
 $(shell mkdir -p $(SUBDIRS))
@@ -246,12 +240,10 @@ mostlyclean: tidynonmodern tidymodern
 tidy: tidynonmodern tidymodern
 
 tidynonmodern:
-	rm -f $(ROM_NAME) $(ELF_NAME) $(MAP_NAME)
-	rm -rf $(OBJ_DIR_NAME)
+	$(RM) $(ALL_BUILDS:%=poke%{.gba,.elf,.map})
 
 tidymodern:
-	rm -f $(MODERN_ROM_NAME) $(MODERN_ELF_NAME) $(MODERN_MAP_NAME)
-	rm -rf $(MODERN_OBJ_DIR_NAME)
+	$(RM) $(MODERN_BUILDS:%=poke%{.gba,.elf,.map})
 
 ifneq ($(MODERN),0)
 $(C_BUILDDIR)/berry_crush.o: override CFLAGS += -Wno-address-of-packed-member
@@ -394,35 +386,39 @@ endif
 $(SONG_BUILDDIR)/%.o: $(SONG_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
 
-$(OBJ_DIR)/sym_bss.ld: sym_bss.txt
+$(BUILD_DIR)/sym_bss.ld: sym_bss.txt
 	$(RAMSCRGEN) .bss $< ENGLISH > $@
 
-$(OBJ_DIR)/sym_common.ld: sym_common.txt $(C_OBJS) $(wildcard common_syms/*.txt)
+$(BUILD_DIR)/sym_common.ld: sym_common.txt $(C_OBJS) $(wildcard common_syms/*.txt)
 	$(RAMSCRGEN) COMMON $< ENGLISH -c $(C_BUILDDIR),common_syms > $@
 
-$(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
+$(BUILD_DIR)/sym_ewram.ld: sym_ewram.txt
 	$(RAMSCRGEN) ewram_data $< ENGLISH > $@
 
 ifeq ($(MODERN),0)
 LD_SCRIPT := ld_script.ld
-LD_SCRIPT_DEPS := $(OBJ_DIR)/sym_bss.ld $(OBJ_DIR)/sym_common.ld $(OBJ_DIR)/sym_ewram.ld
+LD_SCRIPT_DEPS := $(BUILD_DIR)/sym_bss.ld $(BUILD_DIR)/sym_common.ld $(BUILD_DIR)/sym_ewram.ld
 else
 LD_SCRIPT := ld_script_modern.ld
 LD_SCRIPT_DEPS :=
 endif
 
-$(OBJ_DIR)/ld_script.ld: $(LD_SCRIPT) $(LD_SCRIPT_DEPS)
-	cd $(OBJ_DIR) && sed "s#tools/#../../tools/#g" ../../$(LD_SCRIPT) > ld_script.ld
+$(BUILD_DIR)/ld_script.ld: $(LD_SCRIPT) $(LD_SCRIPT_DEPS)
+	cd $(BUILD_DIR) && sed "s#tools/#../../tools/#g" ../../$(LD_SCRIPT) > ld_script.ld
 
 LDFLAGS = -Map ../../$(MAP)
-$(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
-	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld -o ../../$@ <objects> <lib>"
-	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
+$(ELF): $(BUILD_DIR)/ld_script.ld $(OBJS) libagbsyscall
+	@echo "cd $(BUILD_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld -o ../../$@ <objects> <lib>"
+	@cd $(BUILD_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
 
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 	$(FIX) $@ -p --silent
+
+# "friendly" target names for convenience sake
+emerald:    ; @$(MAKE)
+emerald_de: ; @$(MAKE) GAME_LANGUAGE=GERMAN
 
 modern: all
 

@@ -238,22 +238,49 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 	end
 
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
+	.ifdef ENGLISH
 	.string "Hehehe!\p"
 	.string "With this METEORITE, that thing in\n"
 	.string "MT. CHIMNEY will…$"
+	.else
+	.ifdef GERMAN
+	.string "Hähähä!\p"
+	.string "Mit diesem METEORITen wird das Ding\n"
+	.string "am SCHLOTBERG…$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
+	.ifdef ENGLISH
 	.string "Heh?\p"
 	.string "I don't know who you are, but if you get\n"
 	.string "in the way of TEAM MAGMA, don't\l"
 	.string "expect any mercy!$"
+	.else
+	.ifdef GERMAN
+	.string "Häh?\p"
+	.string "Ich weiß zwar nicht, wer du bist. Aber\n"
+	.string "wenn du dich TEAM MAGMA in den Weg\l"
+	.string "stellst, erwarte keine Gnade!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
+	.ifdef ENGLISH
 	.string "Hold it right there, TEAM MAGMA!\p"
 	.string "You're badly mistaken if you think you\n"
 	.string "can have your way with the world!$"
+	.else
+	.ifdef GERMAN
+	.string "Bleibt sofort stehen, TEAM MAGMA!\p"
+	.string "Ihr irrt euch gewaltig, wenn ihr meint,\n"
+	.string "ihr könntet mit der Welt machen, was ihr\l"
+	.string "wollt!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
+	.ifdef ENGLISH
 	.string "Hehehe!\n"
 	.string "Even TEAM AQUA joins us!\p"
 	.string "But it's too much trouble to deal with\n"
@@ -263,8 +290,23 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "MT. CHIMNEY we go!\p"
 	.string "Hehehe! Be seeing you, you TEAM\n"
 	.string "AQUA dingbats!$"
+	.else
+	.ifdef GERMAN
+	.string "Hähähä!\n"
+	.string "Sogar TEAM AQUA leistet uns\l"
+	.string "Gesellschaft!\p"
+	.string "Aber es ist viel zu anstrengend, sich\n"
+	.string "mit allen auseinander zu setzen…\p"
+	.string "Hey, das spielt auch keine Rolle!\p"
+	.string "Wir haben den METEORITen und so\n"
+	.string "machen wir uns auf zum SCHLOTBERG!\p"
+	.string "Hähähä! Wir sehen uns, ihr Würstchen\n"
+	.string "von TEAM AQUA!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
+	.ifdef ENGLISH
 	.string "ARCHIE: Didn't I see you before?\n"
 	.string "At SLATEPORT's MUSEUM?\p"
 	.string "Ah, so your name is {PLAYER}.\p"
@@ -278,23 +320,64 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "to expand the land mass.\p"
 	.string "They are the rivals to us,\n"
 	.string "the sea-loving TEAM AQUA!$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: Dich kenne ich doch!\n"
+	.string "Vom MUSEUM in GRAPHITPORT.\p"
+	.string "Ah, du bist {PLAYER}.\p"
+	.string "Damals dachte ich, du würdest zu\n"
+	.string "TEAM MAGMA gehören.\p"
+	.string "Hmpf…\n"
+	.string "Du bist ein merkwürdiges Kind.\p"
+	.string "TEAM MAGMA besteht aus Fanatikern.\p"
+	.string "Sie zerstören alles und behaupten,\n"
+	.string "die Landmasse vergrößern zu wollen.\p"
+	.string "Wir, TEAM AQUA, lieben das Meer über\n"
+	.string "alles. TEAM MAGMA ist unser Erzfeind!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
+	.ifdef ENGLISH
 	.string "BOSS, we should give chase to\n"
 	.string "TEAM MAGMA…$"
+	.else
+	.ifdef GERMAN
+	.string "BOSS, wir sollten TEAM MAGMA\n"
+	.string "verfolgen…$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
+	.ifdef ENGLISH
 	.string "ARCHIE: Yes, yes, we must!\n"
 	.string "We've got to hurry.\p"
 	.string "There's no telling what TEAM MAGMA\n"
 	.string "will do at MT. CHIMNEY!$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: Ja, ja. Das müssen wir!\n"
+	.string "Wir müssen uns beeilen.\p"
+	.string "Nicht auszudenken, was TEAM MAGMA am\n"
+	.string "SCHLOTBERG anrichten will!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
+	.ifdef ENGLISH
 	.string "ARCHIE: {PLAYER}, you should keep\n"
 	.string "an eye out for TEAM MAGMA, too.\p"
 	.string "Farewell!$"
+	.else
+	.ifdef GERMAN
+	.string "ADRIAN: {PLAYER}, du solltest\n"
+	.string "TEAM MAGMA im Auge behalten.\p"
+	.string "Leb wohl!$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
+	.ifdef ENGLISH
 	.string "I… I'm COZMO…\n"
 	.string "I'm a PROFESSOR…\p"
 	.string "TEAM MAGMA asked me to guide them\n"
@@ -308,8 +391,35 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at MT. CHIMNEY?$"
+	.else
+	.ifdef GERMAN
+	.string "Ich… Ich bin KOSMO…\n"
+	.string "Ich bin Professor…\p"
+	.string "Einige Typen von TEAM MAGMA haben\n"
+	.string "mich überredet, sie zu METEOR-\l"
+	.string "FÄLLE zu führen…\p"
+	.string "Sie haben mich hereingelegt.\n"
+	.string "Sie haben sogar den METEORITen\l"
+	.string "mitgenommen…\p"
+	.string "Und dann tauchte TEAM AQUA auf. Die\n"
+	.string "sind auch nicht anders.\p"
+	.string "Und ich?\n"
+	.string "Ich verstehe absolut nicht, was los ist.\p"
+	.string "TEAM MAGMA…\p"
+	.string "Was haben sie mit dem METEORITen am\n"
+	.string "SCHLOTBERG vor?$"
+	.endif
+	.endif
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
+	.ifdef ENGLISH
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at MT. CHIMNEY?$"
+	.else
+	.ifdef GERMAN
+	.string "PROF. KOSMO: Dieses TEAM MAGMA…\p"
+	.string "Was haben sie mit dem METEORITen am\n"
+	.string "SCHLOTBERG vor?$"
+	.endif
+	.endif

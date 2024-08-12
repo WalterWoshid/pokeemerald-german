@@ -40,22 +40,53 @@ BattleFrontier_PokemonCenter_1F_EventScript_Skitty::
 	end
 
 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon:
+	.ifdef ENGLISH
 	.string "There was someone here using a \n"
 	.string "POKéMON I've never seen before.\p"
 	.string "I never learned about it at\n"
 	.string "TRAINER'S SCHOOL at least.\p"
 	.string "I wonder where you can catch POKéMON\n"
 	.string "like that.$"
+	.else
+	.ifdef GERMAN
+	.string "Hier war gerade jemand, der hat ein\n"
+	.string "POKéMON gehabt, das ich vorher noch\p"
+	.string "nie gesehen habe. Ich habe auch in der\n"
+	.string "TRAINERSCHULE nichts darüber gelernt.\p"
+	.string "Wo findet man wohl so ein POKéMON?$"
+	.endif
+	.endif
 
 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena:
+	.ifdef ENGLISH
 	.string "Okay! Next stop, the BATTLE ARENA!\n"
 	.string "I'd better get the right POKéMON from\l"
 	.string "the PC Storage System.$"
+	.else
+	.ifdef GERMAN
+	.string "Okay! Nächster Halt: KAMPFRING!\n"
+	.string "Ich sollte mir schnell ein POKéMON aus\l"
+	.string "dem POKéMON-Lagerungs-System nehmen.$"
+	.endif
+	.endif
 
 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge:
+	.ifdef ENGLISH
 	.string "Giggle… I'm going to go through every\n"
 	.string "challenge with just this baby!$"
+	.else
+	.ifdef GERMAN
+	.string "Kicher… Mit diesem Schatz hier werde\n"
+	.string "ich jede Herausforderung bestehen!$"
+	.endif
+	.endif
 
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
+	.ifdef ENGLISH
 	.string "SKITTY: Mya myaaah!$"
+	.else
+	.ifdef GERMAN
+	.string "ENECO: Mya myaaah!$"
+	.endif
+	.endif
 

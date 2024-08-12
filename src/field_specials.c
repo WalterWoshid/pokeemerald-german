@@ -2213,6 +2213,15 @@ void BufferBattleTowerElevatorFloors(void)
     u16 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
     u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
 
+#if GERMAN
+    if (battleMode == FRONTIER_MODE_LINK_MULTIS)
+    {
+        gSpecialVar_0x8005 = 4;
+        gSpecialVar_0x8006 = 5;
+        return;
+    }
+#endif
+
     if (battleMode == FRONTIER_MODE_MULTIS && !FlagGet(FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER))
     {
         gSpecialVar_0x8005 = 5;

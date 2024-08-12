@@ -110,36 +110,96 @@ Route112_EventScript_Shayla::
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:
+	.ifdef ENGLISH
 	.string "Hey, man, is our leader really going\n"
 	.string "to awaken that thing?$"
+	.else
+	.ifdef GERMAN
+	.string "Hey, ob unser Anführer dieses Ding\n"
+	.string "wirklich aufwecken wird?$"
+	.endif
+	.endif
 
 Route112_Text_YeahWeNeedMeteorite:
+	.ifdef ENGLISH
 	.string "Sounds like it, yeah. But I heard\n"
 	.string "we need a METEORITE to do it.$"
+	.else
+	.ifdef GERMAN
+	.string "Hört sich so an, ja. Aber wir brauchen\n"
+	.string "einen METEORITen dafür.$"
+	.endif
+	.endif
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
+	.ifdef ENGLISH
 	.string "Oh, I get it now. That's why the rest\n"
 	.string "of the crew went out to FALLARBOR.$"
+	.else
+	.ifdef GERMAN
+	.string "Ach, jetzt verstehe ich! Deshalb sind\n"
+	.string "die anderen nach LAUBWECHSELFELD\l"
+	.string "gegangen.$"
+	.endif
+	.endif
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
+	.ifdef ENGLISH
 	.string "You got it. And until they come back,\n"
 	.string "we're not to let anyone pass, right.$"
+	.else
+	.ifdef GERMAN
+	.string "Genau! Und solange sie weg sind, darf\n"
+	.string "hier niemand durch.$"
+	.endif
+	.endif
 
 Route112_Text_NotEasyToGetBackToLavaridge:
+	.ifdef ENGLISH
 	.string "Eh, I'd like to get to MAUVILLE, but if\n"
 	.string "I went down these ledges, it'd be no\l"
 	.string "easy matter to get back to LAVARIDGE.$"
+	.else
+	.ifdef GERMAN
+	.string "Ich würde gerne nach MALVENFROH CITY,\n"
+	.string "aber wenn ich diese Stufen hinunter-\p"
+	.string "gehe, komme ich kaum wieder nach\n"
+	.string "BAD LAVASTADT.$"
+	.endif
+	.endif
 
 Route112_Text_MtChimneyCableCarSign:
+	.ifdef ENGLISH
 	.string "MT. CHIMNEY CABLE CAR\n"
 	.string "“A short walk {UP_ARROW} way!”$"
+	.else
+	.ifdef GERMAN
+	.string "SEILBAHN ZUM SCHLOTBERG\n"
+	.string "“Ein kurzer Weg nach {UP_ARROW}!”$"
+	.endif
+	.endif
 
 Route112_Text_MtChimneySign:
+	.ifdef ENGLISH
 	.string "MT. CHIMNEY\p"
 	.string "“For LAVARIDGE TOWN or the summit,\n"
 	.string "please take the CABLE CAR.”$"
+	.else
+	.ifdef GERMAN
+	.string "SCHLOTBERG\p"
+	.string "“BAD LAVASTADT oder den Gipfel\n"
+	.string "erreichen Sie mit der SEILBAHN.”$"
+	.endif
+	.endif
 
 Route112_Text_RouteSignLavaridge:
+	.ifdef ENGLISH
 	.string "ROUTE 112\n"
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
+	.else
+	.ifdef GERMAN
+	.string "ROUTE 112\n"
+	.string "{LEFT_ARROW} BAD LAVASTADT$"
+	.endif
+	.endif
 

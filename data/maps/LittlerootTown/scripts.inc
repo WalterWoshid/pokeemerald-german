@@ -910,6 +910,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
+	.ifdef ENGLISH
 	.string "MOM: {PLAYER}, we're here, honey!\p"
 	.string "It must be tiring riding with our things\n"
 	.string "in the moving truck.\p"
@@ -920,11 +921,32 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "an easy place to live, don't you think?\p"
 	.string "And, you get your own room, {PLAYER}!\n"
 	.string "Let's go inside.$"
+	.else
+	.ifdef GERMAN
+	.string "MUTTER: {PLAYER}, wir sind da, Schatz!\p"
+	.string "Die Fahrt im Umzugswagen zwischen all\n"
+	.string "unseren Sachen war bestimmt ermüdend.\p"
+	.string "Nun, wir sind in WURZELHEIM.\p"
+	.string "Wie gefällt es dir?\n"
+	.string "Dies ist unser neues Zuhause!\p"
+	.string "Ist das idyllisch! Man kann hier sicher\n"
+	.string "wunderbar leben, meinst du nicht?\p"
+	.string "Und… du bekommst dein eigenes\n"
+	.string "Zimmer, {PLAYER}! Lass uns hineingehen!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_WaitPlayer:
+	.ifdef ENGLISH
 	.string "MOM: Wait, {PLAYER}!$"
+	.else
+	.ifdef GERMAN
+	.string "MUTTER: Warte, {PLAYER}!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_WearTheseRunningShoes:
+	.ifdef ENGLISH
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
@@ -934,20 +956,54 @@ LittlerootTown_Text_WearTheseRunningShoes:
 	.string "Here, honey! If you're going out on an\n"
 	.string "adventure, wear these RUNNING SHOES.\p"
 	.string "They'll put a zip in your step!$"
+	.else
+	.ifdef GERMAN
+	.string "MUTTER: {PLAYER}! Hast du dich schon\n"
+	.string "PROF. BIRK vorgestellt?\p"
+	.string "Oh! Was für ein hübsches POKéMON! Du\n"
+	.string "hast es von PROF. BIRK erhalten? Toll!\p"
+	.string "Du bist das Kind deines Vaters! Wunder-\n"
+	.string "bar. Du siehst gut aus mit deinem\l"
+	.string "POKéMON!\p"
+	.string "Hier, Liebling! Für eine Abenteuerreise\n"
+	.string "sind diese TURBOTRETER wie geschaffen.\p"
+	.string "Sie werden deinen Schritt\n"
+	.string "beschleunigen!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
+	.ifdef ENGLISH
 	.string "{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES.$"
+	.else
+	.ifdef GERMAN
+	.string "{PLAYER} zieht die TURBOTRETER an.$"
+	.endif
+	.endif
 
 LittlerootTown_Text_ExplainRunningShoes:
+	.ifdef ENGLISH
 	.string "MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions.\p"
 	.string "“Press the B Button while wearing these\n"
 	.string "RUNNING SHOES to run extra-fast!\p"
 	.string "“Slip on these RUNNING SHOES and race\n"
 	.string "in the great outdoors!”$"
+	.else
+	.ifdef GERMAN
+	.string "MUTTER: {PLAYER}, für diese Schuhe gibt\n"
+	.string "es eine Bedienungsanleitung.\p"
+	.string "“Halte den B-Knopf gedrückt,\n"
+	.string "wenn du diese TURBOTRETER anhast,\l"
+	.string "um zu rennen!\p"
+	.string "Schlüpf in diese TURBOTRETER und\n"
+	.string "erobere die Welt da draußen!”$"
+	.endif
+	.endif
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
+	.ifdef ENGLISH
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "To think that you have your very own\n"
@@ -956,29 +1012,78 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "…But please be careful.\n"
 	.string "If anything happens, you can come home.\p"
 	.string "Go on, go get them, honey!$"
+	.else
+	.ifdef GERMAN
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "Sich vorzustellen, dass du nun dein\n"
+	.string "eigenes POKéMON besitzt…\l"
+	.string "Dein Vater wird überglücklich sein.\p"
+	.string "… Aber sei bitte vorsichtig.\n"
+	.string "Sollte etwas passieren, komm wieder\l"
+	.string "nach Hause.\p"
+	.string "Lauf, schnapp’ sie dir alle, Schatz!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_CanUsePCToStoreItems:
+	.ifdef ENGLISH
 	.string "If you use a PC, you can store items\n"
 	.string "and POKéMON.\p"
 	.string "The power of science is staggering!$"
+	.else
+	.ifdef GERMAN
+	.string "Wenn du einen PC benutzt, kannst du\n"
+	.string "dort Items und POKéMON lagern.\p"
+	.string "Die Kraft der Wissenschaft ist\n"
+	.string "atemberaubend!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
+	.ifdef ENGLISH
 	.string "PROF. BIRCH spends days in his LAB\n"
 	.string "studying, then he'll suddenly go out in\l"
 	.string "the wild to do more research…\p"
 	.string "When does PROF. BIRCH spend time\n"
 	.string "at home?$"
+	.else
+	.ifdef GERMAN
+	.string "PROF. BIRK verbringt seine Tage in\n"
+	.string "seinem LABOR, dann rennt er plötzlich\l"
+	.string "nach draußen in die Wildnis, um zu\l"
+	.string "forschen…\p"
+	.string "Wann ist PROF. BIRK eigentlich mal\n"
+	.string "zu Hause?$"
+	.endif
+	.endif
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
+	.ifdef ENGLISH
 	.string "Um, um, um!\p"
 	.string "If you go outside and go in the grass,\n"
 	.string "wild POKéMON will jump out!$"
+	.else
+	.ifdef GERMAN
+	.string "Äh… Ähm… Hihi…\p"
+	.string "Wenn du durch das hohe Gras läufst,\n"
+	.string "wirst du wilde POKéMON entdecken.$"
+	.endif
+	.endif
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
+	.ifdef ENGLISH
 	.string "It's dangerous if you don't have\n"
 	.string "your own POKéMON.$"
+	.else
+	.ifdef GERMAN
+	.string "Das ist gefährlich, wenn du kein eigenes\n"
+	.string "POKéMON dabeihast.$"
+	.endif
+	.endif
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
+	.ifdef ENGLISH
 	.string "Um, hi!\p"
 	.string "There are scary POKéMON outside!\n"
 	.string "I can hear their cries!\p"
@@ -986,29 +1091,81 @@ LittlerootTown_Text_CanYouGoSeeWhatsHappening:
 	.string "but I don't have any POKéMON…\p"
 	.string "Can you go see what's happening\n"
 	.string "for me?$"
+	.else
+	.ifdef GERMAN
+	.string "Äh… Hallo!\p"
+	.string "Da ist ein fürchterliches POKéMON!\n"
+	.string "Ich kann seinen Ruf hören!\p"
+	.string "Ich würde mir ja gerne mal ansehen,\n"
+	.string "was da los ist, aber ich habe kein\l"
+	.string "POKéMON…\p"
+	.string "Kannst du nicht für mich nachschauen,\n"
+	.string "was da los ist?$"
+	.endif
+	.endif
 
 LittlerootTown_Text_YouSavedBirch:
+	.ifdef ENGLISH
 	.string "You saved PROF. BIRCH!\n"
 	.string "I'm so glad!$"
+	.else
+	.ifdef GERMAN
+	.string "Du hast PROF. BIRK gerettet!\n"
+	.string "Ich bin total froh!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
+	.ifdef ENGLISH
 	.string "Are you going to catch POKéMON?\n"
 	.string "Good luck!$"
+	.else
+	.ifdef GERMAN
+	.string "Gehst du POKéMON fangen?\n"
+	.string "Viel Glück!$"
+	.endif
+	.endif
 
 LittlerootTown_Text_TownSign:
+	.ifdef ENGLISH
 	.string "LITTLEROOT TOWN\n"
 	.string "“A town that can't be shaded any hue.”$"
+	.else
+	.ifdef GERMAN
+	.string "WURZELHEIM\n"
+	.string "“Ein Ort, wie es ihn nur einmal gibt.”$"
+	.endif
+	.endif
 
 LittlerootTown_Text_ProfBirchsLab:
+	.ifdef ENGLISH
 	.string "PROF. BIRCH'S POKéMON LAB$"
+	.else
+	.ifdef GERMAN
+	.string "PROF. BIRKS POKéMON-LABOR$"
+	.endif
+	.endif
 
 LittlerootTown_Text_PlayersHouse:
+	.ifdef ENGLISH
 	.string "{PLAYER}'s HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "HAUS von {PLAYER}$"
+	.endif
+	.endif
 
 LittlerootTown_Text_ProfBirchsHouse:
+	.ifdef ENGLISH
 	.string "PROF. BIRCH'S HOUSE$"
+	.else
+	.ifdef GERMAN
+	.string "PROF. BIRKS HAUS$"
+	.endif
+	.endif
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
+	.ifdef ENGLISH
 	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
 	.string "That was good work out there!\p"
 	.string "I knew there was something special\n"
@@ -1018,4 +1175,16 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
-
+	.else
+	.ifdef GERMAN
+	.string "PROF. BIRK: Na, {PLAYER}{KUN}!\n"
+	.string "Das war wirklich gute Arbeit!\p"
+	.string "Ich wusste vom ersten Augenblick an,\n"
+	.string "dass du etwas Besonderes bist. Aber\l"
+	.string "das hätte selbst ich nicht erwartet.\p"
+	.string "Ach ja. Du hast doch noch den\n"
+	.string "POKéDEX, den ich dir gegeben habe?\p"
+	.string "Ich will dir etwas zeigen.\n"
+	.string "Lass uns in mein LABOR gehen.$"
+	.endif
+	.endif
